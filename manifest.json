@@ -1,0 +1,21 @@
+{
+    "name": "美波飯マップ",
+    "short_name": "美波飯",
+    "description": "徳島県美波町の飲食店情報マップ",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FFFBF5",
+    "theme_color": "#F28482",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
