@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>美波飯マップ</title>
     
+    <!-- ★ ADD: OGP (Open Graph Protocol) and Twitter Card tags -->
+    <meta name="description" content="徳島県美波町の美味しいごはん屋さんを探せるマップアプリ">
+    <meta property="og:url" content="https://minamigoen.github.io/MinamiGo/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="美波飯マップ">
+    <meta property="og:description" content="徳島県美波町の美味しいごはん屋さんを探せるマップアプリ">
+    <meta property="og:site_name" content="美波飯マップ">
+    <meta property="og:image" content="https://minamigoen.github.io/MinamiGo/icon-512.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="美波飯マップ">
+    <meta name="twitter:description" content="徳島県美波町の美味しいごはん屋さんを探せるマップアプリ">
+    <meta name="twitter:image" content="https://minamigoen.github.io/MinamiGo/icon-512.png">
+
     <!-- PWA and theming -->
     <meta name="theme-color" content="#F28482"/>
     <link rel="manifest" href="manifest.json">
@@ -121,7 +134,6 @@
         <div id="menu-dropdown" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg hidden overflow-hidden">
             <a href="#" id="menu-locate" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-location-arrow w-5 text-center text-[#F28482]"></i>現在地を表示</a>
             <a href="#" id="menu-toggle-view" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 md:hidden"><i id="menu-toggle-icon" class="fas fa-list w-5 text-center text-[#F28482]"></i><span id="menu-toggle-text">リスト表示に切替</span></a>
-            <!-- ★ ADD: Install button, hidden by default -->
             <a href="#" id="menu-install" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 hidden"><i class="fas fa-download w-5 text-center text-[#F28482]"></i>ホーム画面に追加</a>
             <a href="#" id="menu-share" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-qrcode w-5 text-center text-[#F28482]"></i>このアプリを共有</a>
         </div>
@@ -160,7 +172,7 @@
             let markerLayerGroup = L.layerGroup();
             let currentUserLocation = null;
             let currentUserMarker = null;
-            let deferredPrompt; // ★ ADD: For PWA installation prompt
+            let deferredPrompt; 
 
             // --- Element References ---
             const sidebarContainer = document.getElementById('sidebar-container');
@@ -175,7 +187,7 @@
             const menuToggleIcon = document.getElementById('menu-toggle-icon');
             const menuToggleText = document.getElementById('menu-toggle-text');
             const menuShare = document.getElementById('menu-share');
-            const menuInstall = document.getElementById('menu-install'); // ★ ADD: Install button element
+            const menuInstall = document.getElementById('menu-install'); 
             const copyUrlBtn = document.getElementById('copy-url-btn');
             const modal = document.getElementById('modal');
             const qrModal = document.getElementById('qr-modal');
@@ -209,8 +221,6 @@
                 menuLocate.addEventListener('click', (e) => { e.preventDefault(); locateUser(); menuDropdown.classList.add('hidden'); });
                 menuToggleView.addEventListener('click', (e) => { e.preventDefault(); toggleMobileView(); menuDropdown.classList.add('hidden'); });
                 menuShare.addEventListener('click', (e) => { e.preventDefault(); showQrModal(); menuDropdown.classList.add('hidden'); });
-
-                // ★ ADD: PWA Install button listener
                 menuInstall.addEventListener('click', handleInstallPrompt);
 
                 // Search functionality
@@ -233,22 +243,19 @@
                 // Window resize handling
                 window.addEventListener('resize', debounce(adjustLayoutForScreenSize, 200));
 
-                // ★ ADD: Listen for the browser's install prompt
                 window.addEventListener('beforeinstallprompt', (e) => {
                     e.preventDefault();
                     deferredPrompt = e;
-                    menuInstall.classList.remove('hidden'); // Show the install button
+                    menuInstall.classList.remove('hidden'); 
                 });
 
-                // ★ ADD: Listen for when the app is successfully installed
                 window.addEventListener('appinstalled', () => {
                     deferredPrompt = null;
-                    menuInstall.classList.add('hidden'); // Hide button after install
+                    menuInstall.classList.add('hidden'); 
                     console.log('PWA was installed');
                 });
             }
             
-            // ★ ADD: PWA Install prompt handler
             async function handleInstallPrompt(e) {
                 e.preventDefault();
                 menuDropdown.classList.add('hidden');
@@ -258,8 +265,8 @@
                 deferredPrompt.prompt();
                 const { outcome } = await deferredPrompt.userChoice;
                 console.log(`User response to the install prompt: ${outcome}`);
-                deferredPrompt = null; // The prompt can only be used once
-                menuInstall.classList.add('hidden'); // Hide the button after prompting
+                deferredPrompt = null; 
+                menuInstall.classList.add('hidden');
             }
 
             // --- Data Fetching & Caching ---
@@ -290,7 +297,7 @@
                     localStorage.setItem('minamiGoData', JSON.stringify(allRestaurants));
                 } catch (error) {
                     console.error('最新データの取得に失敗:', error);
-                    if (allRestaurants.length === 0) { // Show error only if no cached data is available
+                    if (allRestaurants.length === 0) { 
                         skeletonLoader.style.display = 'none';
                         cardContainer.innerHTML = `<div class="p-4 m-4 rounded-lg bg-red-100 border border-red-400 text-red-700"><b>データの読み込みに失敗しました。</b><p class="text-sm mt-2">電波の良いところで再度お試しください。</p></div>`;
                     }
@@ -303,14 +310,13 @@
                 displayCards(data);
                 addMarkers(data);
                 if (data.length > 0 && data.length < allRestaurants.length) {
-                    // Don't fit bounds on search filter to avoid jarring map movement
                 } else {
                     adjustMapBounds(data);
                 }
             }
             
             function displayCards(data) {
-                cardContainer.innerHTML = ''; // Clear previous results
+                cardContainer.innerHTML = ''; 
                 if (data.length === 0) {
                     cardContainer.innerHTML = `<div class="p-8 text-gray-500 text-center">該当するお店が見つかりませんでした。</div>`;
                     return;
@@ -475,12 +481,10 @@
             // --- Layout & View Management ---
             function adjustLayoutForScreenSize() {
                 if (window.innerWidth < 768) {
-                    // Mobile: Show map by default, hide list
                     if (!sidebarContainer.classList.contains('hidden')) {
                         toggleMobileView();
                     }
                 } else {
-                    // Desktop: Show both
                     sidebarContainer.classList.remove('hidden');
                     mapContainer.classList.remove('hidden');
                 }
@@ -489,13 +493,13 @@
 
             function toggleMobileView() {
                 const isMapHidden = mapContainer.classList.contains('hidden');
-                if (isMapHidden) { // List is visible -> Switch to Map
+                if (isMapHidden) { 
                     mapContainer.classList.remove('hidden');
                     sidebarContainer.classList.add('hidden');
                     menuToggleIcon.className = 'fas fa-list w-5 text-center text-[#F28482]';
                     menuToggleText.textContent = 'リスト表示に切替';
                     setTimeout(() => map.invalidateSize(), 10);
-                } else { // Map is visible -> Switch to List
+                } else { 
                     mapContainer.classList.add('hidden');
                     sidebarContainer.classList.remove('hidden');
                     menuToggleIcon.className = 'fas fa-map-location-dot w-5 text-center text-[#F28482]';
