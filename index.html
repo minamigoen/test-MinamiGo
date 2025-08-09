@@ -5,104 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>美波飯マップ</title>
     
+    <!-- PWA and theming -->
     <meta name="theme-color" content="#F28482"/>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icon-192.png">
 
+    <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif; @media (min-width: 768px) { overflow: hidden; } }
-        .leaflet-popup-content-wrapper { border-radius: 8px; }
-        .leaflet-popup-content { margin: 13px 20px; font-size: 14px; font-weight: bold; line-height: 1.5; }
-        .gallery-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
-        .gallery-card { background: white; border-radius: 16px; border: 1px solid #FDE8E1; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
-        .gallery-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(224, 122, 95, 0.2); }
-        .gallery-card img { width: 100%; height: 180px; object-fit: cover; background: #eee; }
-        /* ★ カードの内部レイアウトをflexで堅牢に管理 */
-        .gallery-info { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; gap: 8px; }
-        .gallery-title { font-weight: 700; font-size: 1.2rem; color: #3D405B; }
-        .gallery-detail { display: flex; align-items: center; gap: 8px; color: #6B7280; font-size: 0.9rem; }
-        .gallery-detail i { color: #F28482; width: 16px; text-align: center; }
-        /* ★ ボタン群が必ずカード下部に配置されるように修正 */
-        .gallery-btns { margin-top: auto; padding-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
-        .gallery-btns a { display: inline-flex; align-items: center; gap: 6px; background-color: #FEF3F2; color: #F28482; padding: 6px 12px; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: background-color 0.2s; }
-        .gallery-btns a:hover { background-color: #FDE8E1; }
-        .gallery-btns a.route-btn { background-color: #F28482; color: white; }
-        .gallery-btns a.route-btn:hover { background-color: #E07A5F; }
-        .skeleton-card { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        /* --- Base Styles --- */
+        body { 
+            font-family: 'Zen+Maru+Gothic', 'Noto Sans JP', sans-serif; 
+            /* Prevent scrolling on desktop where sidebar and map are fixed */
+            @media (min-width: 768px) { overflow: hidden; } 
+        }
+        
+        /* --- Leaflet Popup Styles --- */
+        .leaflet-popup-content-wrapper { 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .leaflet-popup-content { 
+            margin: 13px 20px; 
+            font-size: 14px; 
+            font-weight: bold; 
+            line-height: 1.5; 
+        }
+
+        /* --- Gallery Card Styles --- */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-card {
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #FDE8E1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(224, 122, 95, 0.2);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #eee;
+        }
+        .gallery-info { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; }
+        .gallery-title { font-size: 1.1rem; font-weight: bold; color: #333; margin-bottom: 8px; }
+        .gallery-detail { display: flex; align-items: flex-start; gap: 8px; color: #555; font-size: 0.85rem; margin-bottom: 6px; }
+        .gallery-detail i { color: #F28482; width: 16px; text-align: center; margin-top: 3px; }
+        .gallery-btns { margin-top: auto; padding-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; border-top: 1px solid #eee; }
+        .gallery-btns a { font-size: 0.8rem; text-decoration: none; padding: 6px 12px; border-radius: 99px; background: #F7F7F7; color: #555; transition: background-color 0.2s; display: inline-flex; align-items: center; gap: 5px; }
+        .gallery-btns a:hover { background: #EAEAEA; }
+        .gallery-btns a.route-btn { background: #F28482; color: white; }
+        .gallery-btns a.route-btn:hover { background: #E06C6A; }
+
+        /* --- Skeleton Loader --- */
+        .skeleton-card { 
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; 
+        }
+        @keyframes pulse { 
+            0%, 100% { opacity: 1; } 
+            50% { opacity: .5; } 
+        }
     </style>
 </head>
 <body class="bg-amber-50">
 
     <div class="md:flex md:h-screen">
+        <!-- Sidebar -->
         <div id="sidebar-container" class="w-full md:w-2/5 lg:w-1/3 h-screen flex-col bg-white shadow-lg hidden md:flex">
             <div class="p-4 bg-[#F28482] text-white shadow-md z-10 relative">
-                <h1 class="text-2xl font-bold text-center" style="font-family: 'Zen Maru Gothic', sans-serif;">美波飯</h1>
-                <input type="text" id="search-input" placeholder="お店を検索..." class="w-full mt-2 p-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50">
+                <h1 class="text-2xl font-bold text-center" style="font-family: 'Zen Maru Gothic', sans-serif;">美波飯マップ</h1>
+                <input type="text" id="search-input" placeholder="お店の名前、住所、種類などで検索..." class="w-full mt-2 p-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-gray-500">
             </div>
             <div id="card-container" class="flex-grow overflow-y-auto bg-[#FFFBF5]">
+                <!-- Skeleton loader shown while data is loading -->
                 <div id="skeleton-loader" class="gallery-container">
-                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div><div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
-                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div><div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
+                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
+                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
+                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
+                    <div class="skeleton-card h-80 rounded-lg bg-gray-200"></div>
                 </div>
             </div>
              <div class="p-2 text-xs text-gray-400 text-center border-t bg-white">データ提供: MINAMITIME</div>
         </div>
+        <!-- Map -->
         <div class="w-full md:w-3/5 lg:w-2/3 h-screen" id="map"></div>
     </div>
     
+    <!-- Menu Button and Dropdown -->
     <div id="menu-container" class="fixed top-5 right-5 z-[1001]">
-        <button id="menu-btn" class="bg-white text-gray-700 w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-xl"><i class="fas fa-bars"></i></button>
-        <div id="menu-dropdown" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg hidden">
-            <a href="#" id="menu-locate" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-t-md"><i class="fas fa-location-arrow w-5 text-center"></i>現在地を表示</a>
-            <a href="#" id="menu-toggle-view" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 md:hidden"><i id="menu-toggle-icon" class="fas fa-list w-5 text-center"></i>リスト表示に切替</a>
-            <a href="#" id="menu-share" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-b-md"><i class="fas fa-qrcode w-5 text-center"></i>このアプリを共有</a>
+        <button id="menu-btn" class="bg-white text-gray-700 w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-gray-100 transition-colors">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu-dropdown" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg hidden overflow-hidden">
+            <a href="#" id="menu-locate" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-location-arrow w-5 text-center text-[#F28482]"></i>現在地を表示</a>
+            <a href="#" id="menu-toggle-view" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 md:hidden"><i id="menu-toggle-icon" class="fas fa-list w-5 text-center text-[#F28482]"></i><span id="menu-toggle-text">リスト表示に切替</span></a>
+            <a href="#" id="menu-share" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-qrcode w-5 text-center text-[#F28482]"></i>このアプリを共有</a>
         </div>
     </div>
     
-    <div id="modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[1000] hidden">
-        <div class="bg-white rounded-lg shadow-2xl w-11/12 md:w-2/3 lg:w-1/2 max-w-4xl max-h-[90vh] flex flex-col">
-            <div class="flex justify-between items-center p-4 border-b bg-[#F28482] text-white rounded-t-lg">
-                <h2 id="modal-name" class="text-2xl font-bold"></h2>
-                <button id="close-modal-btn" class="text-white/80 hover:text-white text-3xl">×</button>
+    <!-- Modals -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[1000] hidden p-4"></div>
+    <div id="qr-modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[1002] hidden p-4">
+         <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-sm text-center relative" onclick="event.stopPropagation();">
+            <button onclick="hideQrModal()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-700 text-2xl w-8 h-8">&times;</button>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">このアプリを共有</h3>
+            <img id="qr-code-image" src="" alt="QR Code" class="w-48 h-48 mx-auto mb-4 rounded-lg border bg-gray-100">
+            <div class="relative flex items-center">
+                <input type="text" id="url-input" readonly class="w-full bg-gray-100 border rounded-lg p-2 pr-12 text-sm text-gray-600">
+                <button id="copy-url-btn" class="absolute right-1 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-600 px-2 py-1 rounded-md text-sm">コピー</button>
             </div>
-            <div class="p-6 overflow-y-auto bg-gray-50">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div><img id="modal-image" src="" alt="Restaurant Image" class="w-full h-64 object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/64748b?text=No+Image';"></div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2"><i class="fas fa-utensils text-[#F28482]"></i>カテゴリ</h3><p id="modal-category" class="mb-4 text-gray-600 pl-6"></p>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#F28482]"></i>住所</h3><p id="modal-address" class="mb-4 text-gray-600 pl-6"></p>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2"><i class="fas fa-clock text-[#F28482]"></i>営業時間</h3><p id="modal-hours" class="mb-4 text-gray-600 pl-6"></p>
-                    </div>
-                </div>
-                <div class="mt-6"><h3 class="text-lg font-semibold text-gray-700 mb-2 flex items-center gap-2"><i class="fas fa-info-circle text-[#F28482]"></i>お店について</h3><p id="modal-description" class="text-gray-600 whitespace-pre-wrap pl-6"></p></div>
-            </div>
-            <div id="modal-footer" class="p-4 border-t bg-gray-100 rounded-b-lg flex justify-between items-center">
-                 <div id="modal-route-container"></div>
-                 <button id="close-modal-footer-btn" class="px-5 py-2 bg-[#F28482] text-white rounded-md hover:bg-[#E07A5F] transition-colors">閉じる</button>
-            </div>
-        </div>
-    </div>
-    <div id="qr-modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[1002] hidden">
-        <div class="bg-white rounded-lg shadow-2xl p-6 w-11/12 max-w-sm text-center">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">このアプリを共有</h2>
-            <div class="p-2 border rounded-lg inline-block bg-white"><img id="qr-code-image" src="" alt="QR Code" width="256" height="256"></div>
-            <p class="mt-4 text-sm text-gray-500">他のスマートフォンでQRコードを読み取ってください。</p>
-            <input id="url-input" type="text" readonly class="w-full mt-4 p-2 border rounded bg-gray-100 text-center text-sm cursor-pointer" title="クリックしてURLをコピー">
-            <button id="close-qr-modal-btn" class="mt-6 w-full px-5 py-3 bg-[#F28482] text-white rounded-md hover:bg-[#E07A5F] transition-colors font-bold">閉じる</button>
+            <p id="copy-feedback" class="text-sm text-green-600 h-5 mt-1"></p>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // PWAサービスワーカー登録
+            // --- PWA Service Worker ---
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('./sw.js')
@@ -111,10 +151,15 @@
                 });
             }
             
+            // --- Global Variables & Constants ---
             const API_URL = "https://script.google.com/macros/s/AKfycbwUu-Xl9mpPWdnZGacuebLcC8mHy-eZv86EnQqxaUG9djOkA7lf2fByRYmj8ZDC4E_2/exec";
-            let allRestaurants = [], map, markerLayerGroup = L.layerGroup(), currentUserLocation = null, currentUserMarker = null;
+            let allRestaurants = [];
+            let map;
+            let markerLayerGroup = L.layerGroup();
+            let currentUserLocation = null;
+            let currentUserMarker = null;
             
-            // --- 全要素の取得 ---
+            // --- Element References ---
             const sidebarContainer = document.getElementById('sidebar-container');
             const mapContainer = document.getElementById('map');
             const cardContainer = document.getElementById('card-container');
@@ -125,48 +170,116 @@
             const menuLocate = document.getElementById('menu-locate');
             const menuToggleView = document.getElementById('menu-toggle-view');
             const menuToggleIcon = document.getElementById('menu-toggle-icon');
+            const menuToggleText = document.getElementById('menu-toggle-text');
             const menuShare = document.getElementById('menu-share');
+            const copyUrlBtn = document.getElementById('copy-url-btn');
             const modal = document.getElementById('modal');
-            const closeModalBtn = document.getElementById('close-modal-btn');
-            const closeModalFooterBtn = document.getElementById('close-modal-footer-btn');
             const qrModal = document.getElementById('qr-modal');
-            const qrCodeImage = document.getElementById('qr-code-image');
-            const urlInput = document.getElementById('url-input');
-            const closeQrModalBtn = document.getElementById('close-qr-modal-btn');
 
-            // --- 関数定義 ---
+            // --- Initialization ---
+            function initializeApp() {
+                initMap();
+                fetchData();
+                setupEventListeners();
+                adjustLayoutForScreenSize();
+            }
+
+            // --- Map Initialization ---
+            function initMap() {
+                const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' });
+                const gsiPhotoLayer = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', { attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>' });
+                map = L.map('map', { center: [33.74, 134.54], zoom: 12, layers: [osmLayer], zoomControl: false });
+                L.control.zoom({ position: 'topright' }).addTo(map);
+                L.control.layers({ "標準地図": osmLayer, "航空写真": gsiPhotoLayer }, null, { position: 'topright' }).addTo(map);
+                markerLayerGroup.addTo(map);
+            }
+
+            // --- Event Listeners Setup ---
+            function setupEventListeners() {
+                // Menu interactions
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    menuDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', () => menuDropdown.classList.add('hidden'));
+                menuLocate.addEventListener('click', (e) => { e.preventDefault(); locateUser(); menuDropdown.classList.add('hidden'); });
+                menuToggleView.addEventListener('click', (e) => { e.preventDefault(); toggleMobileView(); menuDropdown.classList.add('hidden'); });
+                menuShare.addEventListener('click', (e) => { e.preventDefault(); showQrModal(); menuDropdown.classList.add('hidden'); });
+
+                // Search functionality
+                searchInput.addEventListener('input', debounce(filterRestaurants, 300));
+                
+                // URL copy in QR modal
+                copyUrlBtn.addEventListener('click', () => {
+                    const urlInput = document.getElementById('url-input');
+                    urlInput.select();
+                    try {
+                        document.execCommand('copy'); // execCommand for better iframe compatibility
+                        const feedback = document.getElementById('copy-feedback');
+                        feedback.textContent = 'コピーしました！';
+                        setTimeout(() => { feedback.textContent = ''; }, 2000);
+                    } catch (err) {
+                        console.error('URLのコピーに失敗しました', err);
+                    }
+                });
+
+                // Window resize handling
+                window.addEventListener('resize', debounce(adjustLayoutForScreenSize, 200));
+            }
+
+            // --- Data Fetching & Caching ---
             async function fetchData() {
+                // Try to load from cache first
                 try {
                     const cachedData = localStorage.getItem('minamiGoData');
-                    if (cachedData) { allRestaurants = JSON.parse(cachedData); displayUI(allRestaurants); }
-                } catch (e) { localStorage.removeItem('minamiGoData'); }
+                    if (cachedData) {
+                        console.log('キャッシュからデータを表示します');
+                        allRestaurants = JSON.parse(cachedData);
+                        displayUI(allRestaurants);
+                    }
+                } catch (e) {
+                    console.error('キャッシュの読み込みに失敗', e);
+                    localStorage.removeItem('minamiGoData');
+                }
+
+                // Fetch fresh data from API
                 try {
                     const response = await fetch(API_URL);
                     if (!response.ok) throw new Error(`サーバーエラー (ステータス: ${response.status})`);
                     const freshData = await response.json();
                     if (!Array.isArray(freshData)) throw new Error("取得データの形式が不正です。");
+
                     allRestaurants = freshData.map((item, index) => ({ ...item, id: item.timestamp || `id-${index}` }));
+                    console.log('最新データを取得し、UIとキャッシュを更新します');
                     displayUI(allRestaurants);
                     localStorage.setItem('minamiGoData', JSON.stringify(allRestaurants));
                 } catch (error) {
                     console.error('最新データの取得に失敗:', error);
-                    if (allRestaurants.length === 0) {
+                    if (allRestaurants.length === 0) { // Show error only if no cached data is available
                         skeletonLoader.style.display = 'none';
                         cardContainer.innerHTML = `<div class="p-4 m-4 rounded-lg bg-red-100 border border-red-400 text-red-700"><b>データの読み込みに失敗しました。</b><p class="text-sm mt-2">電波の良いところで再度お試しください。</p></div>`;
                     }
                 }
             }
 
+            // --- UI Display ---
             function displayUI(data) {
                 skeletonLoader.style.display = 'none';
                 displayCards(data);
                 addMarkers(data);
-                if (localStorage.getItem('minamiGoData') === null) adjustMapBounds(data);
+                if (data.length > 0 && data.length < allRestaurants.length) {
+                    // Don't fit bounds on search filter to avoid jarring map movement
+                } else {
+                    adjustMapBounds(data);
+                }
             }
             
             function displayCards(data) {
-                cardContainer.innerHTML = '';
-                if (data.length === 0) { cardContainer.innerHTML = `<div class="p-4 text-gray-500 text-center">該当する飲食店がありません。</div>`; return; }
+                cardContainer.innerHTML = ''; // Clear previous results
+                if (data.length === 0) {
+                    cardContainer.innerHTML = `<div class="p-8 text-gray-500 text-center">該当するお店が見つかりませんでした。</div>`;
+                    return;
+                }
                 const fragment = document.createDocumentFragment();
                 data.forEach(item => {
                     const imageUrl = item.image || 'https://placehold.co/400x270/e2e8f0/64748b?text=No+Image';
@@ -179,10 +292,23 @@
                         const btnText = currentUserLocation ? '経路を見る' : '場所を見る';
                         routeBtnHtml = `<a href="${routeUrl}" target="_blank" rel="noopener noreferrer" class="route-btn"><i class="fas fa-map-location-dot"></i>${btnText}</a>`;
                     }
+                    
                     const card = document.createElement('div');
                     card.className = 'gallery-card';
-                    card.innerHTML = `<img src="${imageUrl}" alt="${item.name || ''}" loading="lazy"><div class="gallery-info"><div class="gallery-title">${item.name || ''}</div><div class="gallery-detail"><i class="fas fa-map-marker-alt"></i><span>${item.address || ''}</span></div>${telHtml}<div class="gallery-detail"><i class="fas fa-clock"></i><span><b>営業</b>：${item.hours || '情報なし'} / <b>定休</b>：${item.closed || '情報なし'}</span></div><div class="gallery-btns">${routeBtnHtml}${urlHtml}${snsHtml}</div></div>`;
-                    card.addEventListener('click', (e) => { if (e.target.closest('a')) return; interactWithMap(item); });
+                    card.dataset.id = item.id;
+                    card.innerHTML = `
+                        <img src="${imageUrl}" alt="${item.name || ''}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x270/e2e8f0/64748b?text=No+Image';">
+                        <div class="gallery-info">
+                            <div class="gallery-title">${item.name || ''}</div>
+                            <div class="gallery-detail"><i class="fas fa-map-marker-alt"></i><span>${item.address || ''}</span></div>
+                            ${telHtml}
+                            <div class="gallery-detail"><i class="fas fa-clock"></i><span><b>営業</b>：${item.hours || '情報なし'} / <b>定休</b>：${item.closed || '情報なし'}</span></div>
+                            <div class="gallery-btns">${routeBtnHtml}${urlHtml}${snsHtml}</div>
+                        </div>`;
+                    card.addEventListener('click', (e) => {
+                        if (e.target.closest('a')) return; // Don't trigger if a link inside the card is clicked
+                        interactWithItem(item);
+                    });
                     fragment.appendChild(card);
                 });
                 const galleryContainer = document.createElement('div');
@@ -191,64 +317,184 @@
                 cardContainer.appendChild(galleryContainer);
             }
 
-            function addMarkers(data) { /* (変更なし) */ }
-            function adjustMapBounds(data) { /* (変更なし) */ }
-            function locateUser() { /* (変更なし) */ }
-            function createRouteUrl(destLat, destLng) { /* (変更なし) */ }
-            function showModal(item) { /* (変更なし) */ }
-            function hideModal() { modal.classList.add('hidden'); }
-            function showQrModal() { const url = window.location.href; const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=${encodeURIComponent(url)}`; qrCodeImage.src = qrCodeApiUrl; urlInput.value = url; qrModal.classList.remove('hidden'); }
-            function hideQrModal() { qrModal.classList.add('hidden'); }
-            function toggleMobileView() {
-                const isMapVisible = mapContainer.offsetParent !== null;
-                if (isMapVisible) {
-                    mapContainer.classList.add('hidden');
-                    sidebarContainer.classList.remove('hidden');
-                    menuToggleIcon.className = 'fas fa-map-location-dot w-5 text-center';
-                    document.getElementById('menu-toggle-view').childNodes[1].nodeValue = ' マップ表示に切替';
-                } else {
-                    mapContainer.classList.remove('hidden');
-                    sidebarContainer.classList.add('hidden');
-                    menuToggleIcon.className = 'fas fa-list w-5 text-center';
-                    document.getElementById('menu-toggle-view').childNodes[1].nodeValue = ' リスト表示に切替';
-                    setTimeout(() => map.invalidateSize(), 10);
-                }
+            function addMarkers(data) {
+                markerLayerGroup.clearLayers();
+                data.forEach(item => {
+                    if (item.lat && item.lng) {
+                        const marker = L.marker([item.lat, item.lng], { id: item.id });
+                        let popupContent = `<b>${item.name}</b>`;
+                        const routeUrl = createRouteUrl(item.lat, item.lng);
+                        const linkText = currentUserLocation ? 'ここまでの経路を見る' : '場所を地図で見る';
+                        popupContent += `<br><a href="${routeUrl}" target="_blank" rel="noopener noreferrer" style="color:#F28482; font-weight:bold; text-decoration:underline; margin-top:5px; display:inline-block;">${linkText}</a>`;
+                        marker.bindPopup(popupContent);
+                        marker.on('click', () => interactWithItem(item));
+                        markerLayerGroup.addLayer(marker);
+                    }
+                });
             }
-            function interactWithMap(item) {
-                showModal(item);
+
+            // --- User Interactions ---
+            function interactWithItem(item) {
+                if (window.innerWidth >= 768) {
+                    showModal(item);
+                }
                 if (!item.lat || !item.lng) return;
                 map.setView([item.lat, item.lng], 16);
                 markerLayerGroup.eachLayer(layer => { if (layer.options.id === item.id) layer.openPopup(); });
-                if (window.innerWidth < 768 && sidebarContainer.offsetParent !== null) {
-                    toggleMobileView();
+                if (window.innerWidth < 768 && !mapContainer.classList.contains('hidden')) {
+                     showModal(item);
+                } else if (window.innerWidth < 768 && mapContainer.classList.contains('hidden')) {
+                     toggleMobileView();
+                     setTimeout(() => showModal(item), 100); // Allow view to switch before showing modal
                 }
             }
-            function initMap() { /* (変更なし) */ }
-            function debounce(func, wait) { /* (変更なし) */ }
-            function filterRestaurants() { /* (変更なし) */ }
 
-            // --- イベントリスナー設定 ---
-            menuBtn.addEventListener('click', (e) => { e.stopPropagation(); menuDropdown.classList.toggle('hidden'); });
-            document.addEventListener('click', () => { menuDropdown.classList.add('hidden'); });
-            menuLocate.addEventListener('click', (e) => { e.preventDefault(); locateUser(); menuDropdown.classList.add('hidden'); });
-            menuToggleView.addEventListener('click', (e) => { e.preventDefault(); toggleMobileView(); menuDropdown.classList.add('hidden'); });
-            menuShare.addEventListener('click', (e) => { e.preventDefault(); showQrModal(); menuDropdown.classList.add('hidden'); });
-            closeModalBtn.addEventListener('click', hideModal);
-            closeModalFooterBtn.addEventListener('click', hideModal);
-            modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
-            closeQrModalBtn.addEventListener('click', hideQrModal);
-            qrModal.addEventListener('click', (e) => { if (e.target === qrModal) hideQrModal(); });
-            urlInput.addEventListener('click', () => { urlInput.select(); navigator.clipboard.writeText(urlInput.value).then(() => { alert('URLをクリップボードにコピーしました！'); }).catch(err => { console.error('URLのコピーに失敗:', err); }); });
-            searchInput.addEventListener('input', debounce(filterRestaurants, 300));
-            
-            // --- 初期化 ---
-            initMap();
-            fetchData();
-            if (window.innerWidth < 768) {
-                sidebarContainer.classList.add('hidden');
-            } else {
-                sidebarContainer.classList.remove('hidden');
+            function filterRestaurants() {
+                const query = searchInput.value.toLowerCase().trim();
+                const filtered = allRestaurants.filter(r => 
+                    (r.name && r.name.toLowerCase().includes(query)) ||
+                    (r.category && r.category.toLowerCase().includes(query)) ||
+                    (r.address && r.address.toLowerCase().includes(query)) ||
+                    (r.description && r.description.toLowerCase().includes(query))
+                );
+                displayUI(filtered);
             }
+
+            function locateUser() {
+                if (!navigator.geolocation) {
+                    alert("お使いのブラウザは、現在地取得機能に対応していません。");
+                    return;
+                }
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        currentUserLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
+                        if (currentUserMarker) map.removeLayer(currentUserMarker);
+                        currentUserMarker = L.circleMarker([currentUserLocation.lat, currentUserLocation.lng], { radius: 8, fillColor: "#007AFF", color: "#FFFFFF", weight: 3, opacity: 1, fillOpacity: 0.9 }).addTo(map);
+                        currentUserMarker.bindPopup("<b>あなたの現在地</b>").openPopup();
+                        map.setView([currentUserLocation.lat, currentUserLocation.lng], 15);
+                        // Re-render UI to update route links
+                        filterRestaurants(); 
+                    },
+                    (error) => {
+                        let msg = "現在地の取得に失敗しました。\n";
+                        switch (error.code) {
+                            case error.PERMISSION_DENIED: msg += "原因: 位置情報の利用が許可されていません。\nブラウザの設定をご確認ください。"; break;
+                            case error.POSITION_UNAVAILABLE: msg += "原因: 現在位置を特定できませんでした。"; break;
+                            case error.TIMEOUT: msg += "原因: タイムアウトしました。"; break;
+                            default: msg += "原因: 不明なエラーが発生しました。"; break;
+                        }
+                        alert(msg);
+                        console.error("Geolocation error: ", error);
+                    }
+                );
+            }
+            
+            // --- Modals ---
+            function showModal(item) {
+                if (!item) { hideModal(); return; }
+                const imageUrl = item.image || 'https://placehold.co/600x400/e2e8f0/64748b?text=No+Image';
+                const telHtml = item.tel ? `<div class="flex items-center gap-3 mt-2"><i class="fas fa-phone text-gray-500 w-5 text-center"></i><a href="tel:${item.tel}" class="text-[#F28482] hover:underline">${item.tel}</a></div>` : '';
+                const urlHtml = item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded-full inline-flex items-center gap-2 transition-colors"><i class="fas fa-globe"></i>公式サイト</a>` : '';
+                const snsHtml = item.sns ? `<a href="${item.sns}" target="_blank" rel="noopener noreferrer" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded-full inline-flex items-center gap-2 transition-colors"><i class="fas fa-share-nodes"></i>SNS</a>` : '';
+                let routeBtnHtml = '';
+                if (item.lat && item.lng) {
+                    const routeUrl = createRouteUrl(item.lat, item.lng);
+                    const btnText = currentUserLocation ? 'ここから経路' : '場所を確認';
+                    routeBtnHtml = `<a href="${routeUrl}" target="_blank" rel="noopener noreferrer" class="bg-[#F28482] hover:bg-[#d96a68] text-white font-bold py-2 px-4 rounded-full inline-flex items-center gap-2 transition-colors"><i class="fas fa-map-location-dot"></i>${btnText}</a>`;
+                }
+
+                modal.innerHTML = `
+                    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md m-4 max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation();">
+                        <div class="relative">
+                            <img src="${imageUrl}" alt="${item.name || ''}" class="w-full h-56 object-cover rounded-t-2xl bg-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/64748b?text=No+Image';">
+                            <button onclick="document.getElementById('modal').classList.add('hidden')" class="absolute top-3 right-3 bg-white/70 backdrop-blur-sm text-gray-800 w-8 h-8 rounded-full flex items-center justify-center text-lg hover:bg-white transition-colors">&times;</button>
+                        </div>
+                        <div class="p-6">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-2">${item.name || ''}</h2>
+                            <p class="text-sm text-gray-500 mb-4">${item.category || ''}</p>
+                            <div class="space-y-3 text-gray-700">
+                                <div class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-gray-500 w-5 text-center pt-1"></i><span>${item.address || ''}</span></div>
+                                ${telHtml}
+                                <div class="flex items-start gap-3"><i class="fas fa-clock text-gray-500 w-5 text-center pt-1"></i><span><b>営業:</b> ${item.hours || '情報なし'}<br><b>定休:</b> ${item.closed || '情報なし'}</span></div>
+                                ${item.description ? `<div class="flex items-start gap-3"><i class="fas fa-info-circle text-gray-500 w-5 text-center pt-1"></i><p class="text-sm">${item.description}</p></div>` : ''}
+                            </div>
+                            <div class="flex flex-wrap gap-3 mt-6 pt-6 border-t border-gray-200">
+                                ${routeBtnHtml} ${urlHtml} ${snsHtml}
+                            </div>
+                        </div>
+                    </div>`;
+                modal.classList.remove('hidden');
+                modal.addEventListener('click', hideModal, { once: true });
+            }
+            function hideModal() { modal.classList.add('hidden'); }
+            
+            function showQrModal() {
+                const url = window.location.href;
+                const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=${encodeURIComponent(url)}`;
+                document.getElementById('qr-code-image').src = qrCodeApiUrl;
+                document.getElementById('url-input').value = url;
+                qrModal.classList.remove('hidden');
+                qrModal.addEventListener('click', hideQrModal, { once: true });
+            }
+            function hideQrModal() { qrModal.classList.add('hidden'); }
+
+            // --- Layout & View Management ---
+            function adjustLayoutForScreenSize() {
+                if (window.innerWidth < 768) {
+                    // Mobile: Show map by default, hide list
+                    if (!sidebarContainer.classList.contains('hidden')) {
+                        toggleMobileView();
+                    }
+                } else {
+                    // Desktop: Show both
+                    sidebarContainer.classList.remove('hidden');
+                    mapContainer.classList.remove('hidden');
+                }
+                map.invalidateSize();
+            }
+
+            function toggleMobileView() {
+                const isMapHidden = mapContainer.classList.contains('hidden');
+                if (isMapHidden) { // List is visible -> Switch to Map
+                    mapContainer.classList.remove('hidden');
+                    sidebarContainer.classList.add('hidden');
+                    menuToggleIcon.className = 'fas fa-list w-5 text-center text-[#F28482]';
+                    menuToggleText.textContent = 'リスト表示に切替';
+                    setTimeout(() => map.invalidateSize(), 10);
+                } else { // Map is visible -> Switch to List
+                    mapContainer.classList.add('hidden');
+                    sidebarContainer.classList.remove('hidden');
+                    menuToggleIcon.className = 'fas fa-map-location-dot w-5 text-center text-[#F28482]';
+                    menuToggleText.textContent = 'マップ表示に切替';
+                }
+            }
+            
+            function adjustMapBounds(data) {
+                const locations = data.filter(item => item.lat && item.lng).map(item => [item.lat, item.lng]);
+                if (locations.length > 0) {
+                    map.fitBounds(locations, { padding: [50, 50], maxZoom: 16 });
+                }
+            }
+
+            // --- Utility Functions ---
+            function debounce(func, wait) {
+                let timeout;
+                return function(...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func.apply(this, args), wait);
+                };
+            }
+
+            function createRouteUrl(destLat, destLng) {
+                if (currentUserLocation) {
+                    return `https://www.google.com/maps/dir/?api=1&origin=${currentUserLocation.lat},${currentUserLocation.lng}&destination=${destLat},${destLng}&travelmode=driving`;
+                } else {
+                    return `https://www.google.com/maps/search/?api=1&query=${destLat},${destLng}`;
+                }
+            }
+
+            // --- Start the application ---
+            initializeApp();
         });
     </script>
 </body>
