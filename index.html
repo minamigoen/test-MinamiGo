@@ -106,7 +106,6 @@
     <div class="md:flex md:h-screen">
         <!-- Sidebar -->
         <div id="sidebar-container" class="w-full md:w-2/5 lg:w-1/3 h-screen flex-col bg-white shadow-lg hidden md:flex">
-            <!-- ★ CHANGE: Removed search input from header -->
             <div class="p-4 bg-[#F28482] text-white shadow-md z-10 relative">
                 <h1 class="text-2xl font-bold text-center py-2" style="font-family: 'Zen Maru Gothic', sans-serif;">美波飯マップ</h1>
             </div>
@@ -131,7 +130,6 @@
             <i class="fas fa-bars"></i>
         </button>
         <div id="menu-dropdown" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg hidden overflow-hidden">
-            <!-- ★ ADD: Search button in menu -->
             <a href="#" id="menu-search" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-search w-5 text-center text-[#F28482]"></i>お店を検索</a>
             <a href="#" id="menu-locate" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-location-arrow w-5 text-center text-[#F28482]"></i>現在地を表示</a>
             <a href="#" id="menu-toggle-view" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 md:hidden"><i id="menu-toggle-icon" class="fas fa-list w-5 text-center text-[#F28482]"></i><span id="menu-toggle-text">リスト表示に切替</span></a>
@@ -154,7 +152,6 @@
             <p id="copy-feedback" class="text-sm text-green-600 h-5 mt-1"></p>
         </div>
     </div>
-    <!-- ★ ADD: Search Modal -->
     <div id="search-modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-start z-[1002] hidden p-4 pt-20">
          <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-sm text-center relative" onclick="event.stopPropagation();">
             <button onclick="document.getElementById('search-modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-400 hover:text-gray-700 text-2xl w-8 h-8">&times;</button>
@@ -189,7 +186,7 @@
             const mapContainer = document.getElementById('map');
             const cardContainer = document.getElementById('card-container');
             const skeletonLoader = document.getElementById('skeleton-loader');
-            const searchInput = document.getElementById('search-input'); // ★ CHANGE: Now refers to the input in the modal
+            const searchInput = document.getElementById('search-input');
             const searchSubmitBtn = document.getElementById('search-submit-btn');
             const menuBtn = document.getElementById('menu-btn');
             const menuDropdown = document.getElementById('menu-dropdown');
@@ -503,12 +500,27 @@
 
 
             // --- Layout & View Management ---
+            // ★ FIX: Rewrote function to be less aggressive on mobile resize (e.g., keyboard opening)
             function adjustLayoutForScreenSize() {
-                if (window.innerWidth < 768) {
-                    if (!sidebarContainer.classList.contains('hidden')) {
-                        toggleMobileView();
+                // If a modal is open, just invalidate map size and exit to avoid layout shifts from keyboard.
+                if (!searchModal.classList.contains('hidden') || !modal.classList.contains('hidden')) {
+                    map.invalidateSize();
+                    return;
+                }
+
+                const isMobile = window.innerWidth < 768;
+
+                if (isMobile) {
+                    // On mobile, if both views are somehow visible (e.g. resizing from desktop), default to map view.
+                    // This prevents breaking the layout but respects the user's choice if they are already in list view.
+                    if (!sidebarContainer.classList.contains('hidden') && !mapContainer.classList.contains('hidden')) {
+                        sidebarContainer.classList.add('hidden');
+                        mapContainer.classList.remove('hidden');
+                        menuToggleIcon.className = 'fas fa-list w-5 text-center text-[#F28482]';
+                        menuToggleText.textContent = 'リスト表示に切替';
                     }
                 } else {
+                    // On desktop, ensure both views are visible.
                     sidebarContainer.classList.remove('hidden');
                     mapContainer.classList.remove('hidden');
                 }
