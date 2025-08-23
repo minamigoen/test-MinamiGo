@@ -106,9 +106,9 @@
     <div class="md:flex md:h-screen">
         <!-- Sidebar -->
         <div id="sidebar-container" class="w-full md:w-2/5 lg:w-1/3 h-screen flex-col bg-white shadow-lg hidden md:flex">
-            <div id="sidebar-header" class="p-4 bg-[#F28482] text-white shadow-md z-10 relative">
-                <h1 class="text-2xl font-bold text-center" style="font-family: 'Zen Maru Gothic', sans-serif;">美波飯マップ</h1>
-                <input type="text" id="search-input" placeholder="お店の名前、住所、種類などで検索..." class="w-full mt-2 p-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-gray-500">
+            <!-- ★ CHANGE: Removed search input from header -->
+            <div class="p-4 bg-[#F28482] text-white shadow-md z-10 relative">
+                <h1 class="text-2xl font-bold text-center py-2" style="font-family: 'Zen Maru Gothic', sans-serif;">美波飯マップ</h1>
             </div>
             <div id="card-container" class="flex-grow overflow-y-auto bg-[#FFFBF5]">
                 <!-- Skeleton loader shown while data is loading -->
@@ -131,6 +131,8 @@
             <i class="fas fa-bars"></i>
         </button>
         <div id="menu-dropdown" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg hidden overflow-hidden">
+            <!-- ★ ADD: Search button in menu -->
+            <a href="#" id="menu-search" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-search w-5 text-center text-[#F28482]"></i>お店を検索</a>
             <a href="#" id="menu-locate" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100"><i class="fas fa-location-arrow w-5 text-center text-[#F28482]"></i>現在地を表示</a>
             <a href="#" id="menu-toggle-view" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 md:hidden"><i id="menu-toggle-icon" class="fas fa-list w-5 text-center text-[#F28482]"></i><span id="menu-toggle-text">リスト表示に切替</span></a>
             <a href="#" id="menu-install" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-100 hidden"><i class="fas fa-download w-5 text-center text-[#F28482]"></i>ホーム画面に追加</a>
@@ -150,6 +152,15 @@
                 <button id="copy-url-btn" class="absolute right-1 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-600 px-2 py-1 rounded-md text-sm">コピー</button>
             </div>
             <p id="copy-feedback" class="text-sm text-green-600 h-5 mt-1"></p>
+        </div>
+    </div>
+    <!-- ★ ADD: Search Modal -->
+    <div id="search-modal" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-start z-[1002] hidden p-4 pt-20">
+         <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-sm text-center relative" onclick="event.stopPropagation();">
+            <button onclick="document.getElementById('search-modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-400 hover:text-gray-700 text-2xl w-8 h-8">&times;</button>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">お店を検索</h3>
+            <input type="text" id="search-input" placeholder="お店の名前、住所、種類など..." class="w-full p-2 rounded-md text-gray-800 border focus:outline-none focus:ring-2 focus:ring-[#F28482]">
+            <button id="search-submit-btn" class="w-full mt-4 bg-[#F28482] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#d96a68] transition-colors">検索する</button>
         </div>
     </div>
 
@@ -175,13 +186,14 @@
 
             // --- Element References ---
             const sidebarContainer = document.getElementById('sidebar-container');
-            const sidebarHeader = document.getElementById('sidebar-header');
             const mapContainer = document.getElementById('map');
             const cardContainer = document.getElementById('card-container');
             const skeletonLoader = document.getElementById('skeleton-loader');
-            const searchInput = document.getElementById('search-input');
+            const searchInput = document.getElementById('search-input'); // ★ CHANGE: Now refers to the input in the modal
+            const searchSubmitBtn = document.getElementById('search-submit-btn');
             const menuBtn = document.getElementById('menu-btn');
             const menuDropdown = document.getElementById('menu-dropdown');
+            const menuSearch = document.getElementById('menu-search');
             const menuLocate = document.getElementById('menu-locate');
             const menuToggleView = document.getElementById('menu-toggle-view');
             const menuToggleIcon = document.getElementById('menu-toggle-icon');
@@ -191,6 +203,7 @@
             const copyUrlBtn = document.getElementById('copy-url-btn');
             const modal = document.getElementById('modal');
             const qrModal = document.getElementById('qr-modal');
+            const searchModal = document.getElementById('search-modal');
 
             // --- Initialization ---
             function initializeApp() {
@@ -218,20 +231,18 @@
                     menuDropdown.classList.toggle('hidden');
                 });
                 document.addEventListener('click', () => menuDropdown.classList.add('hidden'));
+                menuSearch.addEventListener('click', (e) => { e.preventDefault(); showSearchModal(); menuDropdown.classList.add('hidden'); });
                 menuLocate.addEventListener('click', (e) => { e.preventDefault(); locateUser(); menuDropdown.classList.add('hidden'); });
                 menuToggleView.addEventListener('click', (e) => { e.preventDefault(); toggleMobileView(); menuDropdown.classList.add('hidden'); });
                 menuShare.addEventListener('click', (e) => { e.preventDefault(); showQrModal(); menuDropdown.classList.add('hidden'); });
                 menuInstall.addEventListener('click', handleInstallPrompt);
 
-                // ★ FIX: Stop tap/click propagation on the sidebar header to prevent "click-through" on mobile
-                ['click', 'touchstart', 'touchend', 'mousedown', 'mouseup'].forEach(eventType => {
-                    sidebarHeader.addEventListener(eventType, (e) => {
-                        e.stopPropagation();
-                    });
-                });
-
                 // Search functionality
                 searchInput.addEventListener('input', debounce(filterRestaurants, 300));
+                searchSubmitBtn.addEventListener('click', () => {
+                    filterRestaurants();
+                    hideSearchModal();
+                });
                 
                 // URL copy in QR modal
                 copyUrlBtn.addEventListener('click', () => {
@@ -482,6 +493,14 @@
                 qrModal.addEventListener('click', hideQrModal, { once: true });
             }
             function hideQrModal() { qrModal.classList.add('hidden'); }
+
+            function showSearchModal() {
+                searchModal.classList.remove('hidden');
+                searchModal.addEventListener('click', hideSearchModal, { once: true });
+                searchInput.focus();
+            }
+            function hideSearchModal() { searchModal.classList.add('hidden'); }
+
 
             // --- Layout & View Management ---
             function adjustLayoutForScreenSize() {
