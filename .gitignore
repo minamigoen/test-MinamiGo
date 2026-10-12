@@ -1,0 +1,7 @@
+dist/
+node_modules/
+private/
+*-export.json
+*.pdf
+.env*
+*.tmp
