@@ -5,3 +5,5 @@ private/
 *.pdf
 .env*
 *.tmp
+__pycache__/
+*.pyc

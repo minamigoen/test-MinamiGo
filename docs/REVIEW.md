@@ -39,4 +39,6 @@
 
 Node単体テスト5件、公開JSON7件のschema検証、static buildが成功。Chromium/Playwrightで320/390/768/1440pxの横overflowなし、検索・条件リセット、favorites再読込保持、詳細dialogと戻る/進む/Escape、地図/一覧、offline再読込、空/500応答、位置情報拒否、JavaScript例外なしを確認。地図テストではOSMリクエストをローカル画像で置換し、タイル提供元へ自動巡回していません。実データは4施設周辺、テストだけの座標fixtureはpublic snapshotへ含めません。
 
-テキストcontrast計算: 白/主ボタン7.66:1、本文/背景11.60:1、補助文字/背景5.61:1。install更新通知は実装済みですが、Android/iOS実機install、最新版SWの複数タブ切替は今後の実機確認です。
+テキストcontrast計算: 白/主ボタン7.66:1、本文/背景11.60:1、補助文字/背景5.61:1。別のテストscopeで新版SWの待機→更新通知→ユーザー操作でactivate/reload→お気に入り保持を確認。初回未接続は未インストールのためブラウザ側通信エラーになり、事前接続が必要と確認しました。Android/iOS実機install、複数タブ切替は今後の実機確認です。
+
+再現用の任意ブラウザテスト: Python + Playwright + Chromiumがある環境で `npm run build` 後、`python3 tests/browser.py` と `python3 tests/sw-update.py`。一時ディレクトリとlocalhostの一時ポートにコピーした `/test-MinamiGo/` 配下を確認し、repo内の配信ファイルは改変しません。ブラウザ検証はCIのNode単体検証とは別です。
