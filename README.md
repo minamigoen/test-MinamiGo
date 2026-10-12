@@ -27,6 +27,6 @@ npm run serve
 
 ## ホスティング
 
-既存テストリポジトリのレビュー用ブランチを使用します。このブランチをpushするだけでは、mainを配信するPagesは切り替わりません。CIの `minamigo-test-preview` artifact が配信ファイルです。本番マージ・Pages配信ブランチの変更はしません。
+既存テストリポジトリのみを使います。ユーザーが既存test表示を今回の試作へ置き換えることを承認したため、テストrepoのmainへ反映してPagesの配信を確認します。本番 `minamigoen/MinamiGo` にはマージしません。旧testソースは `backup/pre-walk-test-20261012`（`000cd52`）として保護しています。CIの `minamigo-test-preview` artifactも利用できます。公開状態と実URLは配信成功後に検証して案内します。
 
 無料枠、地図の利用条件、現況確認、実機での残作業は [検証と制約](docs/REVIEW.md) を参照してください。

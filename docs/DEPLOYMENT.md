@@ -19,3 +19,7 @@ repo管理者が [Settings → Pages](https://github.com/minamigoen/test-MinamiG
 既存Sourceを読み取れないまま切替・環境ルール変更・mainマージをしないでください。[GitHub公式の配信source設定](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)に従い、管理者またはmaintainerが操作します。
 
 公開後は実際のHTTPS URLでmanifest/SW scope、初回load、offline reload、更新通知、外部Mapsリンク、iOS/Android installを確認し、その実URLだけを完成テストURLとして案内します。
+
+## テスト公開への承認（後続）
+
+ユーザーが「街歩きアプリはテストリンク出して。確認します」と、既存testサイトの表示を今回の試作へ置き換える操作を承認しました。この範囲は `minamigoen/test-MinamiGo` のみです。旧testのSHA `000cd52` を `backup/pre-walk-test-20261012` に保護し、検証済み試作をテストrepoのmainに反映します。本番 `minamigoen/MinamiGo` は変更しません。公開完了は実URLとPages deploy結果で確認します。これより前の「mainを変更していない」は初期レビュー段階の記録です。
