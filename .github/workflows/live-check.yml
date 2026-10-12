@@ -1,0 +1,24 @@
+name: Verify public test URL
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  live-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright
+      - name: Verify live test site with mobile and desktop Chromium
+        run: python tests/live-browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-test-browser-evidence
+          path: live-evidence/
+          retention-days: 7
