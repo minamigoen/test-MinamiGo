@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 /** Bound to the owner's PRIVATE management spreadsheet. Never deploy as a public web app.
  * User deliberately runs export. No shared-drive permission or OAuth configuration changes.
  * Keep private PDF, photo files, coordinates pending verification and contact details out.

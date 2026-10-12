@@ -18,6 +18,14 @@
 
 Apps Scriptを使いたくない場合は `{"rows":[...]}` の管理JSONを作成し、各行に `publicApproved:true` を付けて同じimportコマンドを使えます。配信するJSON形式は `{"schemaVersion":1,"updatedAt":"ISO日時","spots":[...]}` です。
 
+## 必要な操作・権限とコネクタによる代替
+
+GASを使う場合は、対象シートを編集できる管理者/編集者が、そのシートに紐づくApps Scriptにコードを保存し、シートを開き直してメニューからexportを実行します。所有者本人だけに限定される操作ではありません。初回実行は実行者の認可状態をGoogleが確認します。`@OnlyCurrentDoc` により対象の現在のスプレッドシートに限定し、Sheetsの `https://www.googleapis.com/auth/spreadsheets.currentonly` と、HTML確認ダイアログの `https://www.googleapis.com/auth/script.container.ui` が関係します。Drive全体・Gmail・外部HTTP・GitHub権限はこのスクリプトのために要求しません。実際の同意画面を確認し、既存プロジェクトに他のコードがある場合はそちらが追加scopeを要求する可能性があります。この試作でOAuth認可や公開デプロイは実施していません。
+
+現在のGoogle Drive/Sheetsコネクタは範囲の取得・作成・編集が可能です。対象の非公開管理Sheet URL/IDと公開承認行が確定すれば、既存の認証で範囲を取得→allowlist/入力検証→JSONsnapshot→GitHubテストブランチcommitの操作に代替できます。**GASの所有者実行は必須ではありません。** 一方、Apps Scriptプロジェクト作成・コード編集・カスタムメニュー実行のツールは、このセッションのコネクタに公開されていません。GAS方式をそのまま有効化する操作だけはシート側の編集者操作が必要です。対象の管理Sheetがまだ指定されていないため、無関係なSheetを選んだり新OAuth・共有権限追加を行っていません。
+
+公式: [Apps Script認可](https://developers.google.com/apps-script/guides/services/authorization)、[SpreadsheetAppのscope](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app)、[UIダイアログのscope](https://developers.google.com/apps-script/reference/base/ui)。
+
 ## 変更を取り消す
 
 公開JSONとアプリを含む前回正常commitへ戻し、Service Workerのバージョンを新しい値に変えて再配信します。古いcache名を再利用しないでください。ブラウザのローカルお気に入りはIDに結びつくため、同じスポットのIDを不用意に変更しないでください。
