@@ -32,12 +32,12 @@
 
 - 7件は2018計画に記載された対象で、現況・像/石そのものの正確な位置・入口・公道からの全経路・見学可否・料金・営業時間は未確認。親側でGoogle Maps掲載と2025年2月撮影Street Viewを閲覧済み。4件は施設周辺の掲載地点として区別して表示し、像や入口と断定していません。北向き地蔵の直接ナビは抑止しています。
 - 7件のStreet View外部リンク、6件のMaps検索、4件の施設周辺への徒歩経路検索を組込み。恋人岬は同名誤案内を防ぐPlace IDを使用。リンク生成は公式仕様に従い、写真の転載・iframeは行いません。短縮リンク形式の再オープンと経路全区間の現地安全確認は未実施です。
-- Sheetsの実ファイル接続・所有者実行・自動同期、テストPagesへの配信設定は実行していません。JSONexport/import・CIartifactは実装済みです。
+- 専用の非公開Sheetsを作成し、7件入力→既存コネクタの範囲読取→公開allowlist JSON→GitHubテストブランチへ反映の一周を検証しました。共有権限は所有者のみ、管理用列とSheet IDの除外を確認。依頼時更新方式で、自動同期とテストPages配信設定は未実施です。
 - Android Chrome / iPhone Safari実機でのinstall、permission、safe-areaは利用者レビューが必要です。
 
 ## 実施した検証
 
-Node単体テスト5件、公開JSON7件のschema検証、static buildが成功。Chromium/Playwrightで320/390/768/1440pxの横overflowなし、検索・条件リセット、favorites再読込保持、詳細dialogと戻る/進む/Escape、地図/一覧、offline再読込、空/500応答、位置情報拒否、JavaScript例外なしを確認。地図テストではOSMリクエストをローカル画像で置換し、タイル提供元へ自動巡回していません。実データは4施設周辺、テストだけの座標fixtureはpublic snapshotへ含めません。
+Node単体テスト8件、公開JSON7件のschema検証、static buildが成功。Chromium/Playwrightで320/390/768/1440pxの横overflowなし、検索・条件リセット、favorites再読込保持、詳細dialogと戻る/進む/Escape、地図/一覧、offline再読込、空/500応答、位置情報拒否、JavaScript例外なしを確認。地図テストではOSMリクエストをローカル画像で置換し、タイル提供元へ自動巡回していません。実データは4施設周辺、テストだけの座標fixtureはpublic snapshotへ含めません。
 
 テキストcontrast計算: 白/主ボタン7.66:1、本文/背景11.60:1、補助文字/背景5.61:1。別のテストscopeで新版SWの待機→更新通知→ユーザー操作でactivate/reload→お気に入り保持を確認。初回未接続は未インストールのためブラウザ側通信エラーになり、事前接続が必要と確認しました。Android/iOS実機install、複数タブ切替は今後の実機確認です。
 

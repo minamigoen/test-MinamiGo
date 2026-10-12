@@ -1,5 +1,5 @@
 export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
-const FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode'];
+export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode'];
 export function safeURL(value) { try { const u=new URL(value); return u.protocol==='https:' && !u.username && !u.password ? u.href : ''; } catch { return ''; } }
 export function validateData(input) {
   if (!input || input.schemaVersion!==1 || !Array.isArray(input.spots) || input.spots.length>2000) throw new Error('データ形式が正しくありません');
@@ -7,7 +7,7 @@ export function validateData(input) {
   const spots=input.spots.map((row,i)=>{
     if (!row || typeof row!=='object' || Array.isArray(row)) throw new Error(`行 ${i+1}: 形式`);
     const spot={};
-    for(const key of FIELDS) if(row[key]!==undefined && row[key]!==null) {
+    for(const key of PUBLIC_FIELDS) if(row[key]!==undefined && row[key]!==null) {
       if(key==='lat'||key==='lng') { if(typeof row[key]!=='number'||!Number.isFinite(row[key])) throw new Error(`行 ${i+1}: 座標`); spot[key]=row[key]; }
       else { if(typeof row[key]!=='string'||row[key].length>2000) throw new Error(`行 ${i+1}: ${key}`); spot[key]=row[key].trim(); }
     }
