@@ -6,7 +6,7 @@ temp,site,server,base=start_site()
 with sync_playwright() as p:
  browser=launch_browser(p)
  context=browser.new_context(viewport={'width':390,'height':844},service_workers='allow')
- page=context.new_page();page.route('https://tile.openstreetmap.org/**',lambda r:r.fulfill(status=200,content_type='image/png',path=str(PROJECT/'icon-192.png')));errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+ page=context.new_page();page.route('https://script.google.com/**',lambda r:r.abort());page.route('https://tile.openstreetmap.org/**',lambda r:r.fulfill(status=200,content_type='image/png',path=str(PROJECT/'icon-192.png')));errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
  page.goto(base);page.wait_for_selector('.card');expect(page.locator('.card')).to_have_count(len(json.loads((PROJECT/'data/spots.json').read_text())['spots']))
  assert not page.locator('#locate').is_disabled()
  page.locator('.save').first.click();page.locator('a[data-page="saved"]').click();expect(page.locator('.card')).to_have_count(1)

@@ -32,3 +32,17 @@ jobs:
           name: public-food-facts-probe
           path: source-probe/
           retention-days: 1
+
+      - run: python3 -m pip install playwright
+      - name: Check existing endpoint from the public app origin without credentials
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import shutil
+          with sync_playwright() as p:
+            b=p.chromium.launch(headless=True,executable_path=shutil.which('google-chrome'))
+            page=b.new_page();page.goto('https://minamigoen.github.io/test-MinamiGo/',wait_until='domcontentloaded')
+            result=page.evaluate("""async()=>{const r=await fetch('https://script.google.com/macros/s/AKfycbwUu-Xl9mpPWdnZGacuebLcC8mHy-eZv86EnQqxaUG9djOkA7lf2fByRYmj8ZDC4E_2/exec',{credentials:'omit'});const d=await r.json();return {status:r.status,count:d.length,origin:location.origin};}""")
+            print('ANONYMOUS_BROWSER_CORS:',result);assert result['status']==200 and result['count']>0
+            b.close()
+          PY

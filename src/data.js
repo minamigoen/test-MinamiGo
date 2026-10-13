@@ -1,7 +1,7 @@
 export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
 export const PHOTO_FIELDS=['photoUrl','photoAlt','photoSource','photoLicense','photoCredit'];
 export const PHOTO_LICENSES={'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC0 1.0':'https://creativecommons.org/publicdomain/zero/1.0/','掲載許諾確認済み':'','管理者撮影（掲載権利確認済み）':''};
-export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt'];
+export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt','upstreamId'];
 export function safeURL(value) {
  if(typeof value!=='string'||value.length>2048)return '';
  try {const u=new URL(value),host=u.hostname.toLowerCase();return u.protocol==='https:'&&!u.username&&!u.password&&(!u.port||u.port==='443')&&host.includes('.')&&!/^\d+(?:\.\d+){3}$/.test(host)&&!host.includes(':')&&!/(?:^|\.)(?:localhost|local|lan|internal)$/.test(host)?u.href:'';}catch{return '';}
@@ -31,6 +31,7 @@ export function validateData(input) {
   if(spot.mapScope==='name-address'&&(!spot.address||!spot.mapQuery||spot.lat!==undefined))throw new Error('名称・住所検索には住所と検索名が必要で、未検証の座標は使用できません');
   if(spot.directionsMode&&spot.directionsMode!=='walking')throw new Error('経路モード');
   if(spot.tel&&!/^[0-9+() -]{5,30}$/.test(spot.tel))throw new Error(`行 ${i+1}: 電話番号`);
+  if(spot.upstreamId&&!/^\d{10}$/.test(spot.upstreamId))throw new Error('元データNO');
   if(spot.officialCheckedAt&&!validDate(spot.officialCheckedAt))throw new Error(`行 ${i+1}: 公式情報の確認日`);
   if(spot.foodType&&(spot.category!=='food'||spot.foodType.length>80))throw new Error(`行 ${i+1}: 飲食店の種類`);
   if(spot.photoUrl){
