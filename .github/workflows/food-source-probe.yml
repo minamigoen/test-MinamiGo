@@ -46,3 +46,17 @@ jobs:
             print('ANONYMOUS_BROWSER_CORS:',result);assert result['status']==200 and result['count']>0
             b.close()
           PY
+
+      - name: Check existing stay sheet anonymous read without changing its sharing
+        run: |
+          python3 - <<'PY'
+          import urllib.request,urllib.error,csv,io,json
+          url='https://docs.google.com/spreadsheets/d/1QwA27PDd0hjc3CZVBJLYSCcMaInLplyC-QU-7ZhSPWQ/gviz/tq?tqx=out:csv&sheet=stay'
+          try:
+            with urllib.request.urlopen(url,timeout=20) as r:
+              raw=r.read(1024*1024).decode('utf-8-sig');status=r.status
+            rows=list(csv.reader(io.StringIO(raw)))
+            ok=bool(rows and rows[0][:2]==['NO','営業所名称'])
+            print('STAY_ANONYMOUS_READ:'+json.dumps({'status':status,'recognized':ok,'count':len(rows)-1 if ok else None},ensure_ascii=False))
+          except Exception as e:print('STAY_ANONYMOUS_READ:'+json.dumps({'available':False,'errorType':type(e).__name__}))
+          PY
