@@ -33,7 +33,7 @@ with sync_playwright() as p:
  assert page.locator('#detail-link-list a').count()>=1
  page.screenshot(path=str(output/'live-mobile-detail.png'))
  page.locator('#close-detail').click();page.wait_for_timeout(100)
- page.locator('#categories button').filter(has_text='食べる').click();foods=[s for s in snapshot['spots'] if s['category']=='food'];expect(page.locator('.card')).to_have_count(len(foods));assert page.locator('#locate').is_disabled();page.locator('#food-type').select_option('カフェ');expect(page.locator('.card')).to_have_count(3);page.screenshot(path=str(output/'live-mobile-food.png'));page.locator('#reset').click();page.wait_for_timeout(100)
+ page.locator('#categories button').filter(has_text='食べる').click();foods=[s for s in snapshot['spots'] if s['category']=='food'];expect(page.locator('.card')).to_have_count(len(foods));assert page.locator('#locate').is_disabled();page.locator('#food-type').select_option('カフェ');expect(page.locator('.card')).to_have_count(sum('カフェ' in s.get('foodType','').split('・') for s in foods));page.screenshot(path=str(output/'live-mobile-food.png'));page.locator('#reset').click();page.wait_for_timeout(100)
  page.locator('.save').first.click();page.locator('a[data-page="saved"]').click();expect(page.locator('.card')).to_have_count(1)
  page.evaluate('navigator.serviceWorker.ready');page.reload();page.wait_for_selector('.card');expect(page.locator('.card')).to_have_count(1)
  scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)');assert scope==url
@@ -41,5 +41,5 @@ with sync_playwright() as p:
  desktop=b.new_context(viewport={'width':1440,'height':1000});dp=desktop.new_page();dp.goto(url,wait_until='domcontentloaded');dp.wait_for_selector('.card');assert dp.evaluate('document.documentElement.scrollWidth<=innerWidth');dp.screenshot(path=str(output/'live-desktop.png'))
  assert not errors,errors
  b.close()
-(output/'result.json').write_text(json.dumps({'url':url,'status':200,'public_spots':len(snapshot['spots']),'food_spots':len(foods),'unlicensed_photos':sum(bool(s.get('photoUrl')) for s in snapshot['spots']),'mobile':[390,844],'desktop':[1440,1000],'manifest_scope':'./','worker_scope':scope,'maps_links':links,'offline_reload':'passed','favorites_reload':'passed','private_fields':'excluded','javascript_errors':errors},ensure_ascii=False,indent=2))
+(output/'result.json').write_text(json.dumps({'url':url,'status':200,'public_spots':len(snapshot['spots']),'food_spots':len(foods),'public_photos':sum(bool(s.get('photoUrl')) for s in snapshot['spots']),'mobile':[390,844],'desktop':[1440,1000],'manifest_scope':'./','worker_scope':scope,'maps_links':links,'offline_reload':'passed','favorites_reload':'passed','private_fields':'excluded','javascript_errors':errors},ensure_ascii=False,indent=2))
 print('PASS: actual HTTPS test URL, reviewed cards, Maps/Street View links, scoped Service Worker, favorites persistence, offline reload, mobile/desktop screenshots; no private fields or JavaScript errors')
