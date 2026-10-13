@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "no": "0000000001",
+      "sourceName": "ホテル白い燈台",
+      "publicName": "ホテル白い燈台",
+      "publicAddress": "徳島県海部郡美波町日和佐浦455",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000002",
+      "sourceName": "ビジネスホテルケアンズ",
+      "publicName": "ビジネスホテルケアンズ",
+      "publicAddress": "徳島県海部郡美波町奥河内字弁才天75-16",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000003",
+      "sourceName": "ふなつき",
+      "publicName": "ふなつき",
+      "publicAddress": "徳島県海部郡美波町奥河内字寺前165",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000004",
+      "sourceName": "旅館きよ美",
+      "publicName": "旅館きよ美",
+      "publicAddress": "徳島県海部郡美波町奥河内字寺前112",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000005",
+      "sourceName": "旅館むらかみ",
+      "publicName": "旅館むらかみ",
+      "publicAddress": "徳島県海部郡美波町奥河内字弁才天68-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000006",
+      "sourceName": "民宿弘陽荘",
+      "publicName": "民宿弘陽荘",
+      "publicAddress": "徳島県海部郡美波町奥河内字本村70",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000007",
+      "sourceName": "えびすロッジ",
+      "publicName": "えびすロッジ",
+      "publicAddress": "徳島県海部郡美波町恵比須浜字田井89-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000008",
+      "sourceName": "海辺の農家民宿クニ舛田",
+      "publicName": "海辺の農家民宿クニ舛田",
+      "publicAddress": "徳島県海部郡美波町恵比須浜字田井218",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000009",
+      "sourceName": "南阿波サンラインモビレージ",
+      "publicName": "南阿波サンラインモビレージ",
+      "publicAddress": "徳島県海部郡美波町山河内字明丸1-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000010",
+      "sourceName": "お宿日和佐",
+      "publicName": "お宿日和佐",
+      "publicAddress": "徳島県海部郡美波町奥河内字本村148-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000011",
+      "sourceName": "壱 THE HOSTEL",
+      "publicName": "壱 THE HOSTEL",
+      "publicAddress": "徳島県海部郡美波町奥河内字寺前114-8",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000012",
+      "sourceName": "グリーンハウス樹園",
+      "publicName": "グリーンハウス樹園",
+      "publicAddress": "徳島県海部郡美波町田井834-5",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000013",
+      "sourceName": "明山荘",
+      "publicName": "明山荘",
+      "publicAddress": "徳島県海部郡美波町田井82-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000014",
+      "sourceName": "民宿ゆき荘",
+      "publicName": "民宿ゆき荘",
+      "publicAddress": "徳島県海部郡美波町西由岐字愛宕山13-19",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000015",
+      "sourceName": "橋本屋旅館",
+      "publicName": "橋本屋旅館",
+      "publicAddress": "徳島県海部郡美波町西由岐字東18",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000016",
+      "sourceName": "イザリCafé",
+      "publicName": "イザリCafé",
+      "publicAddress": "徳島県海部郡美波町伊座利301-2",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000017",
+      "sourceName": "海女の家",
+      "publicName": "海女の家",
+      "publicAddress": "徳島県海部郡美波町阿部字向江406-2",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000018",
+      "sourceName": "ドミトリー聖ヶ丘",
+      "publicName": "ドミトリー聖ヶ丘",
+      "publicAddress": "徳島県海部郡美波町木岐927-2",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000019",
+      "sourceName": "恵比須浜キャンプ村",
+      "publicName": "恵比須浜キャンプ村",
+      "publicAddress": "徳島県海部郡美波町恵比須浜字田井",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000020",
+      "sourceName": "倶楽部イザリ～ノキャンプ場",
+      "publicName": "倶楽部イザリ～ノキャンプ場",
+      "publicAddress": "徳島県海部郡美波町伊座利字小イザリ",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000022",
+      "sourceName": "農家民宿 清流の郷",
+      "publicName": "農家民宿 清流の郷",
+      "publicAddress": "徳島県海部郡美波町山河内字西山208-1",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000023",
+      "sourceName": "さくら庵",
+      "publicName": "さくら庵",
+      "publicAddress": "徳島県海部郡美波町奥河内字寺前114-6",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000024",
+      "sourceName": "B＆Bｍ⁴(エムノヨンジョウ)",
+      "publicName": "B＆Bｍ⁴(エムノヨンジョウ)",
+      "publicAddress": "徳島県海部郡美波町奥河内字本村171",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000025",
+      "sourceName": "かんちゃん亭",
+      "publicName": "かんちゃん亭",
+      "publicAddress": "徳島県海部郡美波町奥河内字本村100",
+      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000026",
+      "sourceName": "ほたる村　CAMP FIELD",
+      "publicName": "ほたる村　CAMP FIELD",
+      "publicAddress": "徳島県海部郡美波町山河内字松尾32",
+      "evidence": "https://www.minamikankou.jp/%E6%B3%8A%E3%81%BE%E3%82%8B/%E3%81%BB%E3%81%9F%E3%82%8B%E6%9D%91",
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "no": "0000000027",
+      "sourceName": "花乃宿",
+      "publicName": "花乃宿",
+      "publicAddress": "徳島県海部郡美波町奥河内本村8-1",
+      "evidence": "https://www.minamikankou.jp/%E6%B3%8A%E3%81%BE%E3%82%8B/%E8%8A%B1%E4%B9%83%E5%AE%BF",
+      "checkedAt": "2026-10-13"
+    }
+  ]
+}

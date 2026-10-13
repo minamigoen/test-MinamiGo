@@ -13,6 +13,11 @@ jobs:
       - run: npm test
       - run: npm run validate
       - run: npm run build
+      - run: python -m pip install playwright
+      - run: python tests/browser.py
+      - run: python tests/media-browser.py
+      - run: python tests/shared-food-browser.py
+      - run: python tests/sw-update.py
       - uses: actions/upload-artifact@v4
         with:
           name: minamigo-test-preview

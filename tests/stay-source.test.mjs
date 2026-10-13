@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {reviewedStays} from '../src/stay-source.js';
+const values=[['NO','営業所名称'],['0000000001','PUBLIC TEST HOTEL','PRIVATE ADDRESS',34,134,'SECRET','PRIVATE NOTE','PRIVATE HOURS','PRIVATE CLOSED','https://example.org/?token=SECRET','PRIVATE SNS','PRIVATE IMAGE']];
+const review={records:[{no:'0000000001',sourceName:'PUBLIC TEST HOTEL',publicName:'PUBLIC TEST HOTEL',publicAddress:'PUBLIC VERIFIED ADDRESS',evidence:'https://example.org/public',checkedAt:'2026-10-13'}]};
+test('lodging exports only independently reviewed public facts',()=>{const d=reviewedStays(values,review);assert.equal(d.spots.length,1);assert.equal(d.spots[0].address,'PUBLIC VERIFIED ADDRESS');assert.ok(!JSON.stringify(d).includes('PRIVATE'));assert.ok(!JSON.stringify(d).includes('SECRET'));assert.equal(d.spots[0].lat,undefined);});
+test('lodging rejects changed identity and duplicate IDs',()=>{assert.throws(()=>reviewedStays([values[0],[values[1][0],'DIFFERENT']],review));assert.throws(()=>reviewedStays([...values,values[1]],review));});
