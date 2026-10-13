@@ -21,7 +21,7 @@ export function validateData(input) {
    else{if(typeof row[key]!=='string'||row[key].length>2000)throw new Error(`行 ${i+1}: ${key}`);spot[key]=row[key].trim();}
   }
   if(!/^[a-z0-9-]{1,80}$/.test(spot.id||'')||ids.has(spot.id))throw new Error(`行 ${i+1}: ID`);ids.add(spot.id);
-  if(!spot.name||spot.name.length>120||!CATEGORIES[spot.category]||!spot.source||!validDate(spot.verifiedAt))throw new Error(`行 ${i+1}: 名称・カテゴリ・出典・確認日が必要です`);
+  if(!spot.name||spot.name.length>120||!Object.hasOwn(CATEGORIES,spot.category)||!spot.source||!validDate(spot.verifiedAt))throw new Error(`行 ${i+1}: 名称・カテゴリ・出典・確認日が必要です`);
   if((spot.lat===undefined)!==(spot.lng===undefined)||Math.abs(spot.lat??0)>90||Math.abs(spot.lng??0)>180)throw new Error(`行 ${i+1}: 座標範囲`);
   if(spot.url&&!safeURL(spot.url))throw new Error(`行 ${i+1}: 公開HTTPS URLのみ`);
   if(spot.streetViewUrl){if(!safeURL(spot.streetViewUrl))throw new Error('Street View URL');const u=new URL(spot.streetViewUrl);if(u.origin!=='https://www.google.com'||u.pathname!=='/maps/@'||u.searchParams.get('map_action')!=='pano')throw new Error(`行 ${i+1}: Street View URL`);}

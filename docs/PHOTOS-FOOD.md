@@ -36,7 +36,7 @@
 
 カード/詳細に写真・代替表示、出典/利用条件を表示。カード画像はlazy loading・async decoding・寸法予約でモバイルの負担を抑えます。写真取得失敗・欠落・オフラインは代替表示に戻り、本文と操作は利用できます。外部写真は独立した提供元へ通信し、Referrerを送りません。写真をアプリのService Workerへ保存/先読みしないため、オフライン写真表示は保証しません。外部URLの表示条件も権利確認に含めてください。
 
-今回のService Worker cache versionは `20261013-photos-food-1`。新しいmedia moduleも同一ホストのapp shellに含め、更新通知から版を切り替えます。お気に入りと学びスタンプの保存キーは維持します。
+今回のService Worker cache versionは `20261013-photos-food-2`。新しいmedia moduleも同一ホストのapp shellに含め、更新通知から版を切り替えます。お気に入りと学びスタンプの保存キーは維持します。
 
 ## 検証
 
