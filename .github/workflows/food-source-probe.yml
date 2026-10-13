@@ -1,0 +1,33 @@
+name: Read existing public MinamiGo food source
+on:
+  push:
+    branches: [feature/shared-food-source-20261013]
+permissions:
+  contents: read
+jobs:
+  public-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read anonymous existing endpoint and keep a fact-only probe
+        run: |
+          python3 - <<'PY'
+          import urllib.request,json,pathlib
+          url='https://script.google.com/macros/s/AKfycbwUu-Xl9mpPWdnZGacuebLcC8mHy-eZv86EnQqxaUG9djOkA7lf2fByRYmj8ZDC4E_2/exec'
+          req=urllib.request.Request(url,headers={'Accept':'application/json','User-Agent':'MinamiGo-test-source-check'})
+          with urllib.request.urlopen(req,timeout=30) as res:
+            raw=res.read(1024*1024+1)
+            if len(raw)>1024*1024:raise ValueError('Public response too large')
+            data=json.loads(raw)
+          if not isinstance(data,list) or len(data)>2000:raise ValueError('Expected existing public array')
+          allowed=['no','name','address','lat','lng','tel','hours','closed','url','sns']
+          safe=[{k:row[k] for k in allowed if k in row} for row in data if isinstance(row,dict) and row.get('name')]
+          pathlib.Path('source-probe').mkdir(exist_ok=True)
+          pathlib.Path('source-probe/facts.json').write_text(json.dumps(safe,ensure_ascii=False))
+          print(json.dumps({'sourceUrl':url,'count':len(safe),'fields':allowed,'image_rows':sum(bool(r.get('image')) for r in data),'rights_fields_present':any(any('license' in k.lower() or 'rights' in k.lower() for k in r) for r in data)},ensure_ascii=False))
+          print(json.dumps([{'no':r.get('no'),'name':r.get('name')} for r in safe],ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-food-facts-probe
+          path: source-probe/
+          retention-days: 1
