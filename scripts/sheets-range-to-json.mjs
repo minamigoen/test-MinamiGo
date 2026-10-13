@@ -1,6 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
-import {PUBLIC_FIELDS,validateData} from '../src/data.js';
+import {PUBLIC_FIELDS,PHOTO_FIELDS,validateData} from '../src/data.js';
 /** Accept a bounded UNFORMATTED_VALUE range response. This does not authenticate,
  * publish a Sheet, or store the private response. Print public JSON only. */
 export function publicSnapshotFromRange(response,updatedAt=new Date().toISOString()) {
@@ -15,9 +15,11 @@ export function publicSnapshotFromRange(response,updatedAt=new Date().toISOStrin
   if(cells[index('publicApproved')]!==true)continue;
   const verified=cells[index('locationVerified')]===true,row={};
   for(const key of PUBLIC_FIELDS) {
-   if(!verified&&['lat','lng','directionsMode'].includes(key))continue;
+   if(!verified&&['lat','lng'].includes(key))continue;
+   if(!verified&&key==='directionsMode'&&cells[index('mapScope')]!=='name-address')continue;
+   if(PHOTO_FIELDS.includes(key)&&cells[index('photoApproved')]!==true)continue;
    const i=index(key);if(i<0)continue;const v=cells[i];
-   if(v!==''&&v!==undefined&&v!==null)row[key]=v;
+   if(v!==''&&v!==undefined&&v!==null){if(key==='relatedLinks'&&typeof v==='string'){try{row[key]=JSON.parse(v);}catch{throw new Error('relatedLinksはJSON配列で入力してください');}}else row[key]=v;}
   }
   spots.push(row);
  }

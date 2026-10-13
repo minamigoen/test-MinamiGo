@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T14:46:21.848Z",
+  "updatedAt": "2026-10-13T03:53:55.927Z",
   "spots": [
     {
       "id": "odaishi-statue",
@@ -13,7 +13,17 @@
       "accessNote": "旧温泉建物から桜町通り沿いに移したとの地域資料があります。石像の最新位置・現存は画像で特定できていません。公道から確認し、旧温泉敷地へ無断で入らないでください。",
       "imageryDate": "2025-02",
       "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lkembx7rrE9LXg5ZJL073Q&viewpoint=33.732145%2C134.5308973&heading=339.04678&pitch=0&fov=75",
-      "mapQuery": "弘法大師の石像 徳島県海部郡美波町奥河内寺前107"
+      "mapQuery": "弘法大師の石像 徳島県海部郡美波町奥河内寺前107",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "hebi-stone",
@@ -26,7 +36,17 @@
       "accessNote": "2025年2月画像で駅前の石・植栽・説明板の区画を確認。個々の石の同定と最新の移設・工事は未確認です。植え込みに入らず、駅前通路の通行を妨げないでください。",
       "imageryDate": "2025-02",
       "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I1yQnp69VvzhnpLzB5tyvQ&viewpoint=33.729002%2C134.5312672&heading=107.33086&pitch=0&fov=75",
-      "mapQuery": "蛇責めの石 徳島県海部郡美波町奥河内 日和佐駅前"
+      "mapQuery": "蛇責めの石 徳島県海部郡美波町奥河内 日和佐駅前",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "koboji-stones",
@@ -45,7 +65,17 @@
       "mapQuery": "弘法寺 徳島県海部郡美波町奥河内字本村70",
       "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
       "mapScope": "surroundings",
-      "directionsMode": "walking"
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "kannonji-statue",
@@ -64,7 +94,17 @@
       "mapQuery": "二見山観音寺 徳島県海部郡美波町奥河内字本村78",
       "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
       "mapScope": "surroundings",
-      "directionsMode": "walking"
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "hachiman-sazare",
@@ -83,7 +123,17 @@
       "mapQuery": "日和佐八幡神社 徳島県海部郡美波町日和佐浦369",
       "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
       "mapScope": "surroundings",
-      "directionsMode": "walking"
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "kitamuki-jizo",
@@ -94,7 +144,17 @@
       "verifiedAt": "2026-10-12",
       "accessNote": "2025年2月画像で住宅地の狭い路地を確認。地蔵の現物・入口・公私の境界・参拝許可は未確認です。現地へ直接誘導せず周辺画像のみ紹介します。私有地に入らず、車で路地に進入しないでください。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JbGqsF17Zs5UxPH0l8Juzw&viewpoint=33.7328015%2C134.5373717&heading=270&pitch=0&fov=75"
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JbGqsF17Zs5UxPH0l8Juzw&viewpoint=33.7328015%2C134.5373717&heading=270&pitch=0&fov=75",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
     },
     {
       "id": "koibito-fudo",
@@ -112,7 +172,197 @@
       "mapPlaceId": "ChIJmz9aXgv9UjURiGDJdbUsSgU",
       "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
       "mapScope": "surroundings",
-      "directionsMode": "walking"
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hiwasaya",
+      "name": "ひわさ屋",
+      "category": "food",
+      "description": "定食・地魚・阿波尾鶏のお店。薬王寺門前町商店組合の店舗紹介に掲載されています。",
+      "address": "徳島県海部郡美波町奥河内寺前122",
+      "hours": "11:30–14:00／17:30–21:00",
+      "closed": "水曜・第2、第4火曜",
+      "tel": "0884-77-3528",
+      "url": "https://yakuouji-monzenmachi.com/archives/shop/128",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "ひわさ屋 徳島県海部郡美波町奥河内寺前122",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/128"
+        }
+      ],
+      "foodType": "定食・地魚・阿波尾鶏",
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "mamebon-cafe",
+      "name": "まめぼんカフェ",
+      "category": "food",
+      "description": "カフェ・イタリアン・スイーツのお店。薬王寺門前町商店組合の店舗紹介に掲載されています。",
+      "address": "徳島県海部郡美波町奥河内字寺前100-9",
+      "hours": "日・月・水・木11:00–17:00／金・土11:00–20:00（L.O.閉店30分前）",
+      "closed": "火曜・第2水曜",
+      "tel": "0884-70-1372",
+      "url": "https://yakuouji-monzenmachi.com/archives/shop/167",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "まめぼんカフェ 徳島県海部郡美波町奥河内字寺前100-9",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/167"
+        },
+        {
+          "label": "掲載された店舗Instagram",
+          "url": "https://www.instagram.com/son3cb/"
+        }
+      ],
+      "foodType": "カフェ・イタリアン・スイーツ",
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "teishaba-cafe",
+      "name": "TEISHABA cafe",
+      "category": "food",
+      "description": "カフェのお店。薬王寺門前町商店組合の店舗紹介に掲載されています。",
+      "address": "徳島県海部郡美波町奥河内字弁才天75-15",
+      "hours": "11:00–16:00",
+      "closed": "木曜・金曜・日曜",
+      "tel": "090-5018-8892",
+      "url": "https://yakuouji-monzenmachi.com/archives/shop/965",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "TEISHABA cafe 徳島県海部郡美波町奥河内字弁才天75-15",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/965"
+        },
+        {
+          "label": "掲載された店舗Instagram",
+          "url": "https://www.instagram.com/teishaba_cafe"
+        }
+      ],
+      "foodType": "カフェ",
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "haratofuten",
+      "name": "ハラトウフテン",
+      "category": "food",
+      "description": "食堂・豆腐料理・弁当・惣菜のお店。薬王寺門前町商店組合の店舗紹介に掲載されています。",
+      "address": "徳島県海部郡美波町奥河内字寺前522-43",
+      "hours": "火～木・日7:00–18:00／金・土7:00–L.O.21:00",
+      "closed": "月曜（不定休）",
+      "tel": "0884-77-0318",
+      "url": "https://yakuouji-monzenmachi.com/archives/shop/865",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "ハラトウフテン 徳島県海部郡美波町奥河内字寺前522-43",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/865"
+        },
+        {
+          "label": "掲載された店舗Instagram",
+          "url": "https://www.instagram.com/haratofuten.tokushima/"
+        }
+      ],
+      "foodType": "食堂・豆腐料理・弁当・惣菜",
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "iron",
+      "name": "阿波尾鶏中華そば藍庵",
+      "category": "food",
+      "description": "中華そば・つけ麺のお店。薬王寺門前町商店組合の店舗紹介に掲載されています。",
+      "address": "徳島県海部郡美波町奥河内寺前229-1",
+      "hours": "火～金11:00–15:00／土・日・祝11:00–16:00",
+      "closed": "月曜",
+      "tel": "0884-70-1590",
+      "url": "https://iron.momojiro.site/",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "阿波尾鶏中華そば藍庵 徳島県海部郡美波町奥河内寺前229-1",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/130"
+        },
+        {
+          "label": "お店の公式サイト",
+          "url": "https://iron.momojiro.site/"
+        },
+        {
+          "label": "建物の歴史：旧永岡家住宅",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/nagaoka"
+        }
+      ],
+      "foodType": "中華そば・つけ麺",
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "azur-shogodo",
+      "name": "アジュール昭吾堂",
+      "category": "food",
+      "description": "洋菓子・カフェのお店。薬王寺門前町商店組合の店舗紹介に掲載されています。掲載ページには現在ランチ提供なしと記載されています。",
+      "address": "徳島県海部郡美波町奥河内寺前237-4",
+      "hours": "9:30–18:00／café12:00–16:30",
+      "closed": "木曜",
+      "tel": "0884-77-0126",
+      "url": "https://r.goope.jp/azyuru/",
+      "source": "薬王寺門前町商店組合 店舗紹介（記事更新日不明）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
+      "mapQuery": "アジュール昭吾堂 徳島県海部郡美波町奥河内寺前237-4",
+      "locationLabel": "名称・住所からの検索（地点・入口・経路は未検証）",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "商店組合の店舗紹介",
+          "url": "https://yakuouji-monzenmachi.com/archives/shop/143"
+        },
+        {
+          "label": "お店の公式サイト",
+          "url": "https://r.goope.jp/azyuru/"
+        }
+      ],
+      "foodType": "洋菓子・カフェ",
+      "officialCheckedAt": "2026-10-13"
     }
   ]
 }
