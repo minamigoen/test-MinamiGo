@@ -42,3 +42,7 @@ Node単体テスト8件、公開JSON7件のschema検証、static buildが成功�
 テキストcontrast計算: 白/主ボタン7.66:1、本文/背景11.60:1、補助文字/背景5.61:1。別のテストscopeで新版SWの待機→更新通知→ユーザー操作でactivate/reload→お気に入り保持を確認。初回未接続は未インストールのためブラウザ側通信エラーになり、事前接続が必要と確認しました。Android/iOS実機install、複数タブ切替は今後の実機確認です。
 
 再現用の任意ブラウザテスト: Python + Playwright + Chromiumがある環境で `npm run build` 後、`python3 tests/browser.py` と `python3 tests/sw-update.py`。一時ディレクトリとlocalhostの一時ポートにコピーした `/test-MinamiGo/` 配下を確認し、repo内の配信ファイルは改変しません。ブラウザ検証はCIのNode単体検証とは別です。
+
+## 2026-10-13 共通データ・宿泊更新
+
+上記のendpoint非依存/owner手動exportは初版の構成です。現在は利用者の要望により、飲食基本情報は元アプリの既存匿名公開APIを読み、端末で10分再利用します。GAS無料quotaの範囲は保証しません。宿泊は実行時API未確認のため既存接続で元表を読み、公開根拠を照合して公開時に更新します。元repo/元Sheets/権限を変更していません。詳細はSHARED-FOOD.md/STAY.md。20件の単体検証、カード/一覧/地図のフィルタ維持・宿泊のMapsリンク、元情報の更新/追加/削除、不正更新/オフラインの直近正常保持、多タブSW更新を確認しました。公開写真0件、私的元表や画像の転載なし。

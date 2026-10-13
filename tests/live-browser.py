@@ -35,7 +35,7 @@ with sync_playwright() as p:
  assert page.locator('#detail-link-list a').count()>=1
  page.screenshot(path=str(output/'live-mobile-detail.png'))
  page.locator('#close-detail').click();page.wait_for_timeout(100)
- page.locator('#categories button').filter(has_text='食べる').click();foods=[s for s in snapshot['spots'] if s['category']=='food'];expect(page.locator('.card')).to_have_count(len(foods));assert page.locator('#locate').is_disabled();page.locator('#food-type').select_option('カフェ');expect(page.locator('.card')).to_have_count(sum('カフェ' in s.get('foodType','').split('・') for s in foods));page.screenshot(path=str(output/'live-mobile-food.png'));page.locator('#reset').click();page.wait_for_timeout(100)
+ page.locator('#categories button').filter(has_text='食べる').click();foods=[s for s in snapshot['spots'] if s['category']=='food'];expect(page.locator('.card')).to_have_count(len(foods));assert page.locator('#locate').is_disabled()==(not any(s.get('lat') is not None for s in foods));page.locator('#food-type').select_option('カフェ');expect(page.locator('.card')).to_have_count(sum('カフェ' in s.get('foodType','').split('・') for s in foods));page.screenshot(path=str(output/'live-mobile-food.png'));expect(page.locator('#food-sync-info')).to_contain_text('共通データ',timeout=15000);page.locator('#reset').click();page.wait_for_timeout(100)
  page.locator('.save').first.click();page.locator('a[data-page="saved"]').click();expect(page.locator('.card')).to_have_count(1)
  page.evaluate('navigator.serviceWorker.ready');page.reload();page.wait_for_selector('.card');expect(page.locator('.card')).to_have_count(1)
  scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)');assert scope==url
