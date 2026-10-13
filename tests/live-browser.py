@@ -19,7 +19,9 @@ with sync_playwright() as p:
    break
   except Exception:
    if attempt==5:raise
-   time.sleep(10)
+   # A visitor that opened during rollout may have installed the previous SW.
+   # Retry as a genuinely fresh visitor, instead of reusing its old app cache.
+   c.close();c=b.new_context(viewport={'width':390,'height':844});page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)));time.sleep(10)
  expect(page.locator('.card')).to_have_count(len(expected['spots']))
  page.screenshot(path=str(output/'live-mobile.png'))
  manifest=page.request.get(url+'manifest.json').json();assert manifest['scope']=='./';assert manifest['start_url']=='./#explore'
