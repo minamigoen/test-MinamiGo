@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T05:27:34.284Z",
+  "updatedAt": "2026-10-13T05:37:31.211Z",
   "spots": [
     {
       "id": "odaishi-statue",
@@ -518,6 +518,23 @@
       "verifiedAt": "2026-10-13",
       "accessNote": "元表の座標・電話・営業時間・備考・画像は取り込んでいません。住所に表記差がある場合は公開施設案内を使用します。予約前に現地の最新案内をご確認ください。",
       "mapQuery": "倶楽部イザリ～ノキャンプ場 徳島県海部郡美波町伊座利字小イザリ",
+      "locationLabel": "公開施設案内の名称・住所検索。入口・経路・営業状況は未検証。",
+      "mapScope": "name-address",
+      "directionsMode": "walking",
+      "relatedLinks": [],
+      "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "minamistay-0000000021",
+      "name": "南阿波サンラインモビレージ（テントサイト）",
+      "category": "stay",
+      "description": "南阿波サンラインモビレージのテントサイトです。同施設のコテージとは宿泊タイプを分けて掲載しています。料金・予約・利用条件は公式案内をご確認ください。",
+      "address": "徳島県海部郡美波町山河内明丸1-1",
+      "url": "https://awasun.com/tentsite/",
+      "source": "南阿波サンラインモビレージ公式（宿泊元表のNOと照合）",
+      "verifiedAt": "2026-10-13",
+      "accessNote": "元表の座標・電話・営業時間・備考・画像は取り込んでいません。住所に表記差がある場合は公開施設案内を使用します。予約前に現地の最新案内をご確認ください。",
+      "mapQuery": "南阿波サンラインモビレージ（テントサイト） 徳島県海部郡美波町山河内明丸1-1",
       "locationLabel": "公開施設案内の名称・住所検索。入口・経路・営業状況は未検証。",
       "mapScope": "name-address",
       "directionsMode": "walking",

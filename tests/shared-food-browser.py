@@ -6,14 +6,19 @@ rows=[{k:s.get(v,'') for k,v in {'no':'upstreamId','name':'name','address':'addr
 for r in rows:
  if r['no']=='0000000023':r['hours']='TEST RUNTIME HOURS'
 rows.append({'no':'0000000050','name':'TEST ONLY NEW SOURCE RECORD','address':'TEST ONLY ADDRESS','hours':'TEST ONLY'})
-tmp,site,server,base=start_site();mode={'good':True};calls={'n':0}
+tmp,site,server,base=start_site();mode={'good':True,'delay':True};calls={'n':0};pending=[]
 with sync_playwright() as p:
  b=launch_browser(p);c=b.new_context();page=c.new_page()
  def respond(route):
   calls['n']+=1
+  if mode['delay']:pending.append(route);return
   if mode['good']:route.fulfill(json=rows,headers={'Access-Control-Allow-Origin':'*'})
   else:route.fulfill(json=[{'no':'INVALID','name':'BAD'}],headers={'Access-Control-Allow-Origin':'*'})
- page.route('https://script.google.com/**',respond);page.goto(base);expect(page.locator('#food-sync-info')).to_contain_text('共通データ 38件');expect(page.locator('.card')).to_have_count(len(base_data['spots'])+1)
+ page.route('https://script.google.com/**',respond);page.goto(base);page.wait_for_selector('.card')
+ for i in range(40):
+  if pending:break
+  page.wait_for_timeout(50)
+ assert pending;page.locator('#search').fill('弘法寺');mode['delay']=False;pending.pop().fulfill(json=rows,headers={'Access-Control-Allow-Origin':'*'});expect(page.locator('#food-sync-info')).to_contain_text('共通データ 38件');expect(page.locator('#search')).to_have_value('弘法寺');page.locator('#search-form').evaluate('(form)=>form.requestSubmit()');expect(page.locator('.card')).to_have_count(1);page.locator('#reset').click();expect(page.locator('.card')).to_have_count(len(base_data['spots'])+1)
  page.locator('[data-spot-id="hiwasaya"] .open').click();page.wait_for_selector('dialog[open]');assert 'TEST RUNTIME HOURS' in page.locator('#detail-fields').inner_text();page.locator('#close-detail').click();page.wait_for_timeout(100)
  before=calls['n'];page.reload();expect(page.locator('#food-sync-info')).to_contain_text('共通データ 38件');assert calls['n']==before
  mode['good']=False;page.locator('a[data-page="help"]').click();page.locator('#refresh').evaluate('(b)=>b.click()');expect(page.locator('#food-sync-info')).to_contain_text('直近正常データ');page.locator('a[data-page="explore"]').click();expect(page.locator('.card')).to_have_count(len(base_data['spots'])+1)
