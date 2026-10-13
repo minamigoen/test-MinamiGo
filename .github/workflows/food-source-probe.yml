@@ -25,6 +25,7 @@ jobs:
           pathlib.Path('source-probe/facts.json').write_text(json.dumps(safe,ensure_ascii=False))
           print(json.dumps({'sourceUrl':url,'count':len(safe),'fields':allowed,'image_rows':sum(bool(r.get('image')) for r in data),'rights_fields_present':any(any('license' in k.lower() or 'rights' in k.lower() for k in r) for r in data)},ensure_ascii=False))
           print(json.dumps([{'no':r.get('no'),'name':r.get('name')} for r in safe],ensure_ascii=False))
+          print('PUBLIC_FACTS_JSON:'+json.dumps(safe,ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v4
         with:
