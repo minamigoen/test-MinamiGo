@@ -30,14 +30,15 @@ export function renderSpotMap(items,{tileUrl,onSelect,offline=false}){
   if(next!==signature){
    signature=next;markers.clearLayers();
    for(const s of points){
-    const content=el('section',null,'map-popup');content.append(el('span',CATEGORIES[s.category],'pill'),el('h3',s.name),el('p',s.address||s.locationLabel));
+    const content=el('section',null,'map-popup');content.append(el('span',CATEGORIES[s.category],'pill'),el('h3',s.name));
     if(s.photoUrl)content.append(photoFigure(s));
+    content.append(el('p',s.address||s.locationLabel));
     if(s.hours)content.append(el('p','営業：'+s.hours));
     content.append(el('p',s.locationLabel||'施設周辺の参考地点。入口は未確認。','muted'));
     const controls=el('div',null,'popup-actions'),open=el('button','詳しく見る');open.onclick=()=>onSelect(s);controls.append(open);
     if(s.mapQuery)controls.append(externalLink('https://www.google.com/maps/search/?'+new URLSearchParams({api:'1',query:s.mapQuery}),'場所を確認'));
     content.append(controls);
-    const marker=L.marker([s.lat,s.lng],{icon:L.divIcon({className:'map-pin category-'+s.category+(s.mapScope==='sheet-reference'?' reference-pin':''),html:'<span aria-hidden="true"></span>',iconSize:[44,44],iconAnchor:[22,22]}),title:s.name+'（参考地点）',alt:s.name+'の詳細を開く'}).bindPopup(content,{maxWidth:280,minWidth:180,autoPan:false}).addTo(markers);
+    const marker=L.marker([s.lat,s.lng],{icon:L.divIcon({className:'map-pin category-'+s.category+(s.mapScope==='sheet-reference'?' reference-pin':''),html:'<span aria-hidden="true"></span>',iconSize:[44,44],iconAnchor:[22,22]}),title:s.name+'（参考地点）',alt:s.name+'の詳細を開く'}).bindPopup(content,{maxWidth:280,minWidth:180,maxHeight:280,autoPan:true,autoPanPadding:[20,20]}).addTo(markers);
     marker.on('click',()=>{map.stop();map.setView([s.lat,s.lng],Math.max(map.getZoom(),16),{animate:false});marker.openPopup();onSelect(s);});
    }
    map.fitBounds(points.map(s=>[s.lat,s.lng]),{maxZoom:15,padding:[30,30]});

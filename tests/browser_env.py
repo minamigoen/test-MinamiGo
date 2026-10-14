@@ -14,4 +14,4 @@ def start_site():
 
 def launch_browser(p):
  path=os.environ.get('MINAMIGO_CHROMIUM') or shutil.which('chromium') or shutil.which('google-chrome')
- return p.chromium.launch(headless=True,args=['--host-resolver-rules=MAP upload.wikimedia.org ~NOTFOUND'],**({'executable_path':path} if path else {}))
+ return p.chromium.launch(headless=True,args=['--host-resolver-rules=MAP upload.wikimedia.org ~NOTFOUND, MAP lh3.googleusercontent.com ~NOTFOUND, MAP www.town.minami.lg.jp ~NOTFOUND'],**({'executable_path':path} if path else {}))

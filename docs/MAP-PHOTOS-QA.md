@@ -1,3 +1,5 @@
+> 2026-10-14写真表示更新：飲食37・宿泊24の実写真を表示。宿泊3件は元画像URL未解決。以下の未許諾／リンクのみの記述は旧版の経緯。[現行の許諾範囲・画像検証](PHOTOS-FACILITIES.md)。
+
 # 地図・空中写真・宿泊元表（2026-10-14）
 
 テスト公開のみ。本番 minamigoen/MinamiGo と元Sheets・共有権限・認証は変更しません。専用ローカル checkout minamigo-test を使用。既存README・docs・前回threadの最終turnを確認しました。このcheckout/workspaceには .agents、AGENTS.md、プロジェクト固有SKILL.mdやローカル記憶はありませんでした。UI/UX Pro Max の mobile map popup touch 検索で44pxの操作領域・8px間隔を採用。Google Sheets接続はmetadata確認後、列名と必要な有界範囲のみ読みました。

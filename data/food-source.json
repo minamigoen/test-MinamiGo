@@ -1,1 +1,58 @@
-{"enabled":true,"url":"https://script.google.com/macros/s/AKfycbwUu-Xl9mpPWdnZGacuebLcC8mHy-eZv86EnQqxaUG9djOkA7lf2fByRYmj8ZDC4E_2/exec","repository":"https://github.com/minamigoen/MinamiGo","refreshMinutes":10,"idMap":{"0000000012":{"id":"azur-shogodo","names":["Sweets Lagoon アジュール昭吾堂","アジュール昭吾堂"]},"0000000013":{"id":"mamebon-cafe","names":["まめぼんcafe","まめぼんカフェ"]},"0000000014":{"id":"iron","names":["阿波尾鶏中華そば 藍庵","阿波尾鶏中華そば藍庵"]},"0000000023":{"id":"hiwasaya","names":["阿波尾鶏・地魚 ひわさ屋","ひわさ屋"]},"0000000034":{"id":"haratofuten","names":["ハラトウフテン"]},"0000000035":{"id":"teishaba-cafe","names":["TEISHABA cafe"]}}}
+{
+  "enabled": true,
+  "url": "https://script.google.com/macros/s/AKfycbwUu-Xl9mpPWdnZGacuebLcC8mHy-eZv86EnQqxaUG9djOkA7lf2fByRYmj8ZDC4E_2/exec",
+  "repository": "https://github.com/minamigoen/MinamiGo",
+  "refreshMinutes": 10,
+  "idMap": {
+    "0000000012": {
+      "id": "azur-shogodo",
+      "names": [
+        "Sweets Lagoon アジュール昭吾堂",
+        "アジュール昭吾堂"
+      ]
+    },
+    "0000000013": {
+      "id": "mamebon-cafe",
+      "names": [
+        "まめぼんcafe",
+        "まめぼんカフェ"
+      ]
+    },
+    "0000000014": {
+      "id": "iron",
+      "names": [
+        "阿波尾鶏中華そば 藍庵",
+        "阿波尾鶏中華そば藍庵"
+      ]
+    },
+    "0000000023": {
+      "id": "hiwasaya",
+      "names": [
+        "阿波尾鶏・地魚 ひわさ屋",
+        "ひわさ屋"
+      ]
+    },
+    "0000000034": {
+      "id": "haratofuten",
+      "names": [
+        "ハラトウフテン"
+      ]
+    },
+    "0000000035": {
+      "id": "teishaba-cafe",
+      "names": [
+        "TEISHABA cafe"
+      ]
+    }
+  },
+  "photoApproval": {
+    "approved": true,
+    "categories": [
+      "food",
+      "stay"
+    ],
+    "approvedAt": "2026-10-14",
+    "scope": "サイト運営者が飲食店と宿泊施設の写真利用許諾を明示。別カテゴリへは適用しない。"
+  },
+  "photoPolicy": "facility-permission-20261014"
+}
