@@ -5,13 +5,13 @@ export function externalLink(href,label,className){const a=element('a',label,cla
 /** Photo URLs reach this renderer only after public-data validation and publication approval.
  * External photos are never fetched by the service worker or prefetched for offline use. */
 export function photoFigure(spot,{detail=false}={}){
- const figure=element('figure',undefined,'spot-media'+(spot.photoUrl?' has-photo':''));const frame=element('div',undefined,'photo-frame');const fallback=element('div',undefined,'photo-fallback');
+ const figure=element('figure',undefined,'spot-media'+(spot.photoUrl?' has-photo':''));figure.dataset.state=spot.photoUrl?'loading':spot.photoStatus?.includes('取得できません')?'source-unavailable':'missing';const frame=element('div',undefined,'photo-frame');const fallback=element('div',undefined,'photo-fallback');
  const icon=element('span',undefined,'photo-symbol');icon.innerHTML='<svg viewBox="0 0 48 48" aria-hidden="true">'+(drawings[spot.category]||drawings.other)+'</svg>';
  const label=element('span',spot.photoUrl?'写真を読み込んでいます':spot.photoStatus||'写真は準備中','photo-fallback-label');fallback.append(icon,label);frame.append(fallback);figure.append(frame);
  if(spot.photoUrl){
   const img=element('img');img.alt=spot.photoAlt;img.width=640;img.height=400;img.loading=detail?'eager':'lazy';img.decoding='async';img.referrerPolicy='no-referrer';img.setAttribute('fetchpriority','low');
   const failed=()=>{img.hidden=true;fallback.hidden=false;label.textContent=navigator.onLine?'写真を表示できません':'写真はオンラインで表示します';figure.dataset.state='fallback';};
-  img.addEventListener('load',()=>{fallback.hidden=true;figure.dataset.state='loaded';},{once:true});img.addEventListener('error',failed,{once:true});frame.append(img);img.src=spot.photoUrl;
+  img.addEventListener('load',()=>{if(!img.naturalWidth||!img.naturalHeight){failed();return;}fallback.hidden=true;figure.dataset.state='loaded';},{once:true});img.addEventListener('error',failed,{once:true});frame.append(img);img.src=spot.photoUrl;
   const credit=element('figcaption',undefined,'photo-credit');credit.append(element('span',spot.photoCredit+' / '));credit.append(externalLink(spot.photoSource,'写真の出典'));credit.append(element('span',' / '));const terms=PHOTO_LICENSES[spot.photoLicense];credit.append(terms?externalLink(terms,spot.photoLicense):element('span',spot.photoLicense));figure.append(credit);
  }
  if(!spot.photoUrl&&spot.photoLink){const caption=element('figcaption',undefined,'photo-credit');caption.append(externalLink(spot.photoLink,'掲載元の写真を開く'));caption.append(element('span','（転載許諾は確認中）'));figure.append(caption);}

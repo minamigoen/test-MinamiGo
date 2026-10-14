@@ -18,6 +18,7 @@ jobs:
       - run: python tests/datasets-browser.py
       - run: python tests/map-browser.py
       - run: python tests/media-browser.py
+      - run: python tests/photo-policy-browser.py
       - run: python tests/shared-food-browser.py
       - run: python tests/sw-update.py
       - uses: actions/upload-artifact@v4

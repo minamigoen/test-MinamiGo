@@ -1,3 +1,4 @@
+import {approvedFacilityPhoto} from './photo-source.js';
 import {validateData,safeURL,PHOTO_FIELDS} from './data.js';
 export const FOOD_EXTRA_FIELDS=['id','foodType','description','accessNote','relatedLinks','officialCheckedAt',...PHOTO_FIELDS];
 const normalize=s=>s.normalize('NFKC').toLocaleLowerCase('ja').replace(/[\s・･]/g,'');
@@ -22,6 +23,7 @@ export function mergeFoodSource(rows,local,config,fetchedAt=new Date().toISOStri
   const id=mapping?.id||'minamimeshi-'+no,annotation=extra.get(id)||{};
   const s={id,name,category:'food',address,source:'美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）',verifiedAt:fetchedAt.slice(0,10),upstreamId:no,foodType:'種類未確認',description:'美波飯の元公開データに掲載されている施設です。現在の営業・提供内容は来店前にご確認ください。'};
   for(const key of FOOD_EXTRA_FIELDS)if(key!=='id'&&annotation[key]!==undefined)s[key]=annotation[key];
+  if(config.photoApproval?.approved){for(const key of PHOTO_FIELDS)delete s[key];Object.assign(s,approvedFacilityPhoto({category:'food',name,image:row.image,approval:config.photoApproval}));if(!s.photoUrl)s.photoStatus=row.image?'写真リンクを確認中':'写真未登録';}
   for(const key of ['hours','closed','tel']){const v=text(row[key],key);if(v)s[key]=v;}
   if(s.tel&&!/^[0-9+() -]{5,30}$/.test(s.tel)){delete s.tel;warnings.push({no,field:'tel',reason:'unsupported format'});}
   const rawUrl=text(row.url,'url'),rawSns=text(row.sns,'sns');const url=safeURL(rawUrl),sns=safeURL(rawSns);if(url)s.url=url;else if(rawUrl)warnings.push({no,field:'url',reason:'unsafe/non-HTTPS URL omitted'});
@@ -31,9 +33,11 @@ export function mergeFoodSource(rows,local,config,fetchedAt=new Date().toISOStri
   if(hasLat){if(typeof lat!=='number'||typeof lng!=='number'||!Number.isFinite(lat)||!Number.isFinite(lng)||lat<33||lat>35||lng<133||lng>136)throw new Error('Invalid upstream coordinates');s.lat=lat;s.lng=lng;s.mapScope='surroundings';s.locationLabel='元公開データの掲載地点（入口・現況・経路は未検証）';}
   else{s.mapScope='name-address';s.locationLabel='名称・住所からの検索（地点・入口・経路は未検証）';}
   s.mapQuery=name+' '+address;s.directionsMode='walking';s.accessNote='名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。'+(annotation.accessNote?' 補足：'+annotation.accessNote:'');
-  sourceRows.push(Object.fromEntries(Object.entries({no,name,address,lat:s.lat,lng:s.lng,tel:s.tel,hours:s.hours,closed:s.closed,url,sns}).filter(([,v])=>v!==undefined&&v!=='')));
-  // The legacy API's comment/image and any private or unknown columns are deliberately not copied.
+  sourceRows.push(Object.fromEntries(Object.entries({no,name,address,lat:s.lat,lng:s.lng,tel:s.tel,hours:s.hours,closed:s.closed,url,sns,image:config.photoApproval?.approved?publicImage(s):undefined}).filter(([,v])=>v!==undefined&&v!=='')));
+  // Comments and unknown/private columns remain excluded. Only approved image URLs survive.
   return s;
  });
  const data=validateData({schemaVersion:1,updatedAt:Date.parse(local.updatedAt)>Date.parse(fetchedAt)?local.updatedAt:fetchedAt,spots:[...local.walk,...food]});return {data,warnings,foodCount:food.length,fetchedAt,sourceRows};
 }
+
+function publicImage(s){return s.photoUrl||undefined;}
