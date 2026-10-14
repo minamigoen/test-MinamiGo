@@ -9,7 +9,7 @@
     "businessOfficialMapLinks": 2,
     "estimatedFromSchematic": 0,
     "entrancesVerified": 0,
-    "streetViewReviewed": 0
+    "streetViewReviewed": 1
   },
   "precisionPolicy": "原公開値を保持。小数桁数は位置精度を保証しない。入口や建物中心として扱わず施設代表点として表示。",
   "heritage": [
@@ -337,16 +337,17 @@
       "pointLabel": "施設代表点（入口・建物中心の別は未確認）",
       "entranceVerified": false,
       "buildingCenterVerified": false,
-      "streetViewReviewed": false,
+      "streetViewReviewed": true,
       "coordinateEstimated": false,
       "coordinateEvidenceType": "business_official_google_maps_place_link",
-      "coordinateMethod": "店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。",
+      "coordinateMethod": "店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。 2025年2月Street Viewで建物正面を目視照合。入口座標は未測定。",
       "evidenceUrls": [
         "https://hwdt.jp/",
         "https://hwdt.jp/about",
         "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7322893,134.5281139,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!16s%2Fg%2F11t4fz86t0?entry=ttu",
         "https://note.ur-net.go.jp/n/n1ecc7540ee9a",
-        "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya"
+        "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
+        "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7321467,134.5306556,5a,75y,10.78h,90t/data=!3m7!1e1!3m5!1snPYDGRGzy1-qHIPIQM6OdQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DnPYDGRGzy1-qHIPIQM6OdQ%26yaw%3D10.783873!7i16384!8i8192!4m9!3m8!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11t4fz86t0"
       ],
       "primaryCoordinateSourceUrl": "https://hwdt.jp/",
       "mapEvidenceUrl": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7322893,134.5281139,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!16s%2Fg%2F11t4fz86t0?entry=ttu",
@@ -358,7 +359,10 @@
         "入口位置",
         "一般公開・内部見学可否",
         "座標の実測誤差"
-      ]
+      ],
+      "streetViewCaptureDate": "2025-02",
+      "streetViewNote": "2025年2月Street Viewを実見し、桜の彫刻・出格子・HWDT表示のある建物正面を照合。入口の緯度経度は測定していない。カメラ位置は施設座標に代用しない。",
+      "streetViewEvidenceUrl": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7321467,134.5306556,5a,75y,10.78h,90t/data=!3m7!1e1!3m5!1snPYDGRGzy1-qHIPIQM6OdQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DnPYDGRGzy1-qHIPIQM6OdQ%26yaw%3D10.783873!7i16384!8i8192!4m9!3m8!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11t4fz86t0"
     },
     {
       "id": "heritage-373010",

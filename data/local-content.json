@@ -1,19 +1,24 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T07:57:43.523Z",
+  "updatedAt": "2026-10-14T08:12:02.357Z",
   "walk": [
     {
       "id": "odaishi-statue",
-      "name": "お大師石像",
+      "name": "お大師石像（弘法大師の石像）",
       "category": "powerspot",
       "description": "2018年計画では日和佐温泉ゆかりの像として紹介。地域資料によると、旧温泉建物内から桜町通り沿いに移されたとのこと。石像の現存・最新位置は未確認です。",
+      "lat": 33.7321904,
+      "lng": 134.5308624,
       "url": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/radium-onsen",
-      "source": "平成30年度事業計画（提供資料） 3・5・6・11頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,6,11頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "旧温泉建物から桜町通り沿いに移したとの地域資料があります。石像の最新位置・現存は画像で特定できていません。公道から確認し、旧温泉敷地へ無断で入らないでください。",
-      "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lkembx7rrE9LXg5ZJL073Q&viewpoint=33.732145%2C134.5308973&heading=339.04678&pitch=0&fov=75",
-      "mapQuery": "弘法大師の石像 徳島県海部郡美波町奥河内寺前107",
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップの個別POI「弘法大師の石像」の座標。2019年2月の公開写真に白い立像と青灰色の壁が写り、原典の像と背景を照合。旧銭湯前の大師像という観光協会マップ記述も整合。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。周辺路上のパノラマは実見したが、対象像そのものは画角内で確認できなかった。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：像の2026年現在の設置状態／入口・私有地境界／測量に基づく像中心ではない\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "mapQuery": "33.7321904,134.5308624",
+      "locationLabel": "対象物付近の参考点（推定位置・入口未確認）。位置同定の確度：中（施設代表点または過去の写真・資料による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
+      "directionsMode": "walking",
       "relatedLinks": [
         {
           "label": "美波遺産・地域の記憶を読む",
@@ -22,6 +27,14 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E5%BC%98%E6%B3%95%E5%A4%A7%E5%B8%AB%E3%81%AE%E7%9F%B3%E5%83%8F/@33.7321265,134.5308548,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDEkdvBLQ!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9Sr4dWBnSXFDvI7PABb2Wi9fTZdRflzbsZQdXap4GUfvUG3gBoAL9DDyx60COaqgpOe4nTFUffq_RFKIrP52ckf-jrdaUm4Hv01Y12wKRxy-dpeAnObzhGZfHHkmebEW1Jd5aVz%3Dw203-h270-k-no!7i3024!8i4032!4m9!3m8!1s0x3552fd83a83157a5:0xa9a6886b3a7fddf9!8m2!3d33.7321904!4d134.5308624!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11h3ngqn4h?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
         }
       ]
     },
@@ -30,13 +43,20 @@
       "name": "蛇責めの石",
       "category": "powerspot",
       "description": "2018年の計画に登場する、日和佐駅前の石。伝承をたどる街歩きの対象として紹介されています。現況・正確な位置は未確認です。",
+      "lat": 33.7289853,
+      "lng": 134.5313319,
       "url": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html",
-      "source": "平成30年度事業計画（提供資料） 3・5・7頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,7頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "2025年2月画像で駅前の石・植栽・説明板の区画を確認。個々の石の同定と最新の移設・工事は未確認です。植え込みに入らず、駅前通路の通行を妨げないでください。",
+      "accessNote": "参考座標の調査（2026-10-14）：個別POI座標を採用。2025年2月のStreet Viewで駅前広場の植込み内にある石・解説板・周辺配置を原典写真と照合。県立図書館収録紀要も駅前広場への移設を記述。\n2025年2月Street Viewで対象物を原典写真と照合。地図採用点はカメラ位置ではなく石の個別POI位置。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：2025年2月以降の移動・工事は未確認／原典の効能表現は信仰・企画上の説明であり実証ではない\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I1yQnp69VvzhnpLzB5tyvQ&viewpoint=33.729002%2C134.5312672&heading=107.33086&pitch=0&fov=75",
-      "mapQuery": "蛇責めの石 徳島県海部郡美波町奥河内 日和佐駅前",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.729002%2C134.5312672&pano=I1yQnp69VvzhnpLzB5tyvQ",
+      "mapQuery": "33.7289853,134.5313319",
+      "locationLabel": "対象物付近の参考点（推定位置・入口未確認）。位置同定の確度：高（対象物の画像照合あり。実測座標ではない）。2025年2月Street Viewで対象物を原典写真と照合。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
+      "directionsMode": "walking",
       "relatedLinks": [
         {
           "label": "美波遺産・地域の記憶を読む",
@@ -45,6 +65,14 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E8%9B%87%E8%B2%AC%E3%82%81%E3%81%AE%E7%9F%B3/@33.729002,134.5312672,5a,75y,107.33h,90t/data=!3m7!1e1!3m5!1sI1yQnp69VvzhnpLzB5tyvQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DI1yQnp69VvzhnpLzB5tyvQ%26yaw%3D107.33086!7i16384!8i8192!4m9!3m8!1s0x3552fce82a9b3a95:0x737dc10317d4026b!8m2!3d33.7289853!4d134.5313319!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11gfk6_rt8"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html"
         }
       ]
     },
@@ -57,14 +85,16 @@
       "lat": 33.7340726,
       "lng": 134.5365881,
       "url": "https://www.katadeyakushi.com/library/5ebc917d1b102b713c249e72/5ebca224dcc04c127fd9f593.pdf",
-      "source": "平成30年度事業計画（提供資料） 3・5・8頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,8頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "寺院の入口周辺は2025年2月画像で確認。法印石像・足型石自体と拝観条件は未確認です。正面入口で案内を確認し、非公開区画へ立ち入らないでください。",
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップ「弘法寺」の施設代表点を独立に再確認。原典の法印像・足型石は寺に付属するが、それぞれの像位置はこの調査では測定していない。MapFanにも同寺の住所・周辺点があり敷地を裏付け。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。南西の路上から建物と寺院屋根を確認。法印像・足型石自体は未確認。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：法印石像の個別位置／足型石の個別位置と現存／参拝可能な入口\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mqq6YVp_DubZsEiAjbBWBw&viewpoint=33.7337883%2C134.5362397&heading=46.04181&pitch=0&fov=75",
-      "mapQuery": "弘法寺 徳島県海部郡美波町奥河内字本村70",
-      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.7337883%2C134.5362397",
+      "mapQuery": "33.7340726,134.5365881",
+      "locationLabel": "弘法寺の施設代表点（入口・対象石像の位置未確認）。位置同定の確度：中（施設代表点または過去の写真・資料による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
       "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
       "directionsMode": "walking",
       "relatedLinks": [
         {
@@ -74,6 +104,18 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E5%BC%98%E6%B3%95%E5%AF%BA/@33.7337883,134.5362397,6a,75y,46.04h,90t/data=!3m7!1e1!3m5!1smqq6YVp_DubZsEiAjbBWBw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3Dmqq6YVp_DubZsEiAjbBWBw%26yaw%3D46.04181!7i16384!8i8192!4m9!3m8!1s0x3552fcd94bd782b1:0xe175870e989c72d2!8m2!3d33.7340726!4d134.5365881!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11bvvzjgfc?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://mapfan.com/spots/SY3H4,J,W37BA0"
         }
       ]
     },
@@ -86,14 +128,16 @@
       "lat": 33.7338697,
       "lng": 134.5353477,
       "url": "https://www.33kannon.net/cannonji",
-      "source": "平成30年度事業計画（提供資料） 3・5・9頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,9頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "寺院の正面外観を2025年2月画像で確認。観音像の現物・境内の公開範囲は未確認です。入口の案内に従ってください。「ぼけ封じ」は信仰上の名称で医療効果を保証しません。",
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップ「二見山観音寺」の施設代表点を独立に再確認。2025年2月のStreet Viewで寺の入口・正面を実見したが、境内の対象観音像の位置は未分離。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。寺院入口・正面の建築は確認。観音像自体は未確認。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：対象観音像そのものの位置・現存／原典の名称は信仰上の呼称であり医学的な効能を示さない\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XzQp8pcYq6SnhaGqD-JP5w&viewpoint=33.7337519%2C134.5353422&heading=1.9051746&pitch=0&fov=75",
-      "mapQuery": "二見山観音寺 徳島県海部郡美波町奥河内字本村78",
-      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.7337519%2C134.5353422",
+      "mapQuery": "33.7338697,134.5353477",
+      "locationLabel": "観音寺の施設代表点（入口・対象石像の位置未確認）。位置同定の確度：中（施設代表点または過去の写真・資料による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
       "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
       "directionsMode": "walking",
       "relatedLinks": [
         {
@@ -103,6 +147,18 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E4%BA%8C%E8%A6%8B%E5%B1%B1%E8%A6%B3%E9%9F%B3%E5%AF%BA/@33.7337519,134.5353422,6a,75y,1.91h,90t/data=!3m7!1e1!3m5!1sXzQp8pcYq6SnhaGqD-JP5w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DXzQp8pcYq6SnhaGqD-JP5w%26yaw%3D1.9051746!7i16384!8i8192!4m9!3m8!1s0x3552fcdea7558c13:0x6bea464a1fcce341!8m2!3d33.7338697!4d134.5353477!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F1tfwmsdf?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://hotokami.jp/area/tokushima/Hrptm/Hrptmtr/Dzpyg/23531/"
         }
       ]
     },
@@ -115,14 +171,16 @@
       "lat": 33.7350018,
       "lng": 134.5403357,
       "url": "https://hiwasahachiman.com/access",
-      "source": "平成30年度事業計画（提供資料） 3・5・6・11頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,6,11頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "参道・境内前は2025年2月画像で確認。さざれ石の現物・位置は画像で特定できていません。現地案内と祭礼・神事の参拝動線を優先してください。",
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップの神社の施設代表点を独立に再確認。CODH観光資源ポイントも同神社を33.735065,134.540512付近に記載。Street Viewでは境内と社殿を確認したが、さざれ石単体は判別できず、神社施設代表点として扱う。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。境内から社殿・鳥居を実見。さざれ石は未確認。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：さざれ石そのものの境内位置・現存／最寄り参拝入口\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mnytBlL4VC-vtQf2tcRwoQ&viewpoint=33.7344783%2C134.5402141&heading=10.792484&pitch=0&fov=75",
-      "mapQuery": "日和佐八幡神社 徳島県海部郡美波町日和佐浦369",
-      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.7344783%2C134.5402141",
+      "mapQuery": "33.7350018,134.5403357",
+      "locationLabel": "日和佐八幡神社の施設代表点（入口・さざれ石の位置未確認）。位置同定の確度：中（施設代表点または過去の写真・資料による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
       "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
       "directionsMode": "walking",
       "relatedLinks": [
         {
@@ -132,6 +190,18 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E6%97%A5%E5%92%8C%E4%BD%90%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE/@33.7344783,134.5402141,9a,75y,10.79h,90t/data=!3m7!1e1!3m5!1smnytBlL4VC-vtQf2tcRwoQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DmnytBlL4VC-vtQf2tcRwoQ%26yaw%3D10.792484!7i16384!8i8192!4m9!3m8!1s0x3552fcd81878b5ab:0x61c674648cc10d26!8m2!3d33.7350018!4d134.5403357!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11cm1vl22m?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/37/370000162300.html"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
         }
       ]
     },
@@ -140,38 +210,18 @@
       "name": "北向き地蔵",
       "category": "powerspot",
       "description": "2018年の資料の地図とイメージ図に紹介されています。谷屋周辺・個人宅周辺のため、場所と立ち入り可能な範囲の確認が必要です。私有地に入らないでください。",
-      "source": "平成30年度事業計画（提供資料） 5・9頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "lat": 33.7327344,
+      "lng": 134.5373353,
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5,9頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-12",
-      "accessNote": "2025年2月画像で住宅地の狭い路地を確認。地蔵の現物・入口・公私の境界・参拝許可は未確認です。現地へ直接誘導せず周辺画像のみ紹介します。私有地に入らず、車で路地に進入しないでください。",
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップ個別POI「北向地蔵（美波町）」の座標。2021年6月の公開写真に、原典p9の木造小祠・灰色瓦の切妻屋根・赤幕・ブロック壁・背後の家屋と同じ構成を確認。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。近接路地のパノラマは実見。祠は壁の向こうで直接確認できなかった。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：2021年6月以後の祠内の像の状態／私有地境界・通行可能範囲／測量位置ではない\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
       "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JbGqsF17Zs5UxPH0l8Juzw&viewpoint=33.7328015%2C134.5373717&heading=270&pitch=0&fov=75",
-      "relatedLinks": [
-        {
-          "label": "美波遺産・地域の記憶を読む",
-          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
-        },
-        {
-          "label": "商店組合の散策絵地図（PDF）",
-          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
-        }
-      ]
-    },
-    {
-      "id": "koibito-fudo",
-      "name": "恋人岬のお不動さん",
-      "category": "powerspot",
-      "description": "2018年の計画に登場するスポット。資料にある「縁切り石」は完成イメージで、実在や整備完了は未確認です。現在の訪問可能性を確認してからお出かけください。",
-      "lat": 33.7360667,
-      "lng": 134.5423243,
-      "source": "平成30年度事業計画（提供資料） 3・5（関連イメージ10）頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
-      "verifiedAt": "2026-10-12",
-      "accessNote": "画像は付近の車道と海岸方向です。不動像・展望台入口・階段・歩道・駐車場所は未確認です。徒歩経路検索は安全な入口を保証しません。道路上で止まらず現地の表示・通行規制を優先してください。",
-      "imageryDate": "2025-02",
-      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8uCeZUFVZBEwf-MtepHhxg&viewpoint=33.7361907%2C134.5422668&heading=149.16254&pitch=0&fov=75",
-      "mapQuery": "波切不動明王 徳島県海部郡美波町日和佐浦",
-      "mapPlaceId": "ChIJmz9aXgv9UjURiGDJdbUsSgU",
-      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.7328015%2C134.5373717",
+      "mapQuery": "33.7327344,134.5373353",
+      "locationLabel": "祠付近の参考点（推定位置・入口未確認）。位置同定の確度：中〜高（公表地点・写真等による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
       "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
       "directionsMode": "walking",
       "relatedLinks": [
         {
@@ -181,58 +231,205 @@
         {
           "label": "商店組合の散策絵地図（PDF）",
           "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E5%8C%97%E5%90%91%E5%9C%B0%E8%94%B5%EF%BC%88%E7%BE%8E%E6%B3%A2%E7%94%BA%EF%BC%89/@33.7327914,134.53733,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICqzauvzgE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9RErnibPgZ1VfYYVzfvf4kRcchF-MdPD1odBIFgdZmo-rvNKS0NHQ0yxmTd3rz09IuJlI5btBcxSrWDBqL1BSVQlthrrmRurkgTqVqNQ1n82k1UxBY4_NoZRySZXiSGmgLv45ZJ1g%3Dw203-h360-k-no!7i3096!8i5504!4m9!3m8!1s0x3552fdccda5fd38b:0x3cf2724277d8d8b9!8m2!3d33.7327344!4d134.5373353!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11ff1v_vbp?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        }
+      ]
+    },
+    {
+      "id": "koibito-fudo",
+      "name": "恋人岬のお不動さん（波切不動明王）",
+      "category": "powerspot",
+      "description": "2018年の計画に登場するスポット。資料にある「縁切り石」は完成イメージで、実在や整備完了は未確認です。現在の訪問可能性を確認してからお出かけください。",
+      "lat": 33.7360667,
+      "lng": 134.5423243,
+      "source": "提供資料「平成30年度パワースポット造成事業計画」3,5,10頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "参考座標の調査（2026-10-14）：個別POI「波切不動明王」の座標を独立に再確認。2021年8月の公開写真で海岸道路脇に岩へ彫られた石仏を実見。観光散策地図の恋人岬脇の波切不動の記述、原典p5の配置と対応する。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。近くの海岸道路・ガードレール・海を確認したが像は画角で確認できず、像の裏付けは2021年公開写真。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：2021年8月以後の像の状態／原典p10の「縁切り石」は完成イメージであり、実際の設置を確認したものではない\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.7361907%2C134.5422668",
+      "mapQuery": "33.7360667,134.5423243",
+      "locationLabel": "石仏付近の参考点（推定位置・入口未確認）。位置同定の確度：中〜高（公表地点・写真等による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        },
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E6%B3%A2%E5%88%87%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.736187,134.5422938,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDa8NyFngE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9ShAestVIrOAeouf6PynCX-5N76g6mt57qgGDer5nxrubnU1-iJZ8B2_LOH6ftztCIt0a0Udvu6q0AtlmBsqtyhL0qyVv6f6rzKddw-i87h1LjH_HyPFmc-ig1GG0mWYGbVueN4FA%3Dw203-h152-k-no!7i4032!8i3024!4m9!3m8!1s0x3552fd0b5e5a3f9b:0x54a2cb575c96088!8m2!3d33.7360667!4d134.5423243!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11fk1ssw7x?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://www.google.com/maps/place/%E6%B3%A2%E5%88%87%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.7361907,134.5422668,21a,75y,158.35h,90t/data=!3m7!1e1!3m5!1s8uCeZUFVZBEwf-MtepHhxg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D8uCeZUFVZBEwf-MtepHhxg%26yaw%3D158.34918!7i16384!8i8192!4m9!3m8!1s0x3552fd0b5e5a3f9b:0x54a2cb575c96088!8m2!3d33.7360667!4d134.5423243!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11fk1ssw7x?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 4",
+          "url": "https://cairns-sistercity.town.minami.lg.jp/introduce/introduce-of-minami"
         }
       ]
     },
     {
       "id": "pdf5-fudo",
-      "name": "造成計画の未確認地点 1（名称確認待ち）",
+      "name": "不動明王（奥河内井ノ上、原典の邸名は要確認）",
       "category": "powerspot",
-      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
-      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し1（原典監査で存在を確認、正式名未確定）",
+      "description": "2018年度の造成計画5頁の吹出しを公開資料と照合。Google マップの奥河内井ノ上「不動明王」の個別POI座標。2025年2月Street Viewで赤い光背の不動像、その左の石塔・供物台・背後の擁壁と岩を実見。原典p5写真と複数の形状・配置が一致し、川沿い上流の引出し位置とも整合。 現在の設置・立入りは未確認です。",
+      "lat": 33.7381009,
+      "lng": 134.5332675,
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。",
-      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。"
+      "accessNote": "参考座標の調査（2026-10-14）：Google マップの奥河内井ノ上「不動明王」の個別POI座標。2025年2月Street Viewで赤い光背の不動像、その左の石塔・供物台・背後の擁壁と岩を実見。原典p5写真と複数の形状・配置が一致し、川沿い上流の引出し位置とも整合。\n2025年2月Street Viewで対象物を原典写真と照合。カメラ位置ではなく対象の個別POI位置を採用。原典の赤い幟はこの画像では見えないが、像と石塔・擁壁は一致。\n参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。\n未確認事項：原典の邸名は「玉木邸」の可能性があるが未確定。確定名として採用しない／所有者・一般公開範囲／2025年2月以後の変更\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=33.738172%2C134.5331985&pano=-wv1mt7ZhNZvs__kWqpoNA",
+      "mapQuery": "33.7381009,134.5332675",
+      "locationLabel": "対象物付近の参考点（推定位置・入口未確認）。位置同定の確度：高（対象物の画像照合あり。実測座標ではない）。2025年2月Street Viewで対象物を原典写真と照合。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "reference",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.738172,134.5331985,10a,75y,136.91h,90t/data=!3m7!1e1!3m5!1s-wv1mt7ZhNZvs__kWqpoNA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D-wv1mt7ZhNZvs__kWqpoNA%26yaw%3D136.90694!7i16384!8i8192!4m13!1m2!2m1!1z576O5rOi55S6IOS4jeWLleaYjueOiw!3m9!1s0x3552fd003c76eb03:0x50f57577c6ec7c68!8m2!3d33.7381009!4d134.5332675!10e5!14m1!1BCgIgARICCAI!15sChbnvo7ms6LnlLog5LiN5YuV5piO546LkgEQcGxhY2Vfb2Zfd29yc2hpcOABAA!16s%2Fg%2F11vq222w19?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        }
+      ]
     },
     {
       "id": "pdf5-office-stone",
-      "name": "造成計画の未確認地点 2（名称確認待ち）",
+      "name": "日和佐陣屋的石",
       "category": "powerspot",
-      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
-      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し2（原典監査で存在を確認、正式名未確定）",
+      "description": "Google マップに「閉業」表示あり。実際の営業・公開・設置状況、移設・撤去の有無は未確定。通常営業中・現在見学可能とは表示せず、旧位置の参考情報として保存する。 2018年度の造成計画5頁の吹出しを公開資料と照合。原典の役場へ伸びる石碑を観光散策地図と広報みなみ2023年1月号の「日和佐陣屋的石」と対応。Google個別POIの旧位置を記録した。ただしGoogleでは「閉業」と表示され、2025年2月の周辺Street Viewでも石自体を再確認できなかった。閉業表示は撤去の確証ではない。 現在の設置・立入りは未確認です。",
+      "lat": 33.7343464,
+      "lng": 134.5350971,
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。",
-      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。"
+      "accessNote": "参考座標の調査（2026-10-14）：原典の役場へ伸びる石碑を観光散策地図と広報みなみ2023年1月号の「日和佐陣屋的石」と対応。Google個別POIの旧位置を記録した。ただしGoogleでは「閉業」と表示され、2025年2月の周辺Street Viewでも石自体を再確認できなかった。閉業表示は撤去の確証ではない。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。役場前の駐車場付近は確認。的石は直接確認できない。\n現在の設置・公開状況を確認するまで通常の地図ピン・経路案内を出さない。\n未確認事項：現在の設置場所／移設・撤去の有無／役場敷地内で現在見学できるか\nGoogle マップに「閉業」表示あり。実際の営業・公開・設置状況、移設・撤去の有無は未確定。通常営業中・現在見学可能とは表示せず、旧位置の参考情報として保存する。",
+      "locationLabel": "旧位置の参考点（現存・公開状況未確認）。位置同定の確度：中（施設代表点または過去の写真・資料による同定）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
+      "mapScope": "surroundings",
+      "mapVisibility": "hidden",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://www.google.com/maps/place/%E6%97%A5%E5%92%8C%E4%BD%90%E9%99%A3%E5%B1%8B%E7%9A%84%E7%9F%B3/@33.7344128,134.5350295,6a,75y,90t/data=!3m7!1e1!3m5!1sNEDTRuXcfgFZdZdDERuZTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DNEDTRuXcfgFZdZdDERuZTQ%26yaw%3D0!7i16384!8i8192!4m9!3m8!1s0x3552fd4dff46fc95:0x7ff72bcbd11f310!8m2!3d33.7343464!4d134.5350971!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11kc2dfsng?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://www.town.minami.lg.jp/fs/5/1/9/5/2/8/_/%E4%BB%A4%E5%92%8C4%E5%B9%B4%E5%BA%A6%E5%BA%83%E5%A0%B1%E3%81%BF%E3%81%AA%E3%81%BF1%E6%9C%88%E5%8F%B7No%2C202_18-19.pdf"
+        }
+      ]
     },
     {
       "id": "pdf5-mountain-daishi",
-      "name": "造成計画の未確認地点 3（名称確認待ち）",
+      "name": "後山の大岩",
       "category": "powerspot",
-      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
-      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し3（原典監査で存在を確認、正式名未確定）",
+      "description": "2018年度の造成計画5頁の吹出しを公開資料と照合。原典p5の文字は「後山『大岩』」と読め、写真も岩塊であり、旧監査名「山の大師」は誤読と判断。e-moshicom「四国の道（大岩コース）」の公開地図で名称「大岩（頂上付近）」と対になった座標を採用。投稿者はNPO新日本歩く道紀行推進機構、問い合わせ先は美波町観光協会。町の四国のみち案内と散策地図も整合。 現在の設置・立入りは未確認です。",
+      "lat": 33.7371574,
+      "lng": 134.536077,
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。",
-      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。"
+      "accessNote": "参考座標の調査（2026-10-14）：原典p5の文字は「後山『大岩』」と読め、写真も岩塊であり、旧監査名「山の大師」は誤読と判断。e-moshicom「四国の道（大岩コース）」の公開地図で名称「大岩（頂上付近）」と対になった座標を採用。投稿者はNPO新日本歩く道紀行推進機構、問い合わせ先は美波町観光協会。町の四国のみち案内と散策地図も整合。\nStreet View未確認。山上の対象岩のStreet View確認はしていない。\n山上の岩の地点であり道路入口ではない。登山口と徒歩ルートの別案内を要する。\n未確認事項：岩の中心の測量座標ではない／2026年現在の登山道・展望岩の安全状態／原典写真の撮影点は未確定\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "mapQuery": "33.7371574,134.536077",
+      "locationLabel": "大岩・頂上付近の参考点（岩の中心・登山口ではない）。位置同定の確度：中〜高（公表地点・写真等による同定）。Street View未確認。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://moshicom.com/course/4925"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://www.town.minami.lg.jp/docs/403.html"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 4",
+          "url": "https://www.pref.tokushima.lg.jp/file/html/835335.pdf"
+        }
+      ]
     },
     {
       "id": "pdf5-riverside-buddha",
-      "name": "造成計画の未確認地点 4（名称確認待ち）",
+      "name": "旧厄除橋南側の道標・石仏（名称読取候補）",
       "category": "powerspot",
-      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
-      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し4（原典監査で存在を確認、正式名未確定）",
+      "description": "2018年度の造成計画5頁の吹出しを公開資料と照合。原典p5の青い引出し線は公民館付近・旧橋南端に向かい、ラベルは「旧厄除橋南側『道標・石仏』」と読める。公式美波遺産の厄除橋記事が現橋より東の旧橋たもとの遍路道標を裏付ける。現在の厄除橋南端の2025年2月Street Viewを回転・移動して確認したが、原典p7の白い祠そのものは発見できず、本座標は保留。 現在の設置・立入りは未確認です。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。",
-      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。"
+      "accessNote": "参考座標の調査（2026-10-14）：原典p5の青い引出し線は公民館付近・旧橋南端に向かい、ラベルは「旧厄除橋南側『道標・石仏』」と読める。公式美波遺産の厄除橋記事が現橋より東の旧橋たもとの遍路道標を裏付ける。現在の厄除橋南端の2025年2月Street Viewを回転・移動して確認したが、原典p7の白い祠そのものは発見できず、本座標は保留。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。現橋南端と南側道路から周辺を実見したが原典の白い祠は見つからず。\n位置未確定のため地図ピン・経路案内を出さない。候補座標や閲覧・撮影位置を対象座標へ転記しない。\n未確認事項：原典の正確な名称／祠・道標・石仏の個別位置と現存／原典写真の対象と現地道標の同一性\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "locationLabel": "位置未確定・地図ピン保留。位置同定の確度：低（対象物の位置が未特定のため保留）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
+      "mapVisibility": "hidden",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://www.google.com/maps/place/%E5%8E%84%E9%99%A4%E6%A9%8B/@33.7321094,134.5335021,8a,75y,124.26h,90t/data=!3m7!1e1!3m5!1slmwPYqDK3wyfBx4W-t486w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DlmwPYqDK3wyfBx4W-t486w%26yaw%3D124.25701975805927!7i16384!8i8192!4m9!3m8!1s0x3552fdb974466a9f:0x935c764fb6dac2ac!8m2!3d33.7324529!4d134.5336869!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11rg8ct91l?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+        }
+      ]
     },
     {
       "id": "pdf5-temple-stone",
-      "name": "造成計画の未確認地点 5（名称確認待ち）",
+      "name": "極楽寺跡の石碑",
       "category": "powerspot",
-      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
-      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し5（原典監査で存在を確認、正式名未確定）",
+      "description": "2018年度の造成計画5頁の吹出しを公開資料と照合。原典写真の「極楽寺」の寺碑、観光散策地図の「極楽寺跡」、県立図書館紀要の日和佐浦の廃寺記載から寺名をほぼ解消。原典地図では日和佐グラウンド西〜南側の墓地。調査ではGoogle航空写真と2025年2月Street Viewを実見したが墓地内に対象画像がなく、石碑の個別位置を特定できないため座標保留。 現在の設置・立入りは未確認です。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁。個別公開地図・原典写真照合による参考地点（2026-10-14調査）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。",
-      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。"
+      "accessNote": "参考座標の調査（2026-10-14）：原典写真の「極楽寺」の寺碑、観光散策地図の「極楽寺跡」、県立図書館紀要の日和佐浦の廃寺記載から寺名をほぼ解消。原典地図では日和佐グラウンド西〜南側の墓地。調査ではGoogle航空写真と2025年2月Street Viewを実見したが墓地内に対象画像がなく、石碑の個別位置を特定できないため座標保留。\n2025年2月Street Viewで周辺を確認。対象物そのものは未確認。周囲の道路は実見、墓地内はStreet Viewなし。\n位置未確定のため地図ピン・経路案内を出さない。候補座標や閲覧・撮影位置を対象座標へ転記しない。\n未確認事項：石碑そのものの位置・現存／墓地のどの入口から行けるか／敷地立入可否\n現在の設置・公開状況は画像の撮影時点以後に変わる可能性があります。",
+      "locationLabel": "位置未確定・地図ピン保留。位置同定の確度：低（対象物の位置が未特定のため保留）。2025年2月Street Viewで周辺を確認。対象物そのものは未確認。",
+      "mapVisibility": "hidden",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "位置調査の根拠 1",
+          "url": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+        },
+        {
+          "label": "位置調査の根拠 2",
+          "url": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html"
+        },
+        {
+          "label": "位置調査の根拠 3",
+          "url": "https://www.google.com/maps/@33.73345,134.5388,188m/data=!3m1!1e3"
+        },
+        {
+          "label": "位置調査の根拠 4",
+          "url": "https://www.google.com/maps/@33.7328941,134.5392845,5a,75y,295.63h,90t/data=!3m7!1e1!3m5!1sXUznNSA2rHNRS0iGyRrWng!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DXUznNSA2rHNRS0iGyRrWng%26yaw%3D295.62986477757227!7i16384!8i8192"
+        }
+      ]
     },
     {
       "id": "heritage-373001",
@@ -497,9 +694,9 @@
       "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
       "source": "美波遺産公式・認定No.373009の個別解説（独自要約）。座標：現店舗の公式Mapリンク（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：HWDT Leather Showroom。営業・公開条件は要確認。",
+      "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：HWDT Leather Showroom。営業・公開条件は要確認。\n2025年2月Street Viewを実見し、桜の彫刻・出格子・HWDT表示のある建物正面を照合。入口の緯度経度は測定していない。カメラ位置は施設座標に代用しない。",
       "mapQuery": "旧旅館櫻屋 徳島県海部郡美波町奥河内寺前106-2",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。2025年2月Street Viewで建物外観を照合。入口・内部公開範囲は未確認。",
       "mapScope": "surroundings",
       "relatedLinks": [
         {
@@ -517,6 +714,10 @@
         {
           "label": "座標を照合した地図",
           "url": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7322893,134.5281139,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!16s%2Fg%2F11t4fz86t0?entry=ttu"
+        },
+        {
+          "label": "Street View外観照合（2025年2月・入口未測定）",
+          "url": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7321467,134.5306556,5a,75y,10.78h,90t/data=!3m7!1e1!3m5!1snPYDGRGzy1-qHIPIQM6OdQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DnPYDGRGzy1-qHIPIQM6OdQ%26yaw%3D10.783873!7i16384!8i8192!4m9!3m8!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11t4fz86t0"
         }
       ]
     },

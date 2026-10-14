@@ -262,8 +262,8 @@
       "source": "美波遺産公式・認定No.373009の個別解説（独自要約）。座標：現店舗の公式Mapリンク（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
       "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
-      "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：HWDT Leather Showroom。営業・公開条件は要確認。",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。2025年2月Street Viewで建物外観を照合。入口・内部公開範囲は未確認。",
+      "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：HWDT Leather Showroom。営業・公開条件は要確認。\n2025年2月Street Viewを実見し、桜の彫刻・出格子・HWDT表示のある建物正面を照合。入口の緯度経度は測定していない。カメラ位置は施設座標に代用しない。",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -280,6 +280,10 @@
         {
           "label": "座標を照合した地図",
           "url": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7322893,134.5281139,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!16s%2Fg%2F11t4fz86t0?entry=ttu"
+        },
+        {
+          "label": "Street View外観照合（2025年2月・入口未測定）",
+          "url": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7321467,134.5306556,5a,75y,10.78h,90t/data=!3m7!1e1!3m5!1snPYDGRGzy1-qHIPIQM6OdQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DnPYDGRGzy1-qHIPIQM6OdQ%26yaw%3D10.783873!7i16384!8i8192!4m9!3m8!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11t4fz86t0"
         }
       ],
       "lat": 33.7322893,

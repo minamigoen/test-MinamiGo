@@ -28,7 +28,7 @@ with sync_playwright() as p:
   stage=page.locator('.map-stage').bounding_box();panel=page.locator('#detail').bounding_box();assert panel['height']<stage['height']*.56
   page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-panel-{width}.png'))
   page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).not_to_be_visible();assert page.evaluate(vp)==before;page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).to_be_visible()
-  before=page.evaluate(vp);page.locator('#close-detail').click();expect(page.locator('#detail')).not_to_be_visible();assert page.evaluate(vp)==before
+  before=page.evaluate(vp);scroll=page.evaluate('scrollY');page.locator('#close-detail').click();expect(page.locator('#detail')).not_to_be_visible();assert page.evaluate(vp)==before;assert page.evaluate('scrollY')==scroll
   # List selection pans without zoom, then selected pin is usable with Enter/Escape.
   row=page.locator('#map-list button').nth(1);sid=row.get_attribute('data-spot-id');row.focus();row.press('Enter');expect(page.locator('#detail-title')).to_have_text(spots[sid]['name']);expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',sid);assert page.evaluate(vp)['zoom']==before['zoom'];page.locator('#close-detail').click()
   page.locator('#map').scroll_into_view_if_needed();pin=page.locator('.map-pin[data-spot-id="'+sid+'"]');pin.focus();pin.press('Enter');expect(page.locator('#detail')).to_be_visible();expect(page.locator('#detail-title')).to_have_text(spots[sid]['name']);page.keyboard.press('Escape');expect(page.locator('#detail')).not_to_be_visible();assert page.locator('.map-pin:focus').get_attribute('data-spot-id')==sid
@@ -41,8 +41,18 @@ with sync_playwright() as p:
   page.get_by_role('button',name='美波遺産',exact=True).click();expect(page.locator('.map-pin')).to_have_count(12);expect(page.locator('#map-list button')).to_have_count(12)
   for spot in [s for s in spots.values() if s['category']=='heritage']:
    page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);expect(page.locator('#detail-fields')).to_contain_text('施設代表点');expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',spot['id']);assert not page.locator('#detail-media img').count();page.locator('#close-detail').click()
+  page.get_by_role('button',name='パワースポット',exact=True).click();expect(page.locator('.map-pin')).to_have_count(9);expect(page.locator('#map-list button')).to_have_count(12)
+  for spot in [s for s in spots.values() if s['category']=='powerspot']:
+   page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);assert not page.locator('#detail-media img').count()
+   if spot.get('mapVisibility')=='hidden':expect(page.locator('.map-pin.selected')).to_have_count(0)
+   else:expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',spot['id'])
+   if spot.get('navigationPolicy')=='disabled':assert page.locator('#detail-actions a[href*="/maps/dir/"]').count()==0
+   if spot['id']=='pdf5-office-stone':expect(page.locator('#detail-description')).to_contain_text('閉業');assert page.locator('#detail-actions a[href*="/maps/"]').count()==0
+   if spot['id'] in ['hebi-stone','pdf5-fudo']:expect(page.locator('#detail-fields')).to_contain_text('2025年2月Street Viewで対象物')
+   page.locator('#close-detail').click()
+  page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-power-{width}.png'))
   assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');assert not errors,errors
-  results.append({'width':width,'continuous_real_pin_selections':selected,'panel':'nonmodal, collapse/expand/close','viewport_preserved':True,'keyboard':'list Enter, marker Enter, Escape restores marker focus','real_food_and_stay_photos':True,'desktop_side_by_side':width==1440,'javascript_errors':errors});print(f'PASS map UX {width}px',flush=True);c.close()
+  results.append({'width':width,'continuous_real_pin_selections':selected,'panel':'nonmodal, collapse/expand/close','viewport_preserved':True,'keyboard':'list Enter, marker Enter, Escape restores marker focus','real_food_and_stay_photos':True,'heritage_pins':12,'power_visible_pins':9,'power_records_retained':12,'historical_and_mountain_navigation':'disabled','desktop_side_by_side':width==1440,'javascript_errors':errors});print(f'PASS map UX {width}px',flush=True);c.close()
  b.close()
 (OUT/'map-ux-result.json').write_text(json.dumps({'url':URL,'runs':results},ensure_ascii=False,indent=2),encoding='utf8')
 if server: server.shutdown();tmp.cleanup()
