@@ -1,7 +1,7 @@
-export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
+export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',heritage:'美波遺産',powerspot:'パワースポット',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
 export const PHOTO_FIELDS=['photoUrl','photoAlt','photoSource','photoLicense','photoCredit'];
-export const PHOTO_LICENSES={'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC0 1.0':'https://creativecommons.org/publicdomain/zero/1.0/','掲載許諾確認済み':'','管理者撮影（掲載権利確認済み）':''};
-export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt','upstreamId'];
+export const PHOTO_LICENSES={'CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC0 1.0':'https://creativecommons.org/publicdomain/zero/1.0/','掲載許諾確認済み':'','管理者撮影（掲載権利確認済み）':''};
+export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','directionsMode','photoLink','photoStatus',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt','upstreamId'];
 export function safeURL(value) {
  if(typeof value!=='string'||value.length>2048)return '';
  try {const u=new URL(value),host=u.hostname.toLowerCase();if([...u.searchParams.keys()].some(k=>/^(?:access_token|token|api_key|apikey|key|signature|sig|password|secret|authorization|auth)$/i.test(k)))return '';return u.protocol==='https:'&&!u.username&&!u.password&&(!u.port||u.port==='443')&&host.includes('.')&&!/^\d+(?:\.\d+){3}$/.test(host)&&!host.includes(':')&&!/(?:^|\.)(?:localhost|local|lan|internal)$/.test(host)?u.href:'';}catch{return '';}
@@ -27,8 +27,10 @@ export function validateData(input) {
   if(spot.streetViewUrl){if(!safeURL(spot.streetViewUrl))throw new Error('Street View URL');const u=new URL(spot.streetViewUrl);if(u.origin!=='https://www.google.com'||u.pathname!=='/maps/@'||u.searchParams.get('map_action')!=='pano')throw new Error(`行 ${i+1}: Street View URL`);}
   if(spot.mapScope&&!spot.locationLabel)throw new Error('周辺地点の説明が必要です');
   if(spot.directionsMode&&!spot.mapQuery)throw new Error('経路検索先が必要です');
-  if(spot.mapScope&&!['surroundings','name-address'].includes(spot.mapScope))throw new Error('地図範囲');
+  if(spot.mapScope&&!['surroundings','name-address','sheet-reference'].includes(spot.mapScope))throw new Error('地図範囲');
   if(spot.mapScope==='name-address'&&(!spot.address||!spot.mapQuery||spot.lat!==undefined))throw new Error('名称・住所検索には住所と検索名が必要で、未検証の座標は使用できません');
+  if(spot.mapScope==='sheet-reference'&&(spot.category!=='stay'||spot.lat===undefined||spot.lat<33.5||spot.lat>34||spot.lng<134.3||spot.lng>134.8))throw new Error('宿泊参考座標範囲');
+  if(spot.photoLink){const u=new URL(safeURL(spot.photoLink)||'https://invalid.example');if(u.origin!=='https://www.town.minami.lg.jp'||!/^\/foreign_country\/assets\/images\/sightseeing\/stay_(?:img|thumb)\d+\.jpg$/.test(u.pathname))throw new Error('公開写真リンクは確認済み町画像のみ');}
   if(spot.directionsMode&&spot.directionsMode!=='walking')throw new Error('経路モード');
   if(spot.tel&&!/^[0-9+() -]{5,30}$/.test(spot.tel))throw new Error(`行 ${i+1}: 電話番号`);
   if(spot.upstreamId&&!/^\d{10}$/.test(spot.upstreamId))throw new Error('元データNO');

@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "validate": "node scripts/import-data.mjs --check data/spots.json",
+    "validate": "node scripts/import-data.mjs --check data/spots.json && node scripts/check-datasets.mjs",
     "serve": "python3 -m http.server 4173",
     "build": "node scripts/build.mjs",
     "sync:food": "node scripts/sync-food.mjs",
-    "sync:stay": "node scripts/sync-stay.mjs"
+    "sync:stay": "node scripts/sync-stay.mjs",
+    "sync:local": "node scripts/sync-local-datasets.mjs"
   },
   "engines": {
     "node": ">=20"
