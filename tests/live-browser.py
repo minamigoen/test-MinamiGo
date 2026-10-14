@@ -16,6 +16,11 @@ with sync_playwright() as p:
    assert '美波まちのふしぎ帖' in page.locator('.brand').inner_text()
    expect(page.locator('.card')).to_have_count(len(expected['spots']))
    assert page.locator('.spot-media').count()>=len(expected['spots'])
+   # Counts can match the previous release. Wait for the data/photo revision and
+   # the asynchronous source merge before accepting this visitor as current.
+   served=page.request.get(url+'data/spots.json').json();assert served==expected
+   page.wait_for_function('()=>/共通データ \\d+件|取得できません/.test(document.getElementById("food-sync-info").textContent)',timeout=15000)
+   expect(page.locator('#cards .has-photo')).to_have_count(sum(bool(s.get('photoUrl')) for s in expected['spots']),timeout=12000)
    break
   except Exception:
    if attempt==5:raise
