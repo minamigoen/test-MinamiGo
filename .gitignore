@@ -7,3 +7,4 @@ private/
 *.tmp
 __pycache__/
 *.pyc
+live-evidence/
