@@ -10,4 +10,4 @@ for(const [path,category] of [['data/power-spots.json','powerspot'],['data/herit
 }
 assert.equal(snapshot.spots.filter(s=>s.category==='food').length,37);assert.equal(snapshot.spots.filter(s=>s.category==='stay').length,27);
 
-const power=validateData(await read('data/power-spots.json'));assert.equal(power.spots.length,12);assert.equal(power.spots.filter(s=>s.name.includes('名称確認待ち')).length,5);
+const power=validateData(await read('data/power-spots.json'));assert.equal(power.spots.length,12);assert.equal(power.spots.filter(s=>s.lat!==undefined).length,10);assert.equal(power.spots.filter(s=>s.lat!==undefined&&s.mapVisibility!=='hidden').length,9);assert.equal(power.spots.filter(s=>s.lat===undefined).length,2);

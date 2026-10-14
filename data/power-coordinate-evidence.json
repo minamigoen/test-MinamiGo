@@ -1,0 +1,736 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-10-14",
+  "scope": "提供された平成30年度計画のパワースポット12件の名称・位置調査。10件の参考座標（旧位置1件を含む）と2件の座標保留。",
+  "sourceDocument": {
+    "name": "202610011718.pdf",
+    "period": "平成30年度（2018年度）の事業計画",
+    "primaryMapPage": 5,
+    "warning": "計画書・完成イメージは現在の設置や整備完了を証明しない。"
+  },
+  "methodology": {
+    "browser": "クラウドブラウザー Google マップ。ユーザー端末は使用していない。",
+    "coordinateInterpretation": "Googleの !3d/!4d は対象POI。Street Viewの @ 緯度経度は撮影カメラなので対象座標に代用していない。公表座標の桁数を保存しているが測量精度を意味しない。",
+    "precision": "地図UIでは目安・施設代表点・旧位置の区分を表示し、通常は小数5桁程度で十分。",
+    "confidence": "位置同定の確度。現在の設置・公開状況とは別にcurrentInstallationStatusを参照。",
+    "status": "画像の年月以降の変更は確認できない。写真閲覧をStreet View確認として扱わない。",
+    "rights": "公開写真は照合用に閲覧したのみ。アプリへの転載許諾は確認していない。",
+    "navigation": "recommendedNavigation=trueは参考地点への導線を持たせる候補であり、入口や通行可能ルートが確認済みという意味ではない。山上の大岩・旧位置の的石・保留2件は経路案内しない。"
+  },
+  "summary": {
+    "total": 12,
+    "withCoordinates": 10,
+    "coordinatesWithheld": 2,
+    "historicalOnly": 1,
+    "objectVisibleInStreetView2025": 2,
+    "recommendedVisibleReferencePins": 9,
+    "facilityReferencePinsNotObject": 3,
+    "navigationReferenceCandidates": 8
+  },
+  "power": [
+    {
+      "id": "odaishi-statue",
+      "name": "お大師石像（弘法大師の石像）",
+      "originalAuditName": "お大師石像",
+      "lat": 33.7321904,
+      "lng": 134.5308624,
+      "confidence": "medium",
+      "pointType": "object_pin_approximate",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E5%BC%98%E6%B3%95%E5%A4%A7%E5%B8%AB%E3%81%AE%E7%9F%B3%E5%83%8F/@33.7321265,134.5308548,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDEkdvBLQ!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9Sr4dWBnSXFDvI7PABb2Wi9fTZdRflzbsZQdXap4GUfvUG3gBoAL9DDyx60COaqgpOe4nTFUffq_RFKIrP52ckf-jrdaUm4Hv01Y12wKRxy-dpeAnObzhGZfHHkmebEW1Jd5aVz%3Dw203-h270-k-no!7i3024!8i4032!4m9!3m8!1s0x3552fd83a83157a5:0xa9a6886b3a7fddf9!8m2!3d33.7321904!4d134.5308624!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11h3ngqn4h?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+      ],
+      "method": "Google マップの個別POI「弘法大師の石像」の座標。2019年2月の公開写真に白い立像と青灰色の壁が写り、原典の像と背景を照合。旧銭湯前の大師像という観光協会マップ記述も整合。",
+      "unresolved": [
+        "像の2026年現在の設置状態",
+        "入口・私有地境界",
+        "測量に基づく像中心ではない"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "note": "周辺路上のパノラマは実見したが、対象像そのものは画角内で確認できなかった。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "date": "2019-02",
+        "source": "Google マップ投稿写真",
+        "match": "原典の白い大師立像と壁面"
+      },
+      "currentInstallationStatus": "photo_confirmed_2019_not_current",
+      "sourcePages": [
+        3,
+        5,
+        6,
+        11
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "対象物付近の参考点（推定位置・入口未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中（施設代表点または過去の写真・資料による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "hebi-stone",
+      "name": "蛇責めの石",
+      "originalAuditName": "蛇責めの石",
+      "lat": 33.7289853,
+      "lng": 134.5313319,
+      "confidence": "high",
+      "pointType": "object_pin_approximate",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E8%9B%87%E8%B2%AC%E3%82%81%E3%81%AE%E7%9F%B3/@33.729002,134.5312672,5a,75y,107.33h,90t/data=!3m7!1e1!3m5!1sI1yQnp69VvzhnpLzB5tyvQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DI1yQnp69VvzhnpLzB5tyvQ%26yaw%3D107.33086!7i16384!8i8192!4m9!3m8!1s0x3552fce82a9b3a95:0x737dc10317d4026b!8m2!3d33.7289853!4d134.5313319!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11gfk6_rt8",
+        "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html"
+      ],
+      "method": "個別POI座標を採用。2025年2月のStreet Viewで駅前広場の植込み内にある石・解説板・周辺配置を原典写真と照合。県立図書館収録紀要も駅前広場への移設を記述。",
+      "unresolved": [
+        "2025年2月以降の移動・工事は未確認",
+        "原典の効能表現は信仰・企画上の説明であり実証ではない"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": true,
+        "cameraLat": 33.729002,
+        "cameraLng": 134.5312672,
+        "panoId": "I1yQnp69VvzhnpLzB5tyvQ",
+        "note": "地図採用点はカメラ位置ではなく石の個別POI位置。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF写真とGoogle Street View",
+        "match": "石・説明板・駅前植栽"
+      },
+      "currentInstallationStatus": "streetview_confirmed_2025_02",
+      "sourcePages": [
+        3,
+        5,
+        7
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "対象物付近の参考点（推定位置・入口未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": true,
+      "confidenceLabel": "高（対象物の画像照合あり。実測座標ではない）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "koboji-stones",
+      "name": "弘法寺の法印石像・足型石",
+      "originalAuditName": "弘法寺の法印石像・足型石",
+      "lat": 33.7340726,
+      "lng": 134.5365881,
+      "confidence": "medium",
+      "pointType": "facility_reference_pin",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E5%BC%98%E6%B3%95%E5%AF%BA/@33.7337883,134.5362397,6a,75y,46.04h,90t/data=!3m7!1e1!3m5!1smqq6YVp_DubZsEiAjbBWBw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3Dmqq6YVp_DubZsEiAjbBWBw%26yaw%3D46.04181!7i16384!8i8192!4m9!3m8!1s0x3552fcd94bd782b1:0xe175870e989c72d2!8m2!3d33.7340726!4d134.5365881!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11bvvzjgfc?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://mapfan.com/spots/SY3H4,J,W37BA0"
+      ],
+      "method": "Google マップ「弘法寺」の施設代表点を独立に再確認。原典の法印像・足型石は寺に付属するが、それぞれの像位置はこの調査では測定していない。MapFanにも同寺の住所・周辺点があり敷地を裏付け。",
+      "unresolved": [
+        "法印石像の個別位置",
+        "足型石の個別位置と現存",
+        "参拝可能な入口"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7337883,
+        "cameraLng": 134.5362397,
+        "note": "南西の路上から建物と寺院屋根を確認。法印像・足型石自体は未確認。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p8",
+        "match": "原典対象は寺院付属の像・石"
+      },
+      "currentInstallationStatus": "site_confirmed_object_not_verified",
+      "sourcePages": [
+        3,
+        5,
+        8
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "displayPointLabel": "弘法寺の施設代表点（入口・対象石像の位置未確認）",
+      "coordinateNote": "Googleの施設登録ピン。入口、建物中心、敷地中心、石像位置のいずれであるかは断定できない。",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中（施設代表点または過去の写真・資料による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "kannonji-statue",
+      "name": "観音寺のぼけ封じ観音尊",
+      "originalAuditName": "観音寺のぼけ封じ観音尊",
+      "lat": 33.7338697,
+      "lng": 134.5353477,
+      "confidence": "medium",
+      "pointType": "facility_reference_pin",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E4%BA%8C%E8%A6%8B%E5%B1%B1%E8%A6%B3%E9%9F%B3%E5%AF%BA/@33.7337519,134.5353422,6a,75y,1.91h,90t/data=!3m7!1e1!3m5!1sXzQp8pcYq6SnhaGqD-JP5w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DXzQp8pcYq6SnhaGqD-JP5w%26yaw%3D1.9051746!7i16384!8i8192!4m9!3m8!1s0x3552fcdea7558c13:0x6bea464a1fcce341!8m2!3d33.7338697!4d134.5353477!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F1tfwmsdf?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://hotokami.jp/area/tokushima/Hrptm/Hrptmtr/Dzpyg/23531/"
+      ],
+      "method": "Google マップ「二見山観音寺」の施設代表点を独立に再確認。2025年2月のStreet Viewで寺の入口・正面を実見したが、境内の対象観音像の位置は未分離。",
+      "unresolved": [
+        "対象観音像そのものの位置・現存",
+        "原典の名称は信仰上の呼称であり医学的な効能を示さない"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7337519,
+        "cameraLng": 134.5353422,
+        "note": "寺院入口・正面の建築は確認。観音像自体は未確認。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p9",
+        "match": "寺院名と原典の対応"
+      },
+      "currentInstallationStatus": "site_confirmed_object_not_verified",
+      "sourcePages": [
+        3,
+        5,
+        9
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "displayPointLabel": "観音寺の施設代表点（入口・対象石像の位置未確認）",
+      "coordinateNote": "Googleの施設登録ピン。入口、建物中心、敷地中心、石像位置のいずれであるかは断定できない。",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中（施設代表点または過去の写真・資料による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "hachiman-sazare",
+      "name": "日和佐八幡神社のさざれ石",
+      "originalAuditName": "日和佐八幡神社のさざれ石",
+      "lat": 33.7350018,
+      "lng": 134.5403357,
+      "confidence": "medium",
+      "pointType": "facility_reference_pin",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E6%97%A5%E5%92%8C%E4%BD%90%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE/@33.7344783,134.5402141,9a,75y,10.79h,90t/data=!3m7!1e1!3m5!1smnytBlL4VC-vtQf2tcRwoQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DmnytBlL4VC-vtQf2tcRwoQ%26yaw%3D10.792484!7i16384!8i8192!4m9!3m8!1s0x3552fcd81878b5ab:0x61c674648cc10d26!8m2!3d33.7350018!4d134.5403357!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11cm1vl22m?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/37/370000162300.html",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+      ],
+      "method": "Google マップの神社の施設代表点を独立に再確認。CODH観光資源ポイントも同神社を33.735065,134.540512付近に記載。Street Viewでは境内と社殿を確認したが、さざれ石単体は判別できず、神社施設代表点として扱う。",
+      "unresolved": [
+        "さざれ石そのものの境内位置・現存",
+        "最寄り参拝入口"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7344783,
+        "cameraLng": 134.5402141,
+        "note": "境内から社殿・鳥居を実見。さざれ石は未確認。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5,p6,p11",
+        "match": "原典は神社内の石を掲載"
+      },
+      "currentInstallationStatus": "site_confirmed_object_not_verified",
+      "sourcePages": [
+        3,
+        5,
+        6,
+        11
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "displayPointLabel": "日和佐八幡神社の施設代表点（入口・さざれ石の位置未確認）",
+      "coordinateNote": "Googleの施設登録ピン。入口、建物中心、敷地中心、石像位置のいずれであるかは断定できない。",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中（施設代表点または過去の写真・資料による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "kitamuki-jizo",
+      "name": "北向き地蔵",
+      "originalAuditName": "北向き地蔵",
+      "lat": 33.7327344,
+      "lng": 134.5373353,
+      "confidence": "medium_high",
+      "pointType": "shrine_pin_approximate",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E5%8C%97%E5%90%91%E5%9C%B0%E8%94%B5%EF%BC%88%E7%BE%8E%E6%B3%A2%E7%94%BA%EF%BC%89/@33.7327914,134.53733,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICqzauvzgE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9RErnibPgZ1VfYYVzfvf4kRcchF-MdPD1odBIFgdZmo-rvNKS0NHQ0yxmTd3rz09IuJlI5btBcxSrWDBqL1BSVQlthrrmRurkgTqVqNQ1n82k1UxBY4_NoZRySZXiSGmgLv45ZJ1g%3Dw203-h360-k-no!7i3096!8i5504!4m9!3m8!1s0x3552fdccda5fd38b:0x3cf2724277d8d8b9!8m2!3d33.7327344!4d134.5373353!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11ff1v_vbp?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf"
+      ],
+      "method": "Google マップ個別POI「北向地蔵（美波町）」の座標。2021年6月の公開写真に、原典p9の木造小祠・灰色瓦の切妻屋根・赤幕・ブロック壁・背後の家屋と同じ構成を確認。",
+      "unresolved": [
+        "2021年6月以後の祠内の像の状態",
+        "私有地境界・通行可能範囲",
+        "測量位置ではない"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7328015,
+        "cameraLng": 134.5373717,
+        "note": "近接路地のパノラマは実見。祠は壁の向こうで直接確認できなかった。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "date": "2021-06",
+        "source": "Google マップ投稿写真",
+        "match": "小祠の屋根・木部・幕と周囲の壁"
+      },
+      "currentInstallationStatus": "photo_confirmed_2021_not_current",
+      "sourcePages": [
+        5,
+        9
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "祠付近の参考点（推定位置・入口未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中〜高（公表地点・写真等による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "koibito-fudo",
+      "name": "恋人岬のお不動さん（波切不動明王）",
+      "originalAuditName": "恋人岬のお不動さん",
+      "lat": 33.7360667,
+      "lng": 134.5423243,
+      "confidence": "medium_high",
+      "pointType": "statue_area_pin_approximate",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E6%B3%A2%E5%88%87%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.736187,134.5422938,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDa8NyFngE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9ShAestVIrOAeouf6PynCX-5N76g6mt57qgGDer5nxrubnU1-iJZ8B2_LOH6ftztCIt0a0Udvu6q0AtlmBsqtyhL0qyVv6f6rzKddw-i87h1LjH_HyPFmc-ig1GG0mWYGbVueN4FA%3Dw203-h152-k-no!7i4032!8i3024!4m9!3m8!1s0x3552fd0b5e5a3f9b:0x54a2cb575c96088!8m2!3d33.7360667!4d134.5423243!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11fk1ssw7x?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://www.google.com/maps/place/%E6%B3%A2%E5%88%87%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.7361907,134.5422668,21a,75y,158.35h,90t/data=!3m7!1e1!3m5!1s8uCeZUFVZBEwf-MtepHhxg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D8uCeZUFVZBEwf-MtepHhxg%26yaw%3D158.34918!7i16384!8i8192!4m9!3m8!1s0x3552fd0b5e5a3f9b:0x54a2cb575c96088!8m2!3d33.7360667!4d134.5423243!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11fk1ssw7x?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://cairns-sistercity.town.minami.lg.jp/introduce/introduce-of-minami"
+      ],
+      "method": "個別POI「波切不動明王」の座標を独立に再確認。2021年8月の公開写真で海岸道路脇に岩へ彫られた石仏を実見。観光散策地図の恋人岬脇の波切不動の記述、原典p5の配置と対応する。",
+      "unresolved": [
+        "2021年8月以後の像の状態",
+        "原典p10の「縁切り石」は完成イメージであり、実際の設置を確認したものではない"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7361907,
+        "cameraLng": 134.5422668,
+        "note": "近くの海岸道路・ガードレール・海を確認したが像は画角で確認できず、像の裏付けは2021年公開写真。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "date": "2021-08",
+        "source": "Google マップ投稿写真",
+        "match": "海岸道路脇の岩刻石仏群"
+      },
+      "currentInstallationStatus": "photo_confirmed_2021_not_current",
+      "sourcePages": [
+        3,
+        5,
+        10
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "石仏付近の参考点（推定位置・入口未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中〜高（公表地点・写真等による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "pdf5-fudo",
+      "name": "不動明王（奥河内井ノ上、原典の邸名は要確認）",
+      "originalAuditName": "不動明王（邸名の判読要確認）",
+      "lat": 33.7381009,
+      "lng": 134.5332675,
+      "confidence": "high",
+      "pointType": "object_pin_approximate",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E4%B8%8D%E5%8B%95%E6%98%8E%E7%8E%8B/@33.738172,134.5331985,10a,75y,136.91h,90t/data=!3m7!1e1!3m5!1s-wv1mt7ZhNZvs__kWqpoNA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D-wv1mt7ZhNZvs__kWqpoNA%26yaw%3D136.90694!7i16384!8i8192!4m13!1m2!2m1!1z576O5rOi55S6IOS4jeWLleaYjueOiw!3m9!1s0x3552fd003c76eb03:0x50f57577c6ec7c68!8m2!3d33.7381009!4d134.5332675!10e5!14m1!1BCgIgARICCAI!15sChbnvo7ms6LnlLog5LiN5YuV5piO546LkgEQcGxhY2Vfb2Zfd29yc2hpcOABAA!16s%2Fg%2F11vq222w19?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "method": "Google マップの奥河内井ノ上「不動明王」の個別POI座標。2025年2月Street Viewで赤い光背の不動像、その左の石塔・供物台・背後の擁壁と岩を実見。原典p5写真と複数の形状・配置が一致し、川沿い上流の引出し位置とも整合。",
+      "unresolved": [
+        "原典の邸名は「玉木邸」の可能性があるが未確定。確定名として採用しない",
+        "所有者・一般公開範囲",
+        "2025年2月以後の変更"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": true,
+        "cameraLat": 33.738172,
+        "cameraLng": 134.5331985,
+        "panoId": "-wv1mt7ZhNZvs__kWqpoNA",
+        "note": "カメラ位置ではなく対象の個別POI位置を採用。原典の赤い幟はこの画像では見えないが、像と石塔・擁壁は一致。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5とGoogle Street View",
+        "match": "赤い光背・左の石塔・供物台・岩壁"
+      },
+      "currentInstallationStatus": "streetview_confirmed_2025_02",
+      "sourcePages": [
+        5
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": true,
+      "nameStatus": "descriptive_name_owner_label_unresolved",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "対象物付近の参考点（推定位置・入口未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": true,
+      "confidenceLabel": "高（対象物の画像照合あり。実測座標ではない）",
+      "coordinateEstimated": true,
+      "navigationNote": "参考地点までの目安。入口は未確認。公道側から確認し、寺社・施設の参拝条件や私有地の境界に従う。",
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "pdf5-office-stone",
+      "name": "日和佐陣屋的石",
+      "originalAuditName": "役場へ線が伸びる石碑（正式名の判読要確認）",
+      "lat": 33.7343464,
+      "lng": 134.5350971,
+      "confidence": "medium",
+      "pointType": "historical_object_pin",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://www.google.com/maps/place/%E6%97%A5%E5%92%8C%E4%BD%90%E9%99%A3%E5%B1%8B%E7%9A%84%E7%9F%B3/@33.7344128,134.5350295,6a,75y,90t/data=!3m7!1e1!3m5!1sNEDTRuXcfgFZdZdDERuZTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DNEDTRuXcfgFZdZdDERuZTQ%26yaw%3D0!7i16384!8i8192!4m9!3m8!1s0x3552fd4dff46fc95:0x7ff72bcbd11f310!8m2!3d33.7343464!4d134.5350971!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11kc2dfsng?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://www.town.minami.lg.jp/fs/5/1/9/5/2/8/_/%E4%BB%A4%E5%92%8C4%E5%B9%B4%E5%BA%A6%E5%BA%83%E5%A0%B1%E3%81%BF%E3%81%AA%E3%81%BF1%E6%9C%88%E5%8F%B7No%2C202_18-19.pdf"
+      ],
+      "method": "原典の役場へ伸びる石碑を観光散策地図と広報みなみ2023年1月号の「日和佐陣屋的石」と対応。Google個別POIの旧位置を記録した。ただしGoogleでは「閉業」と表示され、2025年2月の周辺Street Viewでも石自体を再確認できなかった。閉業表示は撤去の確証ではない。",
+      "unresolved": [
+        "現在の設置場所",
+        "移設・撤去の有無",
+        "役場敷地内で現在見学できるか"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "cameraLat": 33.7344128,
+        "cameraLng": 134.5350295,
+        "note": "役場前の駐車場付近は確認。的石は直接確認できない。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5,p8と旧観光地図",
+        "match": "的石の名称と役場への配置"
+      },
+      "currentInstallationStatus": "uncertain_google_permanently_closed",
+      "sourcePages": [
+        5
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "historical_location_current_unverified",
+      "recommendedMapVisibility": false,
+      "recommendedNavigation": false,
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "旧位置の参考点（現存・公開状況未確認）",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中（施設代表点または過去の写真・資料による同定）",
+      "coordinateEstimated": true,
+      "navigationNote": "現在の設置・公開状況を確認するまで通常の地図ピン・経路案内を出さない。",
+      "publishRecommendation": "historical_reference_only_hide_normal_pin_and_navigation",
+      "currentStatusNote": "Google マップに「閉業」表示あり。実際の営業・公開・設置状況、移設・撤去の有無は未確定。通常営業中・現在見学可能とは表示せず、旧位置の参考情報として保存する。"
+    },
+    {
+      "id": "pdf5-mountain-daishi",
+      "name": "後山の大岩",
+      "originalAuditName": "山の大師（山名の判読要確認）",
+      "lat": 33.7371574,
+      "lng": 134.536077,
+      "confidence": "medium_high",
+      "pointType": "published_walking_route_waypoint",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://moshicom.com/course/4925",
+        "https://www.town.minami.lg.jp/docs/403.html",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://www.pref.tokushima.lg.jp/file/html/835335.pdf"
+      ],
+      "method": "原典p5の文字は「後山『大岩』」と読め、写真も岩塊であり、旧監査名「山の大師」は誤読と判断。e-moshicom「四国の道（大岩コース）」の公開地図で名称「大岩（頂上付近）」と対になった座標を採用。投稿者はNPO新日本歩く道紀行推進機構、問い合わせ先は美波町観光協会。町の四国のみち案内と散策地図も整合。",
+      "unresolved": [
+        "岩の中心の測量座標ではない",
+        "2026年現在の登山道・展望岩の安全状態",
+        "原典写真の撮影点は未確定"
+      ],
+      "streetView": {
+        "inspected": false,
+        "objectVisuallyConfirmed": false,
+        "note": "山上の対象岩のStreet View確認はしていない。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5",
+        "match": "山上の岩塊と「大岩」の文字"
+      },
+      "currentInstallationStatus": "published_landmark_current_access_not_verified",
+      "sourcePages": [
+        5
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "estimated_reference_point",
+      "recommendedMapVisibility": true,
+      "recommendedNavigation": false,
+      "nameStatus": "corrected_from_source_and_public_trail",
+      "navigationNote": "山上の岩の地点であり道路入口ではない。登山口と徒歩ルートの別案内を要する。",
+      "displayPointLabel": "大岩・頂上付近の参考点（岩の中心・登山口ではない）",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": false,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "中〜高（公表地点・写真等による同定）",
+      "coordinateEstimated": true,
+      "publishRecommendation": "reference_pin_with_uncertainty_label"
+    },
+    {
+      "id": "pdf5-riverside-buddha",
+      "name": "旧厄除橋南側の道標・石仏（名称読取候補）",
+      "originalAuditName": "川沿いの祠・石仏（正式名の判読要確認）",
+      "lat": null,
+      "lng": null,
+      "confidence": "low",
+      "pointType": "unresolved_object",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge",
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://www.google.com/maps/place/%E5%8E%84%E9%99%A4%E6%A9%8B/@33.7321094,134.5335021,8a,75y,124.26h,90t/data=!3m7!1e1!3m5!1slmwPYqDK3wyfBx4W-t486w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DlmwPYqDK3wyfBx4W-t486w%26yaw%3D124.25701975805927!7i16384!8i8192!4m9!3m8!1s0x3552fdb974466a9f:0x935c764fb6dac2ac!8m2!3d33.7324529!4d134.5336869!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11rg8ct91l?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "method": "原典p5の青い引出し線は公民館付近・旧橋南端に向かい、ラベルは「旧厄除橋南側『道標・石仏』」と読める。公式美波遺産の厄除橋記事が現橋より東の旧橋たもとの遍路道標を裏付ける。現在の厄除橋南端の2025年2月Street Viewを回転・移動して確認したが、原典p7の白い祠そのものは発見できず、本座標は保留。",
+      "unresolved": [
+        "原典の正確な名称",
+        "祠・道標・石仏の個別位置と現存",
+        "原典写真の対象と現地道標の同一性"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "note": "現橋南端と南側道路から周辺を実見したが原典の白い祠は見つからず。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5,p7",
+        "match": "原典の祠の形は確認できるが現地画像との一致未成立"
+      },
+      "currentInstallationStatus": "not_verified",
+      "sourcePages": [
+        5
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "withheld",
+      "recommendedMapVisibility": false,
+      "recommendedNavigation": false,
+      "nameStatus": "provisional_reading",
+      "candidateCoordinates": [
+        {
+          "lat": 33.7321,
+          "lng": 134.5339,
+          "confidence": "low",
+          "pointType": "search_area_only",
+          "approximateSearchRadiusM": 80,
+          "method": "現橋南端より東側という記事と原典概略図からの粗い探索範囲。物体位置ではない。",
+          "publish": false
+        }
+      ],
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "位置未確定・地図ピン保留",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "低（対象物の位置が未特定のため保留）",
+      "coordinateEstimated": true,
+      "navigationNote": "位置未確定のため地図ピン・経路案内を出さない。候補座標や閲覧・撮影位置を対象座標へ転記しない。",
+      "publishRecommendation": "hold_pin_and_navigation"
+    },
+    {
+      "id": "pdf5-temple-stone",
+      "name": "極楽寺跡の石碑",
+      "originalAuditName": "寺跡の石碑（寺名の判読要確認）",
+      "lat": null,
+      "lng": null,
+      "confidence": "low",
+      "pointType": "unresolved_object",
+      "estimated": true,
+      "evidenceUrls": [
+        "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+        "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html",
+        "https://www.google.com/maps/@33.73345,134.5388,188m/data=!3m1!1e3",
+        "https://www.google.com/maps/@33.7328941,134.5392845,5a,75y,295.63h,90t/data=!3m7!1e1!3m5!1sXUznNSA2rHNRS0iGyRrWng!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DXUznNSA2rHNRS0iGyRrWng%26yaw%3D295.62986477757227!7i16384!8i8192"
+      ],
+      "method": "原典写真の「極楽寺」の寺碑、観光散策地図の「極楽寺跡」、県立図書館紀要の日和佐浦の廃寺記載から寺名をほぼ解消。原典地図では日和佐グラウンド西〜南側の墓地。調査ではGoogle航空写真と2025年2月Street Viewを実見したが墓地内に対象画像がなく、石碑の個別位置を特定できないため座標保留。",
+      "unresolved": [
+        "石碑そのものの位置・現存",
+        "墓地のどの入口から行けるか",
+        "敷地立入可否"
+      ],
+      "streetView": {
+        "inspected": true,
+        "imageryDate": "2025-02",
+        "objectVisuallyConfirmed": false,
+        "note": "周囲の道路は実見、墓地内はStreet Viewなし。"
+      },
+      "photoEvidence": {
+        "inspected": true,
+        "source": "提供PDF p5",
+        "match": "石碑の寺名「極楽寺」と原典地図の寺跡を照合。宗派文字は確定データとして採用しない。"
+      },
+      "currentInstallationStatus": "not_verified",
+      "sourcePages": [
+        5
+      ],
+      "sourcePeriod": "平成30年度（2018年度）の計画",
+      "coordinateStatus": "withheld",
+      "recommendedMapVisibility": false,
+      "recommendedNavigation": false,
+      "nameStatus": "substantially_resolved_coordinates_withheld",
+      "rejectedMatches": [
+        {
+          "name": "海見山極楽寺（伊座利）",
+          "reason": "同名の別寺。原典対象の日和佐浦ではない。"
+        }
+      ],
+      "coordinateNote": "上記航空写真URLとStreet View URLの@座標は閲覧中心/撮影位置であり、対象石碑の座標として利用しない。",
+      "areaNote": "日和佐浦・日和佐グラウンド西側〜南側の墓地周辺。旧寺跡の石碑の点は未特定。",
+      "category": "power",
+      "categoryLabel": "パワースポット",
+      "coordinateSystem": "WGS84",
+      "checkedAt": "2026-10-14",
+      "displayPointLabel": "位置未確定・地図ピン保留",
+      "entranceVerified": false,
+      "objectCenterMeasured": false,
+      "imageReuseStatus": "permission_not_verified",
+      "streetViewReviewed": true,
+      "streetViewObjectConfirmed": false,
+      "confidenceLabel": "低（対象物の位置が未特定のため保留）",
+      "coordinateEstimated": true,
+      "navigationNote": "位置未確定のため地図ピン・経路案内を出さない。候補座標や閲覧・撮影位置を対象座標へ転記しない。",
+      "publishRecommendation": "hold_pin_and_navigation"
+    }
+  ]
+}

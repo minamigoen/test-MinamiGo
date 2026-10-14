@@ -9,7 +9,7 @@ with sync_playwright() as p:
   records=[s for s in snapshot['spots'] if s['category']==category]
   page.get_by_role('button',name=label,exact=True).click();expect(page.locator('.card')).to_have_count(count)
   page.locator('#map-view').click();expect(page.locator('#map-list button')).to_have_count(count)
-  pins=sum(s.get('lat') is not None for s in records);expect(page.locator('.map-pin')).to_have_count(pins) if pins else expect(page.locator('#map')).not_to_be_visible()
+  pins=sum(s.get('lat') is not None and s.get('mapVisibility')!='hidden' for s in records);expect(page.locator('.map-pin')).to_have_count(pins) if pins else expect(page.locator('#map')).not_to_be_visible()
   pending=[s for s in records if s.get('lat') is None]
   if pending:
    spot=pending[0];page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('dialog')).to_be_visible();expect(page.locator('#detail-title')).to_have_text(spot['name']);expect(page.locator('#detail-category')).to_have_text(label);page.locator('#close-detail').click()

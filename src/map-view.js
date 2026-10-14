@@ -1,4 +1,4 @@
-import {CATEGORIES} from './data.js';
+import {CATEGORIES,isVisibleMapSpot} from './data.js';
 
 export const AERIAL_URL='https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg';
 const aerialCredit='出典：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a> / Landsat8 (GSI, TSIC, GEO Grid/AIST; USGS), GEBCO';
@@ -14,7 +14,7 @@ export function setMapBase(value){
 }
 export function renderSpotMap(items,{tileUrl,onSelect,offline=false}){
  const canvas=document.getElementById('map'),status=document.getElementById('map-status'),list=document.getElementById('map-list');
- const points=items.filter(s=>s.lat!==undefined);
+ const points=items.filter(isVisibleMapSpot);
  canvas.hidden=!points.length||!navigator.onLine||offline;
  if(!points.length)status.textContent='座標のない場所は下の一覧から詳細・住所検索を利用できます。';
  else if(!navigator.onLine||offline)status.textContent='オフラインのため地図を表示できません。下の一覧から詳細を確認できます。';
