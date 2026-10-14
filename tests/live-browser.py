@@ -51,7 +51,7 @@ with sync_playwright() as p:
  page.locator('#base-aerial').click();expect(page.locator('#base-aerial')).to_have_attribute('aria-pressed','true');expect(page.locator('#map-imagery-note')).to_be_visible()
  expect(page.locator('.leaflet-control-attribution')).to_contain_text('国土地理院')
  page.screenshot(path=str(output/'live-aerial.png'))
- page.locator('#map-list button').first.click();expect(page.locator('dialog')).to_be_visible();page.locator('#close-detail').click();expect(page.locator('dialog')).not_to_be_visible();page.locator('#map').scroll_into_view_if_needed();page.locator('.reference-pin').first.click();expect(page.locator('dialog')).to_be_visible();expect(page.locator('#detail-fields')).to_contain_text('参考座標');expect(page.locator('#detail-media')).to_contain_text('写真の出典')
+ page.locator('#map-list button').first.click();expect(page.locator('dialog')).to_be_visible();page.locator('#close-detail').click();expect(page.locator('dialog')).not_to_be_visible();page.locator('#map').scroll_into_view_if_needed();page.locator('.reference-pin').first.focus();page.locator('.reference-pin').first.press('Enter');expect(page.locator('dialog')).to_be_visible();expect(page.locator('#detail-fields')).to_contain_text('参考座標');expect(page.locator('#detail-media')).to_contain_text('写真の出典')
  page.screenshot(path=str(output/'live-stay-detail.png'));page.locator('#close-detail').click()
  page.locator('#base-map').click();expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap')
  page.locator('#cards-view').click();page.locator('#reset').click()
