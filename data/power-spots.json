@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-14T09:00:00Z",
+  "spots": [
+    {
+      "id": "odaishi-statue",
+      "name": "お大師石像",
+      "category": "powerspot",
+      "description": "2018年計画では日和佐温泉ゆかりの像として紹介。地域資料によると、旧温泉建物内から桜町通り沿いに移されたとのこと。石像の現存・最新位置は未確認です。",
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/radium-onsen",
+      "source": "平成30年度事業計画（提供資料） 3・5・6・11頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "旧温泉建物から桜町通り沿いに移したとの地域資料があります。石像の最新位置・現存は画像で特定できていません。公道から確認し、旧温泉敷地へ無断で入らないでください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lkembx7rrE9LXg5ZJL073Q&viewpoint=33.732145%2C134.5308973&heading=339.04678&pitch=0&fov=75",
+      "mapQuery": "弘法大師の石像 徳島県海部郡美波町奥河内寺前107",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hebi-stone",
+      "name": "蛇責めの石",
+      "category": "powerspot",
+      "description": "2018年の計画に登場する、日和佐駅前の石。伝承をたどる街歩きの対象として紹介されています。現況・正確な位置は未確認です。",
+      "url": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html",
+      "source": "平成30年度事業計画（提供資料） 3・5・7頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "2025年2月画像で駅前の石・植栽・説明板の区画を確認。個々の石の同定と最新の移設・工事は未確認です。植え込みに入らず、駅前通路の通行を妨げないでください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I1yQnp69VvzhnpLzB5tyvQ&viewpoint=33.729002%2C134.5312672&heading=107.33086&pitch=0&fov=75",
+      "mapQuery": "蛇責めの石 徳島県海部郡美波町奥河内 日和佐駅前",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "koboji-stones",
+      "name": "弘法寺の法印石像・足型石",
+      "category": "powerspot",
+      "description": "2018年の計画で、弘法寺の法印石像と足型石が紹介されています。資料の完成イメージは現在の整備状況を示すものではありません。",
+      "address": "徳島県海部郡美波町奥河内字本村70（弘法寺）",
+      "lat": 33.7340726,
+      "lng": 134.5365881,
+      "url": "https://www.katadeyakushi.com/library/5ebc917d1b102b713c249e72/5ebca224dcc04c127fd9f593.pdf",
+      "source": "平成30年度事業計画（提供資料） 3・5・8頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "寺院の入口周辺は2025年2月画像で確認。法印石像・足型石自体と拝観条件は未確認です。正面入口で案内を確認し、非公開区画へ立ち入らないでください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mqq6YVp_DubZsEiAjbBWBw&viewpoint=33.7337883%2C134.5362397&heading=46.04181&pitch=0&fov=75",
+      "mapQuery": "弘法寺 徳島県海部郡美波町奥河内字本村70",
+      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "mapScope": "surroundings",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "kannonji-statue",
+      "name": "観音寺のぼけ封じ観音尊",
+      "category": "powerspot",
+      "description": "2018年の計画に記載された像の名称です。信仰・伝承として紹介しており、医療効果を示す情報ではありません。現況・拝観可否は未確認です。",
+      "address": "徳島県海部郡美波町奥河内字本村78（観音寺）",
+      "lat": 33.7338697,
+      "lng": 134.5353477,
+      "url": "https://www.33kannon.net/cannonji",
+      "source": "平成30年度事業計画（提供資料） 3・5・9頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "寺院の正面外観を2025年2月画像で確認。観音像の現物・境内の公開範囲は未確認です。入口の案内に従ってください。「ぼけ封じ」は信仰上の名称で医療効果を保証しません。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XzQp8pcYq6SnhaGqD-JP5w&viewpoint=33.7337519%2C134.5353422&heading=1.9051746&pitch=0&fov=75",
+      "mapQuery": "二見山観音寺 徳島県海部郡美波町奥河内字本村78",
+      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "mapScope": "surroundings",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hachiman-sazare",
+      "name": "日和佐八幡神社のさざれ石",
+      "category": "powerspot",
+      "description": "2018年の計画で紹介された、日和佐八幡神社のさざれ石。看板や石柱の完成イメージは資料上の構想で、設置済みと確認できていません。",
+      "address": "徳島県海部郡美波町日和佐浦369（日和佐八幡神社）",
+      "lat": 33.7350018,
+      "lng": 134.5403357,
+      "url": "https://hiwasahachiman.com/access",
+      "source": "平成30年度事業計画（提供資料） 3・5・6・11頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "参道・境内前は2025年2月画像で確認。さざれ石の現物・位置は画像で特定できていません。現地案内と祭礼・神事の参拝動線を優先してください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mnytBlL4VC-vtQf2tcRwoQ&viewpoint=33.7344783%2C134.5402141&heading=10.792484&pitch=0&fov=75",
+      "mapQuery": "日和佐八幡神社 徳島県海部郡美波町日和佐浦369",
+      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "mapScope": "surroundings",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "kitamuki-jizo",
+      "name": "北向き地蔵",
+      "category": "powerspot",
+      "description": "2018年の資料の地図とイメージ図に紹介されています。谷屋周辺・個人宅周辺のため、場所と立ち入り可能な範囲の確認が必要です。私有地に入らないでください。",
+      "source": "平成30年度事業計画（提供資料） 5・9頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "2025年2月画像で住宅地の狭い路地を確認。地蔵の現物・入口・公私の境界・参拝許可は未確認です。現地へ直接誘導せず周辺画像のみ紹介します。私有地に入らず、車で路地に進入しないでください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JbGqsF17Zs5UxPH0l8Juzw&viewpoint=33.7328015%2C134.5373717&heading=270&pitch=0&fov=75",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "koibito-fudo",
+      "name": "恋人岬のお不動さん",
+      "category": "powerspot",
+      "description": "2018年の計画に登場するスポット。資料にある「縁切り石」は完成イメージで、実在や整備完了は未確認です。現在の訪問可能性を確認してからお出かけください。",
+      "lat": 33.7360667,
+      "lng": 134.5423243,
+      "source": "平成30年度事業計画（提供資料） 3・5（関連イメージ10）頁 ／ 周辺確認：Google Maps・Street View（2025年2月撮影、2026-10-12閲覧）",
+      "verifiedAt": "2026-10-12",
+      "accessNote": "画像は付近の車道と海岸方向です。不動像・展望台入口・階段・歩道・駐車場所は未確認です。徒歩経路検索は安全な入口を保証しません。道路上で止まらず現地の表示・通行規制を優先してください。",
+      "imageryDate": "2025-02",
+      "streetViewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8uCeZUFVZBEwf-MtepHhxg&viewpoint=33.7361907%2C134.5422668&heading=149.16254&pitch=0&fov=75",
+      "mapQuery": "波切不動明王 徳島県海部郡美波町日和佐浦",
+      "mapPlaceId": "ChIJmz9aXgv9UjURiGDJdbUsSgU",
+      "locationLabel": "Google Maps掲載地点（施設周辺・像や入口の位置は未確認）",
+      "mapScope": "surroundings",
+      "directionsMode": "walking",
+      "relatedLinks": [
+        {
+          "label": "美波遺産・地域の記憶を読む",
+          "url": "https://minami-heritage.yakuouji-monzenmachi.com/"
+        },
+        {
+          "label": "商店組合の散策絵地図（PDF）",
+          "url": "https://yakuouji-monzenmachi.com/wp-content/themes/yakuouji-monzenmachi1.0.0/assets/images/about/map.pdf"
+        }
+      ]
+    },
+    {
+      "id": "pdf5-fudo",
+      "name": "造成計画の未確認地点 1（名称確認待ち）",
+      "category": "powerspot",
+      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し1（原典監査で存在を確認、正式名未確定）",
+      "verifiedAt": "2026-10-14",
+      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。",
+      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。"
+    },
+    {
+      "id": "pdf5-office-stone",
+      "name": "造成計画の未確認地点 2（名称確認待ち）",
+      "category": "powerspot",
+      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し2（原典監査で存在を確認、正式名未確定）",
+      "verifiedAt": "2026-10-14",
+      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。",
+      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。"
+    },
+    {
+      "id": "pdf5-mountain-daishi",
+      "name": "造成計画の未確認地点 3（名称確認待ち）",
+      "category": "powerspot",
+      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し3（原典監査で存在を確認、正式名未確定）",
+      "verifiedAt": "2026-10-14",
+      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。",
+      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。"
+    },
+    {
+      "id": "pdf5-riverside-buddha",
+      "name": "造成計画の未確認地点 4（名称確認待ち）",
+      "category": "powerspot",
+      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し4（原典監査で存在を確認、正式名未確定）",
+      "verifiedAt": "2026-10-14",
+      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。",
+      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。"
+    },
+    {
+      "id": "pdf5-temple-stone",
+      "name": "造成計画の未確認地点 5（名称確認待ち）",
+      "category": "powerspot",
+      "description": "2018年度の造成計画5頁に写真付きの吹出しがあります。正式名称・所在・現況は未確定です。判読途中の名称を確定名として掲載していません。",
+      "source": "提供資料「平成30年度パワースポット造成事業計画」5頁・追加吹出し5（原典監査で存在を確認、正式名未確定）",
+      "verifiedAt": "2026-10-14",
+      "locationLabel": "位置確認待ち。原典に数値座標はなく、正式名称の判読も確認中。",
+      "accessNote": "この項目は資料中の地点候補です。独立した実在施設・見学可能地点としての確認は未完了。原典の高解像度版または資料提供者の名称・所在地確認が必要です。資料写真の転載許諾も未確認のため表示しません。"
+    }
+  ]
+}

@@ -15,6 +15,8 @@ jobs:
       - run: npm run build
       - run: python -m pip install playwright
       - run: python tests/browser.py
+      - run: python tests/datasets-browser.py
+      - run: python tests/map-browser.py
       - run: python tests/media-browser.py
       - run: python tests/shared-food-browser.py
       - run: python tests/sw-update.py

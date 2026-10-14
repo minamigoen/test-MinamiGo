@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright,expect
 url='https://minamigoen.github.io/test-MinamiGo/'
 output=Path('live-evidence');output.mkdir(exist_ok=True)
 with sync_playwright() as p:
- chrome=shutil.which('google-chrome') or shutil.which('chromium')
+ chrome=os.environ.get('MINAMIGO_CHROMIUM') or shutil.which('google-chrome') or shutil.which('chromium')
  b=p.chromium.launch(headless=True,**({'executable_path':chrome} if chrome else {}))
  expected=json.loads(Path('data/spots.json').read_text());c=b.new_context(viewport={'width':390,'height':844});page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
  for attempt in range(6):
@@ -36,6 +36,23 @@ with sync_playwright() as p:
  page.screenshot(path=str(output/'live-mobile-detail.png'))
  page.locator('#close-detail').click();page.wait_for_timeout(100)
  page.locator('#categories button').filter(has_text='食べる').click();foods=[s for s in snapshot['spots'] if s['category']=='food'];expect(page.locator('.card')).to_have_count(len(foods));assert page.locator('#locate').is_disabled()==(not any(s.get('lat') is not None for s in foods));page.locator('#food-type').select_option('カフェ');expect(page.locator('.card')).to_have_count(sum('カフェ' in s.get('foodType','').split('・') for s in foods));page.screenshot(path=str(output/'live-mobile-food.png'));expect(page.locator('#food-sync-info')).to_contain_text('共通データ',timeout=15000);page.locator('#reset').click();page.wait_for_timeout(100)
+
+ for category,label,count in [('heritage','美波遺産',12),('powerspot','パワースポット',12)]:
+  page.get_by_role('button',name=label,exact=True).click();expect(page.locator('.card')).to_have_count(count)
+  page.locator('#map-view').click();expect(page.locator('#map-list button')).to_have_count(count)
+  page.screenshot(path=str(output/f'live-{category}.png'));page.locator('#cards-view').click()
+ page.locator('#categories button').filter(has_text='泊まる').click();expect(page.locator('.card')).to_have_count(27)
+ page.locator('#map-view').click();expect(page.locator('.reference-pin')).to_have_count(24)
+ page.locator('#base-aerial').click();expect(page.locator('#base-aerial')).to_have_attribute('aria-pressed','true');expect(page.locator('#map-imagery-note')).to_be_visible()
+ expect(page.locator('.leaflet-control-attribution')).to_contain_text('国土地理院')
+ page.screenshot(path=str(output/'live-aerial.png'))
+ page.locator('#map-list button').first.click();expect(page.locator('dialog')).to_be_visible();page.locator('#close-detail').click();expect(page.locator('dialog')).not_to_be_visible();page.locator('#map').scroll_into_view_if_needed();page.locator('.reference-pin').first.click();expect(page.locator('dialog')).to_be_visible();expect(page.locator('#detail-fields')).to_contain_text('参考座標');expect(page.locator('#detail-media')).to_contain_text('掲載元の写真を開く')
+ page.screenshot(path=str(output/'live-stay-detail.png'));page.locator('#close-detail').click()
+ page.locator('#base-map').click();expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap')
+ page.locator('#cards-view').click();page.locator('#reset').click()
+ expect(page.locator('#town-photo img')).to_be_visible();assert page.locator('#town-photo img').evaluate('(i)=>i.complete && i.naturalWidth>0')
+ for width in [320,390,768,1440]:
+  page.set_viewport_size({'width':width,'height':900});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
  page.locator('.save').first.click();page.locator('a[data-page="saved"]').click();expect(page.locator('.card')).to_have_count(1)
  page.evaluate('navigator.serviceWorker.ready');page.reload();page.wait_for_selector('.card');expect(page.locator('.card')).to_have_count(1)
  scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)');assert scope==url
@@ -43,5 +60,5 @@ with sync_playwright() as p:
  desktop=b.new_context(viewport={'width':1440,'height':1000});dp=desktop.new_page();dp.goto(url,wait_until='domcontentloaded');dp.wait_for_selector('.card');assert dp.evaluate('document.documentElement.scrollWidth<=innerWidth');dp.screenshot(path=str(output/'live-desktop.png'))
  assert not errors,errors
  b.close()
-(output/'result.json').write_text(json.dumps({'url':url,'status':200,'public_spots':len(snapshot['spots']),'food_spots':len(foods),'public_photos':sum(bool(s.get('photoUrl')) for s in snapshot['spots']),'mobile':[390,844],'desktop':[1440,1000],'manifest_scope':'./','worker_scope':scope,'maps_links':links,'offline_reload':'passed','favorites_reload':'passed','private_fields':'excluded','javascript_errors':errors},ensure_ascii=False,indent=2))
+(output/'result.json').write_text(json.dumps({'url':url,'status':200,'public_spots':len(snapshot['spots']),'food_spots':len(foods),'heritage_spots':12,'power_spots':12,'stay_reference_pins':24,'stay_public_photo_links':20,'licensed_town_photo':'CC BY 2.0 / na0905','aerial_switch':'passed','public_photos':sum(bool(s.get('photoUrl')) for s in snapshot['spots']),'mobile':[390,844],'desktop':[1440,1000],'manifest_scope':'./','worker_scope':scope,'maps_links':links,'offline_reload':'passed','favorites_reload':'passed','private_fields':'excluded','javascript_errors':errors},ensure_ascii=False,indent=2))
 print('PASS: actual HTTPS test URL, reviewed cards, Maps/Street View links, scoped Service Worker, favorites persistence, offline reload, mobile/desktop screenshots; no private fields or JavaScript errors')
