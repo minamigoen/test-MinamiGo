@@ -16,7 +16,7 @@ with sync_playwright() as p:
  b=p.chromium.launch(headless=True,**({'executable_path':chrome} if chrome else {}))
  for width in [390,1440]:
   c=b.new_context(viewport={'width':width,'height':900},service_workers='block');page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-  page.goto(URL,wait_until='domcontentloaded');page.wait_for_selector('.card');page.wait_for_function('()=>/共通データ 37件|取得できません/.test(document.getElementById("food-sync-info").textContent)',timeout=20000)
+  page.goto(URL+'#explore?view=cards',wait_until='domcontentloaded');page.wait_for_selector('.card');page.wait_for_function('()=>/共通データ 37件|取得できません/.test(document.getElementById("food-sync-info").textContent)',timeout=20000)
   page.get_by_role('button',name='食べる',exact=True).click();page.locator('#map-view').click();page.locator('#map-section').scroll_into_view_if_needed();expect(page.locator('.map-pin')).to_have_count(37)
   selected=[]
   # Only click visible, unobscured real markers. No JS dispatch or programmatic selection.

@@ -32,3 +32,5 @@ dialog.map-detail{position:absolute;inset:auto 12px 12px auto;z-index:800;margin
 }
 
 .site-footer{display:block;padding:20px 0;margin-top:32px;font-size:13px;line-height:1.7}.site-footer p{margin:0 0 8px}.site-footer a{display:inline-flex;align-items:center;min-height:44px;margin:0 6px;text-underline-offset:3px;overflow-wrap:anywhere}.site-footer .rights-note{font-size:12px}.site-footer span{display:inline}@media(max-width:480px){.site-footer .source-note a{margin-left:0;margin-right:8px}.site-footer .source-note>span{display:none}.site-footer .source-note>a{display:flex;width:fit-content;max-width:100%}}
+
+.map-workspace.without-map{display:block}.map-workspace.without-map .map-sidebar{height:auto;max-height:70dvh}.map-workspace.without-map .map-list{grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}.map-pin.category-festival span{background:#835119}

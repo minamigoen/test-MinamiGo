@@ -7,11 +7,16 @@
       "name": "四季堂",
       "category": "heritage",
       "description": "1993年築の雑貨店舗。入母屋屋根と木製建具を備え、伝統的な木・土・紙の素材を生かしている。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前89",
+      "lat": 33.73249810985317,
+      "lng": 134.52907490862106,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shikido",
       "source": "美波遺産公式・認定No.373001の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shikido",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：四季堂。営業・公開条件は要確認。",
+      "mapQuery": "四季堂 〒779-2305　徳島県海部郡美波町奥河内字寺前89",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -25,23 +30,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22261"
         }
-      ],
-      "lat": 33.73249810985317,
-      "lng": 134.52907490862106,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前89",
-      "mapScope": "surroundings",
-      "mapQuery": "四季堂 〒779-2305　徳島県海部郡美波町奥河内字寺前89"
+      ]
     },
     {
       "id": "heritage-373002",
       "name": "旧竹川家住宅",
       "category": "heritage",
       "description": "平屋と2階建ての二棟からなる。平屋の下屋造と2階建ての出桁造が特徴で、2020年に多目的スペースとして活用された。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前88-3",
+      "lat": 33.732404699108436,
+      "lng": 134.52917655646527,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/takegawa",
       "source": "美波遺産公式・認定No.373002の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/takegawa",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：よろず屋弁財天。営業・公開条件は要確認。",
+      "mapQuery": "旧竹川家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前88-3",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -55,23 +60,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22264"
         }
-      ],
-      "lat": 33.732404699108436,
-      "lng": 134.52917655646527,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前88-3",
-      "mapScope": "surroundings",
-      "mapQuery": "旧竹川家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前88-3"
+      ]
     },
     {
       "id": "heritage-373003",
       "name": "旧八嶋電機店舗",
       "category": "heritage",
-      "description": "住宅から電器店になった建物。原典は2021年の出桁造復旧と庭整備を計画として説明しており、完了の確認は別途必要。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "description": "住宅から電器店になった建物。原典は2021年の出桁造復旧と庭整備を計画として説明しており、完了の確認は別途必要。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。\n現店舗の観光・体験案内：遊べるおみやげハウス「日和佐日和」。内容・実施条件は関連案内をご確認ください。",
+      "address": "徳島県海部郡美波町奥河内字寺前229-3",
+      "lat": 33.7321353,
+      "lng": 134.5295354,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima",
       "source": "美波遺産公式・認定No.373003の個別解説（独自要約）。座標：現店舗の公式Mapリンク（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Mapsリンクの遷移先place URLにある対象地点座標（!3d/!4d）を抽出。UR公式記事で旧八嶋電機から日和佐日和への改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：遊べるおみやげハウス 日和佐日和。営業・公開条件は要確認。",
+      "mapQuery": "旧八嶋電機店舗 徳島県海部郡美波町奥河内字寺前229-3",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -88,24 +93,28 @@
         {
           "label": "座標を照合した地図",
           "url": "https://maps.app.goo.gl/agE78hgRVoqiYJ8Y7"
+        },
+        {
+          "label": "町の体験・観光案内",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur6"
         }
-      ],
-      "lat": 33.7321353,
-      "lng": 134.5295354,
-      "address": "徳島県海部郡美波町奥河内字寺前229-3",
-      "mapScope": "surroundings",
-      "mapQuery": "旧八嶋電機店舗 徳島県海部郡美波町奥河内字寺前229-3"
+      ]
     },
     {
       "id": "heritage-373004",
       "name": "旧和楽亭店舗",
       "category": "heritage",
       "description": "飲食店として使われた建物。玄関の妻入切妻屋根が特徴で、原典ではタイ古式マッサージ店として紹介される。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前229-2",
+      "lat": 33.73209417072278,
+      "lng": 134.52978407800867,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/warakutei",
       "source": "美波遺産公式・認定No.373004の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/warakutei",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：あなんど。営業・公開条件は要確認。",
+      "mapQuery": "旧和楽亭店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前229-2",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -119,23 +128,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22262"
         }
-      ],
-      "lat": 33.73209417072278,
-      "lng": 134.52978407800867,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前229-2",
-      "mapScope": "surroundings",
-      "mapQuery": "旧和楽亭店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前229-2"
+      ]
     },
     {
       "id": "heritage-373005",
       "name": "旧永岡家住宅",
       "category": "heritage",
       "description": "1934年築の元遍路宿。出桁造・漆喰壁・押縁下見を備え、2018年の改修後は飲食と地域情報発信に活用された。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前229-1",
+      "lat": 33.73212063215295,
+      "lng": 134.52966092877625,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/nagaoka",
       "source": "美波遺産公式・認定No.373005の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/nagaoka",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：阿波尾鶏中華そば藍庵。営業・公開条件は要確認。",
+      "mapQuery": "旧永岡家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前229-1",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -153,23 +162,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22263"
         }
-      ],
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前229-1",
-      "lat": 33.73212063215295,
-      "lng": 134.52966092877625,
-      "mapScope": "surroundings",
-      "mapQuery": "旧永岡家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前229-1"
+      ]
     },
     {
       "id": "heritage-373006",
       "name": "旧一福屋店舗",
       "category": "heritage",
       "description": "元飲食店を2016年に改修した建物。看板状の覆い等を取り除き、深い庇と木製建具を生かした外観を復した。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前100-9",
+      "lat": 33.73226011573282,
+      "lng": 134.52976954059312,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ichifukuya",
       "source": "美波遺産公式・認定No.373006の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ichifukuya",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：まめぼんcafe。営業・公開条件は要確認。",
+      "mapQuery": "旧一福屋店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前100-9",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -187,23 +196,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22265"
         }
-      ],
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前100-9",
-      "lat": 33.73226011573282,
-      "lng": 134.52976954059312,
-      "mapScope": "surroundings",
-      "mapQuery": "旧一福屋店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前100-9"
+      ]
     },
     {
       "id": "heritage-373007",
       "name": "旧清水家住宅",
       "category": "heritage",
       "description": "1925年築の元遍路宿。住宅や大学サテライトオフィスとして使われ、2020年から企業交流施設になったと紹介される。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前228",
+      "lat": 33.73212646641036,
+      "lng": 134.52995942115308,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shimizu",
       "source": "美波遺産公式・認定No.373007の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shimizu",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：美波町門前町再生交流オフィス。営業・公開条件は要確認。",
+      "mapQuery": "旧清水家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前228",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -217,23 +226,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22266"
         }
-      ],
-      "lat": 33.73212646641036,
-      "lng": 134.52995942115308,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前228",
-      "mapScope": "surroundings",
-      "mapQuery": "旧清水家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前228"
+      ]
     },
     {
       "id": "heritage-373008",
       "name": "旧寺内家住宅",
       "category": "heritage",
       "description": "1921年築の元遍路宿を2018年に改修。広い間口の縦格子、吹抜けの内部空間、棟の鳥衾が特徴。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前179-1",
+      "lat": 33.7320550413868,
+      "lng": 134.5305425136857,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/terauchi",
       "source": "美波遺産公式・認定No.373008の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/terauchi",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：at Teramae。営業・公開条件は要確認。",
+      "mapQuery": "旧寺内家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前179-1",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -247,23 +256,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22267"
         }
-      ],
-      "lat": 33.7320550413868,
-      "lng": 134.5305425136857,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前179-1",
-      "mapScope": "surroundings",
-      "mapQuery": "旧寺内家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前179-1"
+      ]
     },
     {
       "id": "heritage-373009",
       "name": "旧旅館櫻屋",
       "category": "heritage",
       "description": "1910年築の元遍路宿。桜の彫刻を組み合わせた出格子などが特徴で、2019年に古民家再生事業で改修された。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "徳島県海部郡美波町奥河内寺前106-2",
+      "lat": 33.7322893,
+      "lng": 134.5306888,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
       "source": "美波遺産公式・認定No.373009の個別解説（独自要約）。座標：現店舗の公式Mapリンク（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。2025年2月Street Viewで建物外観を照合。入口・内部公開範囲は未確認。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n店舗公式サイトのGoogle Maps placeリンクの対象地点座標（!3d/!4d）を抽出。クラウドブラウザでGoogle Mapsの施設名・番地・公式サイトを照合。UR公式記事で旧旅館櫻屋からHWDTへの改修を照合。地図の表示中心@座標を対象地点座標と取り違えない。\n現在の用途の参照名：HWDT Leather Showroom。営業・公開条件は要確認。\n2025年2月Street Viewを実見し、桜の彫刻・出格子・HWDT表示のある建物正面を照合。入口の緯度経度は測定していない。カメラ位置は施設座標に代用しない。",
+      "mapQuery": "旧旅館櫻屋 徳島県海部郡美波町奥河内寺前106-2",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。2025年2月Street Viewで建物外観を照合。入口・内部公開範囲は未確認。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -285,23 +294,23 @@
           "label": "Street View外観照合（2025年2月・入口未測定）",
           "url": "https://www.google.com/maps/place/HWDT+Leather+Showroom/@33.7321467,134.5306556,5a,75y,10.78h,90t/data=!3m7!1e1!3m5!1snPYDGRGzy1-qHIPIQM6OdQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DnPYDGRGzy1-qHIPIQM6OdQ%26yaw%3D10.783873!7i16384!8i8192!4m9!3m8!1s0x3552fdc0d31024a5:0x4e56631f5a4c6ffa!8m2!3d33.7322893!4d134.5306888!10e5!14m1!1BCgIgARICCAI!16s%2Fg%2F11t4fz86t0"
         }
-      ],
-      "lat": 33.7322893,
-      "lng": 134.5306888,
-      "address": "徳島県海部郡美波町奥河内寺前106-2",
-      "mapScope": "surroundings",
-      "mapQuery": "旧旅館櫻屋 徳島県海部郡美波町奥河内寺前106-2"
+      ]
     },
     {
       "id": "heritage-373010",
       "name": "大黒家住宅",
       "category": "heritage",
       "description": "通り側の平屋と奥の2階建てを一体化した住宅。狭い間口から奥へ広がる平面と出格子が特徴。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前177",
+      "lat": 33.73207263156896,
+      "lng": 134.53084985387198,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/daikoku",
       "source": "美波遺産公式・認定No.373010の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/daikoku",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：大黒家住宅。営業・公開条件は要確認。",
+      "mapQuery": "大黒家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前177",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -315,23 +324,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22268"
         }
-      ],
-      "lat": 33.73207263156896,
-      "lng": 134.53084985387198,
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前177",
-      "mapScope": "surroundings",
-      "mapQuery": "大黒家住宅 〒779-2305　徳島県海部郡美波町奥河内字寺前177"
+      ]
     },
     {
       "id": "heritage-373011",
       "name": "旧市天堂店舗",
       "category": "heritage",
       "description": "1919年築の元材木問屋で、後に和菓子店となった。さくら庵として活用され、2019年に宿泊・飲食等の複合施設に改修された。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前114-6",
+      "lat": 33.732056537806024,
+      "lng": 134.53217873544352,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ittendo",
       "source": "美波遺産公式・認定No.373011の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ittendo",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：さくら庵。営業・公開条件は要確認。",
+      "mapQuery": "旧市天堂店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前114-6",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -349,23 +358,23 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22269"
         }
-      ],
-      "address": "〒779-2305　徳島県海部郡美波町奥河内字寺前114-6",
-      "lat": 33.732056537806024,
-      "lng": 134.53217873544352,
-      "mapScope": "surroundings",
-      "mapQuery": "旧市天堂店舗 〒779-2305　徳島県海部郡美波町奥河内字寺前114-6"
+      ]
     },
     {
       "id": "heritage-373012",
       "name": "旧薩摩家住宅",
       "category": "heritage",
       "description": "旧厄除橋の近くにある元材木商の住宅。出格子と高欄が残り、2006年に改修して飲食店になったと紹介される。 原典の歴史説明です。現在の営業・見学可否は施設へ確認してください。",
+      "address": "〒779-2305 徳島県海部郡美波町奥河内字寺前122",
+      "lat": 33.731846234036524,
+      "lng": 134.53389187886705,
+      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/satsuma",
       "source": "美波遺産公式・認定No.373012の個別解説（独自要約）。座標：公式観光施設ページの地図（2026-10-14照合）。",
       "verifiedAt": "2026-10-14",
-      "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/satsuma",
-      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "accessNote": "美波遺産は建物の認定で、パワースポット造成計画とは別資料です。認定は内部見学・立入りの許可を意味しません。公式原典は別ウィンドウで開きます。原典写真や地図の埋込み・再配信はしていません。\nこの点は施設の目安。私有地や建物内への立入りを案内するものではない。通り側から確認し、営業・公開条件に従う。\n公式ツーリズム四国の対象施設ページに公開された地図用latitude/longitudeと地図iframeの対象座標を一致確認。美波遺産原典の名称・歴史・用途を照合。\n現在の用途の参照名：ひわさ屋。営業・公開条件は要確認。",
+      "mapQuery": "旧薩摩家住宅 〒779-2305 徳島県海部郡美波町奥河内字寺前122",
+      "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
+      "mapScope": "surroundings",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -383,12 +392,7 @@
           "label": "座標の出典（施設代表点）",
           "url": "https://shikoku-tourism.com/spot/22271"
         }
-      ],
-      "address": "〒779-2305 徳島県海部郡美波町奥河内字寺前122",
-      "lat": 33.731846234036524,
-      "lng": 134.53389187886705,
-      "mapScope": "surroundings",
-      "mapQuery": "旧薩摩家住宅 〒779-2305 徳島県海部郡美波町奥河内字寺前122"
+      ]
     }
   ]
 }

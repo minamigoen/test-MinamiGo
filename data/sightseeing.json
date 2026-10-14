@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-14T14:00:00Z",
+  "spots": [
+    {
+      "id": "town-0000000001",
+      "name": "田井ノ浜海水浴場",
+      "category": "nature",
+      "description": "由岐地区の海水浴場。遊泳・開設時期は町の最新案内をご確認ください。",
+      "address": "〒779-2109 徳島県海部郡美波町田井",
+      "lat": 33.7718848,
+      "lng": 134.5829812,
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch1",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。",
+      "mapQuery": "33.7718848,134.5829812",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch1"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/88e34mKrNvSK4MpG6"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000002",
+      "name": "大浜海岸",
+      "category": "nature",
+      "description": "ウミガメの産卵地として知られ、季節によってだるま朝日も見られる海岸。観察は町の保護・立入案内に従ってください。",
+      "address": "〒779-2304 徳島県海部郡美波町日和佐浦３７４−４",
+      "lat": 33.7331756,
+      "lng": 134.5411183,
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。",
+      "mapQuery": "33.7331756,134.5411183",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/%C5%8Chama_Beach_01.jpg/960px-%C5%8Chama_Beach_01.jpg",
+      "photoAlt": "2010年1月撮影の美波町・大浜海岸",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:%C5%8Chama_Beach_01.jpg",
+      "photoLicense": "CC BY 2.0",
+      "photoCredit": "na0905 / Ōhama Beach 01.jpg / 大浜海岸・2010年1月（表示サイズ変更・トリミング）",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch2"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch4"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/KoZC5ws2FGvV3vdJ9"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000003",
+      "name": "薬王寺（名水 瑠璃の水・寺院体験）",
+      "category": "culture",
+      "description": "四国霊場第23番札所。写経・阿字観などの寺院体験は実施内容と予約条件を公式案内でご確認ください。",
+      "address": "美波町奥河内字寺前285-1",
+      "lat": 33.7323478,
+      "lng": 134.5276112,
+      "tel": "0884-77-0023",
+      "url": "https://yakuouji.net/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町watch欄のMap・電話・営業時間は薬王寺温泉の情報が混在。寺院のMapは体験欄の薬王寺POI、電話は寺院公式の0884-77-0023を採用。温泉の営業時間は不採用。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。",
+      "mapQuery": "33.7323478,134.5276112",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch5"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur4"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/j8NMr51ab1jEGZ1PA"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000004",
+      "name": "満石神社（名水 ごんげんさんの水）",
+      "category": "culture",
+      "description": "木岐の神社と湧水の案内です。伝承上の説明と現在の参拝・利用条件を分けてご確認ください。",
+      "address": "〒779-2108 徳島県海部郡美波町木岐３６−６",
+      "lat": 33.7632453,
+      "lng": 134.5763907,
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch6",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.7632453,134.5763907",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch6"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/iJWpRtWGzXy9DpR16"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000005",
+      "name": "日和佐城",
+      "category": "culture",
+      "description": "城山の模擬天守を訪ねる史跡案内。開館・立入条件は町の施設案内をご確認ください。",
+      "address": "徳島県海部郡美波町日和佐浦445-1",
+      "lat": 33.7295363,
+      "lng": 134.5360968,
+      "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。 町案内の住所表記と元表が不一致。町の施設ガイド institution06 の日和佐浦445-1を採用。",
+      "mapQuery": "33.7295363,134.5360968",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch7"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/9dXhNVuR6srtkeYq8"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000006",
+      "name": "阿波沖海戦小公園",
+      "category": "culture",
+      "description": "由岐の海戦を伝える記念公園。関連する展示や見学条件は地域の案内をご確認ください。",
+      "address": "〒779-2101 徳島県海部郡美波町西由岐西１３−７５",
+      "lat": 33.7706647,
+      "lng": 134.5886388,
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch8",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.7706647,134.5886388",
+      "locationLabel": "元表の参考座標（推定位置・施設境界・入口は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch8"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000007",
+      "name": "日和佐うみがめ博物館 カレッタ",
+      "category": "culture",
+      "description": "大浜海岸近くでウミガメについて学べる博物館。開館日・料金は公式案内をご確認ください。",
+      "address": "徳島県海部郡美波町日和佐浦374-4",
+      "lat": 33.7346276,
+      "lng": 134.5407497,
+      "hours": "9:00〜17:00",
+      "closed": "毎週月曜日(但し、祝日の場合は翌日)12月29日～31日",
+      "tel": "0884-77-1110",
+      "url": "https://caretta.town.minami.lg.jp/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。",
+      "mapQuery": "33.7346276,134.5407497",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch9"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/bV7by3t8b5d3NCtW9"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000008",
+      "name": "南阿波サンライン",
+      "category": "nature",
+      "description": "美波町から牟岐町へ続く海沿いの観光道路。表示点は道路区間の目安です。",
+      "address": "徳島県海部郡",
+      "lat": 33.689895,
+      "lng": 134.4782814,
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch10",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.689895,134.4782814",
+      "locationLabel": "道路区間の代表点（推定位置）。展望台・道路入口・通行可能経路は未確認。",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch10"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/ZN9ozjNWxTQKCGp79"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000009",
+      "name": "桜街道",
+      "category": "nature",
+      "description": "阿部街道沿いの桜の風景を楽しむ案内。開花・通行条件は現地と町の案内をご確認ください。",
+      "address": "美波町 阿部街道沿い（区間の位置確認待ち）",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町サイトのMapは南阿波サンラインと同じリンク。桜街道の位置としては採用しない。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000010",
+      "name": "道の駅日和佐",
+      "category": "shop",
+      "description": "物産・産直品と観光案内を利用できる道の駅。館ごとの営業時間は最新案内をご確認ください。",
+      "address": "徳島県海部郡美波町奥河内寺前493-6",
+      "lat": 33.7302896,
+      "lng": 134.5302471,
+      "hours": "9:00～17:30(トイレは24時間利用可能)",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch12",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.7302896,134.5302471",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch12"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/SA9WKWjCYmx5hNGM9"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000011",
+      "name": "日和佐八幡神社秋まつり",
+      "category": "festival",
+      "description": "日和佐地区の秋の祭り。開催年の日程・交通規制・会場案内は公式発表をご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000012",
+      "name": "赤松神社奉納吹筒花火",
+      "category": "festival",
+      "description": "赤松神社で伝わる奉納花火の案内。開催日と見学条件は開催年の公式発表をご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000013",
+      "name": "由岐の連続秋まつり",
+      "category": "festival",
+      "description": "由岐各地区に伝わる秋の祭りの案内。複数の会場があるため日程・場所を主催者へご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000014",
+      "name": "ひわさ冬まつり",
+      "category": "festival",
+      "description": "日和佐の新年の行事の案内。開催内容と会場は開催年の公式発表をご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000015",
+      "name": "日和佐うみがめまつり",
+      "category": "festival",
+      "description": "ウミガメと地域に親しむ祭りの案内。開催内容・日程は開催年の公式発表をご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000016",
+      "name": "由岐伊勢エビまつり",
+      "category": "festival",
+      "description": "由岐の伊勢エビと地域の催しの案内。開催日・販売条件は主催者の最新情報をご確認ください。",
+      "address": "美波町（開催年の会場・集合場所は要確認）",
+      "hours": "開催年の日程・会場は公式発表で確認",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000017",
+      "name": "海と遊ぼ屋海達",
+      "category": "experience",
+      "description": "日和佐の海でダイビングなどを案内する事業者。予約・集合場所・実施条件を公式案内でご確認ください。",
+      "address": "〒779-2304 徳島県海部郡美波町日和佐浦19−５",
+      "lat": 33.7319919,
+      "lng": 134.5381059,
+      "tel": "0884-70-1277",
+      "url": "https://www.umitatsu.com/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 元表と公開Mapの対象地点座標が異なる。表示中心@座標ではなく対象POI !3d/!4dを採用。",
+      "mapQuery": "33.7319919,134.5381059",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur1"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/KPa7h6NgFawdBD977"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000018",
+      "name": "人力企画",
+      "category": "experience",
+      "description": "カヤック・SUP・トレッキングなどを案内する事業者。予約と集合場所は公式案内をご確認ください。",
+      "address": "〒779-2104 徳島県海部郡美波町東由岐大池１７０−５",
+      "hours": "7:00～21:00（公式About掲載・予約条件は要確認）",
+      "closed": "無休（公式About掲載）",
+      "tel": "050-5470-2917",
+      "url": "https://www.outdoor-sports.info/about",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町MapのPOI名はクーランマラン。人力企画と同一施設と確定できないため、元表座標も保留。公式Aboutで名称・住所・電話を確認。",
+      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur2"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.outdoor-sports.info/about"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000019",
+      "name": "うみがめマリンクルーズ",
+      "category": "experience",
+      "description": "日和佐港周辺からの遊覧船の案内。予約・乗り場・運航条件は公式案内をご確認ください。",
+      "address": "〒779-2304 徳島県海部郡美波町日和佐浦４１－１",
+      "lat": 33.7319152,
+      "lng": 134.5367892,
+      "tel": "0884-77-1730",
+      "url": "https://umigame-marine-cruise.com/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.7319152,134.5367892",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur3"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/ejHbms74Z4vXKMAq9"
+        }
+      ]
+    },
+    {
+      "id": "town-0000000020",
+      "name": "観光ボランティアガイド会日和佐",
+      "category": "experience",
+      "description": "日和佐のまち歩きを案内するガイド会。受付・集合場所・予約条件を公開案内でご確認ください。",
+      "address": "〒779-2305 徳島県海部郡美波町奥河内 字弁財天250-4",
+      "lat": 33.7292946,
+      "lng": 134.5306969,
+      "tel": "0884-77-0768",
+      "url": "https://www.town.minami.lg.jp/kankou-guide/",
+      "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
+      "verifiedAt": "2026-10-14",
+      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
+      "mapQuery": "33.7292946,134.5306969",
+      "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
+      "mapScope": "surroundings",
+      "photoStatus": "写真の利用条件を確認中",
+      "relatedLinks": [
+        {
+          "label": "町の観光案内・出典 1",
+          "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur5"
+        },
+        {
+          "label": "参考座標の根拠",
+          "url": "https://goo.gl/maps/SKUvVtpCPF5M3RtMA"
+        }
+      ]
+    }
+  ]
+}
