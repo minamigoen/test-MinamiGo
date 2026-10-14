@@ -13,7 +13,7 @@ with sync_playwright() as p:
  expect(page.locator('.reference-pin')).to_have_count(24);expect(page.locator('#map-list button')).to_have_count(27)
  # Point click matches the original map: recenter/zoom and open the detail immediately.
  page.locator('#map-list button').first.click();expect(page.locator('dialog')).to_be_visible();page.locator('#close-detail').click();expect(page.locator('dialog')).not_to_be_visible();page.locator('#map').scroll_into_view_if_needed();page.locator('.reference-pin').first.click();expect(page.locator('dialog')).to_be_visible();expect(page.locator('#detail-fields')).to_contain_text('参考座標');expect(page.locator('#detail-media')).to_contain_text('写真の出典');expect(page.locator('#detail-media img')).to_be_visible();assert page.locator('#detail-media img').evaluate('(i)=>i.naturalWidth>0')
- page.locator('#close-detail').click();expect(page.locator('.leaflet-popup')).to_be_visible()
+ page.locator('#close-detail').click();expect(page.locator('.leaflet-popup')).to_be_visible();page.wait_for_timeout(400)
  viewport='import(new URL("./src/map-view.js",document.baseURI)).then(m=>m.mapViewport())';before=page.evaluate(viewport);assert before['zoom']>=16
  page.locator('#base-aerial').click();expect(page.locator('.leaflet-control-attribution')).to_contain_text('国土地理院');assert page.evaluate(viewport)==before;expect(page.locator('.leaflet-popup')).to_be_visible()
  page.locator('#base-map').click();expect(page.locator('.leaflet-control-attribution')).to_contain_text('OpenStreetMap');assert page.evaluate(viewport)==before
