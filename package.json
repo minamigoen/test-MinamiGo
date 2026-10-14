@@ -9,7 +9,8 @@
     "build": "node scripts/build.mjs",
     "sync:food": "node scripts/sync-food.mjs",
     "sync:stay": "node scripts/sync-stay.mjs",
-    "sync:local": "node scripts/sync-local-datasets.mjs"
+    "sync:local": "node scripts/sync-local-datasets.mjs",
+    "sync:sightseeing": "node scripts/sync-sightseeing.mjs"
   },
   "engines": {
     "node": ">=20"

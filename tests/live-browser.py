@@ -10,7 +10,7 @@ with sync_playwright() as p:
  expected=json.loads(Path('data/spots.json').read_text());c=b.new_context(viewport={'width':390,'height':844});page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
  for attempt in range(6):
   try:
-   response=page.goto(url,wait_until='domcontentloaded',timeout=30000)
+   response=page.goto(url+'#explore?view=cards',wait_until='domcontentloaded',timeout=30000)
    assert response and response.status==200
    page.wait_for_selector('.card',timeout=12000)
    assert '美波まちのふしぎ帖' in page.locator('.brand').inner_text()
@@ -62,7 +62,7 @@ with sync_playwright() as p:
  page.evaluate('navigator.serviceWorker.ready');page.reload();page.wait_for_selector('.card');expect(page.locator('.card')).to_have_count(1)
  scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)');assert scope==url
  c.set_offline(True);page.reload();page.wait_for_selector('.card');expect(page.locator('#notice')).to_contain_text('オフライン');expect(page.locator('.card')).to_have_count(1);c.set_offline(False)
- desktop=b.new_context(viewport={'width':1440,'height':1000});dp=desktop.new_page();dp.goto(url,wait_until='domcontentloaded');dp.wait_for_selector('.card');assert dp.evaluate('document.documentElement.scrollWidth<=innerWidth');dp.screenshot(path=str(output/'live-desktop.png'))
+ desktop=b.new_context(viewport={'width':1440,'height':1000});dp=desktop.new_page();dp.goto(url+'#explore?view=cards',wait_until='domcontentloaded');dp.wait_for_selector('.card');assert dp.evaluate('document.documentElement.scrollWidth<=innerWidth');dp.screenshot(path=str(output/'live-desktop.png'))
  assert not errors,errors
  b.close()
 (output/'result.json').write_text(json.dumps({'url':url,'status':200,'public_spots':len(snapshot['spots']),'food_spots':len(foods),'heritage_spots':12,'power_spots':12,'stay_reference_pins':24,'stay_public_photos':26,'licensed_town_photo':'CC BY 2.0 / na0905','aerial_switch':'passed','public_photos':sum(bool(s.get('photoUrl')) for s in snapshot['spots']),'mobile':[390,844],'desktop':[1440,1000],'manifest_scope':'./','worker_scope':scope,'maps_links':links,'offline_reload':'passed','favorites_reload':'passed','private_fields':'excluded','javascript_errors':errors},ensure_ascii=False,indent=2))

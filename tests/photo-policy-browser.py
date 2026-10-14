@@ -13,7 +13,7 @@ with sync_playwright() as p:
  page.route('https://script.google.com/**',api)
  for host in ['https://www.town.minami.lg.jp/**','https://lh3.googleusercontent.com/**']:
   page.route(host,lambda r:r.fulfill(content_type='image/png',path=str(PROJECT/'icon-192.png')))
- page.goto(base,wait_until='domcontentloaded');expect(page.locator('#food-sync-info')).to_contain_text('共通データ 37件');assert calls['n']==1
+ page.goto(base+'#explore?view=cards',wait_until='domcontentloaded');expect(page.locator('#food-sync-info')).to_contain_text('共通データ 37件');assert calls['n']==1
  page.get_by_role('button',name='食べる',exact=True).click();expect(page.locator('#cards .has-photo')).to_have_count(37);expect(page.locator('#cards .has-photo').first).to_have_attribute('data-state','loaded')
  policy=page.evaluate('JSON.parse(localStorage.getItem("minamigo-test-v2-shared-food")).photoPolicy');assert policy=='facility-permission-20261014'
  # Malformed public photo strings never become an image or overwrite source identity.

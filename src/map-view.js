@@ -14,13 +14,13 @@ export function setMapBase(value){
 }
 export function renderSpotMap(items,{tileUrl,onSelect,offline=false}){
  const canvas=document.getElementById('map'),status=document.getElementById('map-status'),list=document.getElementById('map-list');
- const points=items.filter(isVisibleMapSpot);
- canvas.hidden=!points.length||!navigator.onLine||offline;
+ const points=items.filter(isVisibleMapSpot);let created=false;
+ canvas.hidden=!points.length||!navigator.onLine||offline;canvas.closest('.map-stage').hidden=canvas.hidden;canvas.closest('.map-workspace').classList.toggle('without-map',canvas.hidden);if(!points.length&&markers){markers.clearLayers();signature='';}
  if(!points.length)status.textContent='座標のない場所は下の一覧から詳細・住所検索を利用できます。';
  else if(!navigator.onLine||offline)status.textContent='オフラインのため地図を表示できません。下の一覧から詳細を確認できます。';
  else{
   if(!map){
-   map=L.map(canvas,{center:[33.73,134.53],zoom:12,scrollWheelZoom:false,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false});
+   created=true;map=L.map(canvas,{center:[33.73,134.53],zoom:12,scrollWheelZoom:false,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false});
    bases={map:L.tileLayer(tileUrl,{maxZoom:18,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}),aerial:L.tileLayer(AERIAL_URL,{maxZoom:18,attribution:aerialCredit})};
    for(const layer of Object.values(bases))layer.on('tileerror',()=>{if(map.hasLayer(layer))document.getElementById('map-tile-status').textContent='背景を読み込めません。地図／空中写真を切り替えるか、下の一覧をご利用ください。';});
    markers=L.layerGroup().addTo(map);setMapBase(base);
@@ -34,7 +34,7 @@ export function renderSpotMap(items,{tileUrl,onSelect,offline=false}){
     marker.on('click',()=>onSelect(s));
     marker.getElement().addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();onSelect(s);}});
    }
-   map.fitBounds(points.map(s=>[s.lat,s.lng]),{maxZoom:15,padding:[30,30],animate:false});
+   map.fitBounds(points.map(s=>[s.lat,s.lng]),{maxZoom:15,padding:[30,30],animate:false});if(created&&points.length>40)map.setView([33.73,134.53],12,{animate:false});
   }
   const refs=points.filter(s=>s.mapScope==='sheet-reference').length;
   status.textContent=`${points.length}件の施設周辺の参考地点${refs?'（宿泊元表の参考座標 '+refs+'件）':''}。入口・経路・現況は未確認です。座標のない場所も一覧から選べます。`;

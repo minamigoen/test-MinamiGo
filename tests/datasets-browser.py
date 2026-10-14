@@ -4,7 +4,7 @@ import json
 snapshot=json.loads((PROJECT/'data/spots.json').read_text(encoding='utf-8'))
 tmp,site,server,base=start_site()
 with sync_playwright() as p:
- b=launch_browser(p);page=b.new_page(viewport={'width':390,'height':844});page.route('https://script.google.com/**',lambda r:r.abort());page.route('https://tile.openstreetmap.org/**',lambda r:r.fulfill(content_type='image/png',path=str(PROJECT/'icon-192.png')));page.goto(base);page.wait_for_selector('.card')
+ b=launch_browser(p);page=b.new_page(viewport={'width':390,'height':844});page.route('https://script.google.com/**',lambda r:r.abort());page.route('https://tile.openstreetmap.org/**',lambda r:r.fulfill(content_type='image/png',path=str(PROJECT/'icon-192.png')));page.goto(base+'#explore?view=cards');page.wait_for_selector('.card')
  for category,label,count in [('heritage','美波遺産',12),('powerspot','パワースポット',12)]:
   records=[s for s in snapshot['spots'] if s['category']==category]
   page.get_by_role('button',name=label,exact=True).click();expect(page.locator('.card')).to_have_count(count)

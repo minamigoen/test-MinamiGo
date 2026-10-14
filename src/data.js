@@ -1,4 +1,4 @@
-export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',heritage:'美波遺産',powerspot:'パワースポット',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
+export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',festival:'祭り・催し',heritage:'美波遺産',powerspot:'パワースポット',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
 export const PHOTO_FIELDS=['photoUrl','photoAlt','photoSource','photoLicense','photoCredit'];
 export const PHOTO_LICENSES={'CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC0 1.0':'https://creativecommons.org/publicdomain/zero/1.0/','掲載許諾確認済み':'','管理者撮影（掲載権利確認済み）':''};
 export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','mapVisibility','navigationPolicy','directionsMode','photoLink','photoStatus',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt','upstreamId'];

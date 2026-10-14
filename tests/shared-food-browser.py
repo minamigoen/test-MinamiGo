@@ -14,7 +14,7 @@ with sync_playwright() as p:
   if mode['delay']:pending.append(route);return
   if mode['good']:route.fulfill(json=rows,headers={'Access-Control-Allow-Origin':'*'})
   else:route.fulfill(json=[{'no':'INVALID','name':'BAD'}],headers={'Access-Control-Allow-Origin':'*'})
- page.route('https://script.google.com/**',respond);page.goto(base);page.wait_for_selector('.card')
+ page.route('https://script.google.com/**',respond);page.goto(base+'#explore?view=cards');page.wait_for_selector('.card')
  for i in range(40):
   if pending:break
   page.wait_for_timeout(50)
