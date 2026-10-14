@@ -22,9 +22,9 @@ with sync_playwright() as p:
   # Only click visible, unobscured real markers. No JS dispatch or programmatic selection.
   for _ in range(3):
    candidates=page.locator('.map-pin').evaluate_all('(es)=>es.filter(e=>{const r=e.getBoundingClientRect(),x=r.x+r.width/2,y=r.y+r.height/2;return y>0&&y<innerHeight-85&&x>0&&x<innerWidth&&e.contains(document.elementFromPoint(x,y))&&!e.classList.contains("selected");}).map(e=>e.dataset.spotId)')
-   assert candidates,'another visible marker must remain selectable'
+   candidates=[sid for sid in candidates if sid not in selected];assert candidates,'another visible marker must remain selectable'
    sid=candidates[0];pin=page.locator('.map-pin[data-spot-id="'+sid+'"]');before=page.evaluate(vp);pin.click();expect(page.locator('#detail-title')).to_have_text(spots[sid]['name']);expect(page.locator('#map-list [data-spot-id="'+sid+'"]')).to_have_attribute('aria-pressed','true');assert page.evaluate(vp)==before,('pin selection must preserve map viewport',before,page.evaluate(vp));assert not page.locator('#detail').evaluate('(d)=>d.matches(":modal")')
-   page.wait_for_function('()=>{const i=document.querySelector("#detail-media img");return i&&i.complete&&i.naturalWidth>0&&i.naturalHeight>0;}',timeout=20000);selected.append(sid)
+   page.wait_for_function('()=>{const i=document.querySelector("#detail-media img");return i&&i.complete&&i.naturalWidth>0&&i.naturalHeight>0;}',timeout=20000);page.locator('#detail-media img').evaluate('(i)=>i.decode()');selected.append(sid)
   stage=page.locator('.map-stage').bounding_box();panel=page.locator('#detail').bounding_box();assert panel['height']<stage['height']*.56
   page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-panel-{width}.png'))
   page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).not_to_be_visible();assert page.evaluate(vp)==before;page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).to_be_visible()
@@ -37,7 +37,7 @@ with sync_playwright() as p:
    lb=page.locator('.map-sidebar').bounding_box();mb=page.locator('#map').bounding_box();assert lb['x']+lb['width']<mb['x'] and abs(lb['y']-mb['y'])<2
   # Stay photos also survive the new map panel.
   page.get_by_role('button',name='泊まる',exact=True).click();page.locator('#map-list button').first.click();expect(page.locator('#detail-title')).to_have_text('ホテル白い燈台');page.wait_for_function('()=>{const i=document.querySelector("#detail-media img");return i&&i.complete&&i.naturalWidth>0&&i.naturalHeight>0;}',timeout=20000)
-  page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-stay-panel-{width}.png'));page.locator('#close-detail').click()
+  page.locator('#detail-media img').evaluate('(i)=>i.decode()');page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-stay-panel-{width}.png'));page.locator('#close-detail').click()
   page.get_by_role('button',name='美波遺産',exact=True).click();expect(page.locator('.map-pin')).to_have_count(12);expect(page.locator('#map-list button')).to_have_count(12)
   for spot in [s for s in spots.values() if s['category']=='heritage']:
    page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);expect(page.locator('#detail-fields')).to_contain_text('施設代表点');expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',spot['id']);assert not page.locator('#detail-media img').count();page.locator('#close-detail').click()
