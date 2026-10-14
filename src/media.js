@@ -5,7 +5,7 @@ export function externalLink(href,label,className){const a=element('a',label,cla
 /** Photo URLs reach this renderer only after public-data validation and publication approval.
  * External photos are never fetched by the service worker or prefetched for offline use. */
 export function photoFigure(spot,{detail=false}={}){
- const figure=element('figure',undefined,'spot-media'+(spot.photoUrl?' has-photo':''));figure.dataset.state=spot.photoUrl?'loading':spot.photoStatus?.includes('取得できません')?'source-unavailable':'missing';const frame=element('div',undefined,'photo-frame');const fallback=element('div',undefined,'photo-fallback');
+ const figure=element('figure',undefined,'spot-media'+(spot.photoUrl?' has-photo':''));figure.dataset.state=spot.photoUrl?'loading':/取得できません|写真の施設対応を確認中/.test(spot.photoStatus||'')?'source-unavailable':'missing';const frame=element('div',undefined,'photo-frame');const fallback=element('div',undefined,'photo-fallback');
  const icon=element('span',undefined,'photo-symbol');icon.innerHTML='<svg viewBox="0 0 48 48" aria-hidden="true">'+(drawings[spot.category]||drawings.other)+'</svg>';
  const label=element('span',spot.photoUrl?'写真を読み込んでいます':spot.photoStatus||'写真は準備中','photo-fallback-label');fallback.append(icon,label);frame.append(fallback);figure.append(frame);
  if(spot.photoUrl){
