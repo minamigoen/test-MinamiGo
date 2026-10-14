@@ -28,7 +28,7 @@ with sync_playwright() as p:
   stage=page.locator('.map-stage').bounding_box();panel=page.locator('#detail').bounding_box();assert panel['height']<stage['height']*.56
   page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-panel-{width}.png'))
   page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).not_to_be_visible();assert page.evaluate(vp)==before;page.locator('#toggle-detail').click();expect(page.locator('#detail-body')).to_be_visible()
-  before=page.evaluate(vp);page.locator('#close-detail').click();expect(page.locator('#detail')).not_to_be_visible();assert page.evaluate(vp)==before
+  before=page.evaluate(vp);scroll=page.evaluate('scrollY');page.locator('#close-detail').click();expect(page.locator('#detail')).not_to_be_visible();assert page.evaluate(vp)==before;assert page.evaluate('scrollY')==scroll
   # List selection pans without zoom, then selected pin is usable with Enter/Escape.
   row=page.locator('#map-list button').nth(1);sid=row.get_attribute('data-spot-id');row.focus();row.press('Enter');expect(page.locator('#detail-title')).to_have_text(spots[sid]['name']);expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',sid);assert page.evaluate(vp)['zoom']==before['zoom'];page.locator('#close-detail').click()
   page.locator('#map').scroll_into_view_if_needed();pin=page.locator('.map-pin[data-spot-id="'+sid+'"]');pin.focus();pin.press('Enter');expect(page.locator('#detail')).to_be_visible();expect(page.locator('#detail-title')).to_have_text(spots[sid]['name']);page.keyboard.press('Escape');expect(page.locator('#detail')).not_to_be_visible();assert page.locator('.map-pin:focus').get_attribute('data-spot-id')==sid

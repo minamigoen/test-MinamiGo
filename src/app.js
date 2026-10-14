@@ -49,7 +49,7 @@ function render(){const r=route();const help=r.page==='help';document.body.class
  $('empty').hidden=loading||items.length>0;$('map-section').hidden=r.view!=='map'||!items.length||help;$('cards').hidden=r.view==='map';
  if(!loading&&!items.length){if(!data)empty('情報を取得できませんでした','通信が戻ったら再読み込みしてください。初めての利用には通信が必要です。',true);else if(!data.spots.length)empty('掲載情報を準備しています','資料の確認が完了したスポットから掲載します。お気に入りや使い方を先にお試しいただけます。');else if(r.page==='saved')empty('お気に入りはまだありません','「探す」で気になる場所の☆を押すと、ここに保存されます。検索条件がある場合はリセットしてください。');else empty('条件に合うスポットがありません','名前やカテゴリを変えて、もう一度探してみてください。');}
  if(r.view!=='map')for(const s of items)$('cards').append(card(s));else if(items.length&&!help)renderMap(items);
- if(r.view==='map')selectMapSpot(r.id);const s=data?.spots.find(s=>s.id===r.id);if(s&&!help)detail(s);else if($('detail').open){$('detail').close();const opener=(lastOpener?.isConnected?lastOpener:null)||document.querySelector('[data-spot-id="'+lastOpenerId+'"] .open')||document.querySelector('#map-list [data-spot-id="'+lastOpenerId+'"]');opener?.focus();}
+ if(r.view==='map')selectMapSpot(r.id);const s=data?.spots.find(s=>s.id===r.id);if(s&&!help)detail(s);else if($('detail').open){$('detail').close();const opener=(lastOpener?.isConnected?lastOpener:null)||document.querySelector('[data-spot-id="'+lastOpenerId+'"] .open')||document.querySelector('#map-list [data-spot-id="'+lastOpenerId+'"]');opener?.focus({preventScroll:true});}
  if((!navigator.onLine||networkFallback))notice(data?'オフラインです。保存済みの情報を表示しています。地図・外部リンクには通信が必要です。':'オフラインです。初めての利用には通信が必要です。');
 }
 let detailId='',detailCollapsed=false;
