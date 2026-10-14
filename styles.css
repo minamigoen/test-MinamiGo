@@ -30,3 +30,5 @@ dialog.map-detail{position:absolute;inset:auto 12px 12px auto;z-index:800;margin
  dialog.map-detail{inset:auto 8px 8px;max-height:42%;width:calc(100% - 16px);padding:12px;border-radius:16px}.map-detail .dialog-top{top:-12px}.map-detail h2{font-size:18px}.map-detail.collapsed{max-height:120px}.map-detail #detail-media .photo-frame{max-height:120px}
  .map-mode .map-help{margin:8px 0;padding:8px}.map-mode .map-base-switch{margin:8px 0}
 }
+
+.site-footer{display:block;padding:20px 0;margin-top:32px;font-size:13px;line-height:1.7}.site-footer p{margin:0 0 8px}.site-footer a{display:inline-flex;align-items:center;min-height:44px;margin:0 6px;text-underline-offset:3px;overflow-wrap:anywhere}.site-footer .rights-note{font-size:12px}.site-footer span{display:inline}@media(max-width:480px){.site-footer .source-note a{margin-left:0;margin-right:8px}.site-footer .source-note>span{display:none}.site-footer .source-note>a{display:flex;width:fit-content;max-width:100%}}
