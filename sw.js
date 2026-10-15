@@ -1,5 +1,5 @@
 const PREFIX='minamigo-test-'+new URL(self.registration.scope).pathname+'-';
-const CACHE=PREFIX+'20261015-guide-courses-ogp-1';
+const CACHE=PREFIX+'20261015-guide-courses-ogp-2';
 const SHELL=['./','./index.html','./offline.html','./styles.css','./src/app.js','./src/app-utilities.js','./src/routing.js','./src/events.js','./src/guide-courses.js','./data/guide-lines.json','./data/events.json','./assets/vendor/qrcode.mjs','./assets/vendor/QRCODE-LICENSE','./assets/vendor/LEAFLET-LICENSE','./src/data.js','./src/quiz.js','./src/media.js','./src/map-view.js','./src/photo-source.js','./src/food-source.js','./data/local-content.json','./data/food-source.json','./config.json','./data/spots.json','./manifest.json','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png','./assets/mark.svg','./assets/vendor/leaflet.js','./assets/vendor/leaflet.css'];
 const urls=new Set(SHELL.map(p=>new URL(p,self.registration.scope).href));
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL.map(url=>new Request(url,{cache:'reload'}))))));
