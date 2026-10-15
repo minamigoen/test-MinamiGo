@@ -1,7 +1,7 @@
 import {CATEGORIES,isVisibleMapSpot,mapPointsForSpot} from './data.js';
 
 export const AERIAL_URL='https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg';
-const aerialCredit='出典：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a> / Landsat8 (GSI, TSIC, GEO Grid/AIST; USGS), GEBCO';
+const aerialCredit='出典：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a> / Landsat8 (GSI, TSIC, GEO Grid/AIST; USGS), GEBCO / 一部施設座標 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL)';
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
 let map,markers,bases,base='map',signature='';
 export function mapViewport(){if(!map)return null;const p=map.getCenter();return {lat:p.lat,lng:p.lng,zoom:map.getZoom()};}

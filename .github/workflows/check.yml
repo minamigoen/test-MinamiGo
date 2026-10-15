@@ -14,6 +14,7 @@ jobs:
       - run: npm run validate
       - run: npm run build
       - run: python -m pip install playwright
+      - run: python tests/source-refresh-test.py
       - run: python tests/browser.py
       - run: python tests/datasets-browser.py
       - run: python tests/map-browser.py

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T00:00:00Z",
+  "updatedAt": "2026-10-15",
   "spots": [
     {
       "id": "town-0000000001",
@@ -147,6 +147,7 @@
       "address": "徳島県海部郡美波町日和佐浦445-1",
       "lat": 33.7295363,
       "lng": 134.5360968,
+      "tel": "0884-77-3617",
       "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
       "verifiedAt": "2026-10-14",
@@ -172,7 +173,8 @@
           "label": "参考座標の根拠",
           "url": "https://goo.gl/maps/9dXhNVuR6srtkeYq8"
         }
-      ]
+      ],
+      "officialCheckedAt": "2026-10-15"
     },
     {
       "id": "town-0000000006",
@@ -653,7 +655,7 @@
       "lat": 33.7319152,
       "lng": 134.5367892,
       "tel": "0884-77-1730",
-      "url": "https://umigame-marine-cruise.com/",
+      "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur3",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。",
@@ -674,7 +676,8 @@
           "label": "参考座標の根拠",
           "url": "https://goo.gl/maps/ejHbms74Z4vXKMAq9"
         }
-      ]
+      ],
+      "officialCheckedAt": "2026-10-15"
     },
     {
       "id": "town-0000000020",
@@ -684,6 +687,7 @@
       "address": "〒779-2305 徳島県海部郡美波町奥河内 字弁財天250-4",
       "lat": 33.7292946,
       "lng": 134.5306969,
+      "price": "ガイド無料。有料施設に入館する場合などは実費。受付可否・コースは申込時に確認。",
       "tel": "0884-77-0768",
       "url": "https://www.town.minami.lg.jp/kankou-guide/",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
@@ -706,7 +710,8 @@
           "label": "参考座標の根拠",
           "url": "https://goo.gl/maps/SKUvVtpCPF5M3RtMA"
         }
-      ]
+      ],
+      "officialCheckedAt": "2026-10-15"
     }
   ]
 }

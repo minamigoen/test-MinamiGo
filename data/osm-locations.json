@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "license": "ODbL-1.0",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap contributors",
+  "checkedAt": "2026-10-15",
+  "records": [{"id":"life-ookita-hiwasa","node":13157556101,"lat":33.7284796,"lng":134.5312621,"sourceUrl":"https://www.openstreetmap.org/node/13157556101","sourceUpdatedAt":"2026-07-22","officialName":"フレッシュフーズオオキタ日和佐店","officialPhone":"0884-77-2493","officialUrl":"https://r.goope.jp/ookitahiwasa/about","scope":"shop representative; entrance not surveyed"}]
+}

@@ -1,0 +1,5 @@
+import {readFile,writeFile,rename} from 'node:fs/promises';import {applyWebSupplements} from '../src/web-supplements.js';import {validateData} from '../src/data.js';
+const read=async p=>JSON.parse(await readFile(p,'utf8')),review=await read('data/web-supplements.json'),osm=await read('data/osm-locations.json');
+const outputs=[];for(const [file,scope]of [['data/power-spots.json','powerspot'],['data/heritage.json','heritage'],['data/sightseeing.json','tourism'],['data/life.json','life'],['data/spots.json','all']]){const d=await read(file);outputs.push([file,validateData({...d,updatedAt:review.checkedAt,spots:applyWebSupplements(d.spots,review,osm,{scope})})]);}
+const local=await read('data/local-content.json');outputs.push(['data/local-content.json',{...local,updatedAt:review.checkedAt,walk:applyWebSupplements(local.walk,review,osm)}]);
+for(const [file,data]of outputs)await writeFile(file+'.tmp',JSON.stringify(data,null,2)+'\n');for(const [file]of outputs)await rename(file+'.tmp',file);console.log('Reviewed web supplements: '+review.patches.length+' patches, '+review.additions.length+' addition; original Sheets untouched');

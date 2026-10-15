@@ -10,6 +10,7 @@
     "sync:food": "node scripts/sync-food.mjs",
     "sync:stay": "node scripts/sync-stay.mjs",
     "sync:local": "node scripts/sync-local-datasets.mjs",
+    "sync:web": "node scripts/sync-web.mjs",
     "sync:sightseeing": "node scripts/sync-sightseeing.mjs"
   },
   "engines": {
