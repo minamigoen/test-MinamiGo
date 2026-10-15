@@ -1,7 +1,8 @@
-export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',festival:'祭り・催し',heritage:'美波遺産',powerspot:'パワースポット',food:'食べる',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
+export const CATEGORIES = {nature:'海・自然',culture:'文化・歴史',festival:'祭り・催し',heritage:'美波遺産',powerspot:'パワースポット',food:'食べる',life:'暮らし',shop:'買う',experience:'体験',stay:'泊まる',other:'その他'};
+export const LIFE_TYPES=['温泉','コインランドリー','コンビニ','ガソリンスタンド','スーパー'];
 export const PHOTO_FIELDS=['photoUrl','photoAlt','photoSource','photoLicense','photoCredit'];
 export const PHOTO_LICENSES={'CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC0 1.0':'https://creativecommons.org/publicdomain/zero/1.0/','掲載許諾確認済み':'','美波町協定に基づく利用許諾':'','管理者撮影（掲載権利確認済み）':''};
-export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','mapVisibility','navigationPolicy','directionsMode','photoLink','photoStatus',...PHOTO_FIELDS,'relatedLinks','foodType','officialCheckedAt','upstreamId'];
+export const PUBLIC_FIELDS = ['id','name','category','description','address','lat','lng','hours','closed','price','tel','url','source','verifiedAt','accessNote','imageryDate','streetViewUrl','mapQuery','mapPlaceId','locationLabel','mapScope','mapVisibility','navigationPolicy','directionsMode','photoLink','photoStatus',...PHOTO_FIELDS,'relatedLinks','mapPoints','lifeTypes','serviceHours','serviceStatus','foodType','officialCheckedAt','upstreamId'];
 export function safeURL(value) {
  if(typeof value!=='string'||value.length>2048)return '';
  try {const u=new URL(value),host=u.hostname.toLowerCase();if([...u.searchParams.keys()].some(k=>/^(?:access_token|token|api_key|apikey|key|signature|sig|password|secret|authorization|auth)$/i.test(k)))return '';return u.protocol==='https:'&&!u.username&&!u.password&&(!u.port||u.port==='443')&&host.includes('.')&&!/^\d+(?:\.\d+){3}$/.test(host)&&!host.includes(':')&&!/(?:^|\.)(?:localhost|local|lan|internal)$/.test(host)?u.href:'';}catch{return '';}
@@ -14,7 +15,10 @@ export function validateData(input) {
   if(!row||typeof row!=='object'||Array.isArray(row))throw new Error(`行 ${i+1}: 形式`);
   const spot={};
   for(const key of PUBLIC_FIELDS)if(row[key]!==undefined&&row[key]!==null){
-   if(key==='relatedLinks'){
+   if(key==='mapPoints'){
+    if(!Array.isArray(row[key])||!row[key].length||row[key].length>10||row.lat!==undefined||row.lng!==undefined)throw new Error('地域の地点一覧');
+    const names=new Set();spot[key]=row[key].map(p=>{if(!p||typeof p.name!=='string'||!p.name.trim()||p.name.length>100||names.has(p.name)||!Number.isFinite(p.lat)||!Number.isFinite(p.lng)||p.lat<33.5||p.lat>34||p.lng<134.3||p.lng>134.8)throw new Error('地域の代表地点');names.add(p.name);return {name:p.name.trim(),lat:p.lat,lng:p.lng};});
+   }else if(key==='relatedLinks'){
     if(!Array.isArray(row[key])||row[key].length>8)throw new Error(`行 ${i+1}: 関連リンクは8件以内`);
     const urls=new Set();spot[key]=row[key].map(link=>{if(!link||typeof link.label!=='string'||!link.label.trim()||link.label.length>100||!safeURL(link.url))throw new Error(`行 ${i+1}: 関連リンクの名称・HTTPS URL`);const url=safeURL(link.url);if(urls.has(url))throw new Error(`行 ${i+1}: 関連リンク重複`);urls.add(url);return {label:link.label.trim(),url};});
    }else if(key==='lat'||key==='lng'){if(typeof row[key]!=='number'||!Number.isFinite(row[key]))throw new Error(`行 ${i+1}: 座標`);spot[key]=row[key];}
@@ -40,6 +44,8 @@ export function validateData(input) {
   if(spot.upstreamId&&!/^\d{10}$/.test(spot.upstreamId))throw new Error('元データNO');
   if(spot.officialCheckedAt&&!validDate(spot.officialCheckedAt))throw new Error(`行 ${i+1}: 公式情報の確認日`);
   if(spot.foodType&&(spot.category!=='food'||spot.foodType.length>80))throw new Error(`行 ${i+1}: 飲食店の種類`);
+  if(spot.lifeTypes&&spot.lifeTypes.split('・').some(t=>!LIFE_TYPES.includes(t)))throw new Error('生活施設の種類');
+  if(spot.mapPoints&&(!spot.locationLabel||spot.navigationPolicy!=='disabled'))throw new Error('地域・複数会場の範囲と案内制限が必要');
   if(spot.photoUrl){
    if(!safeURL(spot.photoUrl)||!safeURL(spot.photoSource)||!spot.photoAlt||spot.photoAlt.length>200||!spot.photoCredit||spot.photoCredit.length>200||!Object.hasOwn(PHOTO_LICENSES,spot.photoLicense))throw new Error(`行 ${i+1}: 写真の公開URL・代替テキスト・出典・クレジット・確認済み利用条件が必要です`);
   }else if(PHOTO_FIELDS.some(k=>spot[k]))throw new Error(`行 ${i+1}: 写真URLがない写真メタデータ`);
@@ -48,10 +54,11 @@ export function validateData(input) {
  if(typeof input.updatedAt!=='string'||!Number.isFinite(Date.parse(input.updatedAt)))throw new Error('更新日が必要です');
  return {schemaVersion:1,updatedAt:input.updatedAt,spots};
 }
-export function filterSpots(spots,{q='',category='',saved=false,foodType=''},favorites=[]){
+export function filterSpots(spots,{q='',category='',saved=false,foodType='',lifeType=''},favorites=[]){
  const term=q.normalize('NFKC').toLocaleLowerCase('ja').trim();
- return spots.filter(s=>(!category||s.category===category)&&(!foodType||s.foodType===foodType||(s.foodType||'').split('・').map(t=>t.trim()).includes(foodType))&&(!saved||favorites.includes(s.id))&&(!term||[s.name,s.address,s.description,s.foodType,CATEGORIES[s.category]].join(' ').normalize('NFKC').toLocaleLowerCase('ja').includes(term)));
+ return spots.filter(s=>(!category||(category==='life'?Boolean(s.lifeTypes)||s.category==='life':s.category===category))&&(!lifeType||(s.lifeTypes||'').split('・').includes(lifeType))&&(!foodType||s.foodType===foodType||(s.foodType||'').split('・').map(t=>t.trim()).includes(foodType))&&(!saved||favorites.includes(s.id))&&(!term||[s.name,s.address,s.description,s.foodType,s.lifeTypes,s.serviceStatus,CATEGORIES[s.category]].join(' ').normalize('NFKC').toLocaleLowerCase('ja').includes(term)));
 }
-export function distanceKm(a,b){const rad=x=>x*Math.PI/180,dlat=rad(b.lat-a.lat),dlng=rad(b.lng-a.lng),n=Math.sin(dlat/2)**2+Math.cos(rad(a.lat))*Math.cos(rad(b.lat))*Math.sin(dlng/2)**2;return 6371*2*Math.atan2(Math.sqrt(n),Math.sqrt(1-n));}
+export function distanceKm(a,b){if(b.lat===undefined&&b.mapPoints?.length)return Math.min(...b.mapPoints.map(p=>distanceKm(a,p)));const rad=x=>x*Math.PI/180,dlat=rad(b.lat-a.lat),dlng=rad(b.lng-a.lng),n=Math.sin(dlat/2)**2+Math.cos(rad(a.lat))*Math.cos(rad(b.lat))*Math.sin(dlng/2)**2;return 6371*2*Math.atan2(Math.sqrt(n),Math.sqrt(1-n));}
 
-export const isVisibleMapSpot=s=>s.lat!==undefined&&s.mapVisibility!=='hidden';
+export const mapPointsForSpot=s=>s.lat!==undefined?[{name:s.name,lat:s.lat,lng:s.lng}]:s.mapPoints||[];
+export const isVisibleMapSpot=s=>mapPointsForSpot(s).length>0&&s.mapVisibility!=='hidden';

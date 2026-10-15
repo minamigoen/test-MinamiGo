@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-15T00:00:00Z",
+  "spots": [
+    {
+      "id": "life-family-hiwasa",
+      "name": "ファミリーマート日和佐店",
+      "category": "life",
+      "description": "コンビニの生活施設。24時間。 臨時の営業時間は店舗公式で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前455",
+      "lat": 33.730250000338835,
+      "lng": 134.5293248561626,
+      "hours": "24時間",
+      "tel": "0884-77-3077",
+      "url": "https://store.family.co.jp/points/31598",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "ファミリーマート日和佐店 徳島県海部郡美波町奥河内字寺前455",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://store.family.co.jp/points/31598"
+        }
+      ],
+      "lifeTypes": "コンビニ",
+      "serviceHours": "24時間。",
+      "serviceStatus": "臨時の営業時間は店舗公式で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-idemitsu-hiwasa",
+      "name": "apollostation日和佐SS／水口油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。月～土7:00～19:30。日曜定休。 給油以外の取扱サービスは店舗へ確認してください。",
+      "address": "徳島県海部郡美波町奥河内寺前132-11",
+      "lat": 33.734003484269564,
+      "lng": 134.53076555555555,
+      "hours": "月～土 7:00～19:30",
+      "closed": "日曜日",
+      "tel": "08847-7-0231",
+      "url": "https://map.idemitsu.com/b/a/info/0000008237/",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "apollostation日和佐SS／水口油店 徳島県海部郡美波町奥河内寺前132-11",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://map.idemitsu.com/b/a/info/0000008237/"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "月～土7:00～19:30。日曜定休。",
+      "serviceStatus": "給油以外の取扱サービスは店舗へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-cosmo-hiwasa",
+      "name": "コスモ日和佐SS／上松石油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。6:30～20:30。年中無休との公式掲載。 臨時の営業変更は店舗公式で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前264-2",
+      "lat": 33.733291,
+      "lng": 134.528574,
+      "hours": "6:30～20:30",
+      "closed": "年中無休",
+      "tel": "0884-77-1859",
+      "url": "https://map.cosmo-energy.co.jp/points/S360071",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "コスモ日和佐SS／上松石油店 徳島県海部郡美波町奥河内字寺前264-2",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://map.cosmo-energy.co.jp/points/S360071"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "6:30～20:30。年中無休との公式掲載。",
+      "serviceStatus": "臨時の営業変更は店舗公式で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-eneos-akamatsu",
+      "name": "ENEOS赤松SS／上松石油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。営業時間の公式掲載は確認できていません。 営業時間・定休日は訪問前に施設へ確認してください。",
+      "address": "徳島県海部郡美波町赤松字野田7-4",
+      "lat": 33.771153700707,
+      "lng": 134.500435881241,
+      "url": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "ENEOS赤松SS／上松石油店 徳島県海部郡美波町赤松字野田7-4",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "営業時間の公式掲載は確認できていません。",
+      "serviceStatus": "営業時間・定休日は訪問前に施設へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-ookita-hiwasa",
+      "name": "フレッシュフーズオオキタ日和佐店",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～19:30。第2水休（8月の扱いは店舗に確認）。 公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
+      "address": "徳島県海部郡美波町奥河内字弁才天16-2",
+      "hours": "9:30～19:30",
+      "closed": "第2水曜日（8月を除くとの別公式掲載あり）",
+      "tel": "0884-77-2493",
+      "url": "https://ff-ookita.jp/about.html",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式の短縮Google Mapsリンクは外部リンクとして残します。リンク由来の候補座標は公開JSONへ転記せず、独立した座標根拠の確認待ちです。",
+      "mapQuery": "フレッシュフーズオオキタ日和佐店 徳島県海部郡美波町奥河内字弁才天16-2",
+      "locationLabel": "公式住所の検索のみ。座標の独立した利用根拠を確認中でピンは保留。",
+      "mapScope": "name-address",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ff-ookita.jp/about.html"
+        },
+        {
+          "label": "店舗公式：休日の補足",
+          "url": "https://r.goope.jp/ookitahiwasa/about"
+        },
+        {
+          "label": "施設公式が案内する地図（外部）",
+          "url": "https://goo.gl/maps/7bYXEF1H49KQ629N6"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～19:30。第2水休（8月の扱いは店舗に確認）。",
+      "serviceStatus": "公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-foodshop-minami",
+      "name": "フードショップみなみ",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～19:00。日曜定休。 最新の営業・取扱商品は公式案内で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前119-1",
+      "lat": 33.7321867,
+      "lng": 134.5332884,
+      "hours": "9:30～19:00",
+      "closed": "日曜日",
+      "url": "https://ptl.zchain.co.jp/store/6437?store_group_id=1",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "フードショップみなみ 徳島県海部郡美波町奥河内字寺前119-1",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ptl.zchain.co.jp/store/6437?store_group_id=1"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～19:00。日曜定休。",
+      "serviceStatus": "最新の営業・取扱商品は公式案内で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-foodcenter-izumi",
+      "name": "フードセンターいずみ",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～18:30。日曜定休との公式チェーン掲載。 旧事業者HPの営業時間と差があります。現時点の確定営業時間とせず訪問前に確認してください。",
+      "address": "徳島県海部郡美波町西由岐字東30",
+      "lat": 33.7722821,
+      "lng": 134.5905434,
+      "hours": "9:30～18:30",
+      "closed": "日曜日",
+      "url": "https://ptl.zchain.co.jp/store/6435?store_group_id=1",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "フードセンターいずみ 徳島県海部郡美波町西由岐字東30",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ptl.zchain.co.jp/store/6435?store_group_id=1"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～18:30。日曜定休との公式チェーン掲載。",
+      "serviceStatus": "旧事業者HPの営業時間と差があります。現時点の確定営業時間とせず訪問前に確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    }
+  ]
+}

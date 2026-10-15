@@ -272,11 +272,16 @@
       "category": "nature",
       "description": "阿部街道沿いの桜の風景を楽しむ案内。開花・通行条件は現地と町の案内をご確認ください。",
       "address": "美波町 阿部街道沿い（区間の位置確認待ち）",
+      "lat": 33.784918,
+      "lng": 134.613762,
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町サイトのMapは南阿波サンラインと同じリンク。桜街道の位置としては採用しない。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.784918,134.613762",
+      "locationLabel": "道路沿線の代表点。桜街道全体の範囲・駐車場・入口を示す一点ではありません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img11.jpg",
       "photoAlt": "桜街道（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
@@ -286,6 +291,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/409.html"
         }
       ]
     },
@@ -327,12 +336,17 @@
       "category": "festival",
       "description": "日和佐地区の秋の祭り。開催年の日程・交通規制・会場案内は公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.73506,
+      "lng": 134.540358,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.73506,134.540358",
+      "locationLabel": "町の2026年案内に掲載された日和佐八幡神社の参考点。祭りは町内・大浜海岸にも広がり、集合場所・動線は別途確認してください。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img1.jpg",
       "photoAlt": "日和佐八幡神社秋まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
@@ -342,6 +356,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/800.html"
         }
       ]
     },
@@ -351,12 +369,17 @@
       "category": "festival",
       "description": "赤松神社で伝わる奉納花火の案内。開催日と見学条件は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.77628,
+      "lng": 134.499093,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.77628,134.499093",
+      "locationLabel": "町の2026年案内に掲載された赤松神社会場の代表点。観覧場所・立入範囲・入口は未確認。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img2.jpg",
       "photoAlt": "赤松神社奉納吹筒花火（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
@@ -366,6 +389,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/388.html"
         }
       ]
     },
@@ -378,9 +405,10 @@
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "locationLabel": "由岐地区の連続秋祭りは7地区の複数会場。各点は町掲載の地域・神社の代表点で、開催範囲全体・集合場所・現在の通行条件を示しません。",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img3.jpg",
       "photoAlt": "由岐の連続秋まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
@@ -390,6 +418,47 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html"
+        }
+      ],
+      "mapPoints": [
+        {
+          "name": "伊座利祭",
+          "lat": 33.803585,
+          "lng": 134.67135552
+        },
+        {
+          "name": "阿部宮内神社",
+          "lat": 33.789733,
+          "lng": 134.641668
+        },
+        {
+          "name": "志和岐祭",
+          "lat": 33.780319,
+          "lng": 134.607817
+        },
+        {
+          "name": "西の地岡崎神社",
+          "lat": 33.775323,
+          "lng": 134.590256
+        },
+        {
+          "name": "西由岐八幡神社",
+          "lat": 33.773727,
+          "lng": 134.590234
+        },
+        {
+          "name": "田井祭",
+          "lat": 33.772863,
+          "lng": 134.580075
+        },
+        {
+          "name": "木岐八幡神社",
+          "lat": 33.767234,
+          "lng": 134.573841
         }
       ]
     },
@@ -399,12 +468,17 @@
       "category": "festival",
       "description": "日和佐の新年の行事の案内。開催内容と会場は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.734177,
+      "lng": 134.541321,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.734177,134.541321",
+      "locationLabel": "大浜海岸周辺の参考点。町の過去会場地図と2026年の観光案内を照合。次回開催・入口・集合場所は未確認。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img4.jpg",
       "photoAlt": "ひわさ冬まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
@@ -414,6 +488,14 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/390.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://www.awanavi.jp/archives/event/1660"
         }
       ]
     },
@@ -423,12 +505,17 @@
       "category": "festival",
       "description": "ウミガメと地域に親しむ祭りの案内。開催内容・日程は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.734177,
+      "lng": 134.541321,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.734177,134.541321",
+      "locationLabel": "会場範囲（大浜海岸周辺）の参考点。町掲載の海岸周辺地点と県観光案内を照合。各催しの舞台・入口・集合場所は示しません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img5.jpg",
       "photoAlt": "日和佐うみがめまつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
@@ -438,6 +525,18 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/390.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://www.town.minami.lg.jp/docs/3324727.html"
+        },
+        {
+          "label": "町の観光案内・出典 4",
+          "url": "https://www.awanavi.jp/archives/event/1690"
         }
       ]
     },
@@ -447,12 +546,17 @@
       "category": "festival",
       "description": "由岐の伊勢エビと地域の催しの案内。開催日・販売条件は主催者の最新情報をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.775086,
+      "lng": 134.591642,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.775086,134.591642",
+      "locationLabel": "町掲載「伊勢エビまつり会場」の代表点（由岐駅前グラウンド）。開催日にはページ見出しと本文に年の不整合があり、最新日程は主催者へ確認してください。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img6.jpg",
       "photoAlt": "由岐伊勢エビまつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
@@ -462,6 +566,14 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/801.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://r.goope.jp/tsci1400/info/6943672"
         }
       ]
     },

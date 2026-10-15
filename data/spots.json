@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T00:49:55.055Z",
+  "updatedAt": "2026-10-15T01:40:08.868Z",
   "spots": [
     {
       "id": "odaishi-statue",
@@ -1098,11 +1098,16 @@
       "category": "nature",
       "description": "阿部街道沿いの桜の風景を楽しむ案内。開花・通行条件は現地と町の案内をご確認ください。",
       "address": "美波町 阿部街道沿い（区間の位置確認待ち）",
+      "lat": 33.784918,
+      "lng": 134.613762,
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町サイトのMapは南阿波サンラインと同じリンク。桜街道の位置としては採用しない。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.784918,134.613762",
+      "locationLabel": "道路沿線の代表点。桜街道全体の範囲・駐車場・入口を示す一点ではありません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img11.jpg",
       "photoAlt": "桜街道（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
@@ -1112,6 +1117,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/409.html"
         }
       ]
     },
@@ -1153,12 +1162,17 @@
       "category": "festival",
       "description": "日和佐地区の秋の祭り。開催年の日程・交通規制・会場案内は公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.73506,
+      "lng": 134.540358,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.73506,134.540358",
+      "locationLabel": "町の2026年案内に掲載された日和佐八幡神社の参考点。祭りは町内・大浜海岸にも広がり、集合場所・動線は別途確認してください。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img1.jpg",
       "photoAlt": "日和佐八幡神社秋まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
@@ -1168,6 +1182,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/800.html"
         }
       ]
     },
@@ -1177,12 +1195,17 @@
       "category": "festival",
       "description": "赤松神社で伝わる奉納花火の案内。開催日と見学条件は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.77628,
+      "lng": 134.499093,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.77628,134.499093",
+      "locationLabel": "町の2026年案内に掲載された赤松神社会場の代表点。観覧場所・立入範囲・入口は未確認。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img2.jpg",
       "photoAlt": "赤松神社奉納吹筒花火（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
@@ -1192,6 +1215,10 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/388.html"
         }
       ]
     },
@@ -1204,9 +1231,10 @@
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "locationLabel": "由岐地区の連続秋祭りは7地区の複数会場。各点は町掲載の地域・神社の代表点で、開催範囲全体・集合場所・現在の通行条件を示しません。",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img3.jpg",
       "photoAlt": "由岐の連続秋まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
@@ -1216,6 +1244,47 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html"
+        }
+      ],
+      "mapPoints": [
+        {
+          "name": "伊座利祭",
+          "lat": 33.803585,
+          "lng": 134.67135552
+        },
+        {
+          "name": "阿部宮内神社",
+          "lat": 33.789733,
+          "lng": 134.641668
+        },
+        {
+          "name": "志和岐祭",
+          "lat": 33.780319,
+          "lng": 134.607817
+        },
+        {
+          "name": "西の地岡崎神社",
+          "lat": 33.775323,
+          "lng": 134.590256
+        },
+        {
+          "name": "西由岐八幡神社",
+          "lat": 33.773727,
+          "lng": 134.590234
+        },
+        {
+          "name": "田井祭",
+          "lat": 33.772863,
+          "lng": 134.580075
+        },
+        {
+          "name": "木岐八幡神社",
+          "lat": 33.767234,
+          "lng": 134.573841
         }
       ]
     },
@@ -1225,12 +1294,17 @@
       "category": "festival",
       "description": "日和佐の新年の行事の案内。開催内容と会場は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.734177,
+      "lng": 134.541321,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.734177,134.541321",
+      "locationLabel": "大浜海岸周辺の参考点。町の過去会場地図と2026年の観光案内を照合。次回開催・入口・集合場所は未確認。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img4.jpg",
       "photoAlt": "ひわさ冬まつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
@@ -1240,6 +1314,14 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/390.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://www.awanavi.jp/archives/event/1660"
         }
       ]
     },
@@ -1249,12 +1331,17 @@
       "category": "festival",
       "description": "ウミガメと地域に親しむ祭りの案内。開催内容・日程は開催年の公式発表をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.734177,
+      "lng": 134.541321,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.734177,134.541321",
+      "locationLabel": "会場範囲（大浜海岸周辺）の参考点。町掲載の海岸周辺地点と県観光案内を照合。各催しの舞台・入口・集合場所は示しません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img5.jpg",
       "photoAlt": "日和佐うみがめまつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
@@ -1264,6 +1351,18 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/390.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://www.town.minami.lg.jp/docs/3324727.html"
+        },
+        {
+          "label": "町の観光案内・出典 4",
+          "url": "https://www.awanavi.jp/archives/event/1690"
         }
       ]
     },
@@ -1273,12 +1372,17 @@
       "category": "festival",
       "description": "由岐の伊勢エビと地域の催しの案内。開催日・販売条件は主催者の最新情報をご確認ください。",
       "address": "美波町（開催年の会場・集合場所は要確認）",
+      "lat": 33.775086,
+      "lng": 134.591642,
       "hours": "開催年の日程・会場は公式発表で確認",
       "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
       "source": "美波町MINAMI TIME・元資料の観光案内を照合した独自要約",
-      "verifiedAt": "2026-10-14",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載点は施設・地域の代表点で、測量済み入口ではありません。祭りの開催年の動線、臨時駐車場、立入範囲は主催者の最新案内に従ってください。",
+      "mapQuery": "33.775086,134.591642",
+      "locationLabel": "町掲載「伊勢エビまつり会場」の代表点（由岐駅前グラウンド）。開催日にはページ見出しと本文に年の不整合があり、最新日程は主催者へ確認してください。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img6.jpg",
       "photoAlt": "由岐伊勢エビまつり（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
@@ -1288,6 +1392,14 @@
         {
           "label": "町の観光案内・出典 1",
           "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6"
+        },
+        {
+          "label": "町の観光案内・出典 2",
+          "url": "https://www.town.minami.lg.jp/docs/801.html"
+        },
+        {
+          "label": "町の観光案内・出典 3",
+          "url": "https://r.goope.jp/tsci1400/info/6943672"
         }
       ]
     },
@@ -1418,6 +1530,209 @@
       ]
     },
     {
+      "id": "life-family-hiwasa",
+      "name": "ファミリーマート日和佐店",
+      "category": "life",
+      "description": "コンビニの生活施設。24時間。 臨時の営業時間は店舗公式で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前455",
+      "lat": 33.730250000338835,
+      "lng": 134.5293248561626,
+      "hours": "24時間",
+      "tel": "0884-77-3077",
+      "url": "https://store.family.co.jp/points/31598",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "ファミリーマート日和佐店 徳島県海部郡美波町奥河内字寺前455",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://store.family.co.jp/points/31598"
+        }
+      ],
+      "lifeTypes": "コンビニ",
+      "serviceHours": "24時間。",
+      "serviceStatus": "臨時の営業時間は店舗公式で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-idemitsu-hiwasa",
+      "name": "apollostation日和佐SS／水口油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。月～土7:00～19:30。日曜定休。 給油以外の取扱サービスは店舗へ確認してください。",
+      "address": "徳島県海部郡美波町奥河内寺前132-11",
+      "lat": 33.734003484269564,
+      "lng": 134.53076555555555,
+      "hours": "月～土 7:00～19:30",
+      "closed": "日曜日",
+      "tel": "08847-7-0231",
+      "url": "https://map.idemitsu.com/b/a/info/0000008237/",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "apollostation日和佐SS／水口油店 徳島県海部郡美波町奥河内寺前132-11",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://map.idemitsu.com/b/a/info/0000008237/"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "月～土7:00～19:30。日曜定休。",
+      "serviceStatus": "給油以外の取扱サービスは店舗へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-cosmo-hiwasa",
+      "name": "コスモ日和佐SS／上松石油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。6:30～20:30。年中無休との公式掲載。 臨時の営業変更は店舗公式で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前264-2",
+      "lat": 33.733291,
+      "lng": 134.528574,
+      "hours": "6:30～20:30",
+      "closed": "年中無休",
+      "tel": "0884-77-1859",
+      "url": "https://map.cosmo-energy.co.jp/points/S360071",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "コスモ日和佐SS／上松石油店 徳島県海部郡美波町奥河内字寺前264-2",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://map.cosmo-energy.co.jp/points/S360071"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "6:30～20:30。年中無休との公式掲載。",
+      "serviceStatus": "臨時の営業変更は店舗公式で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-eneos-akamatsu",
+      "name": "ENEOS赤松SS／上松石油店",
+      "category": "life",
+      "description": "ガソリンスタンドの生活施設。営業時間の公式掲載は確認できていません。 営業時間・定休日は訪問前に施設へ確認してください。",
+      "address": "徳島県海部郡美波町赤松字野田7-4",
+      "lat": 33.771153700707,
+      "lng": 134.500435881241,
+      "url": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "ENEOS赤松SS／上松石油店 徳島県海部郡美波町赤松字野田7-4",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184"
+        }
+      ],
+      "lifeTypes": "ガソリンスタンド",
+      "serviceHours": "営業時間の公式掲載は確認できていません。",
+      "serviceStatus": "営業時間・定休日は訪問前に施設へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-ookita-hiwasa",
+      "name": "フレッシュフーズオオキタ日和佐店",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～19:30。第2水休（8月の扱いは店舗に確認）。 公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
+      "address": "徳島県海部郡美波町奥河内字弁才天16-2",
+      "hours": "9:30～19:30",
+      "closed": "第2水曜日（8月を除くとの別公式掲載あり）",
+      "tel": "0884-77-2493",
+      "url": "https://ff-ookita.jp/about.html",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式の短縮Google Mapsリンクは外部リンクとして残します。リンク由来の候補座標は公開JSONへ転記せず、独立した座標根拠の確認待ちです。",
+      "mapQuery": "フレッシュフーズオオキタ日和佐店 徳島県海部郡美波町奥河内字弁才天16-2",
+      "locationLabel": "公式住所の検索のみ。座標の独立した利用根拠を確認中でピンは保留。",
+      "mapScope": "name-address",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ff-ookita.jp/about.html"
+        },
+        {
+          "label": "店舗公式：休日の補足",
+          "url": "https://r.goope.jp/ookitahiwasa/about"
+        },
+        {
+          "label": "施設公式が案内する地図（外部）",
+          "url": "https://goo.gl/maps/7bYXEF1H49KQ629N6"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～19:30。第2水休（8月の扱いは店舗に確認）。",
+      "serviceStatus": "公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-foodshop-minami",
+      "name": "フードショップみなみ",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～19:00。日曜定休。 最新の営業・取扱商品は公式案内で確認してください。",
+      "address": "徳島県海部郡美波町奥河内字寺前119-1",
+      "lat": 33.7321867,
+      "lng": 134.5332884,
+      "hours": "9:30～19:00",
+      "closed": "日曜日",
+      "url": "https://ptl.zchain.co.jp/store/6437?store_group_id=1",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "フードショップみなみ 徳島県海部郡美波町奥河内字寺前119-1",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ptl.zchain.co.jp/store/6437?store_group_id=1"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～19:00。日曜定休。",
+      "serviceStatus": "最新の営業・取扱商品は公式案内で確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-foodcenter-izumi",
+      "name": "フードセンターいずみ",
+      "category": "life",
+      "description": "スーパーの生活施設。9:30～18:30。日曜定休との公式チェーン掲載。 旧事業者HPの営業時間と差があります。現時点の確定営業時間とせず訪問前に確認してください。",
+      "address": "徳島県海部郡美波町西由岐字東30",
+      "lat": 33.7722821,
+      "lng": 134.5905434,
+      "hours": "9:30～18:30",
+      "closed": "日曜日",
+      "url": "https://ptl.zchain.co.jp/store/6435?store_group_id=1",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ページの施設データにある世界測地系の地点を参照。Google Maps API・Places・Google地図画面から抽出したデータは使っていません。訪問前に公式案内・現地表示を確認してください。",
+      "mapQuery": "フードセンターいずみ 徳島県海部郡美波町西由岐字東30",
+      "locationLabel": "事業者公式ページが配信する施設代表点（2026-10-15確認）。実測入口・敷地区画・経路ではありません。",
+      "mapScope": "surroundings",
+      "relatedLinks": [
+        {
+          "label": "施設公式：営業・利用条件の確認",
+          "url": "https://ptl.zchain.co.jp/store/6435?store_group_id=1"
+        }
+      ],
+      "lifeTypes": "スーパー",
+      "serviceHours": "9:30～18:30。日曜定休との公式チェーン掲載。",
+      "serviceStatus": "旧事業者HPの営業時間と差があります。現時点の確定営業時間とせず訪問前に確認してください。",
+      "officialCheckedAt": "2026-10-15"
+    },
+    {
       "id": "minamistay-0000000001",
       "name": "ホテル白い燈台",
       "category": "stay",
@@ -1427,7 +1742,7 @@
       "lng": 134.54469,
       "url": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
       "source": "美波町・美波町観光協会の公開施設案内（宿泊元表のNOと照合）",
-      "verifiedAt": "2026-10-13",
+      "verifiedAt": "2026-10-15",
       "accessNote": "宿泊元表の座標は参考地点です。入口・現況は未確認。電話・営業時間は取り込んでいません。予約前に施設の最新案内を確認してください。",
       "mapQuery": "ホテル白い燈台 徳島県海部郡美波町日和佐浦455",
       "locationLabel": "宿泊元表の参考座標（2026-10-14読取）。現地・入口・経路は未検証。",
@@ -1441,11 +1756,14 @@
       "photoCredit": "掲載元：美波町公開案内",
       "relatedLinks": [
         {
-          "label": "施設公式：入浴の利用条件",
+          "label": "施設公式：営業・利用条件の確認",
           "url": "https://www.shiroitodai.jp/"
         }
       ],
-      "officialCheckedAt": "2026-10-13"
+      "lifeTypes": "温泉",
+      "serviceHours": "宿泊者のみ入浴可。6:30～8:00／16:00～22:00。",
+      "serviceStatus": "日帰り入浴は2026年8月5日から休業。宿泊者のみ。",
+      "officialCheckedAt": "2026-10-15"
     },
     {
       "id": "minamistay-0000000002",
@@ -1603,13 +1921,15 @@
       "category": "stay",
       "description": "公開施設案内に掲載されている宿泊施設です。営業・予約・チェックイン・料金は施設へご確認ください。",
       "address": "徳島県海部郡美波町山河内字明丸1-1",
+      "lat": 33.692716,
+      "lng": 134.489546,
       "url": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
       "source": "美波町・美波町観光協会の公開施設案内（宿泊元表のNOと照合）",
       "verifiedAt": "2026-10-13",
-      "accessNote": "元表の座標・電話・営業時間・備考・画像は取り込んでいません。住所に表記差がある場合は公開施設案内を使用します。予約前に現地の最新案内をご確認ください。",
+      "accessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。",
       "mapQuery": "南阿波サンラインモビレージ 徳島県海部郡美波町山河内字明丸1-1",
-      "locationLabel": "住所検索のみ。元表で同施設の座標に差があるためピンは保留。",
-      "mapScope": "name-address",
+      "locationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapScope": "surroundings",
       "directionsMode": "walking",
       "photoStatus": "掲載許諾確認済み",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img8.jpg",
@@ -1617,7 +1937,12 @@
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay8",
       "photoLicense": "掲載許諾確認済み",
       "photoCredit": "掲載元：美波町公開案内",
-      "relatedLinks": [],
+      "relatedLinks": [
+        {
+          "label": "町公式：代表地点の根拠",
+          "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution61/"
+        }
+      ],
       "officialCheckedAt": "2026-10-13"
     },
     {
@@ -1776,13 +2101,15 @@
       "category": "stay",
       "description": "公開施設案内に掲載されている宿泊施設です。営業・予約・チェックイン・料金は施設へご確認ください。",
       "address": "徳島県海部郡美波町伊座利301-2",
+      "lat": 33.80266,
+      "lng": 134.669056,
       "url": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
       "source": "美波町・美波町観光協会の公開施設案内（宿泊元表のNOと照合）",
       "verifiedAt": "2026-10-13",
-      "accessNote": "元表の座標・電話・営業時間・備考・画像は取り込んでいません。住所に表記差がある場合は公開施設案内を使用します。予約前に現地の最新案内をご確認ください。",
+      "accessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。",
       "mapQuery": "イザリCafé 徳島県海部郡美波町伊座利301-2",
-      "locationLabel": "住所検索のみ。元表の緯度が欠けているためピンは保留。",
-      "mapScope": "name-address",
+      "locationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapScope": "surroundings",
       "directionsMode": "walking",
       "photoStatus": "掲載許諾確認済み",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img15.jpg",
@@ -1790,7 +2117,16 @@
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay15",
       "photoLicense": "掲載許諾確認済み",
       "photoCredit": "掲載元：美波町公開案内",
-      "relatedLinks": [],
+      "relatedLinks": [
+        {
+          "label": "施設公式：住所・アクセス（町表記と番地差あり）",
+          "url": "https://hpdsp.jp/izaricafe/access"
+        },
+        {
+          "label": "町公式：代表地点の根拠",
+          "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution71/"
+        }
+      ],
       "officialCheckedAt": "2026-10-13"
     },
     {
@@ -1899,13 +2235,15 @@
       "category": "stay",
       "description": "南阿波サンラインモビレージのテントサイトです。同施設のコテージとは宿泊タイプを分けて掲載しています。料金・予約・利用条件は公式案内をご確認ください。",
       "address": "徳島県海部郡美波町山河内明丸1-1",
+      "lat": 33.692716,
+      "lng": 134.489546,
       "url": "https://awasun.com/tentsite/",
       "source": "南阿波サンラインモビレージ公式（宿泊元表のNOと照合）",
       "verifiedAt": "2026-10-13",
-      "accessNote": "元表の座標・電話・営業時間・備考・画像は取り込んでいません。住所に表記差がある場合は公開施設案内を使用します。予約前に現地の最新案内をご確認ください。",
+      "accessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。",
       "mapQuery": "南阿波サンラインモビレージ（テントサイト） 徳島県海部郡美波町山河内明丸1-1",
-      "locationLabel": "住所検索のみ。元表で同施設の座標に差があるためピンは保留。",
-      "mapScope": "name-address",
+      "locationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapScope": "surroundings",
       "directionsMode": "walking",
       "photoStatus": "掲載許諾確認済み",
       "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img20.jpg",
@@ -1913,7 +2251,12 @@
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay20",
       "photoLicense": "掲載許諾確認済み",
       "photoCredit": "掲載元：美波町公開案内",
-      "relatedLinks": [],
+      "relatedLinks": [
+        {
+          "label": "町公式：代表地点の根拠",
+          "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution61/"
+        }
+      ],
       "officialCheckedAt": "2026-10-13"
     },
     {
@@ -2078,7 +2421,7 @@
       "closed": "不定休",
       "tel": "0884-77-0709",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "南阿波サンラインモビレージ 美波町山河内字明丸1-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2110,7 +2453,7 @@
       "closed": "不定休",
       "tel": "0884-77-3755",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "ラトリエあべ 美波町山河内字なか26",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2137,7 +2480,7 @@
       "closed": "火曜日",
       "tel": "0884-77-0083",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "お食事処むらかみ 美波町奥河内字弁才天68-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2164,7 +2507,7 @@
       "closed": "不定休",
       "tel": "090-5141-0170",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "味一 美波町奥河内字寺前493-6(道の駅日和佐内)",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2191,7 +2534,7 @@
       "closed": "火曜日",
       "tel": "0884-77-3033",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "お好み焼き 天花 美波町奥河内字寺前239-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2223,7 +2566,7 @@
       "closed": "木曜日(ただし連休、祝祭日は営業)",
       "tel": "0884-77-2095",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "本格手打ちうどん やすらぎ 美波町奥河内字寺前42-3",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2246,11 +2589,12 @@
       "address": "美波町奥河内字寺前285-1",
       "lat": 33.7314702165836,
       "lng": 134.528475340764,
-      "hours": "8:00 - 20:00(19:30受付終了)",
-      "closed": "不定休",
+      "hours": "お食事処 8:00～20:00（入店19:30まで）",
+      "closed": "お食事処 火曜日・金曜日",
       "tel": "0884-77-1126",
+      "url": "https://yakuouji.net/yakuohji-spa",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "薬王寺温泉 美波町奥河内字寺前285-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2263,13 +2607,16 @@
       "photoCredit": "掲載元：美波町公開案内",
       "relatedLinks": [
         {
-          "label": "施設公式：温泉・洗濯・食事の営業時間",
+          "label": "施設公式：営業・利用条件の確認",
           "url": "https://yakuouji.net/yakuohji-spa"
         }
       ],
+      "lifeTypes": "温泉・コインランドリー",
+      "serviceHours": "温泉12:00～20:00（火・金休）。併設コインランドリー13:00～21:00。",
+      "serviceStatus": "食事・温泉・洗濯は営業時間が異なります。",
       "foodType": "種類未確認",
-      "upstreamId": "0000000010",
-      "officialCheckedAt": "2026-10-15"
+      "officialCheckedAt": "2026-10-15",
+      "upstreamId": "0000000010"
     },
     {
       "id": "azur-shogodo",
@@ -2284,7 +2631,7 @@
       "tel": "0884-77-0126",
       "url": "https://azure-shogodo.com/",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "Sweets Lagoon アジュール昭吾堂 美波町奥河内字寺前237-4",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2325,7 +2672,7 @@
       "closed": "火曜日、第2水曜日",
       "tel": "0884-70-1372",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "まめぼんcafe 美波町奥河内字寺前100-9",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2367,7 +2714,7 @@
       "tel": "0884-70-1590",
       "url": "https://iron.momojiro.site/",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "阿波尾鶏中華そば 藍庵 美波町奥河内字寺前229-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2412,7 +2759,7 @@
       "closed": "月曜日",
       "tel": "0884-77-3477",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "焼肉 平和園 美波町奥河内字寺前79-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2439,7 +2786,7 @@
       "closed": "不定休",
       "tel": "0884-77-1134",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "お食事処 味登里(みどり) 美波町奥河内字弁才天3-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2466,7 +2813,7 @@
       "closed": "火曜日",
       "tel": "0884-70-1464",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "韓国家庭料理 オモニ 美波町奥河内字寺前490-4",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2493,7 +2840,7 @@
       "closed": "不定休",
       "tel": "0884-77-0420",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "中華料理 だいみんけん 美波町奥河内字弁才天11-8",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2520,7 +2867,7 @@
       "closed": "不定休",
       "tel": "090-8280-0982",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "寛ぐcafe なごみ庵 美波町奥河内字寺前490-20",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2552,7 +2899,7 @@
       "closed": "水曜日",
       "tel": "0884-77-0448",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "五番館 美波町西由岐字西71-5",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2579,7 +2926,7 @@
       "closed": "水・第2第4火曜日",
       "tel": "0884-77-3528",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "阿波尾鶏・地魚 ひわさ屋 美波町奥河内字寺前122",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2612,7 +2959,7 @@
       "closed": "不定休",
       "tel": "0884-77-0168",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "ふなつき 美波町奥河内字寺前165",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2639,7 +2986,7 @@
       "closed": "日・月曜日",
       "tel": "0884-77-0006",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "茶房 たにひょう 美波町奥河内字本村152-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2666,7 +3013,7 @@
       "closed": "月曜日",
       "tel": "0884-77-0073",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "てこ屋 美波町日和佐浦41-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2693,7 +3040,7 @@
       "closed": "不定休",
       "tel": "0884-77-2474",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "喫茶 タートル 美波町日和佐浦370-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2720,7 +3067,7 @@
       "closed": "不定休",
       "tel": "0884-77-0013",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "ドライブイン 海賊舟 美波町北河内字本村484-16",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2747,7 +3094,7 @@
       "closed": "火曜日・不定休",
       "tel": "0884-70-1557",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "at Teramae 美波町奥河内字寺前179-1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2774,7 +3121,7 @@
       "closed": "日曜日・月曜日",
       "tel": "0884-77-0463",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "永岡 お好み焼き 美波町奥河内字本村76-5",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2801,7 +3148,7 @@
       "closed": "不定休",
       "tel": "0884-70-1727",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "Café Dorothy 美波町北河内字本村378-2",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2829,7 +3176,7 @@
       "tel": "0884-77-0318",
       "url": "https://www.instagram.com/haratofuten.tokushima/",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "ハラトウフテン 美波町奥河内字寺前522-43⁡⁡",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2866,7 +3213,7 @@
       "closed": "金、日、第４月曜",
       "tel": "090-5018-8892",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。 補足：商店組合の掲載情報です。現在の営業状況・営業時間・定休日は来店前に店舗の最新案内をご確認ください。地図・徒歩経路は名称と住所から検索します。個別の地点・入口・経路の安全性は未検証です。",
       "mapQuery": "TEISHABA cafe 美波町奥河内字 弁才天75-17",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2908,7 +3255,7 @@
       "tel": "080-6235-4110",
       "url": "https://minaminokaze55go.net/",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "美波乃風 美波町西河内大久保７１−２",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2934,7 +3281,7 @@
       "hours": "10:00～17:00",
       "closed": "木曜日",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "よろずや弁財天 美波町奥河内字寺前88-3",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2960,7 +3307,7 @@
       "hours": "平日10:00~14:00\n土日祝日10:00~16:00",
       "closed": "火・水曜日",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "そうざい屋しのき 美波町奥河内字寺前493-6(道の駅日和佐内)",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -2986,7 +3333,7 @@
       "hours": "11:00～16:00/18:00~21:00",
       "closed": "不定休",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "喫茶店HOLBOX 美波町奥河内字弁才天76－1　2階",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3018,7 +3365,7 @@
       "closed": "水曜日",
       "tel": "080-1571-4396",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "Classic Burgers 美波町奥河内字寺前277－1",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3044,7 +3391,7 @@
       "hours": "11:00~15:00",
       "closed": "日・月・祝",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "かめまんねん 美波町奥河内寺前277",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3070,7 +3417,7 @@
       "hours": "平日11:00〜16:00\n土日祝10:00〜16:00",
       "closed": "水・木",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "杜と波の間 美波町奥河内字寺前493-6(道の駅日和佐内)",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3101,7 +3448,7 @@
       "hours": "9:30～17:30（12時から営業開始の日あり）",
       "closed": "不定休（臨時休業の場合はInstagramでお知らせします）",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "皐月庵 美波町北河内大戸５８３−１",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3133,7 +3480,7 @@
       "closed": "月・火・水・木",
       "tel": "090-5951-1537",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "ホテイ・Bowl 美波町日和佐浦36番地",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",
@@ -3164,7 +3511,7 @@
       "hours": "Instagramでお知らせしています",
       "closed": "不定休",
       "source": "美波飯の共通公開データ（元情報の更新日・現在の営業状況は未確認）",
-      "verifiedAt": "2026-10-14",
+      "verifiedAt": "2026-10-15",
       "accessNote": "名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。",
       "mapQuery": "山たこのつぶやき 美波町山河内なか５３",
       "locationLabel": "元公開データの掲載地点（入口・現況・経路は未検証）",

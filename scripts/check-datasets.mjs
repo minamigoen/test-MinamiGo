@@ -1,12 +1,12 @@
-import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {validateData} from '../src/data.js';
+import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {validateData,isVisibleMapSpot,mapPointsForSpot} from '../src/data.js';
 const read=async path=>JSON.parse(await readFile(path,'utf8'));
 const snapshot=validateData(await read('data/spots.json')),local=await read('data/local-content.json');
-for(const [path,category] of [['data/power-spots.json','powerspot'],['data/heritage.json','heritage'],['data/sightseeing.json',null]]){
+for(const [path,category] of [['data/power-spots.json','powerspot'],['data/heritage.json','heritage'],['data/sightseeing.json',null],['data/life.json','life']]){
  const source=validateData(await read(path));
  assert.equal(source.spots.every(s=>(!category||s.category===category)),true);
  assert.deepEqual(snapshot.spots.filter(s=>category?s.category===category:s.id.startsWith('town-')),source.spots,'snapshot must preserve all source records and coordinates');
  assert.deepEqual(local.walk.filter(s=>category?s.category===category:s.id.startsWith('town-')),source.spots,'runtime shared-food refresh must preserve every local record');
- console.log(`${category||"sightseeing"}: ${source.spots.length} records, ${source.spots.filter(s=>s.lat!==undefined).length} reference coordinates, ${source.spots.filter(s=>s.lat===undefined).length} pending positions`);
+ console.log(`${category||"sightseeing"}: ${source.spots.length} records, ${source.spots.filter(isVisibleMapSpot).length} positioned records, ${source.spots.flatMap(mapPointsForSpot).length} coordinates, ${source.spots.filter(s=>!isVisibleMapSpot(s)).length} missing/hidden positions`);
 }
 assert.equal(snapshot.spots.filter(s=>s.category==='food').length,37);assert.equal(snapshot.spots.filter(s=>s.category==='stay').length,26);
 

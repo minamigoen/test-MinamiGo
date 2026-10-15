@@ -1,6 +1,6 @@
 import {approvedFacilityPhoto} from './photo-source.js';
 import {validateData,safeURL,PHOTO_FIELDS} from './data.js';
-export const FOOD_EXTRA_FIELDS=['id','foodType','description','accessNote','relatedLinks','officialCheckedAt',...PHOTO_FIELDS];
+export const FOOD_EXTRA_FIELDS=['id','foodType','description','accessNote','relatedLinks','officialCheckedAt','lifeTypes','serviceHours','serviceStatus','reviewedOverrides',...PHOTO_FIELDS];
 const normalize=s=>s.normalize('NFKC').toLocaleLowerCase('ja').replace(/[\s・･]/g,'');
 function text(v,key,max=2000){if(v===''||v==null)return '';if(typeof v!=='string'||v.length>max)throw new Error('Invalid upstream '+key);return v.trim();}
 export function localContentFromSnapshot(snapshot){const d=validateData(snapshot);return {schemaVersion:1,updatedAt:d.updatedAt,walk:d.spots.filter(s=>s.category!=='food'),foodExtras:d.spots.filter(s=>s.category==='food').map(s=>Object.fromEntries(FOOD_EXTRA_FIELDS.filter(k=>s[k]!==undefined).map(k=>[k,s[k]])))};}
@@ -34,6 +34,7 @@ export function mergeFoodSource(rows,local,config,fetchedAt=new Date().toISOStri
   else{s.mapScope='name-address';s.locationLabel='名称・住所からの検索（地点・入口・経路は未検証）';}
   s.mapQuery=name+' '+address;s.directionsMode='walking';s.accessNote='名称・住所・電話・営業時間・定休日は美波飯と同じ元公開データです。元情報の更新日は不明で、現在の営業・入口・経路を保証しません。来店前に店舗の最新案内をご確認ください。'+(annotation.accessNote?' 補足：'+annotation.accessNote:'');
   sourceRows.push(Object.fromEntries(Object.entries({no,name,address,lat:s.lat,lng:s.lng,tel:s.tel,hours:s.hours,closed:s.closed,url,sns,image:config.photoApproval?.approved?publicImage(s):undefined}).filter(([,v])=>v!==undefined&&v!=='')));
+  if(annotation.reviewedOverrides){const o=annotation.reviewedOverrides;if(o.expectedName!==name||!/^\d{4}-\d{2}-\d{2}$/.test(o.checkedAt)||!safeURL(o.sourceUrl)||!o.values||Object.keys(o.values).some(k=>!['hours','closed','url'].includes(k)))throw new Error('Invalid reviewed food override');for(const [k,v]of Object.entries(o.values)){if(typeof v!=='string'||v.length>2000||(k==='url'&&!safeURL(v)))throw new Error('Unsafe reviewed food override');s[k]=v;}s.officialCheckedAt=o.checkedAt;}
   // Comments and unknown/private columns remain excluded. Only approved image URLs survive.
   return s;
  });

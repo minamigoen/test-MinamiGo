@@ -4,7 +4,7 @@ const snapshot=JSON.parse(readFileSync(new URL('../data/spots.json',import.meta.
 test('stay references preserve missing/conflicting coordinate and private photo boundaries',()=>{
  const stays=validateData(snapshot).spots.filter(s=>s.category==='stay');assert.equal(stays.length,26);assert.equal(stays.filter(s=>s.mapScope==='sheet-reference').length,23);assert.equal(stays.filter(s=>s.photoUrl).length,26);
  for(const s of stays){if(s.photoUrl){assert.equal(s.photoLicense,'掲載許諾確認済み');assert.ok(s.photoSource);}if(s.mapScope==='sheet-reference')assert.match(s.locationLabel,/未検証/);}
- for(const no of ['0000000009','0000000021','0000000016'])assert.equal(stays.find(s=>s.id==='minamistay-'+no).lat,undefined);
+ for(const no of ['0000000009','0000000021','0000000016']){assert.ok(stays.find(s=>s.id==='minamistay-'+no).lat);assert.match(stays.find(s=>s.id==='minamistay-'+no).locationLabel,/町公式/);}
 });
 test('malicious photo reference and out-of-area sheet coordinates fail closed',()=>{
  const s=snapshot.spots.find(s=>s.mapScope==='sheet-reference');
