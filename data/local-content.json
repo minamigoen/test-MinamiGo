@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-15T05:00:18.570Z",
   "walk": [
     {
       "id": "odaishi-statue",
@@ -1788,6 +1788,54 @@
       "lifeTypes": "コインランドリー",
       "serviceHours": "営業時間・休業日・料金は確認中。利用前に現地案内をご確認ください。",
       "serviceStatus": "位置は独立した施設座標の確認待ち。アプリのピン・経路案内は保留。"
+    },
+    {
+      "id": "guide-hiwasa-shrine",
+      "name": "日和佐八幡神社",
+      "category": "culture",
+      "description": "公式ガイドの大浜海岸コースの立寄施設。さざれ石や秋祭りとは別に、神社そのものを案内します。",
+      "address": "徳島県海部郡美波町日和佐浦369",
+      "lat": 33.735065,
+      "lng": 134.540512,
+      "url": "https://hiwasahachiman.com/access",
+      "source": "施設案内：日和佐八幡神社公式。座標：『日本歴史地名大系』施設・地点項目データセット（CODH作成）doi:10.20676/00000456／CC BY 4.0。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "掲載座標は地名データの代表点です。立入範囲と集合場所は神社・ガイド会の最新案内で確認してください。",
+      "locationLabel": "神社の施設代表点。入口・集合場所・さざれ石の位置ではありません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "神社の座標出典・CC BY 4.0・CODHクレジット",
+          "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/37/370000162300.html"
+        },
+        {
+          "label": "公式ガイドコース・申込み",
+          "url": "https://www.town.minami.lg.jp/kankou-guide/"
+        }
+      ]
+    },
+    {
+      "id": "guide-ebisu-cave",
+      "name": "恵比須洞（えびす洞）",
+      "category": "nature",
+      "description": "美波町公式の自然・遊歩道案内。公式ガイドでは約40分の周遊を紹介。急な石段があり、小さな子どもには危険との注意があります。海が荒れた日はガイド中止。",
+      "address": "徳島県海部郡美波町日和佐浦（恵比須洞周辺）",
+      "lat": 33.735708,
+      "lng": 134.550612,
+      "url": "https://www.town.minami.lg.jp/docs/400.html",
+      "source": "美波町公式「恵比須洞」の地図代表点と観光ボランティアガイド会の注意事項を照合した要約。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "公式ガイドの集合は入口駐車場ですが、その正確な位置は未確認です。急な石段・荒天・現地規制に注意し、ガイド会へ確認してください。駅からのアクセス時間をガイドの所要時間へ加算・置換していません。",
+      "locationLabel": "洞周辺の町掲載代表点。入口・駐車場・集合場所ではありません。",
+      "mapScope": "surroundings",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "公式ガイドコース・安全上の注意",
+          "url": "https://www.town.minami.lg.jp/kankou-guide/"
+        }
+      ]
     },
     {
       "id": "minamistay-0000000001",

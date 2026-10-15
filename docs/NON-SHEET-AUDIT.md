@@ -1,6 +1,6 @@
 # シート以外を原典とする施設の全件欠損点検
 
-2026-10-15T04:50:45.493708+00:00
+2026-10-15T05:11:38.239230+00:00
 
 元の飲食・宿泊Sheet行を除き、管理Sheetへのミラー有無にかかわらず全件を対象とする。HTTP到達確認と内容の個別照合を区別。未許諾画像、歴史対象の営業時間、施設入口を推測して埋めない。
 
@@ -58,6 +58,8 @@
 |life-foodshop-minami フードショップみなみ|price, permittedPhoto|reference|[fetched](https://ptl.zchain.co.jp/store/6437?store_group_id=1)|
 |life-foodcenter-izumi フードセンターいずみ|price, permittedPhoto|reference|[fetched](https://ptl.zchain.co.jp/store/6435?store_group_id=1)|
 |life-laundry-hiwasa コインランドリーひわさ|hours, closed, price, tel, coordinates, permittedPhoto|missing|[fetched](https://wowmap.jp/wao/?p=10109126)|
+|guide-hiwasa-shrine 日和佐八幡神社|hours, closed, price, tel, permittedPhoto|reference|[fetched](https://hiwasahachiman.com/access)|
+|guide-ebisu-cave 恵比須洞（えびす洞）|hours, closed, price, tel, permittedPhoto|reference|[fetched](https://www.town.minami.lg.jp/docs/400.html)|
 
 住所・時間・休日・料金・電話・URLの空欄を列挙。自然地・歴史対象では空欄が営業施設と同じ意味にはならない。祭りの開催日は年別カレンダーで確認する。位置missingと、歴史情報の意図的な非表示は区別する。
 

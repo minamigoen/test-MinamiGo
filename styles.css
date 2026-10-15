@@ -52,3 +52,5 @@ button.primary{border-color:var(--action)}
 .map-list-item[aria-pressed=true]{border-color:var(--sea);background:var(--pale)}
 .card{border-color:#fde8e1}.calendar-month,.calendar-event,.spot-events{border-color:var(--line)}
 .life-types{color:var(--sea)}
+
+.course-picker{background:white;border:1px solid var(--line);border-radius:14px;margin:16px 0;padding:14px 18px}.course-picker summary{cursor:pointer;min-height:44px;font-weight:700}.course-picker label{display:block;margin:8px 0}.course-picker select{font:inherit;width:100%;min-height:46px;background:white;color:var(--ink);border:1px solid var(--control-line);border-radius:8px;padding:8px}.course-duration{font-weight:700}.course-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.course-actions a{min-height:44px;padding:8px 0}.course-picker p{overflow-wrap:anywhere}.course-picker ol{padding-left:24px}.course-picker li{padding:5px 0}.map-pin.course-pin span{display:grid;place-items:center;color:white;font-weight:700;background:var(--map-accent)}.map-pin.course-pin.selected span{background:var(--sun);color:var(--ink)}#course-map-note{font-size:13px;line-height:1.6;border-left:4px solid var(--sea)}

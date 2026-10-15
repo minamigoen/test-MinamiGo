@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T04:50:45.493708+00:00",
+  "checkedAt": "2026-10-15T05:11:38.239230+00:00",
   "scope": "Original food/stay Sheet rows excluded; all web/history/heritage/tourism/life records included even when mirrored to a management Sheet. Event22 separately reviewed.",
   "records": [
     {
@@ -1101,6 +1101,50 @@
       },
       "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
       "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "guide-hiwasa-shrine",
+      "name": "日和佐八幡神社",
+      "category": "culture",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://hiwasahachiman.com/access",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "028254a6ea27d495bb9a5cc52b397f3d9815c50fcee53d3f967cad9d5dcbee0b",
+        "checkedAt": "2026-10-15T04:47:42.713165+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。公式番号は宮司宅の表記。ガイド申込みはガイド会へ誘導し、施設電話欄への転記は見送り。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "guide-ebisu-cave",
+      "name": "恵比須洞（えびす洞）",
+      "category": "nature",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/docs/400.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "96fa3198229296fac21f4433322f7d9aefb57e501368b9f2bd6c5c6c4e7aa75d",
+        "checkedAt": "2026-10-15T05:08:14.917644+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。町記事の番号は産業振興課の問合せ先。施設直通番号として登録しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
     }
   ],
   "sourceChecks": {
@@ -1290,6 +1334,12 @@
       "sha256": "5f7c60aafaa4807f9c4261392226ee37e4de916df9d54e4c3c98d724317d4e87",
       "checkedAt": "2026-10-15T04:47:46.161834+00:00"
     },
+    "https://www.town.minami.lg.jp/docs/400.html": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "96fa3198229296fac21f4433322f7d9aefb57e501368b9f2bd6c5c6c4e7aa75d",
+      "checkedAt": "2026-10-15T05:08:14.917644+00:00"
+    },
     "https://www.town.minami.lg.jp/docs/403.html": {
       "status": "fetched",
       "http": 200,
@@ -1327,7 +1377,7 @@
       "checkedAt": "2026-10-15T04:47:48.065058+00:00"
     }
   },
-  "recordCount": 52,
+  "recordCount": 54,
   "positionMissing": [
     "pdf5-riverside-buddha",
     "pdf5-temple-stone",
