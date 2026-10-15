@@ -20,6 +20,8 @@ jobs:
         run: python tests/live-photos.py
       - name: Verify continuous map selection and nonmodal panels
         run: python tests/live-map-ux.py
+      - name: Verify desktop wheel and mobile touch gestures
+        run: python tests/map-wheel-browser.py
       - name: Verify life facilities and supplemented coordinates
         run: python tests/life-browser.py
       - name: Verify default map and reviewed tourism additions

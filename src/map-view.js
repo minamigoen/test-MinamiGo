@@ -4,6 +4,24 @@ export const AERIAL_URL='https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/
 const aerialCredit='出典：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a> / Landsat8 (GSI, TSIC, GEO Grid/AIST; USGS), GEBCO / 一部施設座標 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) / 地点：<a href="https://geoshape.ex.nii.ac.jp/nrct-poi/resource/37/370000162300.html">CODH / CC BY 4.0</a>';
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
 let map,markers,referenceLines,bases,base='map',signature='';
+function enableIntentionalWheel(canvas){
+ const hint=document.getElementById('map-wheel-help');
+ const desktop=matchMedia('(hover: hover) and (pointer: fine)');
+ const setActive=active=>{
+  active=active&&desktop.matches;
+  if(active)map.scrollWheelZoom.enable();else map.scrollWheelZoom.disable();
+  canvas.classList.toggle('wheel-active',active);
+  hint.textContent=active?'ホイールで拡大・縮小できます。地図の外へ出すかEscキーで解除します。':'地図をクリックすると、マウスホイールで拡大・縮小できます。';
+ };
+ canvas.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse')setActive(true);});
+ canvas.addEventListener('focusin',()=>{if(canvas.matches(':focus-visible'))setActive(true);});
+ canvas.addEventListener('pointerleave',()=>setActive(false));
+ canvas.addEventListener('focusout',e=>{if(!canvas.contains(e.relatedTarget))setActive(false);});
+ canvas.addEventListener('keydown',e=>{if(e.key==='Escape')setActive(false);});
+ window.addEventListener('blur',()=>setActive(false));
+ desktop.addEventListener('change',()=>setActive(false));
+}
+
 export function mapViewport(){if(!map)return null;const p=map.getCenter();return {lat:p.lat,lng:p.lng,zoom:map.getZoom()};}
 export function setMapBase(value){
  base=value==='aerial'?'aerial':'map';
@@ -21,6 +39,7 @@ export function renderSpotMap(items,{tileUrl,onSelect,offline=false,course=null,
  else{
   if(!map){
    created=true;map=L.map(canvas,{center:[33.73,134.53],zoom:12,scrollWheelZoom:false,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false});
+   enableIntentionalWheel(canvas);
    bases={map:L.tileLayer(tileUrl,{maxZoom:18,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors / 地点：<a href="https://geoshape.ex.nii.ac.jp/nrct-poi/resource/37/370000162300.html">CODH / CC BY 4.0</a>'}),aerial:L.tileLayer(AERIAL_URL,{maxZoom:18,attribution:aerialCredit})};
    for(const layer of Object.values(bases))layer.on('tileerror',()=>{if(map.hasLayer(layer))document.getElementById('map-tile-status').textContent='背景を読み込めません。地図／空中写真を切り替えるか、下の一覧をご利用ください。';});
    referenceLines=L.layerGroup().addTo(map);markers=L.layerGroup().addTo(map);setMapBase(base);
