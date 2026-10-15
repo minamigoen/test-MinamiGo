@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-15T02:24:59.536Z",
+  "records": [
+    {
+      "id": "hiwasa-winter",
+      "name": "日和佐冬まつり",
+      "month": 1,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-01-01",
+      "end": "2026-01-01",
+      "typical": "1月1日頃（例年の目安）",
+      "typicalSource": "https://www.town.minami.lg.jp/docs/374.html",
+      "time": "",
+      "note": "対象年の掲載日程。次回開催を示すものではありません。",
+      "spotId": "town-0000000014",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.awanavi.jp/archives/event/1660",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "hiwasa-sakura",
+      "name": "日和佐さくらまつり",
+      "month": 3,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-03-25",
+      "end": "2026-04-10",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "ボンボリ点灯期間。催しは4月5日と公表。雨天時の案内は主催者へ。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/378.html",
+          "updatedAt": "2026-03-25",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "sakura-marathon",
+      "name": "桜街道・夢マラソン",
+      "month": 4,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-04-05",
+      "end": "2026-04-05",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "対象年の大会案内。次年度の開催・申込を意味しません。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/5454845.html",
+          "updatedAt": "2026-01-08",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "kame-market",
+      "name": "かめの市",
+      "month": 5,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-05-05",
+      "end": "2026-05-05",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "こどもの日限定コラボイベントとして公表。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/5689012.html",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "awabi-market",
+      "name": "あわびの市",
+      "month": 6,
+      "year": 2026,
+      "status": "cancelled",
+      "start": "2026-06-28",
+      "end": "2026-06-28",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "通常イベントは中止と公表。限定直売のみの別案内があり、通常開催として扱いません。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://r.goope.jp/tsci1400/info/6813938",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        },
+        {
+          "url": "https://r.goope.jp/tsci1400/free/minamityoibento7039445086",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "hiwasa-turtle",
+      "name": "日和佐うみがめまつり",
+      "month": 7,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-07-18",
+      "end": "2026-07-18",
+      "typical": "7月頃（例年の目安）",
+      "typicalSource": "https://www.town.minami.lg.jp/docs/374.html",
+      "time": "",
+      "note": "",
+      "spotId": "town-0000000015",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/3324727.html",
+          "updatedAt": "2026-07-14",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "hiwasa-triathlon",
+      "name": "ひわさうみがめトライアスロン",
+      "month": 7,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-07-19",
+      "end": "2026-07-19",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "2026年の公表日程。2027年7月大会の見送りは別の年の案内として保持。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/5557174.html",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "furusato-yuki",
+      "name": "ふるさと由岐まつり",
+      "month": 8,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-08-15",
+      "end": "2026-08-15",
+      "typical": "",
+      "typicalSource": "",
+      "time": "17:50開始との公表",
+      "note": "JR由岐駅前。対象年の案内です。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://r.goope.jp/tsci1400/info/6854705",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "tai-shiratori",
+      "name": "田井白鳥神社祭",
+      "month": 9,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-09-06",
+      "end": "2026-09-06",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "神事のみと公表。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "nishiyuki-hachiman",
+      "name": "西由岐八幡神社祭",
+      "month": 9,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-09-11",
+      "end": "2026-09-13",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "kiki-hachiman",
+      "name": "木岐八幡神社祭",
+      "month": 9,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-09-12",
+      "end": "2026-09-13",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "nishinochi-okazaki",
+      "name": "西の地岡崎神社祭",
+      "month": 9,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-09-13",
+      "end": "2026-09-14",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "abu-miyauchi",
+      "name": "阿部宮内神社祭",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-03",
+      "end": "2026-10-05",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "shiwagi-yoshino",
+      "name": "志和岐吉野神社祭",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-10",
+      "end": "2026-10-11",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "izari-hachiman",
+      "name": "伊座利新田八幡神社祭",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-14",
+      "end": "2026-10-15",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "地区ごとの会場・動線は町案内で確認。",
+      "spotId": "town-0000000013",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/6203906.html",
+          "updatedAt": "2026-08-21",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "hiwasa-autumn",
+      "name": "日和佐八幡神社秋祭り",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-10",
+      "end": "2026-10-11",
+      "typical": "10月頃（例年の目安）",
+      "typicalSource": "https://www.town.minami.lg.jp/docs/374.html",
+      "time": "",
+      "note": "町カレンダー未掲載のため、2026年の町記事で確認。",
+      "spotId": "town-0000000011",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/800.html",
+          "updatedAt": "2026-09-03",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "akamatsu-fireworks",
+      "name": "赤松神社奉納吹筒花火",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-11",
+      "end": "2026-10-11",
+      "typical": "10月頃（例年の目安）",
+      "typicalSource": "https://www.town.minami.lg.jp/docs/374.html",
+      "time": "19:00予定",
+      "note": "町カレンダー未掲載のため、2026年の町記事で確認。",
+      "spotId": "town-0000000012",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.town.minami.lg.jp/docs/388.html",
+          "updatedAt": "2026-09-17",
+          "dateKind": "記事公開日"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "yuki-lobster",
+      "name": "由岐伊勢エビまつり",
+      "month": 10,
+      "year": 2026,
+      "status": "published",
+      "start": "2026-10-25",
+      "end": "2026-10-25",
+      "typical": "10月下旬頃（例年の目安）",
+      "typicalSource": "https://www.town.minami.lg.jp/docs/374.html",
+      "time": "9:00～14:00（県公式観光案内）",
+      "note": "町記事の見出し・町ICSと県公式の日付が一致。町本文には2025年の旧日時が残るため、その時刻は転記していません。",
+      "spotId": "town-0000000016",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://www.awanavi.jp/archives/event/1445",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        },
+        {
+          "url": "https://www.town.minami.lg.jp/docs/801.html",
+          "updatedAt": "2026-09-18",
+          "dateKind": "記事公開日"
+        },
+        {
+          "url": "https://www.town.minami.lg.jp/calendar/202610/list.ics",
+          "updatedAt": "2026-09-18T04:48:32Z",
+          "dateKind": "ICS LAST-MODIFIED"
+        }
+      ],
+      "sourceConflict": true,
+      "calendarUid": "b14ae12de5d116e5e4f106505b5b1d91"
+    },
+    {
+      "id": "buri-market",
+      "name": "ブリの市",
+      "month": 12,
+      "year": 2026,
+      "status": "planned",
+      "start": "2026-12-30",
+      "end": "2026-12-30",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "開催予定の公表。時刻は未確認。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://r.goope.jp/tsci1400/free/minamityoibento7039445086",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "minami-commerce",
+      "name": "美波町商工祭",
+      "month": null,
+      "year": 2026,
+      "status": "undated",
+      "start": "",
+      "end": "",
+      "typical": "",
+      "typicalSource": "",
+      "time": "",
+      "note": "開催予定との案内はありますが、日付は未定です。",
+      "spotId": "",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://r.goope.jp/tsci1400/free/minamityoibento7039445086",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "yakuouji-newyear",
+      "name": "薬王寺新春祈祷会",
+      "month": 1,
+      "year": null,
+      "status": "typical",
+      "start": "",
+      "end": "",
+      "typical": "例年1月1日～3日（対象年の開催未確認）",
+      "typicalSource": "",
+      "time": "",
+      "note": "年中行事の案内。2026年や翌年の確定日程へ自動繰越ししません。",
+      "spotId": "town-0000000003",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://yakuouji.net/year-event",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    },
+    {
+      "id": "yakuouji-hatsue",
+      "name": "薬王寺初会式",
+      "month": 2,
+      "year": null,
+      "status": "typical",
+      "start": "",
+      "end": "",
+      "typical": "例年2月11日～12日（対象年の開催未確認）",
+      "typicalSource": "",
+      "time": "",
+      "note": "年中行事の案内。2026年や翌年の確定日程へ自動繰越ししません。",
+      "spotId": "town-0000000003",
+      "checkedAt": "2026-10-15",
+      "sources": [
+        {
+          "url": "https://yakuouji.net/year-event",
+          "updatedAt": "",
+          "dateKind": "更新日時未掲載"
+        }
+      ],
+      "sourceConflict": false,
+      "calendarUid": ""
+    }
+  ],
+  "yearNotes": [
+    {
+      "id": "triathlon-2027",
+      "year": 2027,
+      "month": 7,
+      "status": "not-held",
+      "text": "2027年7月のひわさうみがめトライアスロンは見送りと公式に公表されています。2026年の日程を翌年へ繰り越しません。",
+      "source": "https://www.town.minami.lg.jp/docs/5557174.html",
+      "checkedAt": "2026-10-15"
+    }
+  ]
+}

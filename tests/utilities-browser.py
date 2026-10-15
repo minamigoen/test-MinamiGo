@@ -11,7 +11,7 @@ with sync_playwright() as p:
  chrome=os.environ.get('MINAMIGO_CHROMIUM') or shutil.which('google-chrome') or shutil.which('chromium');b=p.chromium.launch(headless=True,**({'executable_path':chrome} if chrome else {}))
  for width in [320,390,1440]:
   c=b.new_context(viewport={'width':width,'height':900},service_workers='block');page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-  page.goto(base,wait_until='domcontentloaded');page.wait_for_selector('.map-pin');page.locator('#map-list button').first.click();spot=page.locator('#map-list button').first.get_attribute('data-spot-id');page.locator('#map-share').click();expect(page.locator('#share-dialog')).to_be_visible();expect(page.locator('#share-current')).to_be_checked();assert page.locator('#share-link').input_value()==base+'#explore?id='+spot
+  page.goto(base,wait_until='domcontentloaded');page.wait_for_selector('.map-pin');page.locator('#map-list button').first.click();spot=page.locator('#map-list button').first.get_attribute('data-spot-id');page.locator('#map-share').click();expect(page.locator('#share-dialog')).to_be_visible();expect(page.locator('#share-current')).to_be_checked();assert page.locator('#share-link').input_value()==base+'?id='+spot+'#explore'
   page.locator('#share-current').uncheck();expect(page.locator('#share-link')).to_have_value(base+'#explore');expect(page.locator('#share-qr svg')).to_be_visible();assert page.locator('#share-qr svg').get_attribute('aria-label')
   path=out/f'qr-{width}.png';page.locator('#share-qr svg').screenshot(path=str(path));page.screenshot(path=str(out/f'share-{width}.png'))
   if os.environ.get('MINAMIGO_DECODE_QR')=='1':
