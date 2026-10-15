@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-15",
+  "license": "ODbL-1.0",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap contributors",
+  "classification": "App reference segments, not official fixed guide routes or current access guarantees",
+  "segments": [
+    {
+      "course": "ebisu",
+      "way": 27210371,
+      "name": "歩道・階段の参考区間",
+      "highway": "steps",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.736109,
+          134.550598
+        ],
+        [
+          33.736159,
+          134.550615
+        ],
+        [
+          33.736194,
+          134.550597
+        ],
+        [
+          33.736271,
+          134.55057
+        ],
+        [
+          33.736324,
+          134.550595
+        ],
+        [
+          33.7363978,
+          134.5506067
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210371",
+      "sourceUpdatedAt": "2008-09-21T05:21:28Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210372,
+      "name": "歩道・階段の参考区間",
+      "highway": "footway",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.736109,
+          134.550598
+        ],
+        [
+          33.736051,
+          134.550514
+        ],
+        [
+          33.735996,
+          134.550441
+        ],
+        [
+          33.735978,
+          134.550379
+        ],
+        [
+          33.735984,
+          134.550361
+        ],
+        [
+          33.73597,
+          134.550322
+        ],
+        [
+          33.735919,
+          134.550208
+        ],
+        [
+          33.735897,
+          134.550184
+        ],
+        [
+          33.735878,
+          134.550175
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210372",
+      "sourceUpdatedAt": "2008-09-21T05:21:35Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210373,
+      "name": "歩道・階段の参考区間",
+      "highway": "footway",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.7363978,
+          134.5506067
+        ],
+        [
+          33.736448,
+          134.550581
+        ],
+        [
+          33.736517,
+          134.550538
+        ],
+        [
+          33.73659,
+          134.550506
+        ],
+        [
+          33.7366422,
+          134.5504916
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210373",
+      "sourceUpdatedAt": "2008-09-21T05:21:36Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210374,
+      "name": "歩道・階段の参考区間",
+      "highway": "steps",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.735878,
+          134.550175
+        ],
+        [
+          33.735874,
+          134.550137
+        ],
+        [
+          33.735846,
+          134.550106
+        ],
+        [
+          33.735827,
+          134.550071
+        ],
+        [
+          33.735794,
+          134.550047
+        ],
+        [
+          33.735769,
+          134.550028
+        ],
+        [
+          33.735743,
+          134.550021
+        ],
+        [
+          33.73572,
+          134.550002
+        ],
+        [
+          33.73571,
+          134.549986
+        ],
+        [
+          33.735683,
+          134.549984
+        ],
+        [
+          33.735638,
+          134.550001
+        ],
+        [
+          33.735606,
+          134.550007
+        ],
+        [
+          33.735562,
+          134.550029
+        ],
+        [
+          33.735533,
+          134.550065
+        ],
+        [
+          33.7355,
+          134.550101
+        ],
+        [
+          33.735492,
+          134.550121
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210374",
+      "sourceUpdatedAt": "2008-09-21T05:21:37Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210375,
+      "name": "歩道・階段の参考区間",
+      "highway": "footway",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.735492,
+          134.550121
+        ],
+        [
+          33.735526,
+          134.550197
+        ],
+        [
+          33.735551,
+          134.550289
+        ],
+        [
+          33.735565,
+          134.550359
+        ],
+        [
+          33.735586,
+          134.550453
+        ],
+        [
+          33.735593,
+          134.550543
+        ],
+        [
+          33.735603,
+          134.55066
+        ],
+        [
+          33.735634,
+          134.55073
+        ],
+        [
+          33.7356712,
+          134.5507605
+        ],
+        [
+          33.73572,
+          134.550818
+        ],
+        [
+          33.735751,
+          134.550903
+        ],
+        [
+          33.735758,
+          134.550977
+        ],
+        [
+          33.735795,
+          134.551043
+        ],
+        [
+          33.73586,
+          134.551108
+        ],
+        [
+          33.735914,
+          134.551092
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210375",
+      "sourceUpdatedAt": "2008-09-21T05:21:39Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210378,
+      "name": "歩道・階段の参考区間",
+      "highway": "steps",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.7360408,
+          134.5508092
+        ],
+        [
+          33.736003,
+          134.550873
+        ],
+        [
+          33.735957,
+          134.550989
+        ],
+        [
+          33.735914,
+          134.551092
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210378",
+      "sourceUpdatedAt": "2008-09-21T05:21:46Z"
+    },
+    {
+      "course": "ebisu",
+      "way": 27210380,
+      "name": "歩道・階段の参考区間",
+      "highway": "footway",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.7360408,
+          134.5508092
+        ],
+        [
+          33.736124,
+          134.550756
+        ],
+        [
+          33.736229,
+          134.550736
+        ],
+        [
+          33.736307,
+          134.550688
+        ],
+        [
+          33.7363978,
+          134.5506067
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/27210380",
+      "sourceUpdatedAt": "2008-09-21T05:21:47Z"
+    },
+    {
+      "course": "ohama",
+      "way": 559284524,
+      "name": "八幡神社参道",
+      "highway": "footway",
+      "access": "not explicitly tagged",
+      "foot": "not explicitly tagged",
+      "points": [
+        [
+          33.7344277,
+          134.5403483
+        ],
+        [
+          33.7341653,
+          134.540355
+        ],
+        [
+          33.73378,
+          134.5403697
+        ],
+        [
+          33.7334223,
+          134.5403844
+        ],
+        [
+          33.7329228,
+          134.5403782
+        ]
+      ],
+      "source": "https://www.openstreetmap.org/way/559284524",
+      "sourceUpdatedAt": "2024-05-02T15:53:07Z"
+    }
+  ]
+}

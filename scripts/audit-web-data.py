@@ -25,6 +25,8 @@ def main():
   if position=='missing':missing.append('coordinates')
   if not s.get('photoUrl'):missing.append('permittedPhoto')
   reason='営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。'if s['category']in ['powerspot','heritage','nature']else'催しの年別日程はevents.jsonで管理。'if s['category']=='festival'else'空欄は未確認。画像は許諾未確認なら補完しない。'
+  if s['id']=='guide-hiwasa-shrine':reason+='公式番号は宮司宅の表記。ガイド申込みはガイド会へ誘導し、施設電話欄への転記は見送り。'
+  if s['id']=='guide-ebisu-cave':reason+='町記事の番号は産業振興課の問合せ先。施設直通番号として登録しない。'
   records.append({'id':s['id'],'name':s['name'],'category':s['category'],'missingFields':missing,'position':position,'sourceUrl':refs[s['id']],'sourceCheck':checks.get(refs[s['id']],{'status':'no-independent-web-source'}),'note':reason,'factCheck':'HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。'})
  report={'checkedAt':datetime.now(timezone.utc).isoformat(),'scope':'Original food/stay Sheet rows excluded; all web/history/heritage/tourism/life records included even when mirrored to a management Sheet. Event22 separately reviewed.','records':records,'sourceChecks':checks,'recordCount':len(records),'positionMissing':[r['id']for r in records if r['position']=='missing'],'historicalHidden':[r['id']for r in records if r['position']=='hidden-historical']}
  Path('maintenance/non-sheet-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
