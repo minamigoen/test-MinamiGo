@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T00:00:00Z",
+  "updatedAt": "2026-10-15",
   "spots": [
     {
       "id": "life-family-hiwasa",
@@ -96,6 +96,7 @@
       "address": "徳島県海部郡美波町赤松字野田7-4",
       "lat": 33.771153700707,
       "lng": 134.500435881241,
+      "tel": "0884-79-3203",
       "url": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184",
       "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
       "verifiedAt": "2026-10-15",
@@ -120,16 +121,20 @@
       "category": "life",
       "description": "スーパーの生活施設。9:30～19:30。第2水休（8月の扱いは店舗に確認）。 公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
       "address": "徳島県海部郡美波町奥河内字弁才天16-2",
+      "lat": 33.7284796,
+      "lng": 134.5312621,
       "hours": "9:30～19:30",
-      "closed": "第2水曜日（8月を除くとの別公式掲載あり）",
+      "closed": "第2水曜日（8月を除く）",
       "tel": "0884-77-2493",
-      "url": "https://ff-ookita.jp/about.html",
-      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
+      "url": "https://r.goope.jp/ookitahiwasa/about",
+      "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）。座標：© OpenStreetMap contributors（ODbL）",
       "verifiedAt": "2026-10-15",
-      "accessNote": "公式の短縮Google Mapsリンクは外部リンクとして残します。リンク由来の候補座標は公開JSONへ転記せず、独立した座標根拠の確認待ちです。",
+      "accessNote": "座標：© OpenStreetMap contributors（ODbL）。店舗ノードを使用し、隣の駐車場ノードは使用していません。公式地図指定点と約2m差。入口・立入り・現在の営業は未実測です。",
       "mapQuery": "フレッシュフーズオオキタ日和佐店 徳島県海部郡美波町奥河内字弁才天16-2",
-      "locationLabel": "公式住所の検索のみ。座標の独立した利用根拠を確認中でピンは保留。",
-      "mapScope": "name-address",
+      "locationLabel": "OSM店舗代表点。公式の名称・電話・店舗案内と照合。入口・現況は未実測。",
+      "mapScope": "surroundings",
+      "mapVisibility": "reference",
+      "navigationPolicy": "disabled",
       "relatedLinks": [
         {
           "label": "施設公式：営業・利用条件の確認",
@@ -142,11 +147,19 @@
         {
           "label": "施設公式が案内する地図（外部）",
           "url": "https://goo.gl/maps/7bYXEF1H49KQ629N6"
+        },
+        {
+          "label": "店舗座標の出典：OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/13157556101"
+        },
+        {
+          "label": "座標データの利用条件：ODbL",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
         }
       ],
       "lifeTypes": "スーパー",
-      "serviceHours": "9:30～19:30。第2水休（8月の扱いは店舗に確認）。",
-      "serviceStatus": "公式2ページで休日の補足に差があります。訪問前に店舗へ確認してください。",
+      "serviceHours": "9:30～19:30。第2水曜日休（8月を除く）。",
+      "serviceStatus": "店舗公式の休日補足を採用。訪問前に最新の営業案内を確認してください。",
       "officialCheckedAt": "2026-10-15"
     },
     {
@@ -159,6 +172,7 @@
       "lng": 134.5332884,
       "hours": "9:30～19:00",
       "closed": "日曜日",
+      "tel": "0884-77-3373",
       "url": "https://ptl.zchain.co.jp/store/6437?store_group_id=1",
       "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
       "verifiedAt": "2026-10-15",
@@ -187,6 +201,7 @@
       "lng": 134.5905434,
       "hours": "9:30～18:30",
       "closed": "日曜日",
+      "tel": "0884-78-1235",
       "url": "https://ptl.zchain.co.jp/store/6435?store_group_id=1",
       "source": "事業者公式掲載を照合した生活施設案内（営業時間・現況は訪問前に確認）",
       "verifiedAt": "2026-10-15",
@@ -204,6 +219,34 @@
       "serviceHours": "9:30～18:30。日曜定休との公式チェーン掲載。",
       "serviceStatus": "旧事業者HPの営業時間と差があります。現時点の確定営業時間とせず訪問前に確認してください。",
       "officialCheckedAt": "2026-10-15"
+    },
+    {
+      "id": "life-laundry-hiwasa",
+      "name": "コインランドリーひわさ",
+      "category": "life",
+      "description": "地域案内に掲載されたコインランドリー。営業時間・料金・連絡先は確認中です。",
+      "address": "徳島県海部郡美波町奥河内字弁才天111-1",
+      "url": "https://wowmap.jp/wao/?p=10109126",
+      "source": "地域案内「わお！マップ」の店舗名・住所と利用者提供のGoogle Maps施設リンクを照合。写真・レビューは転載せず、Google由来座標は施設ピンのデータへ転記していません。",
+      "verifiedAt": "2026-10-15",
+      "accessNote": "ユーザー提供の施設リンクと地域案内の地図はともにGoogle由来で、独立した座標根拠とは数えていません。写真・広告画像・レビューは転載していません。",
+      "mapQuery": "コインランドリーひわさ 徳島県海部郡美波町奥河内字弁才天111-1",
+      "locationLabel": "住所は地域案内で確認。独立した位置根拠が未確認のためピンは保留。",
+      "mapScope": "name-address",
+      "navigationPolicy": "disabled",
+      "relatedLinks": [
+        {
+          "label": "利用者提供の施設地図（外部・位置未検証）",
+          "url": "https://www.google.com/maps/place/%E3%82%B3%E3%82%A4%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%81%B2%E3%82%8F%E3%81%95/@33.7275854,134.5279468,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fd9e7f5abd5d:0x2fc01415d7c027b9!8m2!3d33.7275854!4d134.5305217!16s%2Fg%2F11hgpy3z51"
+        },
+        {
+          "label": "地域案内：店舗名・住所",
+          "url": "https://wowmap.jp/wao/?p=10109126"
+        }
+      ],
+      "lifeTypes": "コインランドリー",
+      "serviceHours": "営業時間・休業日・料金は確認中。利用前に現地案内をご確認ください。",
+      "serviceStatus": "位置は独立した施設座標の確認待ち。アプリのピン・経路案内は保留。"
     }
   ]
 }

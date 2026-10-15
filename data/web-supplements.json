@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-15",
+  "patches": [
+    {
+      "id": "life-ookita-hiwasa",
+      "expectedName": "フレッシュフーズオオキタ日和佐店",
+      "sourceUrl": "https://r.goope.jp/ookitahiwasa/about",
+      "fields": {
+        "closed": "第2水曜日（8月を除く）",
+        "serviceHours": "9:30～19:30。第2水曜日休（8月を除く）。",
+        "serviceStatus": "店舗公式の休日補足を採用。訪問前に最新の営業案内を確認してください。",
+        "url": "https://r.goope.jp/ookitahiwasa/about"
+      },
+      "osmNode": 13157556101
+    },
+    {
+      "id": "life-eneos-akamatsu",
+      "expectedName": "ENEOS赤松SS／上松石油店",
+      "sourceUrl": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184",
+      "fields": {
+        "tel": "0884-79-3203"
+      }
+    },
+    {
+      "id": "life-foodshop-minami",
+      "expectedName": "フードショップみなみ",
+      "sourceUrl": "https://ptl.zchain.co.jp/store/6437?store_group_id=1",
+      "fields": {
+        "tel": "0884-77-3373"
+      }
+    },
+    {
+      "id": "life-foodcenter-izumi",
+      "expectedName": "フードセンターいずみ",
+      "sourceUrl": "https://ptl.zchain.co.jp/store/6435?store_group_id=1",
+      "fields": {
+        "tel": "0884-78-1235"
+      }
+    },
+    {
+      "id": "town-0000000005",
+      "expectedName": "日和佐城",
+      "sourceUrl": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/",
+      "fields": {
+        "tel": "0884-77-3617"
+      }
+    },
+    {
+      "id": "town-0000000020",
+      "expectedName": "観光ボランティアガイド会日和佐",
+      "sourceUrl": "https://www.town.minami.lg.jp/kankou-guide/",
+      "fields": {
+        "price": "ガイド無料。有料施設に入館する場合などは実費。受付可否・コースは申込時に確認。"
+      }
+    },
+    {
+      "id": "pdf5-riverside-buddha",
+      "expectedName": "旧厄除橋南側の道標・石仏（名称読取候補）",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge",
+      "fields": {
+        "url": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge"
+      }
+    },
+    {
+      "id": "pdf5-temple-stone",
+      "expectedName": "極楽寺跡の石碑",
+      "sourceUrl": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html",
+      "fields": {
+        "url": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html"
+      }
+    },
+    {
+      "id": "town-0000000019",
+      "expectedName": "うみがめマリンクルーズ",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur3",
+      "fields": {
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur3"
+      }
+    }
+  ],
+  "additions": [
+    {
+      "id": "life-laundry-hiwasa",
+      "name": "コインランドリーひわさ",
+      "category": "life",
+      "description": "地域案内に掲載されたコインランドリー。営業時間・料金・連絡先は確認中です。",
+      "address": "徳島県海部郡美波町奥河内字弁才天111-1",
+      "url": "https://wowmap.jp/wao/?p=10109126",
+      "source": "地域案内「わお！マップ」の店舗名・住所と利用者提供のGoogle Maps施設リンクを照合。写真・レビューは転載せず、Google由来座標は施設ピンのデータへ転記していません。",
+      "verifiedAt": "2026-10-15",
+      "lifeTypes": "コインランドリー",
+      "serviceHours": "営業時間・休業日・料金は確認中。利用前に現地案内をご確認ください。",
+      "serviceStatus": "位置は独立した施設座標の確認待ち。アプリのピン・経路案内は保留。",
+      "locationLabel": "住所は地域案内で確認。独立した位置根拠が未確認のためピンは保留。",
+      "accessNote": "ユーザー提供の施設リンクと地域案内の地図はともにGoogle由来で、独立した座標根拠とは数えていません。写真・広告画像・レビューは転載していません。",
+      "navigationPolicy": "disabled",
+      "mapQuery": "コインランドリーひわさ 徳島県海部郡美波町奥河内字弁才天111-1",
+      "mapScope": "name-address",
+      "relatedLinks": [
+        {
+          "label": "利用者提供の施設地図（外部・位置未検証）",
+          "url": "https://www.google.com/maps/place/コインランドリーひわさ/@33.7275854,134.5279468,17z/data=!3m1!4b1!4m6!3m5!1s0x3552fd9e7f5abd5d:0x2fc01415d7c027b9!8m2!3d33.7275854!4d134.5305217!16s%2Fg%2F11hgpy3z51"
+        },
+        {
+          "label": "地域案内：店舗名・住所",
+          "url": "https://wowmap.jp/wao/?p=10109126"
+        }
+      ]
+    }
+  ]
+}

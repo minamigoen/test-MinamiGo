@@ -1,0 +1,1339 @@
+{
+  "checkedAt": "2026-10-15T04:50:45.493708+00:00",
+  "scope": "Original food/stay Sheet rows excluded; all web/history/heritage/tourism/life records included even when mirrored to a management Sheet. Event22 separately reviewed.",
+  "records": [
+    {
+      "id": "odaishi-statue",
+      "name": "お大師石像（弘法大師の石像）",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/radium-onsen",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "d540dd15a2e4fcd5f1a5cee74f56615671d74c25b51082e19fcf5226b4d3273a",
+        "checkedAt": "2026-10-15T04:47:45.291023+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "hebi-stone",
+      "name": "蛇責めの石",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "fa8b773e09026e24fce05d7c8bf3a44bc2336f5cfc2760d3de060c8dd3e4757d",
+        "checkedAt": "2026-10-15T04:47:42.215429+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "koboji-stones",
+      "name": "弘法寺の法印石像・足型石",
+      "category": "powerspot",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.katadeyakushi.com/library/5ebc917d1b102b713c249e72/5ebca224dcc04c127fd9f593.pdf",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "2e629fe5b1fbe6b0c792f4a10505d5c26638332ae91cbdfe6f0dd7f62b6906c9",
+        "checkedAt": "2026-10-15T04:47:45.990111+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "kannonji-statue",
+      "name": "観音寺のぼけ封じ観音尊",
+      "category": "powerspot",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.33kannon.net/cannonji",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "46856073bda254018d3b28b591d7f45f908f46c6322a09badabcbdbd9dc507f0",
+        "checkedAt": "2026-10-15T04:47:47.316421+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "hachiman-sazare",
+      "name": "日和佐八幡神社のさざれ石",
+      "category": "powerspot",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://hiwasahachiman.com/access",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "028254a6ea27d495bb9a5cc52b397f3d9815c50fcee53d3f967cad9d5dcbee0b",
+        "checkedAt": "2026-10-15T04:47:42.713165+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "kitamuki-jizo",
+      "name": "北向き地蔵",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "url",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "bbdeff64b366be4fbc0c366934fa345ece8f9fe70ca1e0f9d986965794bd2056",
+        "checkedAt": "2026-10-15T04:47:43.235270+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "koibito-fudo",
+      "name": "恋人岬のお不動さん（波切不動明王）",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "url",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "bbdeff64b366be4fbc0c366934fa345ece8f9fe70ca1e0f9d986965794bd2056",
+        "checkedAt": "2026-10-15T04:47:43.235270+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "pdf5-fudo",
+      "name": "不動明王（奥河内井ノ上、原典の邸名は要確認）",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "url",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": null,
+      "sourceCheck": {
+        "status": "no-independent-web-source"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "pdf5-office-stone",
+      "name": "日和佐陣屋的石",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "url",
+        "permittedPhoto"
+      ],
+      "position": "hidden-historical",
+      "sourceUrl": "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "f1769eb08aa8dc767302dd06fe2e2989a202dd7618ffe947ff698d0a5b67a642",
+        "checkedAt": "2026-10-15T04:47:42.098972+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "pdf5-mountain-daishi",
+      "name": "後山の大岩",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "url",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/docs/403.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "3ae9b41557c15cd9dc08d58093d9d09a18c9e262a0838750a867709e3a71b9d1",
+        "checkedAt": "2026-10-15T04:47:46.149991+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "pdf5-riverside-buddha",
+      "name": "旧厄除橋南側の道標・石仏（名称読取候補）",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "coordinates",
+        "permittedPhoto"
+      ],
+      "position": "missing",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "d05ba829bb005e431e84e26c833ee3a4cf4f5c450685d3f761876431401222e2",
+        "checkedAt": "2026-10-15T04:47:45.270879+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "pdf5-temple-stone",
+      "name": "極楽寺跡の石碑",
+      "category": "powerspot",
+      "missingFields": [
+        "address",
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "coordinates",
+        "permittedPhoto"
+      ],
+      "position": "missing",
+      "sourceUrl": "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "53b355d2ced42f3d744cb3bf0c8438a9b4e00cd328ef5bddc3430650e753bee4",
+        "checkedAt": "2026-10-15T04:47:42.172224+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373001",
+      "name": "四季堂",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shikido",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "b9a3c427a3afa81e14cfe40cdca4f20ea43e17d2205f71c17f903140fb60b04f",
+        "checkedAt": "2026-10-15T04:47:44.251870+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373002",
+      "name": "旧竹川家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/takegawa",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "d8c606dc4c088381d860b3aa70ea65382400616699dbd188b3516882eebf00cb",
+        "checkedAt": "2026-10-15T04:47:44.713604+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373003",
+      "name": "旧八嶋電機店舗",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "e3e996248169039513f1b378f10af7df6067c40ec1a5fda29adbadbe97089bfb",
+        "checkedAt": "2026-10-15T04:47:45.224100+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373004",
+      "name": "旧和楽亭店舗",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/warakutei",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "b4ec1778ba29a46b0e1a7ec6983b4a36b2f779e59bf17724e747c5001268b8b9",
+        "checkedAt": "2026-10-15T04:47:44.929708+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373005",
+      "name": "旧永岡家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/nagaoka",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "7e8501b205c9359bbff15bd5d9d9482f1b9467725b90232682de2407990a15c5",
+        "checkedAt": "2026-10-15T04:47:43.867532+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373006",
+      "name": "旧一福屋店舗",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ichifukuya",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "ac9227957ad23b13dd725eb668fc43a86269bc6d7227cd5914ce8eb113d58963",
+        "checkedAt": "2026-10-15T04:47:43.331865+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373007",
+      "name": "旧清水家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shimizu",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "fb32964db345931c194ff3d46e88346ed2bae96a0f2b5cf0b7b4b6bc1aa57c84",
+        "checkedAt": "2026-10-15T04:47:44.333957+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373008",
+      "name": "旧寺内家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/terauchi",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "f25d3adda4d3a2ddfbe9790647feead1a2a82df08614b211978bfc1f637d793d",
+        "checkedAt": "2026-10-15T04:47:44.824576+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373009",
+      "name": "旧旅館櫻屋",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "dc652023f47106cd98d76eb6158b01adec3ab2acd20516d2d8c4ffff5b315e6e",
+        "checkedAt": "2026-10-15T04:47:43.675869+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373010",
+      "name": "大黒家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/daikoku",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "9994ac2d2d4691389bf62a56557f47b469da622b91601169a7bab28f6e48dfa4",
+        "checkedAt": "2026-10-15T04:47:43.127087+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373011",
+      "name": "旧市天堂店舗",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ittendo",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "1806bc178f62e675eccfb1799f1ed641ab1e9002bd2f72da5f870a65ae3847ef",
+        "checkedAt": "2026-10-15T04:47:43.651113+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "heritage-373012",
+      "name": "旧薩摩家住宅",
+      "category": "heritage",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/satsuma",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "a9e5ea30a53baba8d6994bff6596b6de711b2bfa6a8982810eb8a5ad923aae3f",
+        "checkedAt": "2026-10-15T04:47:44.511198+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000001",
+      "name": "田井ノ浜海水浴場",
+      "category": "nature",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000002",
+      "name": "大浜海岸",
+      "category": "nature",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000003",
+      "name": "薬王寺（名水 瑠璃の水・寺院体験）",
+      "category": "culture",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://yakuouji.net/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "52e00d3b3c5c71bd9e37a7b39226434980c3449c8c3bf2532919151d15cfc7b0",
+        "checkedAt": "2026-10-15T04:47:48.065058+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000004",
+      "name": "満石神社（名水 ごんげんさんの水）",
+      "category": "culture",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000005",
+      "name": "日和佐城",
+      "category": "culture",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "f75e103ac831a877620c8a0dca8f55c47764e1f7c986c274ff0042267d85f53d",
+        "checkedAt": "2026-10-15T04:47:46.556145+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000006",
+      "name": "阿波沖海戦小公園",
+      "category": "culture",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000007",
+      "name": "日和佐うみがめ博物館 カレッタ",
+      "category": "culture",
+      "missingFields": [
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://caretta.town.minami.lg.jp/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "d3fd990d622757cc7525da5ef69973b41f32f94677e9a4c2fc77c95c40e7453d",
+        "checkedAt": "2026-10-15T04:47:41.958999+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000008",
+      "name": "南阿波サンライン",
+      "category": "nature",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000009",
+      "name": "桜街道",
+      "category": "nature",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "営業時間・料金・連絡先は歴史対象／自然・道路に一律適用せず、公開・立入条件は別途確認。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000010",
+      "name": "道の駅日和佐",
+      "category": "shop",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000011",
+      "name": "日和佐八幡神社秋まつり",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000012",
+      "name": "赤松神社奉納吹筒花火",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000013",
+      "name": "由岐の連続秋まつり",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000014",
+      "name": "ひわさ冬まつり",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000015",
+      "name": "日和佐うみがめまつり",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000016",
+      "name": "由岐伊勢エビまつり",
+      "category": "festival",
+      "missingFields": [
+        "closed",
+        "price",
+        "tel"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "催しの年別日程はevents.jsonで管理。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000017",
+      "name": "海と遊ぼ屋海達",
+      "category": "experience",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.umitatsu.com/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "12a5e7a6acad5f9902457e2afbb14acb9e7aadc30e68321840df7387e071a22c",
+        "checkedAt": "2026-10-15T04:47:48.095187+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000018",
+      "name": "人力企画",
+      "category": "experience",
+      "missingFields": [
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.outdoor-sports.info/about",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "5f7c60aafaa4807f9c4261392226ee37e4de916df9d54e4c3c98d724317d4e87",
+        "checkedAt": "2026-10-15T04:47:46.161834+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000019",
+      "name": "うみがめマリンクルーズ",
+      "category": "experience",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+        "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "town-0000000020",
+      "name": "観光ボランティアガイド会日和佐",
+      "category": "experience",
+      "missingFields": [
+        "hours",
+        "closed"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://www.town.minami.lg.jp/kankou-guide/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "3865283d7b5150e06803b9e8de1ab4ad341cda5add6324bc365308b45e1e5c47",
+        "checkedAt": "2026-10-15T04:47:46.461810+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-family-hiwasa",
+      "name": "ファミリーマート日和佐店",
+      "category": "life",
+      "missingFields": [
+        "closed",
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://store.family.co.jp/points/31598",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "ca4773282d3ca4cdf18f74e580589235808a06a8b31e60b0a034d44d129a36cf",
+        "checkedAt": "2026-10-15T04:47:45.499551+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-idemitsu-hiwasa",
+      "name": "apollostation日和佐SS／水口油店",
+      "category": "life",
+      "missingFields": [
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://map.idemitsu.com/b/a/info/0000008237/",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "429bc1fb43b022313eb240e8ddfb38a56502a12b5dda5225d51d15d542045d56",
+        "checkedAt": "2026-10-15T04:47:42.463052+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-cosmo-hiwasa",
+      "name": "コスモ日和佐SS／上松石油店",
+      "category": "life",
+      "missingFields": [
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://map.cosmo-energy.co.jp/points/S360071",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "525df52e9a1d4b1fb24a07d86b86567fb0f058a5eba9ca0bbbf2de04a21e6162",
+        "checkedAt": "2026-10-15T04:47:42.370357+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-eneos-akamatsu",
+      "name": "ENEOS赤松SS／上松石油店",
+      "category": "life",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "fdb504f1bbf609d6e4373cbb0effa0ce56fb439a71a3d291535828338bb701fd",
+        "checkedAt": "2026-10-15T04:47:42.198101+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-ookita-hiwasa",
+      "name": "フレッシュフーズオオキタ日和佐店",
+      "category": "life",
+      "missingFields": [
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://r.goope.jp/ookitahiwasa/about",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "e5624d2775e5a1a08215adf8e4bcbbd79f7c1a5db10f5041a7be57ec837d7817",
+        "checkedAt": "2026-10-15T04:50:45.492707+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-foodshop-minami",
+      "name": "フードショップみなみ",
+      "category": "life",
+      "missingFields": [
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://ptl.zchain.co.jp/store/6437?store_group_id=1",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "ce0f099869ef09b6e6e99b66df42edaff79cb7c6a69e5ef64eb483744535cf1b",
+        "checkedAt": "2026-10-15T04:47:45.484548+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-foodcenter-izumi",
+      "name": "フードセンターいずみ",
+      "category": "life",
+      "missingFields": [
+        "price",
+        "permittedPhoto"
+      ],
+      "position": "reference",
+      "sourceUrl": "https://ptl.zchain.co.jp/store/6435?store_group_id=1",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "e14d01c0036fc6d5a32930aac8ab8538a4fb2a01f7f58cc24a80700094aed17f",
+        "checkedAt": "2026-10-15T04:47:45.463305+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    },
+    {
+      "id": "life-laundry-hiwasa",
+      "name": "コインランドリーひわさ",
+      "category": "life",
+      "missingFields": [
+        "hours",
+        "closed",
+        "price",
+        "tel",
+        "coordinates",
+        "permittedPhoto"
+      ],
+      "position": "missing",
+      "sourceUrl": "https://wowmap.jp/wao/?p=10109126",
+      "sourceCheck": {
+        "status": "fetched",
+        "http": 200,
+        "sha256": "3c13e7cb1d0c778977c355961cbb98bbc518b8e7447589bb64d3f50e8a64ede1",
+        "checkedAt": "2026-10-15T04:47:45.971095+00:00"
+      },
+      "note": "空欄は未確認。画像は許諾未確認なら補完しない。",
+      "factCheck": "HTTP到達は事実の最新性の保証ではない。補完はweb-supplements.jsonの個別承認記録のみ。"
+    }
+  ],
+  "sourceChecks": {
+    "https://asatetu.com/shikokumigishita/wp-content/uploads/2016/10/%E6%97%A5%E5%92%8C%E4%BD%90%E9%A7%85.pdf": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "f1769eb08aa8dc767302dd06fe2e2989a202dd7618ffe947ff698d0a5b67a642",
+      "checkedAt": "2026-10-15T04:47:42.098972+00:00"
+    },
+    "https://caretta.town.minami.lg.jp/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "d3fd990d622757cc7525da5ef69973b41f32f94677e9a4c2fc77c95c40e7453d",
+      "checkedAt": "2026-10-15T04:47:41.958999+00:00"
+    },
+    "https://eneos-ss.com/search/ss/pc/detail.php?SCODE=036184": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "fdb504f1bbf609d6e4373cbb0effa0ce56fb439a71a3d291535828338bb701fd",
+      "checkedAt": "2026-10-15T04:47:42.198101+00:00"
+    },
+    "https://hiwasahachiman.com/access": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "028254a6ea27d495bb9a5cc52b397f3d9815c50fcee53d3f967cad9d5dcbee0b",
+      "checkedAt": "2026-10-15T04:47:42.713165+00:00"
+    },
+    "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4319.html": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "53b355d2ced42f3d744cb3bf0c8438a9b4e00cd328ef5bddc3430650e753bee4",
+      "checkedAt": "2026-10-15T04:47:42.172224+00:00"
+    },
+    "https://library.bunmori.tokushima.jp/digital/webkiyou/43/4323.html": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "fa8b773e09026e24fce05d7c8bf3a44bc2336f5cfc2760d3de060c8dd3e4757d",
+      "checkedAt": "2026-10-15T04:47:42.215429+00:00"
+    },
+    "https://map.cosmo-energy.co.jp/points/S360071": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "525df52e9a1d4b1fb24a07d86b86567fb0f058a5eba9ca0bbbf2de04a21e6162",
+      "checkedAt": "2026-10-15T04:47:42.370357+00:00"
+    },
+    "https://map.idemitsu.com/b/a/info/0000008237/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "429bc1fb43b022313eb240e8ddfb38a56502a12b5dda5225d51d15d542045d56",
+      "checkedAt": "2026-10-15T04:47:42.463052+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "bbdeff64b366be4fbc0c366934fa345ece8f9fe70ca1e0f9d986965794bd2056",
+      "checkedAt": "2026-10-15T04:47:43.235270+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/daikoku": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "9994ac2d2d4691389bf62a56557f47b469da622b91601169a7bab28f6e48dfa4",
+      "checkedAt": "2026-10-15T04:47:43.127087+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ichifukuya": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "ac9227957ad23b13dd725eb668fc43a86269bc6d7227cd5914ce8eb113d58963",
+      "checkedAt": "2026-10-15T04:47:43.331865+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/ittendo": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "1806bc178f62e675eccfb1799f1ed641ab1e9002bd2f72da5f870a65ae3847ef",
+      "checkedAt": "2026-10-15T04:47:43.651113+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/nagaoka": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "7e8501b205c9359bbff15bd5d9d9482f1b9467725b90232682de2407990a15c5",
+      "checkedAt": "2026-10-15T04:47:43.867532+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/sakuraya": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "dc652023f47106cd98d76eb6158b01adec3ab2acd20516d2d8c4ffff5b315e6e",
+      "checkedAt": "2026-10-15T04:47:43.675869+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/satsuma": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "a9e5ea30a53baba8d6994bff6596b6de711b2bfa6a8982810eb8a5ad923aae3f",
+      "checkedAt": "2026-10-15T04:47:44.511198+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shikido": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "b9a3c427a3afa81e14cfe40cdca4f20ea43e17d2205f71c17f903140fb60b04f",
+      "checkedAt": "2026-10-15T04:47:44.251870+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/shimizu": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "fb32964db345931c194ff3d46e88346ed2bae96a0f2b5cf0b7b4b6bc1aa57c84",
+      "checkedAt": "2026-10-15T04:47:44.333957+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/takegawa": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "d8c606dc4c088381d860b3aa70ea65382400616699dbd188b3516882eebf00cb",
+      "checkedAt": "2026-10-15T04:47:44.713604+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/terauchi": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "f25d3adda4d3a2ddfbe9790647feead1a2a82df08614b211978bfc1f637d793d",
+      "checkedAt": "2026-10-15T04:47:44.824576+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/warakutei": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "b4ec1778ba29a46b0e1a7ec6983b4a36b2f779e59bf17724e747c5001268b8b9",
+      "checkedAt": "2026-10-15T04:47:44.929708+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "e3e996248169039513f1b378f10af7df6067c40ec1a5fda29adbadbe97089bfb",
+      "checkedAt": "2026-10-15T04:47:45.224100+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/street-light/radium-onsen": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "d540dd15a2e4fcd5f1a5cee74f56615671d74c25b51082e19fcf5226b4d3273a",
+      "checkedAt": "2026-10-15T04:47:45.291023+00:00"
+    },
+    "https://minami-heritage.yakuouji-monzenmachi.com/street-light/yakuyoke-bridge": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "d05ba829bb005e431e84e26c833ee3a4cf4f5c450685d3f761876431401222e2",
+      "checkedAt": "2026-10-15T04:47:45.270879+00:00"
+    },
+    "https://ptl.zchain.co.jp/store/6435?store_group_id=1": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "e14d01c0036fc6d5a32930aac8ab8538a4fb2a01f7f58cc24a80700094aed17f",
+      "checkedAt": "2026-10-15T04:47:45.463305+00:00"
+    },
+    "https://ptl.zchain.co.jp/store/6437?store_group_id=1": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "ce0f099869ef09b6e6e99b66df42edaff79cb7c6a69e5ef64eb483744535cf1b",
+      "checkedAt": "2026-10-15T04:47:45.484548+00:00"
+    },
+    "https://r.goope.jp/ookitahiwasa/about": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "e5624d2775e5a1a08215adf8e4bcbbd79f7c1a5db10f5041a7be57ec837d7817",
+      "checkedAt": "2026-10-15T04:50:45.492707+00:00"
+    },
+    "https://store.family.co.jp/points/31598": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "ca4773282d3ca4cdf18f74e580589235808a06a8b31e60b0a034d44d129a36cf",
+      "checkedAt": "2026-10-15T04:47:45.499551+00:00"
+    },
+    "https://wowmap.jp/wao/?p=10109126": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "3c13e7cb1d0c778977c355961cbb98bbc518b8e7447589bb64d3f50e8a64ede1",
+      "checkedAt": "2026-10-15T04:47:45.971095+00:00"
+    },
+    "https://www.33kannon.net/cannonji": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "46856073bda254018d3b28b591d7f45f908f46c6322a09badabcbdbd9dc507f0",
+      "checkedAt": "2026-10-15T04:47:47.316421+00:00"
+    },
+    "https://www.katadeyakushi.com/library/5ebc917d1b102b713c249e72/5ebca224dcc04c127fd9f593.pdf": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "2e629fe5b1fbe6b0c792f4a10505d5c26638332ae91cbdfe6f0dd7f62b6906c9",
+      "checkedAt": "2026-10-15T04:47:45.990111+00:00"
+    },
+    "https://www.outdoor-sports.info/about": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "5f7c60aafaa4807f9c4261392226ee37e4de916df9d54e4c3c98d724317d4e87",
+      "checkedAt": "2026-10-15T04:47:46.161834+00:00"
+    },
+    "https://www.town.minami.lg.jp/docs/403.html": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "3ae9b41557c15cd9dc08d58093d9d09a18c9e262a0838750a867709e3a71b9d1",
+      "checkedAt": "2026-10-15T04:47:46.149991+00:00"
+    },
+    "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "93e4b295132543d5979a3425845590793d53e58de5e25827d017db700ba6efad",
+      "checkedAt": "2026-10-15T04:47:46.286546+00:00"
+    },
+    "https://www.town.minami.lg.jp/institution/shisetsu/institution06/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "f75e103ac831a877620c8a0dca8f55c47764e1f7c986c274ff0042267d85f53d",
+      "checkedAt": "2026-10-15T04:47:46.556145+00:00"
+    },
+    "https://www.town.minami.lg.jp/kankou-guide/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "3865283d7b5150e06803b9e8de1ab4ad341cda5add6324bc365308b45e1e5c47",
+      "checkedAt": "2026-10-15T04:47:46.461810+00:00"
+    },
+    "https://www.umitatsu.com/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "12a5e7a6acad5f9902457e2afbb14acb9e7aadc30e68321840df7387e071a22c",
+      "checkedAt": "2026-10-15T04:47:48.095187+00:00"
+    },
+    "https://yakuouji.net/": {
+      "status": "fetched",
+      "http": 200,
+      "sha256": "52e00d3b3c5c71bd9e37a7b39226434980c3449c8c3bf2532919151d15cfc7b0",
+      "checkedAt": "2026-10-15T04:47:48.065058+00:00"
+    }
+  },
+  "recordCount": 52,
+  "positionMissing": [
+    "pdf5-riverside-buddha",
+    "pdf5-temple-stone",
+    "life-laundry-hiwasa"
+  ],
+  "historicalHidden": [
+    "pdf5-office-stone"
+  ]
+}
