@@ -19,10 +19,14 @@
       "publicDescription": "宿泊施設。えびす洞温泉の日帰り入浴は2026年8月5日から休業し、入浴は宿泊者のみです。2026年10月15日に施設公式案内を確認。最新の営業・予約は施設へ確認してください。",
       "relatedLinks": [
         {
-          "label": "施設公式：入浴の利用条件",
+          "label": "施設公式：営業・利用条件の確認",
           "url": "https://www.shiroitodai.jp/"
         }
-      ]
+      ],
+      "lifeTypes": "温泉",
+      "serviceHours": "宿泊者のみ入浴可。6:30～8:00／16:00～22:00。",
+      "serviceStatus": "日帰り入浴は2026年8月5日から休業。宿泊者のみ。",
+      "officialCheckedAt": "2026-10-15"
     },
     {
       "no": "0000000002",
@@ -131,7 +135,13 @@
       "publicPhotoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay8",
       "publicPhotoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img8.jpg",
       "photoIdentityEvidence": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay8",
-      "photoIdentityName": "南阿波サンラインモビレージ"
+      "photoIdentityName": "南阿波サンラインモビレージ",
+      "mapLat": 33.692716,
+      "mapLng": 134.489546,
+      "mapCheckedAt": "2026-10-15",
+      "mapSource": "https://www.town.minami.lg.jp/institution/shisetsu/institution61/",
+      "mapLocationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapAccessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。"
     },
     {
       "no": "0000000010",
@@ -240,7 +250,19 @@
       "publicPhotoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay15",
       "publicPhotoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img15.jpg",
       "photoIdentityEvidence": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay15",
-      "photoIdentityName": "イザリCafé"
+      "photoIdentityName": "イザリCafé",
+      "mapLat": 33.80266,
+      "mapLng": 134.669056,
+      "mapCheckedAt": "2026-10-15",
+      "mapSource": "https://www.town.minami.lg.jp/institution/shisetsu/institution71/",
+      "mapLocationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapAccessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。",
+      "relatedLinks": [
+        {
+          "label": "施設公式：住所・アクセス（町表記と番地差あり）",
+          "url": "https://hpdsp.jp/izaricafe/access"
+        }
+      ]
     },
     {
       "no": "0000000017",
@@ -318,7 +340,13 @@
       "publicPhotoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay20",
       "publicPhotoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img20.jpg",
       "photoIdentityEvidence": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay20",
-      "photoIdentityName": "モビレージキャンプ場"
+      "photoIdentityName": "モビレージキャンプ場",
+      "mapLat": 33.692716,
+      "mapLng": 134.489546,
+      "mapCheckedAt": "2026-10-15",
+      "mapSource": "https://www.town.minami.lg.jp/institution/shisetsu/institution61/",
+      "mapLocationLabel": "町公式施設地図の代表点（2026-10-15確認）。実測入口・敷地区画・通行経路は未確認。",
+      "mapAccessNote": "町が公開する地理院地図の施設地点を採用。元表の欠落・他施設と競合する値は採用しない。同じ施設の宿泊棟とテントサイトは同じ代表点で、サイトの個別区画は示さない。予約・入口は施設公式で確認してください。"
     },
     {
       "no": "0000000022",

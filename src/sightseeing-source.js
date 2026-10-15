@@ -24,6 +24,7 @@ export function importSightseeing(rows,review){
   if(r.action!=='add'||!r.id.startsWith('town-'))throw new Error('Unsupported sightseeing action');
   const s={id:r.id,name,category:r.category,address,description:text(row.description),source:r.source,verifiedAt:r.checkedAt,locationLabel:r.locationLabel,accessNote:r.accessNote,photoStatus:'写真の利用条件を確認中',relatedLinks:r.sourceUrls.map((url,i)=>({label:'町の観光案内・出典 '+(i+1),url}))};
   if(hasLat){s.lat=row.lat;s.lng=row.lng;s.mapScope='surroundings';s.mapQuery=row.lat+','+row.lng;}
+  for(const k of ['mapPoints','navigationPolicy'])if(r[k])s[k]=r[k];
   for(const k of ['hours','closed']){const v=text(row[k]);if(v)s[k]=v;}
   const tel=text(row.tel,40);if(tel){if(!/^[0-9+() -]{5,30}$/.test(tel))throw new Error('Invalid sightseeing telephone');s.tel=tel;}
   const url=text(row.url,2048);if(url){if(!safeURL(url))throw new Error('Invalid sightseeing URL');s.url=url;}
