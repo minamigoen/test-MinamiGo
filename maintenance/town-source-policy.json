@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-15",
+  "records": [
+    {
+      "id": "town-0000000001",
+      "sourceKey": "watch1",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "田井ノ浜海水浴場",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch1"
+      }
+    },
+    {
+      "id": "town-0000000002",
+      "sourceKey": "watch2",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "大浜海岸",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3"
+      }
+    },
+    {
+      "id": "town-0000000003",
+      "sourceKey": "watch5",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod",
+        "hours",
+        "closed",
+        "tel",
+        "url"
+      ],
+      "current": {
+        "name": "薬王寺（名水 瑠璃の水・寺院体験）",
+        "hours": "",
+        "closed": "",
+        "tel": "0884-77-0023",
+        "url": "https://yakuouji.net/"
+      }
+    },
+    {
+      "id": "town-0000000004",
+      "sourceKey": "watch6",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "満石神社（名水 ごんげんさんの水）",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch6"
+      }
+    },
+    {
+      "id": "town-0000000005",
+      "sourceKey": "watch7",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "日和佐城",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/institution/shisetsu/institution06/"
+      }
+    },
+    {
+      "id": "town-0000000006",
+      "sourceKey": "watch8",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "阿波沖海戦小公園",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch8"
+      }
+    },
+    {
+      "id": "town-0000000007",
+      "sourceKey": "watch9",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "日和佐うみがめ博物館 カレッタ",
+        "hours": "9:00〜17:00",
+        "closed": "毎週月曜日(但し、祝日の場合は翌日)12月29日～31日",
+        "tel": "0884-77-1110",
+        "url": "https://caretta.town.minami.lg.jp/"
+      }
+    },
+    {
+      "id": "town-0000000008",
+      "sourceKey": "watch10",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "南阿波サンライン",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch10"
+      }
+    },
+    {
+      "id": "town-0000000009",
+      "sourceKey": "watch11",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "桜街道",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11"
+      }
+    },
+    {
+      "id": "town-0000000010",
+      "sourceKey": "watch12",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "道の駅日和佐",
+        "hours": "9:00～17:30(トイレは24時間利用可能)",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch12"
+      }
+    },
+    {
+      "id": "town-0000000011",
+      "sourceKey": "fes1",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "日和佐八幡神社秋まつり",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1"
+      }
+    },
+    {
+      "id": "town-0000000012",
+      "sourceKey": "fes2",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "赤松神社奉納吹筒花火",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2"
+      }
+    },
+    {
+      "id": "town-0000000013",
+      "sourceKey": "fes3",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "由岐の連続秋まつり",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3"
+      }
+    },
+    {
+      "id": "town-0000000014",
+      "sourceKey": "fes4",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "ひわさ冬まつり",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4"
+      }
+    },
+    {
+      "id": "town-0000000015",
+      "sourceKey": "fes5",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "日和佐うみがめまつり",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5"
+      }
+    },
+    {
+      "id": "town-0000000016",
+      "sourceKey": "fes6",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "由岐伊勢エビまつり",
+        "hours": "開催年の日程・会場は公式発表で確認",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6"
+      }
+    },
+    {
+      "id": "town-0000000017",
+      "sourceKey": "exsur1",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "海と遊ぼ屋海達",
+        "hours": "",
+        "closed": "",
+        "tel": "0884-70-1277",
+        "url": "https://www.umitatsu.com/"
+      }
+    },
+    {
+      "id": "town-0000000018",
+      "sourceKey": "exsur2",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "人力企画",
+        "hours": "7:00～21:00（公式About掲載・予約条件は要確認）",
+        "closed": "無休（公式About掲載）",
+        "tel": "050-5470-2917",
+        "url": "https://www.outdoor-sports.info/about"
+      }
+    },
+    {
+      "id": "town-0000000019",
+      "sourceKey": "exsur3",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "うみがめマリンクルーズ",
+        "hours": "",
+        "closed": "",
+        "tel": "0884-77-1730",
+        "url": "https://umigame-marine-cruise.com/"
+      }
+    },
+    {
+      "id": "town-0000000020",
+      "sourceKey": "exsur5",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "観光ボランティアガイド会日和佐",
+        "hours": "",
+        "closed": "",
+        "tel": "0884-77-0768",
+        "url": "https://www.town.minami.lg.jp/kankou-guide/"
+      }
+    },
+    {
+      "id": "heritage-373003",
+      "sourceKey": "exsur6",
+      "protectedFields": [
+        "name",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "旧八嶋電機店舗",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima"
+      }
+    }
+  ]
+}

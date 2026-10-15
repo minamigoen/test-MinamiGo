@@ -1,0 +1,3 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';import {dirname} from 'node:path';import {planTownUpdates} from '../src/source-updates.js';
+const [before,source,rules,output]=process.argv.slice(2);const read=async p=>JSON.parse(await readFile(p,'utf8'));
+const plan=planTownUpdates(await read(before),await read(source),await read(rules));await mkdir(dirname(output),{recursive:true});await writeFile(output,JSON.stringify(plan,null,2)+'\n');console.log(JSON.stringify({status:plan.status,changes:plan.changes.length,missing:plan.missing?.length||0,publishedDataChanged:false}));if(plan.status==='blocked')process.exitCode=2;

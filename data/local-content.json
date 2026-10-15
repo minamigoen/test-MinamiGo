@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T22:47:47.471Z",
+  "updatedAt": "2026-10-15T00:49:55.055Z",
   "walk": [
     {
       "id": "odaishi-statue",
@@ -506,6 +506,11 @@
       "mapQuery": "旧八嶋電機店舗 徳島県海部郡美波町奥河内字寺前229-3",
       "locationLabel": "施設代表点（入口・建物中心の別は未確認）。入口・Street View・一般公開範囲は未確認（2026-10-14）。",
       "mapScope": "surroundings",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img6.jpg",
+      "photoAlt": "遊べるおみやげハウス「日和佐日和」（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur6",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "美波遺産公式・認定一覧",
@@ -838,7 +843,11 @@
       "mapQuery": "33.7718848,134.5829812",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img1.jpg",
+      "photoAlt": "田井ノ浜海水浴場（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch1",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -905,7 +914,11 @@
       "mapQuery": "33.7323478,134.5276112",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img5.jpg",
+      "photoAlt": "薬王寺（名水 瑠璃の水・寺院体験）（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch5",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -936,7 +949,11 @@
       "mapQuery": "33.7632453,134.5763907",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img6.jpg",
+      "photoAlt": "満石神社（名水 ごんげんさんの水）（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch6",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -963,7 +980,11 @@
       "mapQuery": "33.7295363,134.5360968",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img7.jpg",
+      "photoAlt": "日和佐城（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch7",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -994,7 +1015,11 @@
       "mapQuery": "33.7706647,134.5886388",
       "locationLabel": "元表の参考座標（推定位置・施設境界・入口は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img8.jpg",
+      "photoAlt": "阿波沖海戦小公園（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch8",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1020,7 +1045,11 @@
       "mapQuery": "33.7346276,134.5407497",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img9.jpg",
+      "photoAlt": "日和佐うみがめ博物館 カレッタ（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch9",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1047,7 +1076,11 @@
       "mapQuery": "33.689895,134.4782814",
       "locationLabel": "道路区間の代表点（推定位置）。展望台・道路入口・通行可能経路は未確認。",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img10.jpg",
+      "photoAlt": "南阿波サンライン（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch10",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1070,7 +1103,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町サイトのMapは南阿波サンラインと同じリンク。桜街道の位置としては採用しない。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img11.jpg",
+      "photoAlt": "桜街道（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch11",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1094,7 +1131,11 @@
       "mapQuery": "33.7302896,134.5302471",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/watch_img12.jpg",
+      "photoAlt": "道の駅日和佐（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch12",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1118,7 +1159,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img1.jpg",
+      "photoAlt": "日和佐八幡神社秋まつり（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes1",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1138,7 +1183,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img2.jpg",
+      "photoAlt": "赤松神社奉納吹筒花火（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes2",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1158,7 +1207,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img3.jpg",
+      "photoAlt": "由岐の連続秋まつり（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes3",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1178,7 +1231,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img4.jpg",
+      "photoAlt": "ひわさ冬まつり（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes4",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1198,7 +1255,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img5.jpg",
+      "photoAlt": "日和佐うみがめまつり（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes5",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1218,7 +1279,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 原資料の定例開催日は過去の一般案内。開催年の確定日・会場として表示しない。会場座標は保留。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/festival_img6.jpg",
+      "photoAlt": "由岐伊勢エビまつり（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_fes6",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1242,7 +1307,11 @@
       "mapQuery": "33.7319919,134.5381059",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img1.jpg",
+      "photoAlt": "海と遊ぼ屋海達（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur1",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1268,7 +1337,11 @@
       "verifiedAt": "2026-10-14",
       "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町MapのPOI名はクーランマラン。人力企画と同一施設と確定できないため、元表座標も保留。公式Aboutで名称・住所・電話を確認。",
       "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img2.jpg",
+      "photoAlt": "人力企画（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur2",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1296,7 +1369,11 @@
       "mapQuery": "33.7319152,134.5367892",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img3.jpg",
+      "photoAlt": "うみがめマリンクルーズ（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur3",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1324,7 +1401,11 @@
       "mapQuery": "33.7292946,134.5306969",
       "locationLabel": "対象POIの施設代表点（推定位置・入口・集合場所は未確認）",
       "mapScope": "surroundings",
-      "photoStatus": "写真の利用条件を確認中",
+      "photoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img5.jpg",
+      "photoAlt": "観光ボランティアガイド会日和佐（美波町観光ページ掲載、撮影年月未確認）",
+      "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur5",
+      "photoLicense": "美波町協定に基づく利用許諾",
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
       "relatedLinks": [
         {
           "label": "町の観光案内・出典 1",
@@ -1340,7 +1421,7 @@
       "id": "minamistay-0000000001",
       "name": "ホテル白い燈台",
       "category": "stay",
-      "description": "公開施設案内に掲載されている宿泊施設です。営業・予約・チェックイン・料金は施設へご確認ください。",
+      "description": "宿泊施設。えびす洞温泉の日帰り入浴は2026年8月5日から休業し、入浴は宿泊者のみです。2026年10月15日に施設公式案内を確認。最新の営業・予約は施設へ確認してください。",
       "address": "徳島県海部郡美波町日和佐浦455",
       "lat": 33.737142,
       "lng": 134.54469,
@@ -1358,7 +1439,12 @@
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay1",
       "photoLicense": "掲載許諾確認済み",
       "photoCredit": "掲載元：美波町公開案内",
-      "relatedLinks": [],
+      "relatedLinks": [
+        {
+          "label": "施設公式：入浴の利用条件",
+          "url": "https://www.shiroitodai.jp/"
+        }
+      ],
       "officialCheckedAt": "2026-10-13"
     },
     {
@@ -1458,26 +1544,6 @@
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay5",
       "photoLicense": "掲載許諾確認済み",
       "photoCredit": "掲載元：美波町公開案内",
-      "relatedLinks": [],
-      "officialCheckedAt": "2026-10-13"
-    },
-    {
-      "id": "minamistay-0000000006",
-      "name": "民宿弘陽荘",
-      "category": "stay",
-      "description": "公開施設案内に掲載されている宿泊施設です。営業・予約・チェックイン・料金は施設へご確認ください。",
-      "address": "徳島県海部郡美波町奥河内字本村70",
-      "lat": 33.7342279,
-      "lng": 134.5364188,
-      "url": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
-      "source": "美波町・美波町観光協会の公開施設案内（宿泊元表のNOと照合）",
-      "verifiedAt": "2026-10-13",
-      "accessNote": "宿泊元表の座標は参考地点です。入口・現況は未確認。電話・営業時間は取り込んでいません。予約前に施設の最新案内を確認してください。",
-      "mapQuery": "民宿弘陽荘 徳島県海部郡美波町奥河内字本村70",
-      "locationLabel": "宿泊元表の参考座標（2026-10-14読取）。現地・入口・経路は未検証。",
-      "mapScope": "sheet-reference",
-      "directionsMode": "walking",
-      "photoStatus": "写真の施設対応を確認中",
       "relatedLinks": [],
       "officialCheckedAt": "2026-10-13"
     },
@@ -2103,6 +2169,17 @@
         }
       ],
       "officialCheckedAt": "2026-10-13"
+    },
+    {
+      "id": "minamimeshi-0000000010",
+      "description": "薬王寺温泉のお食事処。施設公式で温泉・コインランドリーの営業案内も確認できます。温泉12:00～20:00（火・金休）、コインランドリー13:00～21:00。下の営業時間はお食事処の案内です。2026年10月15日確認。",
+      "officialCheckedAt": "2026-10-15",
+      "relatedLinks": [
+        {
+          "label": "施設公式：温泉・洗濯・食事の営業時間",
+          "url": "https://yakuouji.net/yakuohji-spa"
+        }
+      ]
     }
   ]
 }

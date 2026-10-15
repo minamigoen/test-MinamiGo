@@ -40,7 +40,7 @@ with sync_playwright() as p:
   page.locator('#detail-media img').evaluate('(i)=>i.decode()');page.locator('#map-section').evaluate('(e)=>e.scrollIntoView({block:"start"})');page.screenshot(path=str(OUT/f'map-stay-panel-{width}.png'));page.locator('#close-detail').click()
   page.get_by_role('button',name='美波遺産',exact=True).click();expect(page.locator('.map-pin')).to_have_count(12);expect(page.locator('#map-list button')).to_have_count(12)
   for spot in [s for s in spots.values() if s['category']=='heritage']:
-   page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);expect(page.locator('#detail-fields')).to_contain_text('施設代表点');expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',spot['id']);assert not page.locator('#detail-media img').count();page.locator('#close-detail').click()
+   page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);expect(page.locator('#detail-fields')).to_contain_text('施設代表点');expect(page.locator('.map-pin.selected')).to_have_attribute('data-spot-id',spot['id']);assert page.locator('#detail-media img').count()==int(bool(spot.get('photoUrl')));page.locator('#close-detail').click()
   page.get_by_role('button',name='パワースポット',exact=True).click();expect(page.locator('.map-pin')).to_have_count(9);expect(page.locator('#map-list button')).to_have_count(12)
   for spot in [s for s in spots.values() if s['category']=='powerspot']:
    page.locator('#map-list [data-spot-id="'+spot['id']+'"]').click();expect(page.locator('#detail-title')).to_have_text(spot['name']);assert not page.locator('#detail-media img').count()
