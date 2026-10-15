@@ -8,7 +8,7 @@ export function planTownUpdates(baseline,fetched,policy){
   const prior=before.get(rule.sourceKey),next=after.get(rule.sourceKey);if(!next){missing.push({id:rule.id,sourceKey:rule.sourceKey,status:'source-missing-retain'});continue;}
   if(!prior){changes.push({id:rule.id,sourceKey:rule.sourceKey,kind:'identity-review',protected:true});continue;}
   for(const field of fields){if((prior[field]||'')===(next[field]||''))continue;const changedName=prior.name!==next.name;
-   changes.push({changeId:rule.id+':'+field,id:rule.id,sourceKey:rule.sourceKey,field,before:prior[field]||'',after:next[field]||'',current:rule.current[field]||'',protected:changedName||field==='image'||rule.protectedFields.includes(field),kind:changedName?'identity-review':field==='image'?'photo-review':'candidate',sourceUrl:fetched.sourceUrl+'#inline-wrap_'+rule.sourceKey,checkedAt:fetched.checkedAt});
+   changes.push({changeId:(rule.changePrefix||rule.id)+':'+field,id:rule.id,sourceKey:rule.sourceKey,field,before:prior[field]||'',after:next[field]||'',current:rule.current[field]||'',protected:changedName||field==='image'||rule.protectedFields.includes(field),kind:changedName?'identity-review':field==='image'?'photo-review':'candidate',sourceUrl:fetched.sourceUrl+'#inline-wrap_'+rule.sourceKey,checkedAt:fetched.checkedAt});
   }
  }
  return {status:'review',sourceUrl:fetched.sourceUrl,checkedAt:fetched.checkedAt,sourceHash:fetched.htmlSha256,changes,missing,unmapped:rows.filter(r=>!before.has(r.key)).map(r=>r.key),retained:true};

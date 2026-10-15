@@ -23,6 +23,10 @@
       "sourceKey": "watch2",
       "protectedFields": [
         "name",
+        "hours",
+        "closed",
+        "tel",
+        "url",
         "image",
         "eventPeriod"
       ],
@@ -32,19 +36,62 @@
         "closed": "",
         "tel": "",
         "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3"
-      }
+      },
+      "changePrefix": "town-0000000002:watch2"
+    },
+    {
+      "id": "town-0000000002",
+      "sourceKey": "watch3",
+      "protectedFields": [
+        "name",
+        "hours",
+        "closed",
+        "tel",
+        "url",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "大浜海岸",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3"
+      },
+      "changePrefix": "town-0000000002:watch3"
+    },
+    {
+      "id": "town-0000000002",
+      "sourceKey": "watch4",
+      "protectedFields": [
+        "name",
+        "hours",
+        "closed",
+        "tel",
+        "url",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "大浜海岸",
+        "hours": "",
+        "closed": "",
+        "tel": "",
+        "url": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_watch3"
+      },
+      "changePrefix": "town-0000000002:watch4"
     },
     {
       "id": "town-0000000003",
       "sourceKey": "watch5",
       "protectedFields": [
         "name",
-        "image",
-        "eventPeriod",
         "hours",
         "closed",
         "tel",
-        "url"
+        "url",
+        "image",
+        "eventPeriod"
       ],
       "current": {
         "name": "薬王寺（名水 瑠璃の水・寺院体験）",
@@ -52,7 +99,29 @@
         "closed": "",
         "tel": "0884-77-0023",
         "url": "https://yakuouji.net/"
-      }
+      },
+      "changePrefix": "town-0000000003:watch5"
+    },
+    {
+      "id": "town-0000000003",
+      "sourceKey": "exsur4",
+      "protectedFields": [
+        "name",
+        "hours",
+        "closed",
+        "tel",
+        "url",
+        "image",
+        "eventPeriod"
+      ],
+      "current": {
+        "name": "薬王寺（名水 瑠璃の水・寺院体験）",
+        "hours": "",
+        "closed": "",
+        "tel": "0884-77-0023",
+        "url": "https://yakuouji.net/"
+      },
+      "changePrefix": "town-0000000003:exsur4"
     },
     {
       "id": "town-0000000004",
@@ -342,5 +411,8 @@
         "url": "https://minami-heritage.yakuouji-monzenmachi.com/archives/certification/yashima"
       }
     }
+  ],
+  "excludedSourceKeys": [
+    "fes3"
   ]
 }
