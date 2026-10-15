@@ -10,6 +10,6 @@ test('official review overrides survive food source refresh while source cache r
  const bad=structuredClone(local);bad.foodExtras.find(s=>s.id===bath.id).reviewedOverrides.expectedName='OTHER';assert.throws(()=>mergeFoodSource(rows,bad,read('data/food-source.json')),/override/);
 });
 test('multiple festival points and a road reference never become a single exact entrance or route',()=>{
- const multi=data.spots.find(s=>s.mapPoints);assert.equal(multi.mapPoints.length,7);assert.equal(multi.lat,undefined);assert.equal(multi.navigationPolicy,'disabled');assert.equal(mapPointsForSpot(multi).length,7);assert.ok(Number.isFinite(distanceKm({lat:33.73,lng:134.53},multi)));assert.equal(data.spots.flatMap(s=>s.mapVisibility==='hidden'?[]:mapPointsForSpot(s)).length,115);
+ const multi=data.spots.find(s=>s.mapPoints);assert.equal(multi.mapPoints.length,7);assert.equal(multi.lat,undefined);assert.equal(multi.navigationPolicy,'disabled');assert.equal(mapPointsForSpot(multi).length,7);assert.ok(Number.isFinite(distanceKm({lat:33.73,lng:134.53},multi)));assert.equal(data.spots.flatMap(s=>s.mapVisibility==='hidden'?[]:mapPointsForSpot(s)).length,116);
  assert.throws(()=>validateData({...data,spots:[{...multi,navigationPolicy:'reference'}]}));assert.throws(()=>validateData({...data,spots:[{...multi,lat:33.73,lng:134.53}]}));assert.equal(data.spots.find(s=>s.id==='life-ookita-hiwasa').lat,undefined);assert.match(data.spots.find(s=>s.id==='town-0000000009').locationLabel,/道路沿線/);
 });

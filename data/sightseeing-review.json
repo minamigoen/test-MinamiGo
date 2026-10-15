@@ -729,19 +729,22 @@
         "https://www.outdoor-sports.info/about"
       ],
       "coordinateStatus": "pending",
-      "locationLabel": "位置確認待ち。会場・対象区間・施設の同一性を確認してから地図へ表示します。",
-      "coordinateSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur2",
-      "accessNote": "入口・通行可能経路・開催場所の現況は未検証です。施設・主催者の最新案内に従ってください。 町MapのPOI名はクーランマラン。人力企画と同一施設と確定できないため、元表座標も保留。公式Aboutで名称・住所・電話を確認。",
+      "locationLabel": "事業者公式のoffice/shop代表点（所在地とサイト設定を照合）。カヤック・SUP体験の出発点、集合場所、入口ではありません。",
+      "coordinateSource": "https://www.outdoor-sports.info/about",
+      "accessNote": "事業者公式サイト設定のbusinessLocationFormattedとbusinessLocationCoordinatesを照合。所在地は東由岐字大池170-5。町の旧Google Mapの別POIは採用せず、出発・集合場所は予約時に事業者へ確認してください。",
       "notes": [
         "町MapのPOI名はクーランマラン。人力企画と同一施設と確定できないため、元表座標も保留。公式Aboutで名称・住所・電話を確認。"
       ],
       "photoPolicy": "municipal-agreement",
-      "checkedAt": "2026-10-14",
+      "checkedAt": "2026-10-15",
       "originalCoordinates": [
         33.775021,
         134.5982161
       ],
-      "coordinate": null,
+      "coordinate": [
+        33.774929,
+        134.5984788
+      ],
       "expectedImage": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/excursion_img2.jpg",
       "photoSourceKey": "exsur2",
       "approvedSourceCaption": "人力企画",
@@ -750,7 +753,8 @@
       "photoAlt": "人力企画（美波町観光ページ掲載、撮影年月未確認）",
       "photoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_exsur2",
       "photoLicense": "美波町協定に基づく利用許諾",
-      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）"
+      "photoCredit": "美波町 MINAMI TIME／協定に基づく観光写真利用（原典確認2026-10-15）",
+      "navigationPolicy": "disabled"
     },
     {
       "no": "0000000019",

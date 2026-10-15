@@ -1,0 +1,29 @@
+# 実装上のデータフロー（2026-10-15確認）
+
+法務文案のための実装棚卸し。法令適合・包括免責・第三者の保存方針を断定する文面ではない。根拠は `src/app.js`、`src/map-view.js`、`src/media.js`、`src/app-utilities.js`、`sw.js`、`index.html`。
+
+|対象|処理・保存|送信先とタイミング|
+|---|---|---|
+|現在地|ボタン押下後にブラウザのGeolocation APIで1回取得し、メモリ内の距離計算・並べ替えだけに使用。localStorage・Cookie・URLに保存しない。|アプリから運営サーバー、API、Maps URLへ現在地を送る処理はない。測位自体の処理はOS・ブラウザ側の機能。|
+|検索・絞込・表示・選択ID|URLの状態で復元。既存公開版はフラグメントを使用。用途別URLの変更時はこの記述も更新する。|フラグメントは通常のHTTPリクエストには送られない。ブラウザ自身の履歴には残り得る。|
+|飲食データ|共通の公開Apps Script APIを起動・再読込時に読む。成功データは端末内保存。10分は再利用の判定であり、保存データの自動削除期限ではない。|script.google.com、リダイレクト先script.googleusercontent.com。fetchはcredentials:omit。アプリの現在地やお気に入りを送るパラメータはない。|
+|通常地図|Leafletを同梱し、表示範囲の標準タイルを読む。|tile.openstreetmap.org。通信にIP・ブラウザ情報・タイルの表示範囲が伴う。|
+|空中写真|利用者が切り替えると地理院タイルを読む。|cyberjapandata.gsi.go.jp。表示範囲のタイル通信が発生する。|
+|施設写真|許諾・出典付きURLをimgで読み、失敗時は代替表示。referrerPolicy:no-referrer。|www.town.minami.lg.jp、lh3.googleusercontent.com、upload.wikimedia.org。外部配信元側のログ・Cookie等の有無をアプリが保証するものではない。|
+|外部地図・Street View|利用者がリンクを開いたとき、選択施設・参考点・目的地を含むURLを開く。経路URLにアプリが取得した現在地のoriginを付けない。|www.google.com等の外部サービス。開いた先の位置利用・保存等はそのサービス側の動作。|
+|公式ページ・電話|公式案内はnoopener noreferrer付き別タブ。telリンクは利用者が選択して端末の電話機能を開く。|各施設の公式サイト・端末の電話アプリ。アプリが自動発信する処理はない。|
+|お気に入り|固定施設IDの配列をlocalStorageのminamigo-test-v2-favoritesへ保存。|アプリから送信しない。|
+|学びスタンプ|正解したクイズIDをminamigo-test-v2-learnedへ保存。実訪問を証明する記録ではない。|アプリから送信しない。|
+|読込済み公開データ|minamigo-test-v2-data、minamigo-test-v2-shared-foodへJSONと取得日時を保存。認証・管理メモ・現在地は保存しない。|端末内localStorage。明示削除・ブラウザ削除まで残り得る。|
+|PWAキャッシュ|同一オリジンのHTML/CSS/JS、アイコン、公開JSONを版付きCacheStorageへ保存。外部写真・地図タイルをService Workerで先読み・保存しない。更新は利用者の操作後に切り替える。|アプリ本体の配信はGitHub Pages。通常のブラウザHTTPキャッシュは別に存在する。|
+|共有・QR|QRは同梱ライブラリで端末内生成。リンクコピー、SVGダウンロード、navigator.shareは利用者のボタン操作。|QR生成の外部APIはない。端末共有メニューの選択先への共有は利用者の操作。現在地・お気に入りを共有URLに含めない。|
+|アクセス解析・Cookie|アプリコードに解析タグ、広告タグ、独自Cookie設定、追跡用収集エンドポイントはない。|GitHub Pages/CDNや外部配信元が通常の通信情報を扱う可能性と、アプリによる収集は区別する。第三者がCookieを一切使わないとは断定しない。|
+|端末保存の削除|使い方の削除ボタンで上記4種類のlocalStorage、アプリ用CacheStorage、Service Worker登録を削除。|外部サービス側の履歴・ログやブラウザ全体の履歴は削除対象ではない。|
+
+## 運営・問い合わせの確認状況
+
+- 運営主体の既存表記：一般社団法人 美波御塩。美波町との協定に基づき提供する旨は既存実装にある。
+- アプリ運営への問い合わせメール・電話・送信フォームは未設定。未確認の個人メールや施設の電話を運営問い合わせ先へ流用しない。
+- 観光協会の案内先は https://www.minamikankou.jp/ 。ガイド会の案内先は https://www.town.minami.lg.jp/kankou-guide/ 。両者を区別した既存リンクを維持する。
+- 新たな解析、Cookie、位置送信、問い合わせフォーム、追跡は追加しない。
+- プライバシー／利用上の注意の公開文案は、別担当の確認後にこの実装事実と照合する。未確認の法令適合や包括免責を断言しない。

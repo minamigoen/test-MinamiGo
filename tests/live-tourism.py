@@ -12,7 +12,7 @@ with sync_playwright() as p:
  for width in [390,1440]:
   c=b.new_context(viewport={'width':width,'height':900},service_workers='block');page=c.new_page();errors=[];images=[];page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:images.append(r.url) if r.resource_type=='image' else None)
   page.goto(URL,wait_until='domcontentloaded');page.wait_for_selector('.map-pin');page.wait_for_function('()=>/共通データ 37件|取得できません/.test(document.getElementById("food-sync-info").textContent)',timeout=20000)
-  expect(page.locator('#map-view')).to_have_attribute('aria-pressed','true');expect(page.locator('#map')).to_be_visible();expect(page.locator('#cards')).not_to_be_visible();expect(page.locator('#map-list button')).to_have_count(114);expect(page.locator('.map-pin')).to_have_count(115)
+  expect(page.locator('#map-view')).to_have_attribute('aria-pressed','true');expect(page.locator('#map')).to_be_visible();expect(page.locator('#cards')).not_to_be_visible();expect(page.locator('#map-list button')).to_have_count(114);expect(page.locator('.map-pin')).to_have_count(116)
   page.screenshot(path=str(OUT/f'default-map-{width}.png'))
   if width==1440:
    sidebar=page.locator('.map-sidebar').bounding_box();m=page.locator('#map').bounding_box();assert sidebar['x']+sidebar['width']<m['x']
@@ -32,7 +32,7 @@ with sync_playwright() as p:
   page.locator('#cards-view').click();expect(page.locator('.card')).to_have_count(114);assert 'view=cards' in page.url;page.reload(wait_until='domcontentloaded');page.wait_for_selector('.card');expect(page.locator('#cards-view')).to_have_attribute('aria-pressed','true');page.locator('#list-view').click();expect(page.locator('#cards')).to_have_class('cards list-layout');page.locator('#map-view').click();expect(page.locator('#map-list button')).to_have_count(114)
   page.locator('#base-aerial').click();expect(page.locator('#base-aerial')).to_have_attribute('aria-pressed','true');page.locator('#base-map').click();assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
   assert not [u for u in images if any(x in u for x in ['/watch_img','/festival_img','/excursion_img']) and u not in {s.get('photoUrl') for s in expected['spots']}],images;assert not errors,errors
-  runs.append({'width':width,'default_view':'map','total':114,'all_visible_pins':115,'new':20,'new_positioned_records':19,'new_pending':1,'multi_venue_points':7,'municipal_photos_embedded':19,'existing_cc_beach_photo':'loaded','festival_records':6,'existing_heritage_merged':1,'view_switch_and_reload':'passed','javascript_errors':errors});print(f'PASS tourism/default map {width}px',flush=True);c.close()
+  runs.append({'width':width,'default_view':'map','total':114,'all_visible_pins':116,'new':20,'new_positioned_records':20,'new_pending':0,'multi_venue_points':7,'municipal_photos_embedded':19,'existing_cc_beach_photo':'loaded','festival_records':6,'existing_heritage_merged':1,'view_switch_and_reload':'passed','javascript_errors':errors});print(f'PASS tourism/default map {width}px',flush=True);c.close()
  b.close()
 (OUT/'tourism-result.json').write_text(json.dumps({'url':URL,'runs':runs},ensure_ascii=False,indent=2),encoding='utf8')
 if server:server.shutdown();tmp.cleanup()

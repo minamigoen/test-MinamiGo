@@ -178,6 +178,21 @@
       "checkedAt": "2026-10-15",
       "entranceVerified": false,
       "note": "町掲載「伊勢エビまつり会場」の代表点（由岐駅前グラウンド）。開催日にはページ見出しと本文に年の不整合があり、最新日程は主催者へ確認してください。"
+    },
+    {
+      "id": "town-0000000018",
+      "source": "https://www.outdoor-sports.info/about",
+      "kind": "official-published-office",
+      "points": [
+        {
+          "name": "人力企画 office/shop",
+          "lat": 33.774929,
+          "lng": 134.5984788
+        }
+      ],
+      "checkedAt": "2026-10-15",
+      "entranceVerified": false,
+      "note": "事業者公式のoffice/shop代表点（所在地とサイト設定を照合）。カヤック・SUP体験の出発点、集合場所、入口ではありません。"
     }
   ]
 }
