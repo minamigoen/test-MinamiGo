@@ -8,6 +8,6 @@ for(const [path,category] of [['data/power-spots.json','powerspot'],['data/herit
  assert.deepEqual(local.walk.filter(s=>category?s.category===category:s.id.startsWith('town-')),source.spots,'runtime shared-food refresh must preserve every local record');
  console.log(`${category||"sightseeing"}: ${source.spots.length} records, ${source.spots.filter(s=>s.lat!==undefined).length} reference coordinates, ${source.spots.filter(s=>s.lat===undefined).length} pending positions`);
 }
-assert.equal(snapshot.spots.filter(s=>s.category==='food').length,37);assert.equal(snapshot.spots.filter(s=>s.category==='stay').length,27);
+assert.equal(snapshot.spots.filter(s=>s.category==='food').length,37);assert.equal(snapshot.spots.filter(s=>s.category==='stay').length,26);
 
 const power=validateData(await read('data/power-spots.json'));assert.equal(power.spots.length,12);assert.equal(power.spots.filter(s=>s.lat!==undefined).length,10);assert.equal(power.spots.filter(s=>s.lat!==undefined&&s.mapVisibility!=='hidden').length,9);assert.equal(power.spots.filter(s=>s.lat===undefined).length,2);

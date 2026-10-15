@@ -16,5 +16,5 @@ test('runtime food photos survive cache remerge and disappear honestly if source
  const first=mergeFoodSource(rows,local,config);assert.equal(first.data.spots.filter(s=>s.category==='food'&&s.photoUrl).length,37);
  assert.equal(mergeFoodSource(first.sourceRows,local,config).data.spots.filter(s=>s.category==='food'&&s.photoUrl).length,37);
  rows[0].image='';const absent=mergeFoodSource(rows,local,config).data.spots.find(s=>s.upstreamId===rows[0].no);assert.equal(absent.photoUrl,undefined);assert.equal(absent.photoStatus,'写真未登録');
- assert.equal(snapshot.spots.some(s=>['heritage','powerspot'].includes(s.category)&&s.photoUrl),false);
+ assert.equal(snapshot.spots.filter(s=>['heritage','powerspot'].includes(s.category)&&s.photoUrl).length,1);assert.equal(snapshot.spots.find(s=>s.category==='heritage'&&s.photoUrl).id,'heritage-373003');
 });

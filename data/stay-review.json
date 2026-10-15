@@ -7,7 +7,7 @@
       "publicName": "ホテル白い燈台",
       "publicAddress": "徳島県海部郡美波町日和佐浦455",
       "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
-      "checkedAt": "2026-10-13",
+      "checkedAt": "2026-10-15",
       "mapLat": 33.737142,
       "mapLng": 134.54469,
       "mapCheckedAt": "2026-10-14",
@@ -15,7 +15,14 @@
       "publicPhotoSource": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay1",
       "publicPhotoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img1.jpg",
       "photoIdentityEvidence": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay1",
-      "photoIdentityName": "ホテル白い燈台"
+      "photoIdentityName": "ホテル白い燈台",
+      "publicDescription": "宿泊施設。えびす洞温泉の日帰り入浴は2026年8月5日から休業し、入浴は宿泊者のみです。2026年10月15日に施設公式案内を確認。最新の営業・予約は施設へ確認してください。",
+      "relatedLinks": [
+        {
+          "label": "施設公式：入浴の利用条件",
+          "url": "https://www.shiroitodai.jp/"
+        }
+      ]
     },
     {
       "no": "0000000002",
@@ -80,19 +87,6 @@
       "publicPhotoUrl": "https://www.town.minami.lg.jp/foreign_country/assets/images/sightseeing/stay_img5.jpg",
       "photoIdentityEvidence": "https://www.town.minami.lg.jp/foreign_country/jp/sightseeing.html#inline-wrap_stay5",
       "photoIdentityName": "旅館むらかみ"
-    },
-    {
-      "no": "0000000006",
-      "sourceName": "民宿弘陽荘",
-      "publicName": "民宿弘陽荘",
-      "publicAddress": "徳島県海部郡美波町奥河内字本村70",
-      "evidence": "https://www.town.minami.lg.jp/institution/result.html?category_ids%5B%5D=11431&category_ids%5B%5D=11432&category_ids%5B%5D=11433",
-      "checkedAt": "2026-10-13",
-      "mapLat": 33.7342279,
-      "mapLng": 134.5364188,
-      "mapCheckedAt": "2026-10-14",
-      "photoStatus": "写真の施設対応を確認中",
-      "photoIdentityNote": "元表のstay_img6.jpgは現在、町公式案内でえびすロッジの写真。弘陽荘の正しい許諾画像URLを確認待ち。"
     },
     {
       "no": "0000000007",
@@ -431,5 +425,13 @@
     ],
     "approvedAt": "2026-10-14",
     "scope": "サイト運営者が飲食店と宿泊施設の写真利用許諾を明示。別カテゴリへは適用しない。"
-  }
+  },
+  "excludedRecords": [
+    {
+      "no": "0000000006",
+      "name": "民宿弘陽荘",
+      "reason": "元データのタスク「削除」",
+      "checkedAt": "2026-10-15"
+    }
+  ]
 }

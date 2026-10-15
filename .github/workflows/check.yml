@@ -21,6 +21,10 @@ jobs:
       - run: python tests/photo-policy-browser.py
       - run: python tests/shared-food-browser.py
       - run: python tests/sw-update.py
+      - run: python -m pip install zxing-cpp pillow
+      - run: python tests/utilities-browser.py --local
+        env:
+          MINAMIGO_DECODE_QR: '1'
       - uses: actions/upload-artifact@v4
         with:
           name: minamigo-test-preview
